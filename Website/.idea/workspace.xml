@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="931052ad-946b-466d-8df2-5c3035fda311" name="Changes" comment="" />
+    <list default="true" id="931052ad-946b-466d-8df2-5c3035fda311" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Main/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Main/Home.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,9 +21,12 @@
       </list>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2ZQ3aXmI8ro9koFxEQrTdESNdnd" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -32,6 +37,8 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Manith",
+    "last_opened_file_path": "D:/DSGP/Website",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -58,6 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1702340539889</updated>
       <workItem from="1702340540959" duration="443000" />
+      <workItem from="1702343181635" duration="695000" />
     </task>
     <servers />
   </component>
