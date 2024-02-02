@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#D2000000"
@@ -9,28 +10,26 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
-        android:layout_width="match_parent"
-        android:layout_height="889dp"
-        android:layout_gravity="bottom"
-        android:layout_marginTop="20dp"
+        android:layout_width="411dp"
+        android:layout_height="892dp"
         android:background="@drawable/wallpap"
         android:visibility="visible"
-        tools:layout_editor_absoluteY="1dp">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="736dp"
+        tools:layout_conversion_absoluteWidth="411dp">
 
         <TextView
             android:id="@+id/greetName"
-            android:layout_width="310dp"
-            android:layout_height="60dp"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="60dp"
-            android:layout_marginEnd="40dp"
-            android:background="@drawable/rounded_background"
+            android:layout_width="410dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="36dp"
+            android:background="@color/white"
             android:text=""
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="40dp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -38,7 +37,7 @@
             android:id="@+id/row1"
             android:layout_width="411dp"
             android:layout_height="175dp"
-            android:layout_marginTop="190dp"
+            android:layout_marginTop="160dp"
             android:orientation="horizontal"
             android:padding="10dp"
             app:layout_constraintStart_toStartOf="parent"
@@ -123,7 +122,7 @@
             android:id="@+id/row2"
             android:layout_width="0dp"
             android:layout_height="175dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="56dp"
             android:orientation="horizontal"
             android:padding="10dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -297,4 +296,4 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
