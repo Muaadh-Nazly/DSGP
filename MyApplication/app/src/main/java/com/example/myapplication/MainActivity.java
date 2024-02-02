@@ -151,11 +151,11 @@ public class MainActivity extends AppCompatActivity {
 
     private String getGreeting(int hour) {
         if (hour >= 0 && hour < 12) {
-            return "Good Morning.";
+            return "Good Morning User !! ";
         } else if (hour >= 12 && hour < 17) {
-            return "Good Afternoon.";
+            return "Good Afternoon User !!";
         } else {
-            return "Good Evening.";
+            return "Good Evening User !!";
         }
     }
 }
