@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                             EditText password = findViewById(R.id.password);
                             if (username.getText().toString().equals("user") && password.getText().toString().equals("1234")) {
                                 // Login successful, load the ClothingActivity
-                                loadClothingActivity();
+                                loadActivity();
                             } else {
                                 Toast.makeText(MainActivity.this, "Login Failed!", Toast.LENGTH_SHORT).show();
                             }
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void loadClothingActivity() {
+    private void loadActivity() {
         setContentView(R.layout.activity_main);
 
         ImageView imageView_1 = findViewById(R.id.image_1);
