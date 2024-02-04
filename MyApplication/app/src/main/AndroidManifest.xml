@@ -28,7 +28,7 @@
             android:name=".LandslideActivity"
             android:exported="false" />
         <activity
-            android:name=".ClothingActivity"
+            android:name=".FloodActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
