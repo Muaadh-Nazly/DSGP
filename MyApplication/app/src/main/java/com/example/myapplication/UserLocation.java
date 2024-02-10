@@ -64,3 +64,30 @@ public class UserLocation extends AppCompatActivity {
 
 
     }
+    private void getLastLocation() {
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+
+            fusedLocationProviderClient.getLastLocation()
+                    .addOnSuccessListener(new OnSuccessListener<Location>() {
+                        @Override
+                        public void onSuccess(Location location) {
+                            if (location != null) {
+                                Geocoder geocoder = new Geocoder(MainActivity.this, Locale.getDefault());
+                                List<Address> addresses = null;
+                                try {
+                                    addresses = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
+                                    latitude.setText("Latitude: " + addresses.get(0).getLatitude());
+                                    longitude.setText("Longitude: " + addresses.get(0).getLongitude());
+                                    address.setText("Address: " + addresses.get(0).getAddressLine(0));
+                                    city.setText("City: " + addresses.get(0).getLocality());
+                                    country.setText("Country: " + addresses.get(0).getCountryName());
+                                } catch (IOException e) {
+                                    e.printStackTrace();
+                                }
+                            }
+                        }
+                    });
+        } else {
+            askPermission();
+        }
+    }
