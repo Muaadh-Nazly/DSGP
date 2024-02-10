@@ -33,8 +33,34 @@ import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
 
-public class UserLocation {
+public class UserLocation extends AppCompatActivity {
 
-    
+    FusedLocationProviderClient fusedLocationProviderClient;
+    TextView country, city, address, longitude, latitude;
+    Button getLocation;
+    private final static int REQUEST_CODE = 100;
 
-}
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        country = findViewById(R.id.country);
+        city = findViewById(R.id.city);
+        address = findViewById(R.id.address);
+        longitude = findViewById(R.id.location);
+        latitude = findViewById(R.id.lagitude);
+        getLocation = findViewById(R.id.get_location_btn);
+
+
+        fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
+
+        getLocation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getLastLocation();
+            }
+        });
+
+
+    }
