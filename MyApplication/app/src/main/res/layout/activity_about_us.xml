@@ -17,6 +17,7 @@
         android:layout_marginTop="40dp"
         android:background="@color/black"
         android:text="About Us"
+        android:fontFamily="@font/poppins_semibold"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@color/white"
