@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.example.myapplication" />
+                  <option name="mobileSdkAppId" value="1:5209972661:android:a54ef295c431bd13a903fc" />
+                  <option name="projectId" value="natural-disaster-predict-1838a" />
+                  <option name="projectNumber" value="5209972661" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

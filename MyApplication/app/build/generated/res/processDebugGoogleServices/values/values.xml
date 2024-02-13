@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="firebase_database_url" translatable="false">https://natural-disaster-predict-1838a-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+    <string name="gcm_defaultSenderId" translatable="false">5209972661</string>
+    <string name="google_api_key" translatable="false">AIzaSyBYWNFmEmonK7ktSxB47Q9RM5NfXNX_RGY</string>
+    <string name="google_app_id" translatable="false">1:5209972661:android:a54ef295c431bd13a903fc</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBYWNFmEmonK7ktSxB47Q9RM5NfXNX_RGY</string>
+    <string name="google_storage_bucket" translatable="false">natural-disaster-predict-1838a.appspot.com</string>
+    <string name="project_id" translatable="false">natural-disaster-predict-1838a</string>
+</resources>

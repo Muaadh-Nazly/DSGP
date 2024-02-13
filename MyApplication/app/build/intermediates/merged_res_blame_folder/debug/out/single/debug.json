@@ -1,0 +1,230 @@
+[
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\drawable_twitter.png.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\drawable\\twitter.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\font_aladin.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\font\\aladin.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\layout_activity_user.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\layout\\activity_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\drawable_rounded_background.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\drawable\\rounded_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\drawable_custom_edittext.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\drawable\\custom_edittext.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\drawable_aboutus.png.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\drawable\\aboutus.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\drawable_baseline_block_24.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\drawable\\baseline_block_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\layout_activity_flood.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\layout\\activity_flood.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\font_archivo_black.ttf.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\font\\archivo_black.ttf"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\layout_activity_settings.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\layout\\activity_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\drawable_loginbkg.png.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\drawable\\loginbkg.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\drawable_images.png.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\drawable\\images.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\drawable_cyclone.png.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\drawable\\cyclone.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\drawable_location.png.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\drawable\\location.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\font_dm_serif_text.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\font\\dm_serif_text.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\drawable_landslide.png.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\drawable\\landslide.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\layout_activity_user_location.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\layout\\activity_user_location.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\layout_activity_landslide.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\layout\\activity_landslide.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\drawable_g_logo.png.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\drawable\\g_logo.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\drawable_baseline_person_24.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\drawable\\baseline_person_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-42:/layout_activity_cyclone.xml.flat",
+        "source": "com.example.myapplication.app-main-44:/layout/activity_cyclone.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\drawable_lock.png.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\drawable\\lock.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\font_dm_serif_display_italic.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\font\\dm_serif_display_italic.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\layout_activity_get_started.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\layout\\activity_get_started.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\drawable_flood.png.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\drawable\\flood.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\font_dm_serif_display.ttf.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\font\\dm_serif_display.ttf"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\drawable_button_background.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\drawable\\button_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\drawable_wallpap.png.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\drawable\\wallpap.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\drawable_loginbkgh.png.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\drawable\\loginbkgh.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\layout_activity_cyclone.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\layout\\activity_cyclone.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\drawable_facebook.png.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\drawable\\facebook.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\drawable_user.png.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\drawable\\user.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\layout_activity_about_us.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\layout\\activity_about_us.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\drawable_fullreport.png.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\drawable\\fullreport.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\drawable_rounded_background_b.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\drawable\\rounded_background_b.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\layout_model.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\layout\\model.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\font_poppins_semibold.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\font\\poppins_semibold.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\layout_app_navigation.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\layout\\app_navigation.xml"
+    }
+]
