@@ -4,10 +4,10 @@ package com.example.myapplication.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.myapplication.R;
@@ -17,20 +17,82 @@ import java.lang.String;
 
 public final class ActivityLandslideBinding implements ViewBinding {
   @NonNull
-  private final RelativeLayout rootView;
+  private final ConstraintLayout rootView;
+
+  @NonNull
+  public final ConstraintLayout LandslideCard1;
+
+  @NonNull
+  public final ConstraintLayout LandslideCard2;
+
+  @NonNull
+  public final ConstraintLayout LandslideCard3;
+
+  @NonNull
+  public final TextView LandslideNeuralNetworkAccuracyPercentage;
+
+  @NonNull
+  public final TextView LandslideNeuralNetworkPredictedOutput;
+
+  @NonNull
+  public final TextView LandslideNeuralNetworkText;
+
+  @NonNull
+  public final TextView LandslideRandomForestAccuracyPercentage;
+
+  @NonNull
+  public final TextView LandslideRandomForestPredictedValue;
+
+  @NonNull
+  public final TextView LandslideRandomForestText;
+
+  @NonNull
+  public final TextView LandslideXGBoostAccuracyPercentage;
+
+  @NonNull
+  public final TextView LandslideXGBoostPredictedValue;
+
+  @NonNull
+  public final TextView LandslideXGBoostText;
 
   @NonNull
   public final TextView TitleLandslide;
 
-  private ActivityLandslideBinding(@NonNull RelativeLayout rootView,
-      @NonNull TextView TitleLandslide) {
+  @NonNull
+  public final ConstraintLayout relativeLayout;
+
+  private ActivityLandslideBinding(@NonNull ConstraintLayout rootView,
+      @NonNull ConstraintLayout LandslideCard1, @NonNull ConstraintLayout LandslideCard2,
+      @NonNull ConstraintLayout LandslideCard3,
+      @NonNull TextView LandslideNeuralNetworkAccuracyPercentage,
+      @NonNull TextView LandslideNeuralNetworkPredictedOutput,
+      @NonNull TextView LandslideNeuralNetworkText,
+      @NonNull TextView LandslideRandomForestAccuracyPercentage,
+      @NonNull TextView LandslideRandomForestPredictedValue,
+      @NonNull TextView LandslideRandomForestText,
+      @NonNull TextView LandslideXGBoostAccuracyPercentage,
+      @NonNull TextView LandslideXGBoostPredictedValue, @NonNull TextView LandslideXGBoostText,
+      @NonNull TextView TitleLandslide, @NonNull ConstraintLayout relativeLayout) {
     this.rootView = rootView;
+    this.LandslideCard1 = LandslideCard1;
+    this.LandslideCard2 = LandslideCard2;
+    this.LandslideCard3 = LandslideCard3;
+    this.LandslideNeuralNetworkAccuracyPercentage = LandslideNeuralNetworkAccuracyPercentage;
+    this.LandslideNeuralNetworkPredictedOutput = LandslideNeuralNetworkPredictedOutput;
+    this.LandslideNeuralNetworkText = LandslideNeuralNetworkText;
+    this.LandslideRandomForestAccuracyPercentage = LandslideRandomForestAccuracyPercentage;
+    this.LandslideRandomForestPredictedValue = LandslideRandomForestPredictedValue;
+    this.LandslideRandomForestText = LandslideRandomForestText;
+    this.LandslideXGBoostAccuracyPercentage = LandslideXGBoostAccuracyPercentage;
+    this.LandslideXGBoostPredictedValue = LandslideXGBoostPredictedValue;
+    this.LandslideXGBoostText = LandslideXGBoostText;
     this.TitleLandslide = TitleLandslide;
+    this.relativeLayout = relativeLayout;
   }
 
   @Override
   @NonNull
-  public RelativeLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -55,13 +117,92 @@ public final class ActivityLandslideBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.Title_landslide;
+      id = R.id.LandslideCard1;
+      ConstraintLayout LandslideCard1 = ViewBindings.findChildViewById(rootView, id);
+      if (LandslideCard1 == null) {
+        break missingId;
+      }
+
+      id = R.id.LandslideCard2;
+      ConstraintLayout LandslideCard2 = ViewBindings.findChildViewById(rootView, id);
+      if (LandslideCard2 == null) {
+        break missingId;
+      }
+
+      id = R.id.LandslideCard3;
+      ConstraintLayout LandslideCard3 = ViewBindings.findChildViewById(rootView, id);
+      if (LandslideCard3 == null) {
+        break missingId;
+      }
+
+      id = R.id.LandslideNeuralNetworkAccuracyPercentage;
+      TextView LandslideNeuralNetworkAccuracyPercentage = ViewBindings.findChildViewById(rootView, id);
+      if (LandslideNeuralNetworkAccuracyPercentage == null) {
+        break missingId;
+      }
+
+      id = R.id.LandslideNeuralNetworkPredictedOutput;
+      TextView LandslideNeuralNetworkPredictedOutput = ViewBindings.findChildViewById(rootView, id);
+      if (LandslideNeuralNetworkPredictedOutput == null) {
+        break missingId;
+      }
+
+      id = R.id.LandslideNeuralNetworkText;
+      TextView LandslideNeuralNetworkText = ViewBindings.findChildViewById(rootView, id);
+      if (LandslideNeuralNetworkText == null) {
+        break missingId;
+      }
+
+      id = R.id.LandslideRandomForestAccuracyPercentage;
+      TextView LandslideRandomForestAccuracyPercentage = ViewBindings.findChildViewById(rootView, id);
+      if (LandslideRandomForestAccuracyPercentage == null) {
+        break missingId;
+      }
+
+      id = R.id.LandslideRandomForestPredictedValue;
+      TextView LandslideRandomForestPredictedValue = ViewBindings.findChildViewById(rootView, id);
+      if (LandslideRandomForestPredictedValue == null) {
+        break missingId;
+      }
+
+      id = R.id.LandslideRandomForestText;
+      TextView LandslideRandomForestText = ViewBindings.findChildViewById(rootView, id);
+      if (LandslideRandomForestText == null) {
+        break missingId;
+      }
+
+      id = R.id.LandslideXGBoostAccuracyPercentage;
+      TextView LandslideXGBoostAccuracyPercentage = ViewBindings.findChildViewById(rootView, id);
+      if (LandslideXGBoostAccuracyPercentage == null) {
+        break missingId;
+      }
+
+      id = R.id.LandslideXGBoostPredictedValue;
+      TextView LandslideXGBoostPredictedValue = ViewBindings.findChildViewById(rootView, id);
+      if (LandslideXGBoostPredictedValue == null) {
+        break missingId;
+      }
+
+      id = R.id.LandslideXGBoostText;
+      TextView LandslideXGBoostText = ViewBindings.findChildViewById(rootView, id);
+      if (LandslideXGBoostText == null) {
+        break missingId;
+      }
+
+      id = R.id.TitleLandslide;
       TextView TitleLandslide = ViewBindings.findChildViewById(rootView, id);
       if (TitleLandslide == null) {
         break missingId;
       }
 
-      return new ActivityLandslideBinding((RelativeLayout) rootView, TitleLandslide);
+      ConstraintLayout relativeLayout = (ConstraintLayout) rootView;
+
+      return new ActivityLandslideBinding((ConstraintLayout) rootView, LandslideCard1,
+          LandslideCard2, LandslideCard3, LandslideNeuralNetworkAccuracyPercentage,
+          LandslideNeuralNetworkPredictedOutput, LandslideNeuralNetworkText,
+          LandslideRandomForestAccuracyPercentage, LandslideRandomForestPredictedValue,
+          LandslideRandomForestText, LandslideXGBoostAccuracyPercentage,
+          LandslideXGBoostPredictedValue, LandslideXGBoostText, TitleLandslide, relativeLayout);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

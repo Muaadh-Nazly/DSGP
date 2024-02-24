@@ -77,6 +77,9 @@ public final class ActivityUserBinding implements ViewBinding {
   @NonNull
   public final TextView lanslideLabel;
 
+  @NonNull
+  public final TextView textView2;
+
   private ActivityUserBinding(@NonNull ConstraintLayout rootView, @NonNull CardView CycloneCard,
       @NonNull CardView FloodCard, @NonNull CardView LandslideCard, @NonNull TextView Settings,
       @NonNull ConstraintLayout constraintLayout2, @NonNull ConstraintLayout constraintLayout3,
@@ -86,7 +89,7 @@ public final class ActivityUserBinding implements ViewBinding {
       @NonNull TextView floodRiskLevel, @NonNull TextView floodRiskLevelPercentage,
       @NonNull TextView greetingsOfTheDay, @NonNull TextView home,
       @NonNull TextView landslideRiskLabel, @NonNull TextView landslideRiskLevelPercentage,
-      @NonNull TextView lanslideLabel) {
+      @NonNull TextView lanslideLabel, @NonNull TextView textView2) {
     this.rootView = rootView;
     this.CycloneCard = CycloneCard;
     this.FloodCard = FloodCard;
@@ -107,6 +110,7 @@ public final class ActivityUserBinding implements ViewBinding {
     this.landslideRiskLabel = landslideRiskLabel;
     this.landslideRiskLevelPercentage = landslideRiskLevelPercentage;
     this.lanslideLabel = lanslideLabel;
+    this.textView2 = textView2;
   }
 
   @Override
@@ -250,11 +254,17 @@ public final class ActivityUserBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.textView2;
+      TextView textView2 = ViewBindings.findChildViewById(rootView, id);
+      if (textView2 == null) {
+        break missingId;
+      }
+
       return new ActivityUserBinding((ConstraintLayout) rootView, CycloneCard, FloodCard,
           LandslideCard, Settings, constraintLayout2, constraintLayout3, currentDateTime,
           currentLocation, cycloneLabel, cycloneRiskLevel, cycloneRiskLevelPercentage, floodLabel,
           floodRiskLevel, floodRiskLevelPercentage, greetingsOfTheDay, home, landslideRiskLabel,
-          landslideRiskLevelPercentage, lanslideLabel);
+          landslideRiskLevelPercentage, lanslideLabel, textView2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

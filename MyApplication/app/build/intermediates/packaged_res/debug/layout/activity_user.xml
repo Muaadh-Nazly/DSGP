@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="@color/grey"
     tools:layout_editor_absoluteX="14dp"
     tools:layout_editor_absoluteY="25dp">
 
 
-    <!--LandslideCard -->
+    <!--LandslideCard which represent Cyclone , Flood, Landslide -->
 
     <androidx.cardview.widget.CardView
         android:id="@+id/FloodCard"
@@ -18,7 +18,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
-        app:cardBackgroundColor="@color/backgroundColor_darkMode"
+        app:cardBackgroundColor="@color/black"
         app:cardCornerRadius="30dp"
         app:layout_constraintBottom_toTopOf="@+id/LandslideCard"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,7 +43,7 @@
                 android:layout_marginTop="88dp"
                 android:layout_marginEnd="116dp"
                 android:text="@string/low_risk"
-                android:textColor="#FBF8F8"
+                android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="DuplicateIds" />
@@ -55,7 +55,7 @@
                 android:layout_marginStart="32dp"
                 android:layout_marginBottom="44dp"
                 android:text="@string/flood"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/white"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -68,7 +68,7 @@
                 android:layout_marginStart="152dp"
                 android:layout_marginBottom="52dp"
                 android:text="@string/_70"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 
@@ -78,12 +78,12 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/CycloneCard"
-        android:layout_width="331dp"
-        android:layout_height="112dp"
+        android:layout_width="337dp"
+        android:layout_height="125dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="40dp"
-        app:cardBackgroundColor="@color/backgroundColor_darkMode"
+        app:cardBackgroundColor="@color/black"
         app:cardCornerRadius="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -107,7 +107,7 @@
                 android:layout_marginEnd="141dp"
                 android:layout_marginBottom="17dp"
                 android:text="@string/low_risk"
-                android:textColor="#FFFFFF" />
+                android:textColor="@color/white" />
 
             <TextView
                 android:id="@+id/cycloneLabel"
@@ -118,7 +118,7 @@
                 android:layout_marginEnd="243dp"
                 android:layout_marginBottom="47dp"
                 android:text="@string/cyclone"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/white"
                 android:textStyle="bold"
                 tools:ignore="MissingConstraints" />
 
@@ -131,7 +131,7 @@
                 android:layout_marginEnd="157dp"
                 android:layout_marginBottom="48dp"
                 android:text="@string/percentage"
-                android:textColor="#F3F0F0" />
+                android:textColor="@color/white" />
         </RelativeLayout>
 
     </androidx.cardview.widget.CardView>
@@ -142,7 +142,7 @@
         android:layout_height="122dp"
         android:layout_marginTop="22dp"
         android:layout_marginEnd="32dp"
-        app:cardBackgroundColor="@color/backgroundColor_darkMode"
+        app:cardBackgroundColor="@color/black"
         app:cardCornerRadius="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/FloodCard"
@@ -158,7 +158,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/landslide"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/white"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -175,7 +175,7 @@
                 android:layout_marginEnd="148dp"
                 android:layout_marginBottom="48dp"
                 android:text="@string/percentage"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 tools:ignore="MissingConstraints" />
@@ -187,7 +187,7 @@
                 android:layout_marginEnd="132dp"
                 android:layout_marginBottom="16dp"
                 android:text="@string/low_risk"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 tools:ignore="MissingConstraints" />
@@ -203,7 +203,7 @@
         android:layout_marginStart="160dp"
         android:layout_marginTop="28dp"
         android:text="@string/greetings"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/white"
         app:layout_constraintDimensionRatio="h,1:1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/currentDateTime"
@@ -215,8 +215,8 @@
         android:layout_height="43dp"
         android:layout_marginStart="132dp"
         android:layout_marginTop="32dp"
-        android:text="Maharagama, Colombo"
-        android:textColor="#FFFFFF"
+        android:text="You Location"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/greetingsOfTheDay" />
 
@@ -227,7 +227,7 @@
         android:layout_marginStart="160dp"
         android:layout_marginTop="32dp"
         android:text="@string/date"
-        android:textColor="#F8F8F8"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
@@ -236,10 +236,10 @@
         android:id="@+id/home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="28dp"
         android:text="@string/home"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -248,11 +248,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="76dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="28dp"
         android:text="@string/settings"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginBottom="36dp"
+        android:text="Map"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

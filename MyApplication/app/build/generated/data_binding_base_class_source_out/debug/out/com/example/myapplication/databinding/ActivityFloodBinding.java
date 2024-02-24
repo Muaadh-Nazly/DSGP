@@ -4,10 +4,10 @@ package com.example.myapplication.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.myapplication.R;
@@ -17,19 +17,79 @@ import java.lang.String;
 
 public final class ActivityFloodBinding implements ViewBinding {
   @NonNull
-  private final RelativeLayout rootView;
+  private final ConstraintLayout rootView;
+
+  @NonNull
+  public final ConstraintLayout FloodCard1;
+
+  @NonNull
+  public final ConstraintLayout FloodCard2;
+
+  @NonNull
+  public final ConstraintLayout FloodCard3;
+
+  @NonNull
+  public final TextView FloodNeuralNetworkAccuracyPercentage;
+
+  @NonNull
+  public final TextView FloodNeuralNetworkPredictedOutput;
+
+  @NonNull
+  public final TextView FloodNeuralNetworkText;
+
+  @NonNull
+  public final TextView FloodRandomForestAccuracyPercentage;
+
+  @NonNull
+  public final TextView FloodRandomForestPredictedValue;
+
+  @NonNull
+  public final TextView FloodRandomForestText;
+
+  @NonNull
+  public final TextView FloodXGBoostAccuracyPercentage;
+
+  @NonNull
+  public final TextView FloodXGBoostPredictedValue;
+
+  @NonNull
+  public final TextView FloodXGBoostText;
 
   @NonNull
   public final TextView TitleFlood;
 
-  private ActivityFloodBinding(@NonNull RelativeLayout rootView, @NonNull TextView TitleFlood) {
+  @NonNull
+  public final ConstraintLayout relativeLayout;
+
+  private ActivityFloodBinding(@NonNull ConstraintLayout rootView,
+      @NonNull ConstraintLayout FloodCard1, @NonNull ConstraintLayout FloodCard2,
+      @NonNull ConstraintLayout FloodCard3, @NonNull TextView FloodNeuralNetworkAccuracyPercentage,
+      @NonNull TextView FloodNeuralNetworkPredictedOutput, @NonNull TextView FloodNeuralNetworkText,
+      @NonNull TextView FloodRandomForestAccuracyPercentage,
+      @NonNull TextView FloodRandomForestPredictedValue, @NonNull TextView FloodRandomForestText,
+      @NonNull TextView FloodXGBoostAccuracyPercentage,
+      @NonNull TextView FloodXGBoostPredictedValue, @NonNull TextView FloodXGBoostText,
+      @NonNull TextView TitleFlood, @NonNull ConstraintLayout relativeLayout) {
     this.rootView = rootView;
+    this.FloodCard1 = FloodCard1;
+    this.FloodCard2 = FloodCard2;
+    this.FloodCard3 = FloodCard3;
+    this.FloodNeuralNetworkAccuracyPercentage = FloodNeuralNetworkAccuracyPercentage;
+    this.FloodNeuralNetworkPredictedOutput = FloodNeuralNetworkPredictedOutput;
+    this.FloodNeuralNetworkText = FloodNeuralNetworkText;
+    this.FloodRandomForestAccuracyPercentage = FloodRandomForestAccuracyPercentage;
+    this.FloodRandomForestPredictedValue = FloodRandomForestPredictedValue;
+    this.FloodRandomForestText = FloodRandomForestText;
+    this.FloodXGBoostAccuracyPercentage = FloodXGBoostAccuracyPercentage;
+    this.FloodXGBoostPredictedValue = FloodXGBoostPredictedValue;
+    this.FloodXGBoostText = FloodXGBoostText;
     this.TitleFlood = TitleFlood;
+    this.relativeLayout = relativeLayout;
   }
 
   @Override
   @NonNull
-  public RelativeLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -54,13 +114,91 @@ public final class ActivityFloodBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.Title_flood;
+      id = R.id.FloodCard1;
+      ConstraintLayout FloodCard1 = ViewBindings.findChildViewById(rootView, id);
+      if (FloodCard1 == null) {
+        break missingId;
+      }
+
+      id = R.id.FloodCard2;
+      ConstraintLayout FloodCard2 = ViewBindings.findChildViewById(rootView, id);
+      if (FloodCard2 == null) {
+        break missingId;
+      }
+
+      id = R.id.FloodCard3;
+      ConstraintLayout FloodCard3 = ViewBindings.findChildViewById(rootView, id);
+      if (FloodCard3 == null) {
+        break missingId;
+      }
+
+      id = R.id.FloodNeuralNetworkAccuracyPercentage;
+      TextView FloodNeuralNetworkAccuracyPercentage = ViewBindings.findChildViewById(rootView, id);
+      if (FloodNeuralNetworkAccuracyPercentage == null) {
+        break missingId;
+      }
+
+      id = R.id.FloodNeuralNetworkPredictedOutput;
+      TextView FloodNeuralNetworkPredictedOutput = ViewBindings.findChildViewById(rootView, id);
+      if (FloodNeuralNetworkPredictedOutput == null) {
+        break missingId;
+      }
+
+      id = R.id.FloodNeuralNetworkText;
+      TextView FloodNeuralNetworkText = ViewBindings.findChildViewById(rootView, id);
+      if (FloodNeuralNetworkText == null) {
+        break missingId;
+      }
+
+      id = R.id.FloodRandomForestAccuracyPercentage;
+      TextView FloodRandomForestAccuracyPercentage = ViewBindings.findChildViewById(rootView, id);
+      if (FloodRandomForestAccuracyPercentage == null) {
+        break missingId;
+      }
+
+      id = R.id.FloodRandomForestPredictedValue;
+      TextView FloodRandomForestPredictedValue = ViewBindings.findChildViewById(rootView, id);
+      if (FloodRandomForestPredictedValue == null) {
+        break missingId;
+      }
+
+      id = R.id.FloodRandomForestText;
+      TextView FloodRandomForestText = ViewBindings.findChildViewById(rootView, id);
+      if (FloodRandomForestText == null) {
+        break missingId;
+      }
+
+      id = R.id.FloodXGBoostAccuracyPercentage;
+      TextView FloodXGBoostAccuracyPercentage = ViewBindings.findChildViewById(rootView, id);
+      if (FloodXGBoostAccuracyPercentage == null) {
+        break missingId;
+      }
+
+      id = R.id.FloodXGBoostPredictedValue;
+      TextView FloodXGBoostPredictedValue = ViewBindings.findChildViewById(rootView, id);
+      if (FloodXGBoostPredictedValue == null) {
+        break missingId;
+      }
+
+      id = R.id.FloodXGBoostText;
+      TextView FloodXGBoostText = ViewBindings.findChildViewById(rootView, id);
+      if (FloodXGBoostText == null) {
+        break missingId;
+      }
+
+      id = R.id.TitleFlood;
       TextView TitleFlood = ViewBindings.findChildViewById(rootView, id);
       if (TitleFlood == null) {
         break missingId;
       }
 
-      return new ActivityFloodBinding((RelativeLayout) rootView, TitleFlood);
+      ConstraintLayout relativeLayout = (ConstraintLayout) rootView;
+
+      return new ActivityFloodBinding((ConstraintLayout) rootView, FloodCard1, FloodCard2,
+          FloodCard3, FloodNeuralNetworkAccuracyPercentage, FloodNeuralNetworkPredictedOutput,
+          FloodNeuralNetworkText, FloodRandomForestAccuracyPercentage,
+          FloodRandomForestPredictedValue, FloodRandomForestText, FloodXGBoostAccuracyPercentage,
+          FloodXGBoostPredictedValue, FloodXGBoostText, TitleFlood, relativeLayout);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

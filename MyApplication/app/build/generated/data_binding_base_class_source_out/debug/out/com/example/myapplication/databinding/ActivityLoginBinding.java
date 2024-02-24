@@ -5,8 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.LinearLayout;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -14,6 +13,8 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.myapplication.R;
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -23,55 +24,46 @@ public final class ActivityLoginBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button button2;
+  public final TextView forgotPassword;
 
   @NonNull
-  public final LinearLayout linearLayout2;
+  public final ImageView imageView;
 
   @NonNull
-  public final ConstraintLayout linearLayout3;
+  public final TextInputEditText passwordLogin;
 
   @NonNull
-  public final ConstraintLayout linearLayout6;
+  public final TextInputLayout passwordLoginLayout;
 
   @NonNull
-  public final Button loginButton;
+  public final TextView signIn;
 
   @NonNull
-  public final TextView loginText;
+  public final Button signInButton;
 
   @NonNull
-  public final EditText passwordLogin;
+  public final TextView signUpInsteadSignIn;
 
   @NonNull
-  public final TextView registerInsteadLogin;
+  public final TextView textView5;
 
   @NonNull
-  public final TextView textView4;
+  public final TextInputEditText usernameLogin;
 
-  @NonNull
-  public final TextView textView6;
-
-  @NonNull
-  public final EditText usernameLogin;
-
-  private ActivityLoginBinding(@NonNull ConstraintLayout rootView, @NonNull Button button2,
-      @NonNull LinearLayout linearLayout2, @NonNull ConstraintLayout linearLayout3,
-      @NonNull ConstraintLayout linearLayout6, @NonNull Button loginButton,
-      @NonNull TextView loginText, @NonNull EditText passwordLogin,
-      @NonNull TextView registerInsteadLogin, @NonNull TextView textView4,
-      @NonNull TextView textView6, @NonNull EditText usernameLogin) {
+  private ActivityLoginBinding(@NonNull ConstraintLayout rootView, @NonNull TextView forgotPassword,
+      @NonNull ImageView imageView, @NonNull TextInputEditText passwordLogin,
+      @NonNull TextInputLayout passwordLoginLayout, @NonNull TextView signIn,
+      @NonNull Button signInButton, @NonNull TextView signUpInsteadSignIn,
+      @NonNull TextView textView5, @NonNull TextInputEditText usernameLogin) {
     this.rootView = rootView;
-    this.button2 = button2;
-    this.linearLayout2 = linearLayout2;
-    this.linearLayout3 = linearLayout3;
-    this.linearLayout6 = linearLayout6;
-    this.loginButton = loginButton;
-    this.loginText = loginText;
+    this.forgotPassword = forgotPassword;
+    this.imageView = imageView;
     this.passwordLogin = passwordLogin;
-    this.registerInsteadLogin = registerInsteadLogin;
-    this.textView4 = textView4;
-    this.textView6 = textView6;
+    this.passwordLoginLayout = passwordLoginLayout;
+    this.signIn = signIn;
+    this.signInButton = signInButton;
+    this.signUpInsteadSignIn = signUpInsteadSignIn;
+    this.textView5 = textView5;
     this.usernameLogin = usernameLogin;
   }
 
@@ -102,71 +94,63 @@ public final class ActivityLoginBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.button2;
-      Button button2 = ViewBindings.findChildViewById(rootView, id);
-      if (button2 == null) {
+      id = R.id.forgotPassword;
+      TextView forgotPassword = ViewBindings.findChildViewById(rootView, id);
+      if (forgotPassword == null) {
         break missingId;
       }
 
-      id = R.id.linearLayout2;
-      LinearLayout linearLayout2 = ViewBindings.findChildViewById(rootView, id);
-      if (linearLayout2 == null) {
-        break missingId;
-      }
-
-      ConstraintLayout linearLayout3 = (ConstraintLayout) rootView;
-
-      id = R.id.linearLayout6;
-      ConstraintLayout linearLayout6 = ViewBindings.findChildViewById(rootView, id);
-      if (linearLayout6 == null) {
-        break missingId;
-      }
-
-      id = R.id.loginButton;
-      Button loginButton = ViewBindings.findChildViewById(rootView, id);
-      if (loginButton == null) {
-        break missingId;
-      }
-
-      id = R.id.loginText;
-      TextView loginText = ViewBindings.findChildViewById(rootView, id);
-      if (loginText == null) {
+      id = R.id.imageView;
+      ImageView imageView = ViewBindings.findChildViewById(rootView, id);
+      if (imageView == null) {
         break missingId;
       }
 
       id = R.id.passwordLogin;
-      EditText passwordLogin = ViewBindings.findChildViewById(rootView, id);
+      TextInputEditText passwordLogin = ViewBindings.findChildViewById(rootView, id);
       if (passwordLogin == null) {
         break missingId;
       }
 
-      id = R.id.registerInsteadLogin;
-      TextView registerInsteadLogin = ViewBindings.findChildViewById(rootView, id);
-      if (registerInsteadLogin == null) {
+      id = R.id.passwordLoginLayout;
+      TextInputLayout passwordLoginLayout = ViewBindings.findChildViewById(rootView, id);
+      if (passwordLoginLayout == null) {
         break missingId;
       }
 
-      id = R.id.textView4;
-      TextView textView4 = ViewBindings.findChildViewById(rootView, id);
-      if (textView4 == null) {
+      id = R.id.signIn;
+      TextView signIn = ViewBindings.findChildViewById(rootView, id);
+      if (signIn == null) {
         break missingId;
       }
 
-      id = R.id.textView6;
-      TextView textView6 = ViewBindings.findChildViewById(rootView, id);
-      if (textView6 == null) {
+      id = R.id.signInButton;
+      Button signInButton = ViewBindings.findChildViewById(rootView, id);
+      if (signInButton == null) {
+        break missingId;
+      }
+
+      id = R.id.signUpInsteadSignIn;
+      TextView signUpInsteadSignIn = ViewBindings.findChildViewById(rootView, id);
+      if (signUpInsteadSignIn == null) {
+        break missingId;
+      }
+
+      id = R.id.textView5;
+      TextView textView5 = ViewBindings.findChildViewById(rootView, id);
+      if (textView5 == null) {
         break missingId;
       }
 
       id = R.id.usernameLogin;
-      EditText usernameLogin = ViewBindings.findChildViewById(rootView, id);
+      TextInputEditText usernameLogin = ViewBindings.findChildViewById(rootView, id);
       if (usernameLogin == null) {
         break missingId;
       }
 
-      return new ActivityLoginBinding((ConstraintLayout) rootView, button2, linearLayout2,
-          linearLayout3, linearLayout6, loginButton, loginText, passwordLogin, registerInsteadLogin,
-          textView4, textView6, usernameLogin);
+      return new ActivityLoginBinding((ConstraintLayout) rootView, forgotPassword, imageView,
+          passwordLogin, passwordLoginLayout, signIn, signInButton, signUpInsteadSignIn, textView5,
+          usernameLogin);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
