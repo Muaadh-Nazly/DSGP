@@ -3,10 +3,8 @@ import joblib
 import numpy as np
 import pandas as pd
 
-rfr_model, ref_columns1, target1 = joblib.load('Modelling/Flood_RFRModel.pkl','r+')
-xgb_model, ref_columns2, target2 = joblib.load('Modelling/Flood_XGBModel.pkl','r+')
-
-
+rfr_model, ref_columns1, target1 = joblib.load('Integration/Flood/Flood_RFRModel.pkl','r+')
+xgb_model, ref_columns2, target2 = joblib.load('Integration/Flood/Flood_XGBModel.pkl','r+')
 
 app = Flask(__name__)
 
@@ -31,15 +29,11 @@ def predict():
     'Day' : int(day),
     'Rainfall(mm)': float(rainfall)
     },index=[0])
-
     
     rfr_prediction = np.round((rfr_model.predict(user_data)[0]*100),2)
     xgb_prediction = np.round((xgb_model.predict(user_data)[0]*100),2)
-
+    
     return jsonify({'RandomForest Predicted Value':rfr_prediction,"XGB Predicted Value":xgb_prediction})
 
 if __name__=='__main__':
     app.run(debug=True)
-
-
-    
