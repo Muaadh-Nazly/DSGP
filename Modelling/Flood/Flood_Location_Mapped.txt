@@ -1,0 +1,3594 @@
+A Colony : 0
+Abayapura : 1
+Abhayapura : 2
+Acgcgankulam : 3
+Adapparagama : 4
+Addalachchenai : 5
+Addaragoda : 6
+Addikkandiya : 7
+Adikkandiya : 8
+Adimune : 9
+Agalawatta : 10
+Agarapathana : 11
+Aggala Ulpotha : 12
+Aguluwa : 13
+Ahakkimurippu : 14
+Ahangama : 15
+Ahangama Central : 16
+Akarangaha : 17
+Akaravita : 18
+Akaravitamakevita : 19
+Akbar Town : 20
+Akkara : 21
+Akkaraipattu : 22
+Akkaraipattukarunkoditivu : 23
+Akkarayankulam : 24
+Akmeemana : 25
+Akulahena : 26
+Akurala East : 27
+Akurala North : 28
+Akurana : 29
+Akurana Town : 30
+Akuressa : 31
+Akurugoda East : 32
+Al District : 33
+Alankemy : 34
+Alankeny : 35
+Alankerny : 36
+Alapaladeniya North : 37
+Alaskerni : 38
+Alaveddy Central : 39
+Alaveddy East : 40
+Alaveddy North : 41
+Alaveddy South : 42
+Alaveddy West : 43
+Alawakkai : 44
+Alawakumbura : 45
+Alawala Maha Kanda : 46
+Alawala North : 47
+Alawala South : 48
+Alawathugoda : 49
+Alawathupitiya : 50
+Alawwa : 51
+Alawwa South : 52
+Alayadiwembu : 53
+Alexendrawatta : 54
+Alhilalpura : 55
+Alim Nagar : 56
+Alimnagar : 57
+All District : 58
+All Districts : 59
+Allaipiddy : 60
+Aluth Watta : 61
+Aluth Wewa West : 62
+Aluthgama : 63
+Aluthgama Bogamuwa North : 64
+Aluthgma : 65
+Aluthherathgama : 66
+Aluthkade East : 67
+Aluthmawatha : 68
+Aluthoya : 69
+Aluthwala : 70
+Aluthwewa : 71
+Alvai : 72
+Alvai North : 73
+Alvai North Centre : 74
+Alvai North West : 75
+Amandoluwa : 76
+Amaragedara : 77
+Ambagahawatta : 78
+Ambagahawewa : 79
+Ambagamuwakorale : 80
+Ambaganthota : 81
+Ambakadawara : 82
+Ambakele : 83
+Ambalangoda : 84
+Ambalanmulla : 85
+Ambalantota : 86
+Ambalanwatta : 87
+Ambalnagar : 88
+Ambanganga Korale : 89
+Ambanpola : 90
+Ambanvita : 91
+Ambathale : 92
+Ambathenna : 93
+Ambegoda : 94
+Ambilladeniya : 95
+Amirthakalli : 96
+Ammanamulla : 97
+Ampakamam : 98
+Ampan : 99
+Ampara : 100
+Ampilanthurai : 101
+Ampilanthurai North : 102
+Ampilanthurai West : 103
+Ampitiya South : 104
+Amune Kandura : 105
+Amunugama : 106
+Amunukotuwa : 107
+Amuthagoda : 108
+Amuwala : 109
+Anaeethivu : 110
+Anaikoddai : 111
+Anaivilunthankulam : 112
+Anakatawewa : 113
+Analaitivu North : 114
+Analaitivu South : 115
+Analkaddnlavelly : 116
+Anamaduwa : 117
+Andaragasyaya : 118
+Andawelayaya : 119
+Andeniya : 120
+Andiambalama West : 121
+Andiyagala : 122
+Andurangoda : 123
+Angagoda : 124
+Angammana : 125
+Angulana : 126
+Angulana North : 127
+Angulana South : 128
+Angunakolapelessa : 129
+Angurukaramulla : 130
+Anguruwathota : 131
+Aniwatta West : 132
+Anjaligala : 133
+Ankokkawala : 134
+Annal Nagar : 135
+Annamalai : 136
+Annasiwewa : 137
+Anthoniyapuram : 138
+Appugewatta : 139
+Arachchikanda : 140
+Arachchikattuwa : 141
+Aragoda : 142
+Araipattai : 143
+Araipattai Centre : 144
+Araipattai East : 145
+Araipattai North : 146
+Araipattai South : 147
+Araipattai West : 148
+Aralaganvila : 149
+Aralaganvila West : 150
+Arali East : 151
+Arali North : 152
+Arali South : 153
+Aramba : 154
+Arambepola : 155
+Aranayaka : 156
+Aranwala : 157
+Arasaditivu : 158
+Arasaditivu North : 159
+Arasady : 160
+Arasarkerni : 161
+Arawanamulla : 162
+Arippu East : 163
+Arippu West : 164
+Ariyagama : 165
+Ariyalai Centre : 166
+Ariyalai Centre North : 167
+Ariyalai Centre Noth : 168
+Ariyalai Centre South : 169
+Ariyalai North South : 170
+Ariyalai North West : 171
+Arnanthanverni : 172
+Arumugathan Kudiyiruppu : 173
+Arumugathankuduriuppu : 174
+Arumuhathanputhukulam : 175
+Arunapura : 176
+Asgangula North : 177
+Asgiriwalpola : 178
+Asgiriwalpola South : 179
+Asgiriya South : 180
+Asgiriya West : 181
+Asikulam : 182
+Asmagoda : 183
+Aswedduma : 184
+Atakalapanna : 185
+Atchchelu : 186
+Atchchelu South : 187
+Atchuvelly North : 188
+Atchuvely North : 189
+Atchuvely South : 190
+Atchuvely West : 191
+Athale : 192
+Athapattukanda : 193
+Atharagallewa : 194
+Aththai : 195
+Aththikkuli : 196
+Athuparayaya : 197
+Athuraliya : 198
+Athuraliya West : 199
+Athwelthota : 200
+Attanagalla : 201
+Attanakadawala North : 202
+Attanakadawala South : 203
+Attaragoda : 204
+Attidiya North : 205
+Attidiya South : 206
+Attudawa : 207
+Atulugama East : 208
+Aulton Watta : 209
+Avarangal West : 210
+Avarankal East : 211
+Avarankal West : 212
+Avissawella : 213
+Avittawa : 214
+Ayagama : 215
+Ayliady : 216
+Badabadda : 217
+Badalkumbura : 218
+Baddegama : 219
+Badulla : 220
+Badulla Central : 221
+Badulla East : 222
+Badulla South : 223
+Badullagammana : 224
+Badulupitiya : 225
+Bagawanthalawa South : 226
+Bagro Watta : 227
+Bahirawa Kanda : 228
+Bakamoona : 229
+Bakmeegolla : 230
+Balagala : 231
+Balakaduwa : 232
+Balakawala : 233
+Balangoda : 234
+Balangoda Town : 235
+Balanthota North : 236
+Balanthota South : 237
+Balapitiya : 238
+Balavinna North : 239
+Balavinna West : 240
+Bambare : 241
+Bambarenda East : 242
+Bambarenda North : 243
+Bampara : 244
+Bamunugama East : 245
+Bamunugama West : 246
+Bamunukotuwa : 247
+Banagala East : 248
+Bandanagala : 249
+Bandara Ulpatha : 250
+Bandaragala : 251
+Bandaragama : 252
+Bandarathota : 253
+Bandarawatta East : 254
+Bandarawatta West : 255
+Bandarawela : 256
+Bandarawela East : 257
+Bandarigalagoda : 258
+Bandawa : 259
+Bandigoda : 260
+Banduraliya : 261
+Bangadeniya : 262
+Barampola : 263
+Barathipuram : 264
+Barawardanaoya : 265
+Bataatha : 266
+Batadola : 267
+Batadoowa West : 268
+Batadura : 269
+Batagodavila : 270
+Batahen : 271
+Batahena : 272
+Batakada : 273
+Batakanda : 274
+Batapola : 275
+Batapotha : 276
+Batayaya : 277
+Batheegama East : 278
+Batheegama West : 279
+Batugammana : 280
+Batugedara : 281
+Batuvita : 282
+Batuwahena : 283
+Batuwangala West : 284
+Bauddhartha Gama : 285
+Bawwagama : 286
+Beddegama : 287
+Beddewela : 288
+Belagama : 289
+Beliathwila : 290
+Beliatta : 291
+Beliattakumbura : 292
+Belideniya : 293
+Belihuloya : 294
+Bellana : 295
+Bellana East : 296
+Belpamulla : 297
+Belungala : 298
+Bendilyamulla East : 299
+Bendiyamulla North : 300
+Bendiyamulla West : 301
+Benthota : 302
+Beragama East : 303
+Beragama North : 304
+Beragama South : 305
+Beragama West : 306
+Beragammulla : 307
+Beragamulla : 308
+Beraleliya : 309
+Beraliyadola : 310
+Berathuduwa : 311
+Berenduwa : 312
+Beruwala : 313
+Beruwela : 314
+Bharathipuram : 315
+Bibiladeniya : 316
+Bibile : 317
+Bimpokuna : 318
+Bingiriya : 319
+Bintenna : 320
+Birainthuraichenai North : 321
+Birainthuraichenai South : 322
+Biranthuruchenaia : 323
+Biranthuruchenaic : 324
+Biyagama : 325
+Biyagama East : 326
+Biyagama North : 327
+Biyagama South : 328
+Biyagama West : 329
+Blackwater Watta : 330
+Bloemendhal : 331
+Bodagama : 332
+Bodhimaluwa : 333
+Bodhinagoda : 334
+Bogahawatta : 335
+Bogamuyaya : 336
+Bogaswewa : 337
+Bokundara : 338
+Bolawalana : 339
+Bolgoda : 340
+Bollegala : 341
+Bollunna : 342
+Bope West : 343
+Bopepoddala : 344
+Bopetta : 345
+Bopitigoda : 346
+Bopitiya : 347
+Bopitiyathuduwa : 348
+Borala : 349
+Boralla : 350
+Boralugoda : 351
+Borella : 352
+Borella North : 353
+Borella Watta And Watta : 354
+Bothale : 355
+Bothale Gamgoda : 356
+Bothale Gangoda : 357
+Braemore : 358
+Brahmanayagama : 359
+Buddhayaya : 360
+Budugehinna : 361
+Budumuttawa : 362
+Buduruwagala : 363
+Bujjampala : 364
+Bulagala : 365
+Bulathgama : 366
+Bulathkohupitiya : 367
+Bulathsinhala : 368
+Bulathsinhala Central : 369
+Bulathsinhala North : 370
+Bulugahawewa : 371
+Bulugohothenna : 372
+Buluwana : 373
+Bungiriya : 374
+Bunnehepola : 375
+Butgomuwa Watta : 376
+Buttala : 377
+Cashim Nagar : 378
+Cassim Nagar : 379
+Challithevu : 380
+Chankanai Center : 381
+Chankanai East : 382
+Chankanai South : 383
+Chankanai West : 384
+Cheddipalaym North : 385
+Cheddipalaym South : 386
+Chemanodai : 387
+Chenaiyoor : 388
+Chenkalady : 389
+Chilavathurai : 390
+Chilaw : 391
+Chulipuram Center : 392
+Chulipuram East : 393
+Chunnakam Town Centre : 394
+Chunnakam Town North : 395
+Chunnakam Town West : 396
+Civic Centre : 397
+Colombo : 398
+Colombo Cinaman Grand : 399
+Columbuthurai : 400
+Columbuthurai East : 401
+Cp Pottakerny : 402
+Dadagamuwa : 403
+Dadigamuwa : 404
+Dadiyawala : 405
+Dahampura : 406
+Daigala : 407
+Dalugamgoda : 408
+Dalukana : 409
+Dalupatha : 410
+Dalupitiya South : 411
+Dalupitiya West : 412
+Daluwakotuwa : 413
+Daluwakotuwa East : 414
+Daluwakotuwa West : 415
+Damana : 416
+Damana Gemunupura : 417
+Damanawara : 418
+Damanayaya : 419
+Dambaduraya : 420
+Dambewelana : 421
+Dambewelena : 422
+Dambulla : 423
+Dambulla Town : 424
+Dambulugama : 425
+Dambuluwana : 426
+Dambulwana : 427
+Damibuluwana : 428
+Dammanthenna : 429
+Dammikagama : 430
+Damparadugoda : 431
+Dampella : 432
+Dandeniya : 433
+Dandeniya North : 434
+Dandugama : 435
+Dandugamgoda : 436
+Danduwawa : 437
+Dangahavila : 438
+Dangalla : 439
+Dangalla Kanda : 440
+Dangalla North : 441
+Dangaswewa : 442
+Dangedara East : 443
+Dangedara West : 444
+Dangolla : 445
+Dankotuwa : 446
+Dankotuwa East : 447
+Davugalagama : 448
+Davulagala : 449
+Dawulagama : 450
+Dayagama : 451
+Dayagama East : 452
+Dayagama West : 453
+Debarawewa : 454
+Debarella : 455
+Debokkawa : 456
+Deddugoda North : 457
+Deddugoda South : 458
+Dedigamuwa : 459
+Dediyagala : 460
+Deduruoya : 461
+Deegala : 462
+Deeyakaduwa East : 463
+Deeyakaduwa West : 464
+Deeyawa : 465
+Dehelgamuwa : 466
+Dehennegama : 467
+Deheragoda : 468
+Dehiattakandiya : 469
+Dehigahamada : 470
+Dehigaspa : 471
+Dehiovita : 472
+Dehiwala : 473
+Dehiyagatha North : 474
+Dehiyagatha South : 475
+Dehupitiya : 476
+Deiyandara : 477
+Deiyannewela : 478
+Dekinda : 479
+Delathura East : 480
+Delathura West : 481
+Delbada : 482
+Delft : 483
+Delft Centre : 484
+Delft Centre West : 485
+Delft East : 486
+Delft South : 487
+Delft West : 488
+Delgamuwa : 489
+Delgasgoda : 490
+Delgoda : 491
+Delgoda East : 492
+Delgoda West : 493
+Dellabada : 494
+Delmalla : 495
+Delthota : 496
+Delwala : 497
+Dematagoda : 498
+Demataluwa : 499
+Dematapitiya : 500
+Demodara : 501
+Demodarawatta : 502
+Denagama East : 503
+Denagama North : 504
+Denagama West : 505
+Denawaka Pathakada : 506
+Denipitiya Central : 507
+Denipitiya East : 508
+Deniyaya : 509
+Deraniyagala : 510
+Deraniyagala South : 511
+Dethabadakanda : 512
+Dethamulla : 513
+Dethemulla : 514
+Deveni Polwatta : 515
+Devinuwara : 516
+Devinuwara Central : 517
+Dewalagoda : 518
+Dewalaya Gawa : 519
+Dewalayagawa : 520
+Dewalegama : 521
+Dewalegama East : 522
+Dewalegama West : 523
+Dewamottawa : 524
+Dewamulla : 525
+Dewathura : 526
+Dibbedda : 527
+Dickwella : 528
+Dickwella Muslim Yonakapura : 529
+Dickwella South : 530
+Diddenipotha East : 531
+Diddenipotha North : 532
+Diddenipotha South : 533
+Digampathaha : 534
+Diganathuduwa : 535
+Diganna : 536
+Digannewa : 537
+Diggoda : 538
+Dikhena : 539
+Dikovita : 540
+Dikoya : 541
+Dikwela : 542
+Dimbulagala : 543
+Dimbulamura : 544
+Dimbulamure : 545
+Dimbuldoowa : 546
+Dimbulwala : 547
+Dippitigoda : 548
+Dippitiya : 549
+Divithura South : 550
+Divulana : 551
+Divulapitiya : 552
+Divuldamana : 553
+Divullewa : 554
+Divulpitiya : 555
+Divurumpitiya : 556
+Diwulwewa : 557
+Diyabeduma : 558
+Diyagama : 559
+Diyakaduwa East : 560
+Diyalape : 561
+Diyapota : 562
+Diyathalawa : 563
+Dodampe : 564
+Dodampe East : 565
+Dodampe West : 566
+Dodangoda : 567
+Dodankahavila : 568
+Dolapihilla North : 569
+Doloswala : 570
+Doluwa : 571
+Dombagahawela : 572
+Dombagammana : 573
+Dombagasvinna : 574
+Dompe : 575
+Doowa : 576
+Doowa Watta : 577
+Dorakumbura : 578
+Dorapane : 579
+Dumbara : 580
+Dumbara Manana : 581
+Dummaladeniya East : 582
+Dummaladeniya North : 583
+Dummalasooriya : 584
+Dunkannawa : 585
+Dunupotha : 586
+Dunuvila North : 587
+Dunuvila South : 588
+Durakanda : 589
+Durekkanda : 590
+Dutch Bar : 591
+Eachchilampthi : 592
+Ebawalapitiya : 593
+Ebwalapitiya : 594
+Echankulam : 595
+Echchankulam : 596
+Edandukitha East : 597
+Eeavur : 598
+Egaloya : 599
+Egoda Malwala : 600
+Egoda Uyana : 601
+Egoda Uyana Central : 602
+Egoda Uyana South : 603
+Ehelape : 604
+Eheliyagoda : 605
+Ehetuwewa : 606
+Ekala : 607
+Ekala Kurunduwatta : 608
+Ekamuthugama : 609
+Elagahawatta : 610
+Elahera : 611
+Elanthaikulam : 612
+Elapatha : 613
+Elapitawala : 614
+Elapitiwala : 615
+Elathota : 616
+Elawaka : 617
+Elayapattuwa : 618
+Elgiriya : 619
+Elhena : 620
+Eliwila : 621
+Ella : 622
+Ellagala : 623
+Ellagalla : 624
+Ellagawa : 625
+Ellahena : 626
+Ellawala : 627
+Ellawala Pahalagama : 628
+Ellegawa : 629
+Ellegedara : 630
+Ellewela East : 631
+Ellewela West : 632
+Ellewewa : 633
+Elpitawala : 634
+Elpitiya : 635
+Elpitiyawala : 636
+Eluthoor Eluthur : 637
+Eluvaitivu : 638
+Eluvativu : 639
+Embawa : 640
+Embawalapitiya : 641
+Embilipitiya : 642
+Emil Nagar : 643
+Endana : 644
+Endiriyanwala : 645
+Ennala : 646
+Epitamulla : 647
+Epitawala : 648
+Epitiawala : 649
+Erabedda : 650
+Eragama : 651
+Eramudugoda : 652
+Erattana : 653
+Eravur : 654
+Eravur Pattu Chenkalady : 655
+Eravur Town Eravur : 656
+Eravura : 657
+Eravurb : 658
+Eravurc : 659
+Eravurd : 660
+Eravuru : 661
+Ereporuwa : 662
+Erihabe : 663
+Eriyagasthenna : 664
+Eriyathota : 665
+Erlalai East : 666
+Erlalai South : 667
+Errikkalampiddy West : 668
+Erukalamiddy South : 669
+Erukkalampiddy : 670
+Eruvil East : 671
+Eruvil North : 672
+Eruvil South : 673
+Eruvill East : 674
+Etambagasmulla : 675
+Etavila : 676
+Etawarahena : 677
+Ethagala East : 678
+Ethagala West : 679
+Ethamulla : 680
+Ethinimale : 681
+Ethoya : 682
+Ethul Kotte : 683
+Ethulkotte West : 684
+Ettiligoda North : 685
+Ettukala : 686
+Evarihena : 687
+Evariwatta : 688
+Evenai : 689
+Ewariwatta : 690
+Faizal Nagar : 691
+Fort : 692
+Gabbela : 693
+Gagalagamuwa : 694
+Gagawatakooralaya : 695
+Gahalagaswala : 696
+Gajabapura : 697
+Gajaneggama : 698
+Gal Edandugoda : 699
+Gal Eliya : 700
+Galabada : 701
+Galagedara : 702
+Galahitiuyawa : 703
+Galahitiya : 704
+Galahitiya South : 705
+Galahitiyawa : 706
+Galamuna : 707
+Galapitadigana : 708
+Galathura : 709
+Galawadugoda : 710
+Galawetiya : 711
+Galayala Pahala : 712
+Galboda : 713
+Galedandadelgoda : 714
+Galekada : 715
+Galenbindunuwewa : 716
+Galetumba : 717
+Galewela : 718
+Galgamuwa : 719
+Galgemandiya : 720
+Galgemandiya G : 721
+Galigamuwa : 722
+Galihangama : 723
+Galkanda : 724
+Gallahemulla : 725
+Gallassa : 726
+Gallawatta : 727
+Galle Four Gravets : 728
+Gallella : 729
+Gallella West : 730
+Gallinna : 731
+Galloluwa : 732
+Galmaduwa : 733
+Galnewa : 734
+Galpamuna : 735
+Galpaya : 736
+Galpothugoda : 737
+Galtemmandiya : 738
+Galudupita : 739
+Galukagama : 740
+Galwetiya : 741
+Gam Udawa : 742
+Gamagewatta : 743
+Gamagoda East : 744
+Gaminipura : 745
+Gammedapitiya : 746
+Gammeddagama : 747
+Gampaha : 748
+Gampaha Aluthgama North : 749
+Gampola : 750
+Gampolawela : 751
+Gandara Central : 752
+Gandara South : 753
+Gandara West : 754
+Gandarawatta South : 755
+Ganegama : 756
+Ganegama South : 757
+Ganepola : 758
+Ganeswaram : 759
+Ganewatta : 760
+Ganga Ihala Korale : 761
+Gangabada West : 762
+Gangalagamuwa : 763
+Gangasiripura : 764
+Gangeyaya : 765
+Gangeyaya Area : 766
+Gangodagama : 767
+Gangodakanda : 768
+Gangodavila : 769
+Gangodavila North : 770
+Gangodavila South : 771
+Gangulvitiya : 772
+Gapitiyagama : 773
+Gawaragiriya : 774
+Gawarawela : 775
+Gawarawila : 776
+Gemunupura : 777
+Getahetta : 778
+Getulawa : 779
+Gileemale South : 780
+Ginthota : 781
+Ginthota West : 782
+Girathalana : 783
+Giribawa : 784
+Giridara : 785
+Giridara West : 786
+Girikola : 787
+Girikole : 788
+Giriulla : 789
+Glasgrowatta : 790
+Glen Alpin : 791
+Gnasooriyam Square : 792
+Gnimadam : 793
+Goarakadoowa : 794
+Godagama : 795
+Godagandeniya : 796
+Godakanda : 797
+Godakawela : 798
+Godapitiya : 799
+Godauda : 800
+Godawa : 801
+Godigamuwa : 802
+Godigamuwa Mahawala : 803
+Godigamuwa West : 804
+Goluwamulla : 805
+Goluwamulla North : 806
+Goluwawa : 807
+Gomarankadawala : 808
+Gomathiyaya : 809
+Gombaddala North : 810
+Gombaddala South : 811
+Gonagaha : 812
+Gonagahapura : 813
+Gonagala : 814
+Gonagamuwa : 815
+Gonakumbura : 816
+Gonapeenuwala : 817
+Gonapeenuwala Central : 818
+Gonapeenuwala West : 819
+Gonawala : 820
+Gonawala West : 821
+Gongithota : 822
+Gongithota West : 823
+Gongitota : 824
+Gongitota West : 825
+Goniwala : 826
+Goonapeenuwala : 827
+Gopalapura : 828
+Gorokgahapotta : 829
+Gorokgoda : 830
+Gotabayapura : 831
+Gothamipura : 832
+Gothatuwa : 833
+Govinna North : 834
+Govinna South : 835
+Grandpass : 836
+Grandpass North : 837
+Grandpass South : 838
+Gungamuwa : 839
+Gurudola : 840
+Gurugewatta : 841
+Guruwala : 842
+Habaraduwa : 843
+Habarakada : 844
+Habaraluwewa : 845
+Habarangala : 846
+Habarawa : 847
+Habbeliara : 848
+Haddapitiya : 849
+Hadukanda : 850
+Hakmana : 851
+Halapitiya : 852
+Haldanduwawa South : 853
+Haldola : 854
+Haldoowa : 855
+Haldummulla : 856
+Haliela : 857
+Halkadiliya : 858
+Hallinna : 859
+Halmilewa : 860
+Halmillagala : 861
+Halmillaketiya : 862
+Halmulla : 863
+Halpawala : 864
+Halpegm : 865
+Halthota : 866
+Haluapullanawewa : 867
+Halwathura : 868
+Halwella : 869
+Hambantota : 870
+Hambantota West : 871
+Hamburugala : 872
+Handukanda : 873
+Handungamuwa : 874
+Hangamuwa : 875
+Hangarangala : 876
+Hangunmitiya : 877
+Hanguranketha : 878
+Hanthana : 879
+Hanthihawa : 880
+Hanwella : 881
+Hapugala : 882
+Hapugoda : 883
+Hapurudeniya : 884
+Haputale : 885
+Haputhale : 886
+Haputhalegama : 887
+Harispattuwa : 888
+Hathalawa : 889
+Hathale : 890
+Hathalispahuwa : 891
+Hatharaliyadda : 892
+Hathbodiya : 893
+Hathnapitiya : 894
+Hattella : 895
+Hawaeliya : 896
+Hawpe : 897
+Heelogama : 898
+Heen Agara : 899
+Heenatiyana South : 900
+Heenetiyana : 901
+Heenkenda : 902
+Heennarangolla : 903
+Heeramulthuntota : 904
+Heeressagala : 905
+Hegoda : 906
+Heiyanthuduwa East : 907
+Heiyanthuduwa South : 908
+Hekitta : 909
+Helakadurugamuwa : 910
+Henagoda : 911
+Henamulla : 912
+Henapola : 913
+Henarathgoda : 914
+Hendala : 915
+Hendala North : 916
+Hendala South : 917
+Hendigalla : 918
+Hendiyagala : 919
+Hendiyapola : 920
+Henegama : 921
+Henegama West : 922
+Henegedara : 923
+Henepola : 924
+Heraliyawa : 925
+Hettimulla Road : 926
+Hettipola : 927
+Hewenpelessa : 928
+Hidallana : 929
+Hikkaduwa : 930
+Hindagoda : 931
+Hingura Ara : 932
+Hingurakdamana : 933
+Hingurakgoda : 934
+Hinguralakanda : 935
+Hinguruwelpitiya : 936
+Hiniduma : 937
+Hiniduma North : 938
+Hinidumgoda : 939
+Hipanwatta : 940
+Hiramadagama : 941
+Hiripitiya East : 942
+Hiripitiya South : 943
+Hittatiya Meda : 944
+Hokandara North : 945
+Holeepitiya : 946
+Holly Bon : 947
+Homagama : 948
+Homagama Kahathuduwa : 949
+Horabokka : 950
+Horaketiya : 951
+Horamula : 952
+Horana : 953
+Horanekarakanda : 954
+Horangala : 955
+Horapavita : 956
+Horapavita North : 957
+Horapavita South : 958
+Horape Thuduwa : 959
+Horivila : 960
+Horombuwa : 961
+Horowpothana : 962
+Hulandawa : 963
+Hulandawa Left : 964
+Hulandawa South : 965
+Hulannuga : 966
+Hulannuge : 967
+Hulogedara : 968
+Hulugalla : 969
+Hundirapola : 970
+Hundiripola : 971
+Hungamuwa : 972
+Hunugalawatta : 973
+Hunugallewa : 974
+Hunupitiya : 975
+Hunupitiya East : 976
+Hunupitiya North : 977
+Hunupitiya South : 978
+Hunuwala North : 979
+Hunuwala South : 980
+Hureegaswewa : 981
+I Annfield : 982
+Ibbagamuwa : 983
+Idaikkaddu : 984
+Idangoda : 985
+Idanthota : 986
+Iddagoda West : 987
+Idiman : 988
+Ihakuluwewa : 989
+Ihala Athuraliya : 990
+Ihala Bomiriya : 991
+Ihala Bopitiya : 992
+Ihala Ellewewa : 993
+Ihala Erevula : 994
+Ihala Galathura : 995
+Ihala Gigummaduwa : 996
+Ihala Hakamuwa : 997
+Ihala Katuneriya : 998
+Ihala Kottamulla : 999
+Ihala Kottaramulla : 1000
+Ihala Kudawewa : 1001
+Ihala Makandura : 1002
+Ihala Mavila : 1003
+Ihala Naragala : 1004
+Ihala Naragala South : 1005
+Ihala Narangala : 1006
+Ihala Nattandiya : 1007
+Ihala Omatta : 1008
+Ihala Thabbowa : 1009
+Ihala Vitiyala South : 1010
+Ihala Vitiyala West : 1011
+Ihala Welgama : 1012
+Ihala Wettewa : 1013
+Ihala Yagamwela : 1014
+Ihalagama : 1015
+Ihalagama East : 1016
+Ihalagama South : 1017
+Ihalagama West : 1018
+Ihalawewa : 1019
+Ikkapallama : 1020
+Ilangathurai : 1021
+Ilangathurai Mugathuravan : 1022
+Ilangathurai Mugathuvaram : 1023
+Ilanthai Moddai : 1024
+Ilavalai North : 1025
+Ilippugama : 1026
+Illavalai : 1027
+Ilukhena : 1028
+Ilukpatha : 1029
+Ilumbakanda : 1030
+Iluppaikadavai : 1031
+Imaduwa : 1032
+Imbulahena : 1033
+Imbulgoda : 1034
+Imbulpe : 1035
+Inamaluwa : 1036
+Indibedda East : 1037
+Indiviatiya : 1038
+Indivinna : 1039
+Indivitiya : 1040
+Induruwa : 1041
+Ingiriya : 1042
+Ingurudaluwa : 1043
+Inguruoya North : 1044
+Inguruoya South : 1045
+Inguruwatta : 1046
+Inthupuram : 1047
+Inuvil North East : 1048
+Inuvil South West : 1049
+Inuvil West : 1050
+Ipalogama : 1051
+Iqubalnagar : 1052
+Iralakulam : 1053
+Iranai Ilupaikulam : 1054
+Iranavila West : 1055
+Irattinapuram : 1056
+Irruthayapuram East : 1057
+Irupalai East : 1058
+Irupalai South : 1059
+Iruthayapuram : 1060
+Iruthayapuram Central : 1061
+Iruthayapuram East : 1062
+Iruthayapuram West : 1063
+Iruthayauram Central : 1064
+Island Northkayts : 1065
+Island South Velanai : 1066
+Ittapana North : 1067
+Ittavil : 1068
+Iyanar Kovilady : 1069
+Iyang Keni : 1070
+Iyankemy : 1071
+Iyankemy Muslim : 1072
+Iyankemy Tamil : 1073
+Iyankeni Tamil : 1074
+Iyankerney : 1075
+Iyankerni : 1076
+Iyankerni Muslim : 1077
+Ja Ela : 1078
+Jadura : 1079
+Jaela : 1080
+Jaffna : 1081
+Jaffna Town East : 1082
+Jahinkanda : 1083
+Jaladeen Square Hidayapuram : 1084
+Jamburegoda East : 1085
+Jamburegoda West : 1086
+Jankoorawela : 1087
+Jasinkanda : 1088
+Jathuwangoda : 1089
+Jaya Nagar : 1090
+Jayabima : 1091
+Jayalanda : 1092
+Jayanagar : 1093
+Jayanthinagar : 1094
+Jayanthipura : 1095
+Jayanthipuram : 1096
+Jayapura : 1097
+Jeevapuram : 1098
+Jeyanthiputam : 1099
+Jeyapuram North : 1100
+Jeyapuram South : 1101
+Jinna Nagar : 1102
+Jinnanagar : 1103
+Jonepuram : 1104
+Joolapallama : 1105
+Joolpallama : 1106
+Julangete : 1107
+Kabulumulla : 1108
+Kachchirawa : 1109
+Kadalana : 1110
+Kadangoda : 1111
+Kadapola : 1112
+Kadawalagedara : 1113
+Kadawatha : 1114
+Kadawedduwa : 1115
+Kadawedduwa East : 1116
+Kadaweediya North : 1117
+Kadayamotai : 1118
+Kaddukarandudiyiruppu : 1119
+Kaddumurivu : 1120
+Kadduvan West : 1121
+Kadduwa : 1122
+Kadigawa : 1123
+Kadigawa Track : 1124
+Kadirana North : 1125
+Kadirana South : 1126
+Kadirapura : 1127
+Kadukanna : 1128
+Kadukkamunai : 1129
+Kaduruduwa : 1130
+Kaduruwana : 1131
+Kaduwala : 1132
+Kaduwela : 1133
+Kahadoowa South : 1134
+Kahadoowa Watta : 1135
+Kahagala : 1136
+Kahagolla : 1137
+Kahambiliyawa : 1138
+Kahangama : 1139
+Kahatagahapitiya : 1140
+Kahatagasdigiliya : 1141
+Kahathuduwapanagoda : 1142
+Kahatovita : 1143
+Kahatovita West : 1144
+Kahattewela : 1145
+Kahawa Beach : 1146
+Kahawatta : 1147
+Kahawatta South : 1148
+Kahengama : 1149
+Kahengama West : 1150
+Kailagoda : 1151
+Kakachlvaddal : 1152
+Kakamunai : 1153
+Kakavankulam East : 1154
+Kakawankulam West : 1155
+Kakitha Nagar : 1156
+Kakkankudy : 1157
+Kaladiya : 1158
+Kalaella : 1159
+Kalagedi Ara : 1160
+Kalahagala : 1161
+Kalahapitiya : 1162
+Kalalella : 1163
+Kalallella : 1164
+Kalamadu : 1165
+Kalametiya : 1166
+Kalapaluwawa : 1167
+Kalappukaddu : 1168
+Kalatuwagama : 1169
+Kalatuwawa : 1170
+Kalatuwawa West : 1171
+Kalavilakanda : 1172
+Kalawana : 1173
+Kalawana East : 1174
+Kalawana West : 1175
+Kalawewa : 1176
+Kalegana : 1177
+Kalegana North : 1178
+Kalegana South : 1179
+Kallady : 1180
+Kallady Mugathuvaran : 1181
+Kallady Mugathuwaram : 1182
+Kallady Uppodai : 1183
+Kallady Veloor : 1184
+Kallappadu South : 1185
+Kalmadu : 1186
+Kalmadunagar : 1187
+Kalmunai : 1188
+Kalmunai Muslim Section : 1189
+Kalmunai Tamil : 1190
+Kalogahaela : 1191
+Kalotuwawa : 1192
+Kalpitiya : 1193
+Kaluaggala : 1194
+Kaludewa : 1195
+Kaludewa East : 1196
+Kalueliya : 1197
+Kalugala : 1198
+Kaluganga : 1199
+Kalukandawa : 1200
+Kalukele : 1201
+Kalukodayawa West : 1202
+Kalupahana : 1203
+Kalupedigama : 1204
+Kalutara : 1205
+Kaluthavalai : 1206
+Kaluthavalai Santhipuram : 1207
+Kaluthawalai : 1208
+Kaluthawali : 1209
+Kaluthawali Central : 1210
+Kaluvila : 1211
+Kaluwanchikudy : 1212
+Kaluwanchikudy North : 1213
+Kaluwanchikudy South : 1214
+Kaluwarippuwa West : 1215
+Kalvayal : 1216
+Kamburadeniya : 1217
+Kamburawala : 1218
+Kamburupitiya : 1219
+Kammala : 1220
+Kammalthure : 1221
+Kanagambigaikulam : 1222
+Kanaggalla : 1223
+Kanamulla North : 1224
+Kanamulla South : 1225
+Kanangama : 1226
+Kandaketiya : 1227
+Kandakuliya : 1228
+Kandakuliya Beach : 1229
+Kandangoda : 1230
+Kandangoda South : 1231
+Kandapola : 1232
+Kandathoduwawa : 1233
+Kandavalai : 1234
+Kandawala : 1235
+Kandawalai : 1236
+Kandegama : 1237
+Kandegama Ihalagama : 1238
+Kandegedara : 1239
+Kandegoda : 1240
+Kandemulla : 1241
+Kandepola : 1242
+Kandewatta : 1243
+Kandiripola : 1244
+Kandiyapitiyawewa : 1245
+Kandoluwawa : 1246
+Kanduboda East : 1247
+Kandulawa : 1248
+Kandy Four Gravets Gangawata : 1249
+Kanewala : 1250
+Kanichchagala : 1251
+Kankanamgoda : 1252
+Kankeyanodai : 1253
+Kankeyanodai South : 1254
+Kannagaipuram : 1255
+Kannaipuram : 1256
+Kanotuwa : 1257
+Kanthalai : 1258
+Kanthamadam Norht West : 1259
+Kantharmadam North East : 1260
+Kantharmadam North West : 1261
+Kantharmadam South East : 1262
+Kantharmadam South West : 1263
+Kantharodai : 1264
+Kanthasamy Nagar : 1265
+Kanubichchiya : 1266
+Kanuggalla : 1267
+Kanuketiya : 1268
+Kanulwela : 1269
+Kanumale : 1270
+Kanupelella : 1271
+Kanuwana : 1272
+Kappalthurai : 1273
+Kapudoowa West : 1274
+Kapugama : 1275
+Kapugama Central : 1276
+Kapugama West : 1277
+Kapugampotha : 1278
+Kapugedara : 1279
+Kapugoda : 1280
+Kapuhenthota : 1281
+Kapuwatta : 1282
+Kapuwatta Kolaney : 1283
+Karachchakodithivu : 1284
+Karachchi : 1285
+Karachchiyagama : 1286
+Karadamulla : 1287
+Karadana South : 1288
+Karadavila : 1289
+Karadikkuli : 1290
+Karagahagedara : 1291
+Karagoda Uyangoda Atha : 1292
+Karagoda Uyangoda East : 1293
+Karagoda Uyangoda West : 1294
+Karahadungala : 1295
+Karainagar Central : 1296
+Karainagar Centre : 1297
+Karainagar East : 1298
+Karainagar North East : 1299
+Karainagar North West : 1300
+Karainagar South : 1301
+Karainagar South East : 1302
+Karainagar South West : 1303
+Karainagar West : 1304
+Karakole : 1305
+Karaldekama : 1306
+Karaldekma : 1307
+Karambe : 1308
+Karampon : 1309
+Karampon East : 1310
+Karampon West : 1311
+Karanagoda : 1312
+Karanavai : 1313
+Karanavai Centre : 1314
+Karanavai East : 1315
+Karanavai North : 1316
+Karanavai South : 1317
+Karanayakamulla : 1318
+Karandana South : 1319
+Karandana West : 1320
+Karandeniya : 1321
+Karandeniya South : 1322
+Karangoda : 1323
+Karapagala : 1324
+Karasnagala : 1325
+Karasnagala South : 1326
+Karathivu North : 1327
+Karativu : 1328
+Karaveddy Centre : 1329
+Karaveddy North : 1330
+Karaveddy West : 1331
+Kareinagar : 1332
+Kariyalainagapaduvan : 1333
+Karkas Hall : 1334
+Karukkamunai : 1335
+Karuvappanthurai : 1336
+Karuveppankerni : 1337
+Karuwalagaswewa : 1338
+Kasawatta : 1339
+Katana : 1340
+Katchenai : 1341
+Katharagama : 1342
+Kathiravelly : 1343
+Katiyagala : 1344
+Katiyala : 1345
+Katiyawa : 1346
+Katkovlam : 1347
+Kattaiaru : 1348
+Kattaipanichan North : 1349
+Kattaipanichchan South : 1350
+Kattaiparichan South : 1351
+Kattakaduwa : 1352
+Kattankudy : 1353
+Kattankudy East : 1354
+Kattankudy North : 1355
+Kattankudy South : 1356
+Kattimahana : 1357
+Kattukarankudiya : 1358
+Kattuwa : 1359
+Katubedda : 1360
+Katugasthota : 1361
+Katukaliyawa : 1362
+Katukele West : 1363
+Katukeliyawa : 1364
+Katukurunda : 1365
+Katukurundawtta : 1366
+Katukurunduwatta : 1367
+Katumuluwa : 1368
+Katuneriya : 1369
+Katupelella : 1370
+Katupotha : 1371
+Katuwana : 1372
+Katuwangoda : 1373
+Katuwapitiya : 1374
+Kavanthissapura : 1375
+Kavathamunai : 1376
+Kawadipanna : 1377
+Kawanthissapuragn : 1378
+Kawantissapura : 1379
+Kawduwawa : 1380
+Kayankerni : 1381
+Kayts : 1382
+Kebellewa : 1383
+Kebiliyapola North : 1384
+Kebiliyapola South : 1385
+Kebithigollewa : 1386
+Keeliyankudiya : 1387
+Keerisuddan : 1388
+Keeriwalagama : 1389
+Kegalle : 1390
+Kegalugama : 1391
+Kehelovitigama : 1392
+Kehelwala : 1393
+Kekirawa : 1394
+Kekulagala : 1395
+Kekulaliya : 1396
+Kekulawala : 1397
+Kekunawala : 1398
+Kekunawela : 1399
+Kelanimulla : 1400
+Kelaniya : 1401
+Kelegama : 1402
+Kelekumbura : 1403
+Kelimune : 1404
+Kelinkanda : 1405
+Keliyapura : 1406
+Kella : 1407
+Kendagolla : 1408
+Kendakaduwa : 1409
+Kendaketiya : 1410
+Kendopitiya : 1411
+Keneligoda : 1412
+Keppetipola : 1413
+Kepungoda : 1414
+Keragahapokuna : 1415
+Kerangapokuna : 1416
+Kerawalapitiya : 1417
+Kerudavil East : 1418
+Kerudavil South : 1419
+Kesbewa : 1420
+Keselwatta : 1421
+Ketagal Ara : 1422
+Ketaliyampalla : 1423
+Ketaliyanpalla : 1424
+Ketapalakanda : 1425
+Ketapola : 1426
+Ketawalegedara : 1427
+Ketepola : 1428
+Keththarama : 1429
+Ketiyape North : 1430
+Ketiyape South : 1431
+Kettaramaya : 1432
+Kevitiya : 1433
+Khettarama : 1434
+Kidelpitiya : 1435
+Kili Town : 1436
+Kimbulapitiya : 1437
+Kimbulapitiya Central : 1438
+Kimbulapitiya West : 1439
+Kindigoda North : 1440
+Kindigoda South : 1441
+Kiniyama East : 1442
+Kinnaya : 1443
+Kinniya : 1444
+Kiragala : 1445
+Kiran East : 1446
+Kiran West : 1447
+Kirankulam : 1448
+Kirankulam Cental : 1449
+Kirankulam North : 1450
+Kirankulam South : 1451
+Kiranodagama : 1452
+Kiribathgoda : 1453
+Kiridigala : 1454
+Kiridigalla : 1455
+Kiridiwelmada : 1456
+Kiriella : 1457
+Kirimetimulla North : 1458
+Kirimetimulla South : 1459
+Kirimetiyana : 1460
+Kirinda : 1461
+Kirinda Mangin Ihala Central : 1462
+Kirinda Puhulwella : 1463
+Kirindivita : 1464
+Kirinuge : 1465
+Kiriweldola : 1466
+Kirula : 1467
+Kirumichani : 1468
+Kithalagama Central : 1469
+Kithalagama East : 1470
+Kithalagama West : 1471
+Kithalawa : 1472
+Kithalella : 1473
+Kithsiripura : 1474
+Kithulampitiya : 1475
+Kithulhitiyawa Udagama Colaniya : 1476
+Kithulpe : 1477
+Kithulwehera : 1478
+Kittampahuwa : 1479
+Kivulegama : 1480
+Kobawaka North : 1481
+Kobawaka South : 1482
+Kobeigane : 1483
+Kochchikade : 1484
+Kochchikade South : 1485
+Koddady : 1486
+Koddaikallar North : 1487
+Koddaikallar South : 1488
+Kodippilikanda : 1489
+Koduruwawela : 1490
+Koduvamadu : 1491
+Koggalla : 1492
+Koholankala : 1493
+Koholanwala : 1494
+Kohukumbura : 1495
+Kohuliyadda : 1496
+Kokilai : 1497
+Kokkadichcholai : 1498
+Kokkaducholai : 1499
+Kokkaducholai South : 1500
+Kokkupadayan : 1501
+Kokkuvil : 1502
+Kokkuvil Centre West : 1503
+Kokkuvil Centrewest : 1504
+Kokkuvil South West : 1505
+Kokuvil Center West : 1506
+Kokuvil Centre West : 1507
+Kokuvil South West : 1508
+Kokuvil West Center : 1509
+Kokuvil West Sentre : 1510
+Kolambagamuwa : 1511
+Kolambage Ara : 1512
+Kolambewa : 1513
+Kolamediriya North : 1514
+Kolandagala : 1515
+Kolavenigama : 1516
+Kolavil : 1517
+Kolawenigama : 1518
+Koledanda : 1519
+Kolinjadiya : 1520
+Kolinjadiya West : 1521
+Kollak Kurichchi : 1522
+Kollakurichchi : 1523
+Kollankulam : 1524
+Kolombewa : 1525
+Kolombugama : 1526
+Kolonjadiya West : 1527
+Kolonna : 1528
+Kolonnawa : 1529
+Kolonyaya : 1530
+Komarie : 1531
+Komarika : 1532
+Kommathurai North : 1533
+Kommathural West : 1534
+Kommathurani West : 1535
+Konakagala : 1536
+Konavil : 1537
+Kondachchi : 1538
+Kondavil Centre East : 1539
+Kondavil Centre West : 1540
+Kondavil North East : 1541
+Kondavil South East : 1542
+Kondavil South West : 1543
+Konduruwapola : 1544
+Kongala Centre : 1545
+Kongala East : 1546
+Kongala South : 1547
+Kongala West : 1548
+Konkatuwa : 1549
+Konketiyawa : 1550
+Konotta : 1551
+Konwewa : 1552
+Koodamunai : 1553
+Koolavady : 1554
+Koolvady East : 1555
+Koonketiya : 1556
+Koonwelena : 1557
+Koorai : 1558
+Kopay Center : 1559
+Kopay Centre : 1560
+Kopay North : 1561
+Kopay South : 1562
+Koragala : 1563
+Korakallimadu : 1564
+Korakkankaddu : 1565
+Koralai Pattu Central : 1566
+Koralai Pattu Northvakarai : 1567
+Koralai Pattu South Kiran : 1568
+Koralai Pattu Valachchenai : 1569
+Koralai Pattu West : 1570
+Koralai Pattu West Oddamavadi : 1571
+Koralawella South : 1572
+Koramburuwana : 1573
+Korase : 1574
+Koravelly : 1575
+Kosdeniya : 1576
+Kosgasthenna : 1577
+Kosgoda : 1578
+Kosgulana : 1579
+Koshena : 1580
+Kosnilgoda : 1581
+Kosovita : 1582
+Kospelavinna : 1583
+Kosvita : 1584
+Koswatta : 1585
+Koswatta North : 1586
+Koswatte : 1587
+Kotagala : 1588
+Kotagama : 1589
+Kotahena : 1590
+Kotahena East : 1591
+Kotakethana : 1592
+Kotaleeya : 1593
+Kotambapitiya : 1594
+Kotamulla : 1595
+Kotapola : 1596
+Kotapola North : 1597
+Kotavehera : 1598
+Kotawa Usavi Sankeernaya : 1599
+Kothalawala : 1600
+Kothmale : 1601
+Kotikambokka : 1602
+Kotikawatta East : 1603
+Kotiyakumbura : 1604
+Kottagoda : 1605
+Kottanthievu : 1606
+Kottapitiya : 1607
+Kottapitiya North : 1608
+Kottapitiya South : 1609
+Kottukachchiya : 1610
+Kotugoda : 1611
+Kotuvila : 1612
+Kotuwegoda : 1613
+Kovil Vayal : 1614
+Kovilkulam : 1615
+Kovill Prathuvu West : 1616
+Kovilporativu : 1617
+Kovilporativu South : 1618
+Kovilporativu West : 1619
+Kovilvayal : 1620
+Kovinna : 1621
+Kovulwewa : 1622
+Kuchchaveli : 1623
+Kuda Wadduwa : 1624
+Kudagalahena : 1625
+Kudagalgamuwa : 1626
+Kudagamaelahera : 1627
+Kudahakapola North : 1628
+Kudahakapola South : 1629
+Kudaligama : 1630
+Kudanelukulama : 1631
+Kudaoya : 1632
+Kudaoya Kirandola : 1633
+Kudapaduwa : 1634
+Kudapana : 1635
+Kudathanai : 1636
+Kudawella North : 1637
+Kudawella South : 1638
+Kudawewa : 1639
+Kuddatiyawa : 1640
+Kudirippuwa : 1641
+Kudiyerppu : 1642
+Kudumeeriya : 1643
+Kudumpimalai : 1644
+Kuduoya : 1645
+Kuduwa : 1646
+Kuduwella North : 1647
+Kujawatta : 1648
+Kukulegama North : 1649
+Kukulegama South : 1650
+Kukurampola : 1651
+Kuleepitiya South : 1652
+Kulivinamadu : 1653
+Kuliyapitiya East : 1654
+Kuliyapitiya West : 1655
+Kuluvinamadu : 1656
+Kumana : 1657
+Kumaragama : 1658
+Kumarapuram : 1659
+Kumarimulla : 1660
+Kumbaldiwela : 1661
+Kumbugoda Ara : 1662
+Kumbukgahamulla : 1663
+Kumbukgolla : 1664
+Kumbukkana : 1665
+Kumbukwala : 1666
+Kumbukwewa : 1667
+Kumbulwewa South : 1668
+Kumburupiddi East : 1669
+Kumburupiddi North : 1670
+Kumburutheniwela : 1671
+Kundasale : 1672
+Kundirapola : 1673
+Kundumadu : 1674
+Kunjawatta : 1675
+Kunubichchiya : 1676
+Kuppilan South : 1677
+Kuppiyawatta : 1678
+Kurana : 1679
+Kurawalana : 1680
+Kurinjipitiya North : 1681
+Kurmanvely : 1682
+Kurmanvely West : 1683
+Kuruduhena : 1684
+Kurugoda : 1685
+Kurukkalamadam North : 1686
+Kurukkalamadam South : 1687
+Kurukkalputhukkulam : 1688
+Kurumanvelly East : 1689
+Kurumanwely East : 1690
+Kurundugaha Ela : 1691
+Kurundupotha : 1692
+Kurunduwatta : 1693
+Kurunegala : 1694
+Kuruniyawatta : 1695
+Kurupanawa : 1696
+Kurupetta : 1697
+Kuruvita : 1698
+Kuswala : 1699
+Kuttiyawatta : 1700
+Kuwanchikudy South : 1701
+Labbala : 1702
+Laggalapallegama : 1703
+Lahugala : 1704
+Lakshapathiya : 1705
+Lalpe : 1706
+Lankagama : 1707
+Lankapura : 1708
+Lansiyagama : 1709
+Lansiyawadiya : 1710
+Lathpandura : 1711
+Lathpandura East : 1712
+Lellopitiya : 1713
+Lenabatuwa : 1714
+Lenadora South : 1715
+Lenagala : 1716
+Lenama North : 1717
+Lihiriyagama : 1718
+Lindagawahena : 1719
+Liyangolla : 1720
+Lnginiyagala : 1721
+Lunugala : 1722
+Lunugala Yodha Wewa : 1723
+Lunugamvehera : 1724
+Lunupokuna : 1725
+Lunuwewa : 1726
+Mabima : 1727
+Mabima East : 1728
+Mabima West : 1729
+Mabola : 1730
+Mabole : 1731
+Madabaddara : 1732
+Madagalla : 1733
+Madakotuwa : 1734
+Madalagama : 1735
+Madalagama Colony : 1736
+Madampe : 1737
+Madampe North : 1738
+Madampitiya : 1739
+Madapatha : 1740
+Madawalamulla North : 1741
+Madawalamulla South : 1742
+Madduvil Centre : 1743
+Madduvil East : 1744
+Madduvil North : 1745
+Madduvil Nunavil : 1746
+Madduvil West : 1747
+Madduvilandu West : 1748
+Madduvilnadu East : 1749
+Madhu : 1750
+Madigedethilianga : 1751
+Madinnagoda : 1752
+Madithiyawala : 1753
+Maditiyawala : 1754
+Madola : 1755
+Madudamana : 1756
+Madugama : 1757
+Madulla : 1758
+Madupitiya : 1759
+Madurankuliya : 1760
+Madurawala : 1761
+Maduruketiya : 1762
+Maduruvita : 1763
+Maduwala : 1764
+Maduwanwela : 1765
+Maeliya : 1766
+Magala South : 1767
+Magama : 1768
+Magandanamulla : 1769
+Maguldamana : 1770
+Magulpokuna : 1771
+Magura East : 1772
+Magura West : 1773
+Magurankadawala : 1774
+Magurugoda : 1775
+Maha Bellankadawala : 1776
+Maha Buthgamuwa C : 1777
+Maha Buthgamuwa D : 1778
+Maha Embogama : 1779
+Maha Kirimetiya : 1780
+Maha Wadduwa : 1781
+Mahaagara : 1782
+Mahabage : 1783
+Mahabharana : 1784
+Mahadamana : 1785
+Mahadeniya : 1786
+Mahadivulwewa : 1787
+Mahagama : 1788
+Mahagama East : 1789
+Mahagama North : 1790
+Mahagama South : 1791
+Mahagama West : 1792
+Mahagangoda : 1793
+Mahagoda : 1794
+Mahahunupitiya East : 1795
+Mahahunupitiya West : 1796
+Mahaiyawa : 1797
+Mahakandegama : 1798
+Mahakele : 1799
+Mahakeliyawa : 1800
+Mahakumbukkadawala : 1801
+Mahaoya : 1802
+Mahapelessa : 1803
+Mahara : 1804
+Maharagama : 1805
+Maharambaikulam : 1806
+Maharoof Gramam : 1807
+Maharuf Gramam : 1808
+Mahasenpura : 1809
+Mahaulpatha : 1810
+Mahavila : 1811
+Mahavilachchiya : 1812
+Mahawa : 1813
+Mahawatta : 1814
+Mahawela : 1815
+Mahaweligama : 1816
+Mahawewa : 1817
+Mahiladitivu : 1818
+Mahiladitivu South : 1819
+Mahiloor : 1820
+Mahiloor East : 1821
+Mahiloor South West : 1822
+Mahiloor West : 1823
+Mahindagama : 1824
+Mahindapura : 1825
+Mahipalagoda : 1826
+Mahiyanganaya : 1827
+Maikkulama : 1828
+Mailankulam : 1829
+Mailattewa : 1830
+Mailawa : 1831
+Mailewa : 1832
+Maitipe : 1833
+Makandura : 1834
+Makandura East : 1835
+Makandura Pahala : 1836
+Makandura West : 1837
+Makeelangamuwa : 1838
+Makele : 1839
+Makevita North : 1840
+Makiladitheevu West : 1841
+Makilangamuwa : 1842
+Makilur Munai : 1843
+Makulewa : 1844
+Makuluwa : 1845
+Malakaman South : 1846
+Malambe North : 1847
+Malambe West : 1848
+Malampaveli : 1849
+Malamulla West : 1850
+Malangama : 1851
+Malangamuwa : 1852
+Malayarkaddy : 1853
+Maldeniya : 1854
+Malevita North : 1855
+Malgamandeniya : 1856
+Malgamuwa : 1857
+Maligagodella : 1858
+Maligakanda : 1859
+Maligaspe : 1860
+Maligawatta : 1861
+Maligawatta West : 1862
+Malimbada : 1863
+Malimbada East : 1864
+Malimbada North : 1865
+Malimbada South : 1866
+Malimbada West : 1867
+Malinda East : 1868
+Maliyadewapura : 1869
+Mallakam Central : 1870
+Mallakam Centre : 1871
+Mallakam North : 1872
+Mallakam South : 1873
+Mallawapitiya : 1874
+Mallikai : 1875
+Malmeekanda : 1876
+Maluvarauarkaddayadampuran : 1877
+Maluweyaya : 1878
+Malvila : 1879
+Malwala : 1880
+Malwana : 1881
+Malwana Town : 1882
+Malwatta : 1883
+Malwattagama : 1884
+Mamangam : 1885
+Mampuriya : 1886
+Manalkadu : 1887
+Manampita : 1888
+Manampitiya : 1889
+Manampitiya East : 1890
+Manathivu : 1891
+Manaveriya : 1892
+Manaweriya : 1893
+Manchanthoduvai South : 1894
+Manchanthoduval North : 1895
+Manchanthooduval South : 1896
+Mancholai : 1897
+Mancholaichenai : 1898
+Mandapththady : 1899
+Mangala Eliya : 1900
+Maniggala : 1901
+Manikapuram : 1902
+Manikgoda : 1903
+Manikkampattiya : 1904
+Manipay East : 1905
+Manipay North : 1906
+Manipay South : 1907
+Manipay West : 1908
+Mankadu : 1909
+Mankerani Central : 1910
+Mankerni South : 1911
+Mankulam : 1912
+Manmunai : 1913
+Manmunai North Batti Town : 1914
+Manmunai Pattu Araipattai : 1915
+Manmunai South Eruvilpattu : 1916
+Manmunai South West Peddipe : 1917
+Manmunai West : 1918
+Manmunai Westvavunatheivu : 1919
+Mannar Town : 1920
+Mansoolai : 1921
+Manthai East : 1922
+Manthai West : 1923
+Manthikai : 1924
+Mapakadawewa : 1925
+Mapakanda South : 1926
+Mapalagama : 1927
+Mapalagama Pahala : 1928
+Mapitiya : 1929
+Mapota : 1930
+Marada North : 1931
+Maradagolla : 1932
+Maradana : 1933
+Maragahadeniya : 1934
+Maragama : 1935
+Maragoda : 1936
+Marahela : 1937
+Maraka : 1938
+Maramba South : 1939
+Marandagolla : 1940
+Marapana : 1941
+Maravita : 1942
+Maresankoodal : 1943
+Marichchukkaddi : 1944
+Maritimepattu : 1945
+Maruthamadu : 1946
+Maruthanagar : 1947
+Maruthankulam : 1948
+Maruthapuram Mukkaipilavu : 1949
+Masiapiddy : 1950
+Masimbula : 1951
+Maspotha : 1952
+Massenna : 1953
+Matagoda : 1954
+Matale : 1955
+Matara Beach Area : 1956
+Matara Four Gravets : 1957
+Matha Kiramam : 1958
+Mathagal : 1959
+Mathagal East : 1960
+Mathagal South : 1961
+Mathagal West : 1962
+Mathakiramam : 1963
+Maththumagala : 1964
+Mathugama : 1965
+Mathuramkulam : 1966
+Mattakkuliya : 1967
+Mattakotuwa : 1968
+Mattumagala : 1969
+Matuwagala : 1970
+Maudella : 1971
+Maunawa : 1972
+Maussagolla : 1973
+Mavadichenai : 1974
+Mavadimunmari : 1975
+Mavadiveembu : 1976
+Mavadivembu : 1977
+Mavediceempu : 1978
+Mavila : 1979
+Mavilankanthurai : 1980
+Mawanagama : 1981
+Mawanella : 1982
+Mawathagama : 1983
+Mawela : 1984
+Meda Gonavala : 1985
+Meda Katukenda : 1986
+Meda Kottaramulla : 1987
+Meda Pahala Katuneriya : 1988
+Medabedda : 1989
+Medadumbara : 1990
+Medagama : 1991
+Medagoda : 1992
+Medapitigama : 1993
+Medapitiya : 1994
+Medawachchiya : 1995
+Medawachchiya Junction : 1996
+Medawela West : 1997
+Medawelena : 1998
+Meddegama North : 1999
+Meddepitiya : 2000
+Medipitiya : 2001
+Medirigiriya : 2002
+Mediripitiya : 2003
+Medirivila : 2004
+Meeella : 2005
+Meegahakivula : 2006
+Meegahapelessa : 2007
+Meegahawatta : 2008
+Meegahawela : 2009
+Meegahawewa : 2010
+Meegalewa : 2011
+Meegaspitiya : 2012
+Meehitiya : 2013
+Meemana : 2014
+Meepagama : 2015
+Meepavita : 2016
+Meerakemy : 2017
+Meerakerni : 2018
+Meeravodai : 2019
+Meethotamulla : 2020
+Meewalapathaha : 2021
+Meewanapalana West : 2022
+Meewathpura : 2023
+Meewellewa : 2024
+Megoda Kolonnawa : 2025
+Mehiella : 2026
+Melchena : 2027
+Mellapotta : 2028
+Mellawa : 2029
+Menik Faram Kalapaya I : 2030
+Menik Faram Kalapaya Ii : 2031
+Meniklanda : 2032
+Methanveli : 2033
+Metibokka : 2034
+Metihakwala : 2035
+Metikotuwa : 2036
+Metiviliya : 2037
+Mewella : 2038
+Michinagar : 2039
+Midalana : 2040
+Midalana West : 2041
+Midigama : 2042
+Mihidugama : 2043
+Mihindugama : 2044
+Mihinthale : 2045
+Milankulama : 2046
+Milidduwa : 2047
+Millagoda : 2048
+Millana : 2049
+Millaniya : 2050
+Mineriya : 2051
+Minipe : 2052
+Miniranketiya : 2053
+Minuwangoda : 2054
+Minuwangoda West : 2055
+Mirigama : 2056
+Mirihana : 2057
+Miriswatta : 2058
+Miriswelpotha : 2059
+Miyanadeniya : 2060
+Miyanavita East : 2061
+Miyanavita West : 2062
+Mligaspe : 2063
+Modara : 2064
+Modarawana : 2065
+Moddaikadai : 2066
+Mola Eliya : 2067
+Molaeliya : 2068
+Molakepupathana : 2069
+Molligoda : 2070
+Molligoda North : 2071
+Molligoda South : 2072
+Mollipothana : 2073
+Molpe : 2074
+Moneragala : 2075
+Mookalangamuwa East : 2076
+Mookalangamuwa West : 2077
+Moonamaldeniya : 2078
+Moonamalpa : 2079
+Moor Street : 2080
+Moor Street North : 2081
+Moor Street South : 2082
+Moragahawewa : 2083
+Moragammana : 2084
+Moragane : 2085
+Moragoda : 2086
+Moragolla : 2087
+Morakele North : 2088
+Morakele South : 2089
+Moraketiya : 2090
+Morapitiya : 2091
+Morapitiya North : 2092
+Morapitiya South : 2093
+Morathota : 2094
+Moratuwa : 2095
+Moratuwella : 2096
+Moravinna : 2097
+Morawaka : 2098
+Morawewa : 2099
+Morenna : 2100
+Morukkuliya : 2101
+Mount Lavinia : 2102
+Mudaligedara : 2103
+Mudcove : 2104
+Mudduwa : 2105
+Mudduwa East : 2106
+Mudduwagama : 2107
+Mudiyala : 2108
+Mudukattuwa North : 2109
+Mudukattuwa South : 2110
+Mudukatuwa North : 2111
+Mudukatuwa South : 2112
+Muduna : 2113
+Mudungoda : 2114
+Mudunkotuwa : 2115
+Mudunkotuwa West : 2116
+Mugunuattawana : 2117
+Mugunuwatawana : 2118
+Muhudukattuwa South : 2119
+Muhur Central : 2120
+Mukkuthoduwawa : 2121
+Mulatiyana : 2122
+Mullaiyady : 2123
+Mullalai : 2124
+Mullanai : 2125
+Mullegama : 2126
+Mullegama North : 2127
+Mulleriyawa North : 2128
+Mulleriyawa South : 2129
+Mullipothana North : 2130
+Mullipuram : 2131
+Munaikadu East : 2132
+Munaikadu North : 2133
+Munaikadu South : 2134
+Munaikady West : 2135
+Munaitheevu : 2136
+Munaithevu : 2137
+Munasinghapura : 2138
+Munasinhapura : 2139
+Mundalama : 2140
+Munikkaduwa : 2141
+Munisirigama : 2142
+Muppane : 2143
+Murakadanchenai : 2144
+Murasumoddai : 2145
+Murasumooddai : 2146
+Murugapurai : 2147
+Muruthalai : 2148
+Muruthamuraya : 2149
+Muruthamuraya East : 2150
+Muruthamuraya West : 2151
+Musalai : 2152
+Muthalaikudah : 2153
+Muthugalayagama : 2154
+Muthur East Idps : 2155
+Muthur West : 2156
+Muthuwadiya : 2157
+Muttibendi Vila : 2158
+Muttur : 2159
+Muttur East : 2160
+Muttur West : 2161
+Muttuvil West : 2162
+Muwagama : 2163
+Muwanwellegedara : 2164
+Mylampavelly : 2165
+Mylavadduvan : 2166
+Nabadawewa : 2167
+Nabadewa : 2168
+Nabirittankadawara : 2169
+Nachchadoowa : 2170
+Nachchikkuda : 2171
+Naddanan : 2172
+Nadugala : 2173
+Naduthivu : 2174
+Nagadeepa : 2175
+Nagalagane : 2176
+Nagathalvu : 2177
+Nagoda : 2178
+Nagodawela : 2179
+Nahena : 2180
+Naimbala : 2181
+Nainamadama West : 2182
+Nainativu : 2183
+Nakandala : 2184
+Nakele : 2185
+Nakkala : 2186
+Nala Walana : 2187
+Nalawalana : 2188
+Nalla : 2189
+Nallandaluwa : 2190
+Nalliaddy North : 2191
+Nalloor : 2192
+Nallooruwa North : 2193
+Nallur : 2194
+Nallur East : 2195
+Nallur North : 2196
+Nallur Noth : 2197
+Nallur South : 2198
+Naloor South : 2199
+Nambuluwa : 2200
+Nammuwawa : 2201
+Namperiyal Kanda : 2202
+Nanadhan : 2203
+Nande Nuwara : 2204
+Napawala : 2205
+Narahenpita : 2206
+Narammala : 2207
+Narandeniya : 2208
+Narangoda : 2209
+Naranthanai : 2210
+Naranthanai North : 2211
+Naranthanai North West : 2212
+Naranthanai South : 2213
+Naranvila : 2214
+Naravila : 2215
+Narawelpita East : 2216
+Narawelpita South : 2217
+Narawelpita West : 2218
+Naruvilikkulam : 2219
+Nathuduwa : 2220
+Nathuduwa West : 2221
+Natpiddymunai : 2222
+Nattandiya : 2223
+Nattarampotha : 2224
+Naula : 2225
+Navagaha Ela : 2226
+Navakiri Nagar : 2227
+Navakkiri : 2228
+Navakudah : 2229
+Navakudah Sotuh : 2230
+Navakudha East : 2231
+Navali East : 2232
+Navali North : 2233
+Navali South : 2234
+Navanthurai North : 2235
+Navanthurai South : 2236
+Navatkadu : 2237
+Navihamuna : 2238
+Navimana South : 2239
+Navinna : 2240
+Navithanveli : 2241
+Nawadamkulama : 2242
+Nawagampura : 2243
+Nawagamuwa : 2244
+Nawagamuwa South : 2245
+Nawagattegama : 2246
+Nawala East : 2247
+Nawala West : 2248
+Nawatkuda East : 2249
+Nawatkudaha B : 2250
+Nawatkudha South : 2251
+Nayakkanda North : 2252
+Nayakumbura : 2253
+Nebadagahayaya : 2254
+Nedalagamuwa : 2255
+Nedurana : 2256
+Nedurupitiya : 2257
+Neelawa Bedda : 2258
+Neerella : 2259
+Neervely North : 2260
+Neervely South : 2261
+Neervely West : 2262
+Neetvely North : 2263
+Negombo : 2264
+Neithal Nagar : 2265
+Neketta : 2266
+Nellikadu : 2267
+Nelliyady North : 2268
+Nelukkulam : 2269
+Nelumkanuwa : 2270
+Nelumpathgama : 2271
+Nelumpura : 2272
+Nelumvila : 2273
+Neluwa : 2274
+Neralampitiya : 2275
+Neralampitiya South : 2276
+New Bazaar : 2277
+New Kattankudy Division West : 2278
+New Kattankudy East : 2279
+New Kattankudy North : 2280
+New Kattankudy South : 2281
+New Kattankudy West : 2282
+New Moor Street : 2283
+New Town : 2284
+Nidanwala : 2285
+Nidigamvila : 2286
+Nikagoda : 2287
+Nikapitiya : 2288
+Nikawala : 2289
+Nikawatawana : 2290
+Nikawela : 2291
+Nikaweratiya : 2292
+Nikaweratiya North : 2293
+Nikawewagn : 2294
+Nilaveli : 2295
+Nilbamma Project Area : 2296
+Nimbala : 2297
+Nindawela : 2298
+Ninthavur : 2299
+Niraliyadda : 2300
+Niriella : 2301
+Nishshankapura : 2302
+Nithalawa : 2303
+Nivandanama South : 2304
+Nivithigala : 2305
+Nivithiwelbokka : 2306
+Niwanthidiya : 2307
+Niyagama : 2308
+Niyangama : 2309
+Nochchimunai : 2310
+Nochchiyagama : 2311
+Nochimunai : 2312
+Noragalla : 2313
+Noragallagn : 2314
+Norangala : 2315
+Nugadanda : 2316
+Nugadoowa : 2317
+Nugape : 2318
+Nugawela East : 2319
+Nugawela West : 2320
+Nugayaya : 2321
+Nugegoda : 2322
+Nugegoda West : 2323
+Nuwara Eliya : 2324
+Nuwara Eliya Central : 2325
+Nuwaragala : 2326
+Nuwaragam Palatha Central : 2327
+Nuwaragam Palatha East : 2328
+Obesekarapura : 2329
+Oddamavadi North : 2330
+Oddamavadi South : 2331
+Oddusuddan : 2332
+Ogodapala : 2333
+Ogodapola : 2334
+Okewela : 2335
+Ollikkulam : 2336
+Ollikulam : 2337
+Olumadu : 2338
+Oluthuduwai : 2339
+Omalpe : 2340
+Omanthai : 2341
+On Rakwana Pothupitiya Road : 2342
+Onegama Muslimgama : 2343
+Onthachimadam South : 2344
+Onthachimadam West : 2345
+Opanayaka : 2346
+Opatha : 2347
+Orubedi Siyambalawa : 2348
+Orugodawatta : 2349
+Osanagoda : 2350
+Othegama : 2351
+Ottamawadi : 2352
+Ovitigama : 2353
+Pachchakodi : 2354
+Pachchilaipalli : 2355
+Padalangala : 2356
+Padatheruppu : 2357
+Padavi Sri Pura : 2358
+Padaviya : 2359
+Paddapuram : 2360
+Paddippalai : 2361
+Paddiruppua : 2362
+Padili Kokmaduwa : 2363
+Padiyathalawa : 2364
+Padukka : 2365
+Paduwasnuwara West : 2366
+Pagoda : 2367
+Pagoda East : 2368
+Pahala Athuraliya : 2369
+Pahala Beragama : 2370
+Pahala Bomiriya A : 2371
+Pahala Bomiriya B : 2372
+Pahala Bomoriya : 2373
+Pahala Bomoriya A : 2374
+Pahala Bomoriya B : 2375
+Pahala Bopitiya : 2376
+Pahala Ellewewa : 2377
+Pahala Erevula : 2378
+Pahala Galahitiyagama : 2379
+Pahala Galapitiyagama : 2380
+Pahala Galathura : 2381
+Pahala Galwewa : 2382
+Pahala Gigummaduwa : 2383
+Pahala Gomugomuwa : 2384
+Pahala Hadirawalana : 2385
+Pahala Hakamuwa : 2386
+Pahala Kadirana : 2387
+Pahala Kadurugamuwa : 2388
+Pahala Kaduwa : 2389
+Pahala Kandawala : 2390
+Pahala Karavita : 2391
+Pahala Kiyabawa : 2392
+Pahala Kolamune : 2393
+Pahala Kottaramulla : 2394
+Pahala Kudaligama : 2395
+Pahala Kuruvita : 2396
+Pahala Mahawewa : 2397
+Pahala Mapitigama : 2398
+Pahala Mavila : 2399
+Pahala Naragala : 2400
+Pahala Nattandiya : 2401
+Pahala Thabbowa : 2402
+Pahala Udugampola : 2403
+Pahala Vitiyala West : 2404
+Pahala Yagamwela : 2405
+Pahalagama : 2406
+Pahalagama East : 2407
+Pahalamahawewairanavilaadapparagama : 2408
+Pahalangoda : 2409
+Pahalavitiyala East : 2410
+Pahalawewa : 2411
+Pahamunupanna : 2412
+Pakkiyawatta : 2413
+Pala Nagar : 2414
+Pala Thoppur : 2415
+Palachcholai : 2416
+Palacholai : 2417
+Palagala : 2418
+Palagala Watta : 2419
+Palagolla : 2420
+Palaikuli : 2421
+Palalla : 2422
+Palameenmadu : 2423
+Palamoddai : 2424
+Palampoddaru : 2425
+Palamunai : 2426
+Palangathura : 2427
+Palangathure : 2428
+Palanhandiya : 2429
+Palasola : 2430
+Palaviya : 2431
+Palawela : 2432
+Palayadithona : 2433
+Palayadlvaddal : 2434
+Palchenai : 2435
+Paleegala : 2436
+Palindanuwara : 2437
+Paliyagoda : 2438
+Paliyawatta : 2439
+Pallala : 2440
+Pallama : 2441
+Pallamkoddai : 2442
+Pallansena North : 2443
+Pallansena South : 2444
+Pallawela : 2445
+Palle Deegala : 2446
+Pallebadda : 2447
+Pallegama : 2448
+Pallegama North : 2449
+Pallegama South : 2450
+Pallegedara : 2451
+Pallekada : 2452
+Pallekanda : 2453
+Pallekele : 2454
+Pallepola : 2455
+Pallewawwa : 2456
+Pallewela : 2457
+Palleweliketiya : 2458
+Palli Wasalpaduwa : 2459
+Pallikkuda : 2460
+Pallikuda : 2461
+Pallimunai : 2462
+Pallimunai East : 2463
+Pallimunai West : 2464
+Palliya Mankada : 2465
+Palliya West : 2466
+Palliyagodella : 2467
+Palliyawatta : 2468
+Palliyawatta North : 2469
+Palliyawatta South : 2470
+Palugamuwa : 2471
+Palugasdamana Ela : 2472
+Palugaswewa : 2473
+Palugaswewa Farm : 2474
+Paluwelgala North : 2475
+Pambaimadu : 2476
+Pamburana : 2477
+Pamburugaswewa : 2478
+Pamunugama : 2479
+Panadugama : 2480
+Panadura : 2481
+Panagamuwa : 2482
+Panagoda : 2483
+Panahetagala : 2484
+Panama : 2485
+Panama North : 2486
+Panama South : 2487
+Panama West : 2488
+Panamura : 2489
+Panangalla : 2490
+Panankaddikoddu : 2491
+Panankaddikoddu East : 2492
+Panankaddikoddu West : 2493
+Pananwela West : 2494
+Panape : 2495
+Panapitiya North : 2496
+Panapitiya South : 2497
+Panawala : 2498
+Panchchikawatta : 2499
+Pandaravelly : 2500
+Pandariyaveli : 2501
+Pandatheruppu : 2502
+Pandivita : 2503
+Panduwasnuwara : 2504
+Panduwasnuwara East : 2505
+Panichankerni : 2506
+Panichayadi : 2507
+Panichayadimunmari : 2508
+Panichayady : 2509
+Panichchankerni : 2510
+Panlippulam : 2511
+Pannagamuwa : 2512
+Pannakam : 2513
+Pannala : 2514
+Pannalai : 2515
+Pannampitiya : 2516
+Pannankandy : 2517
+Pannavedduvan : 2518
+Pannila : 2519
+Pannila South : 2520
+Pannimulla : 2521
+Pannipitiya : 2522
+Panrikkeithakulam : 2523
+Pansalgoda : 2524
+Pansalgodella : 2525
+Panvala Kumbura : 2526
+Panvila : 2527
+Panwala : 2528
+Paper Town : 2529
+Paradoowa North : 2530
+Paradoowa South : 2531
+Paraduwa East : 2532
+Paragala : 2533
+Paragasthenna : 2534
+Paragoda East : 2535
+Paragoda West : 2536
+Parakaduwa : 2537
+Paramankirai : 2538
+Paramulla : 2539
+Parana Ambalama : 2540
+Paranagama : 2541
+Paranambalama : 2542
+Paranthan : 2543
+Paranthan Town : 2544
+Parapamulla East : 2545
+Parapamulla South : 2546
+Parapamulla West : 2547
+Parasankulam : 2548
+Parawahagama : 2549
+Parithiyadaippu : 2550
+Pariyatrumunai : 2551
+Paruthiyadaippu : 2552
+Pasbage Korale : 2553
+Pasgoda : 2554
+Passara : 2555
+Pathadumbara : 2556
+Pathagama : 2557
+Pathahewaheta : 2558
+Pathakada : 2559
+Pathawalaya Nadakanda : 2560
+Pathawelivitiya North : 2561
+Pathberiya : 2562
+Pathigodamulla : 2563
+Patithalawa : 2564
+Patitivila : 2565
+Pattalipuram : 2566
+Pattanduwa : 2567
+Pattanduwawa North : 2568
+Pattigoda : 2569
+Pattivila North : 2570
+Pattivila South : 2571
+Pattiya East : 2572
+Pattiya North : 2573
+Pattiya South : 2574
+Pattiya West : 2575
+Pattiyagama : 2576
+Pattiyawala : 2577
+Patugama : 2578
+Patunugama : 2579
+Pavilupaddankudiyruppu : 2580
+Pawattamaduwa : 2581
+Payagala Beach Area : 2582
+Pebotuwa : 2583
+Pedapitiya South : 2584
+Peddapitiya North : 2585
+Peddapitiya South : 2586
+Pedinnoruwa : 2587
+Pelapitiyagoda North : 2588
+Pelatiyawa : 2589
+Pelawatta : 2590
+Pelbendiyawa : 2591
+Pelenda : 2592
+Pelenda Kanda : 2593
+Pelenda West : 2594
+Peliyagoda Gangabada : 2595
+Peliyagoda Gangabada East : 2596
+Peliyagoda Gangabada West : 2597
+Peliyagodawatta : 2598
+Pellandeniya : 2599
+Pellapitiya North : 2600
+Pelmadulla : 2601
+Pelmadulla Town : 2602
+Pelmadullagama : 2603
+Pelvehera : 2604
+Pelwatta : 2605
+Pemigala : 2606
+Penideniya : 2607
+Penigala : 2608
+Perakanatta : 2609
+Perakumpura : 2610
+Perallavelly : 2611
+Peramakuttuwa : 2612
+Perani Lahugala : 2613
+Peranigama : 2614
+Periya Kinnaya : 2615
+Periya Kurukupane : 2616
+Periya Paranthan : 2617
+Periya Urany : 2618
+Periyakada : 2619
+Periyakadu Nelawa : 2620
+Periyakallar West : 2621
+Periyakulam : 2622
+Periyamurippu : 2623
+Periyapalam : 2624
+Periyaporathevu : 2625
+Periyatrumunai : 2626
+Periyauppodai : 2627
+Periyaurani : 2628
+Periyavillam : 2629
+Periyavillan : 2630
+Perunthoru : 2631
+Pesalai : 2632
+Pethispura : 2633
+Pethiyagoda : 2634
+Pettah : 2635
+Petth : 2636
+Pihitigalakanda : 2637
+Pilakatumulla : 2638
+Pilana : 2639
+Pilapitiya : 2640
+Pimbura : 2641
+Pimburattewa East : 2642
+Pimburattewa West : 2643
+Pinhena : 2644
+Pinikahana : 2645
+Pinkanda : 2646
+Pinnameda : 2647
+Pinnameda West : 2648
+Pinwatta : 2649
+Piramanalankulam : 2650
+Piramanthalaru : 2651
+Piramanthanaru : 2652
+Piranpattai : 2653
+Pirivena : 2654
+Pitabeddara : 2655
+Pitakada : 2656
+Pitakanda : 2657
+Pitakatuwana : 2658
+Pitakotte : 2659
+Pitakotte East : 2660
+Pitakotte West : 2661
+Pitawalgamuwa : 2662
+Pitigala North : 2663
+Pitigalakanda : 2664
+Pitipana Central : 2665
+Pitipana North : 2666
+Pk Kottu : 2667
+Poddana : 2668
+Pohorabawa : 2669
+Pohoranwewa : 2670
+Pokunawatta : 2671
+Pokuruwatawana : 2672
+Polegoda West : 2673
+Polgahawela : 2674
+Polgahawelena : 2675
+Polgampala : 2676
+Polgolla : 2677
+Polikandy : 2678
+Polikandy East : 2679
+Polonthalawade : 2680
+Polpithigama : 2681
+Polwathugoda : 2682
+Polwatta : 2683
+Polwattahena : 2684
+Ponnakar : 2685
+Ponochchimunai : 2686
+Poogalla : 2687
+Poogoda : 2688
+Poojanagaraya : 2689
+Poojapitiya : 2690
+Poolankadu : 2691
+Poomalarnathan : 2692
+Poonakary : 2693
+Poonapitiya : 2694
+Poonochchikulam : 2695
+Poornawatta East : 2696
+Poornawatta West : 2697
+Poovarasankulam : 2698
+Poovarasanthive : 2699
+Poovilapaddankudy : 2700
+Poramba : 2701
+Porativu Pattu Ellavul : 2702
+Poronuwa : 2703
+Porottakanda : 2704
+Pothana : 2705
+Pothupitiya North : 2706
+Pothupitiya South : 2707
+Pothuvil : 2708
+Pothuvila : 2709
+Pothuwatawana : 2710
+Pothuwewaw : 2711
+Pottakanda : 2712
+Pottewela : 2713
+Pthukkudiyeruppu South : 2714
+Pttapola Ihalagama : 2715
+Pubbiliya : 2716
+Pubudagama : 2717
+Pubudugama : 2718
+Puchakerni : 2719
+Pudavakkattu : 2720
+Pudhukudiyirippu : 2721
+Pudur : 2722
+Pulasthigama : 2723
+Pulichchakulama : 2724
+Pulikandikulama : 2725
+Puliyampokkanai : 2726
+Puliyankoodal : 2727
+Puliyankulam : 2728
+Puliyankulama : 2729
+Puliyantheevu East : 2730
+Pulmoddai : 2731
+Puloly East : 2732
+Puloly North : 2733
+Puloly North East : 2734
+Puloly South : 2735
+Puloly South West : 2736
+Puludiviyal : 2737
+Pulungasmulla : 2738
+Pumarattadech Chanay : 2739
+Punaicholai : 2740
+Punanal East : 2741
+Punchiwewa : 2742
+Punnaineeravi : 2743
+Punnalaikadduvan South : 2744
+Punnanai East : 2745
+Pupulaketiya : 2746
+Puspane : 2747
+Pussawela : 2748
+Pussella : 2749
+Pussellawela : 2750
+Puthukudiyiruppu : 2751
+Puthukudiyiuppu : 2752
+Puthukudiyiuppu North : 2753
+Puthukudiyiurppu South : 2754
+Puthunagar : 2755
+Puthuvelly : 2756
+Puttalam : 2757
+Puttalam East : 2758
+Puttalam South : 2759
+Puttalama East : 2760
+Puttirarkandan : 2761
+Puttur East : 2762
+Puttur West : 2763
+Rachchothy : 2764
+Radani Ara : 2765
+Radawela East : 2766
+Radawela West : 2767
+Raddegoda : 2768
+Raddella : 2769
+Raddoluwa North : 2770
+Raddoluwa West : 2771
+Ragama Railway Station : 2772
+Raggahawatta : 2773
+Rahumaniya Nagar : 2774
+Rajadurai Kiramam : 2775
+Rajagiriya : 2776
+Rajanganaya : 2777
+Rajendrankulam : 2778
+Rajjallegama : 2779
+Rakshawa : 2780
+Rakwana : 2781
+Rakwana North : 2782
+Rakwana Town : 2783
+Ralkuly : 2784
+Ralmaduwa : 2785
+Rambewa : 2786
+Ramboda : 2787
+Rambuka : 2788
+Rambukana East : 2789
+Rambukana West : 2790
+Rambukkana : 2791
+Rambukpotha : 2792
+Ramjan Game : 2793
+Ranajayagama : 2794
+Ranakeliya : 2795
+Ranala : 2796
+Ranamadu : 2797
+Ranamuregama : 2798
+Randiyagama : 2799
+Randunuwatta : 2800
+Rangamulla : 2801
+Rangollamada : 2802
+Raniswala : 2803
+Rankethgama : 2804
+Ranna East Gn : 2805
+Ransegoda East : 2806
+Ransegoda North : 2807
+Ransegoda South : 2808
+Ransegoda West : 2809
+Rasamadhu : 2810
+Rasnayakapura : 2811
+Rassagala : 2812
+Rathagalla : 2813
+Rathgama : 2814
+Rathinapuram : 2815
+Rathkekulawa : 2816
+Rathmalana East : 2817
+Rathmalavita : 2818
+Rathmale : 2819
+Rathmalgaha Ela : 2820
+Rathmalgoda : 2821
+Rathmalgoda East : 2822
+Rathmalkatuwa : 2823
+Rathmalthenna : 2824
+Rathmalvita : 2825
+Rathnadivulwewa : 2826
+Rathnapura Town : 2827
+Rathnemaluwayaya : 2828
+Rathukoho : 2829
+Ratkarawwa : 2830
+Ratmalana : 2831
+Ratmalana East : 2832
+Ratnapura : 2833
+Ratnapura Town : 2834
+Ratnapura Town North : 2835
+Ratnapura Town West : 2836
+Rattanapitiya : 2837
+Rattota : 2838
+Razoolputhuveli : 2839
+Reclamation East : 2840
+Regithenna : 2841
+Rekawa : 2842
+Rekkangane : 2843
+Rerukana : 2844
+Retiyala : 2845
+Rideegama : 2846
+Rideemaliyadda : 2847
+Ridivita : 2848
+Rifaipura : 2849
+Rilawulla : 2850
+Rilhena : 2851
+Rkm School Camp : 2852
+Rohanapura : 2853
+Rubberwatta : 2854
+Ruwanwella : 2855
+Sagaragama : 2856
+Sainthamarathu : 2857
+Salamulla : 2858
+Salasumgama : 2859
+Saliya Mawatha : 2860
+Saliyapura : 2861
+Samagipura : 2862
+Samanabedda : 2863
+Samanabedda North : 2864
+Samangama : 2865
+Samanpura : 2866
+Samanthapura : 2867
+Samanthurai : 2868
+Samavechativu : 2869
+Sameeragama : 2870
+Samimale : 2871
+Sammanthurai : 2872
+Sammerset : 2873
+Samodagama : 2874
+Samurdhigama : 2875
+Sandagalathenna : 2876
+Sandagiripura : 2877
+Sandalankawa : 2878
+Sandanagama : 2879
+Sandilipay Centre : 2880
+Sandilipay North : 2881
+Sandilipay Noth : 2882
+Sandilipay West : 2883
+Sandungama : 2884
+Sangamam : 2885
+Sanghabodhigama : 2886
+Sanguvely : 2887
+Sankapala : 2888
+Sannasgama : 2889
+Santhapuram : 2890
+Santhipuram : 2891
+Santhivelly : 2892
+Sapugoda : 2893
+Sarubima : 2894
+Sasthirikoolankulam : 2895
+Sathukondan : 2896
+Sathurukonadan : 2897
+Savarawatta : 2898
+Savatkaddu : 2899
+Sayinthamarathu : 2900
+Sedawatta : 2901
+Seddiyakurichchi : 2902
+Seeduwa : 2903
+Seenipella East : 2904
+Seenipella West : 2905
+Seenukkuwagn : 2906
+Seeradunna : 2907
+Seethawaka : 2908
+Seewelgama : 2909
+Sella Katharagama : 2910
+Sellakanda : 2911
+Sellankanda : 2912
+Selvanagar : 2913
+Selvanagar East : 2914
+Selvernager : 2915
+Semamadhu : 2916
+Sembukuliya : 2917
+Semmanodai : 2918
+Senagama : 2919
+Senanayakapura : 2920
+Senapura : 2921
+Senasungoda : 2922
+Serasumgala : 2923
+Seruvila : 2924
+Settappaduwa : 2925
+Settukudah : 2926
+Sevanagala : 2927
+Severiyarpuram : 2928
+Shafi Nagar : 2929
+Shalambaikulam : 2930
+Shamalachchatheevu : 2931
+Shasthrawela : 2932
+Shoorangal : 2933
+Sidurupitiya : 2934
+Silawathai : 2935
+Sillalai : 2936
+Sillalai North : 2937
+Sillalai Noth : 2938
+Sillalai South : 2939
+Silvapuraya : 2940
+Sinapaduwa : 2941
+Sinaurani : 2942
+Sinavattai : 2943
+Singhalagoda : 2944
+Singhapura : 2945
+Sinhalagoda : 2946
+Sinhapura : 2947
+Sinharajapura : 2948
+Sinharamulla : 2949
+Sinharamulla North : 2950
+Sinharaumlla : 2951
+Sinharoopagama : 2952
+Sinna Kinnaya : 2953
+Sinna Kinniya : 2954
+Sinna Urany : 2955
+Sinnakada : 2956
+Sinnakadai : 2957
+Sinnapaduwa : 2958
+Siradikulam : 2959
+Sirambiadiya : 2960
+Siribopura : 2961
+Sirigampala North : 2962
+Sirikanduyaya : 2963
+Sirimalgoda : 2964
+Siripura : 2965
+Sirisamanpura : 2966
+Siriwardana Pedesa : 2967
+Sirupiddy East : 2968
+Siruthoppu : 2969
+Sithandy : 2970
+Sithankerni : 2971
+Sittandy : 2972
+Sittaram : 2973
+Sivakamiyammankovilady : 2974
+Sivanagar : 2975
+Sivanara East : 2976
+Sivapurai : 2977
+Siyambala Wewa : 2978
+Siyambalagahawatta : 2979
+Siyambalagasruppa West : 2980
+Siyambalagaswewa : 2981
+Siyambalanduwa : 2982
+Siyambalanduwa Town : 2983
+Siyambalape South : 2984
+Siyambalapitiya : 2985
+Skandapuram : 2986
+Somapura : 2987
+Somils : 2988
+Soorangal : 2989
+Soorikattakadu : 2990
+Sooriyagoda : 2991
+Sooriyathalawa : 2992
+Sooriyawewa : 2993
+Soranathota : 2994
+Soranpattu : 2995
+Sp Pottakerny : 2996
+Sri Jayawardanapura Kotte : 2997
+Srimangalapura : 2998
+Sripada : 2999
+Strathspey : 3000
+Subasinhapura : 3001
+Subhasinghapura : 3002
+Subuthipura : 3003
+Sudagala : 3004
+Sudaragahagama : 3005
+Sudugala : 3006
+Sudupanawela : 3007
+Suduwella : 3008
+Sulthanagoda East : 3009
+Sulthanagoda North : 3010
+Sulthanagoda West : 3011
+Sumedhankarapurai : 3012
+Sungavila : 3013
+Sungawilla Somawathiya Road : 3014
+Suruvil : 3015
+Suthumalai North : 3016
+Suthumalai South : 3017
+Tangalle : 3018
+Telangapatha : 3019
+Tellippalai : 3020
+Thadduvankoddy : 3021
+Thagwa Nagar : 3022
+Thaha Nagar : 3023
+Thalahagama East : 3024
+Thalahagama West : 3025
+Thalahena : 3026
+Thalahena North : 3027
+Thalaimannar : 3028
+Thalaimannar Pier : 3029
+Thalaimannar Pier East : 3030
+Thalaimannar Pier West : 3031
+Thalaimannar South : 3032
+Thalaimannar Station : 3033
+Thalalla East : 3034
+Thalamalgama : 3035
+Thalangama North : 3036
+Thalangama West : 3037
+Thalankudah : 3038
+Thalapitiya : 3039
+Thalavila West : 3040
+Thalawa : 3041
+Thalawakele : 3042
+Thalawathugoda : 3043
+Thalawathuhenpita North : 3044
+Thaldiyawala : 3045
+Thalgasmote : 3046
+Thalgasmote East : 3047
+Thaligala : 3048
+Thalkote : 3049
+Thalngama : 3050
+Thalpitiya North : 3051
+Thalpitiya South : 3052
+Thalpotha : 3053
+Thalvupadu : 3054
+Thalwatta : 3055
+Thamankaduwa : 3056
+Thamaraikerni : 3057
+Thambala : 3058
+Thambalagamuwa : 3059
+Thambapanniya : 3060
+Thambarawa : 3061
+Thambuttegama : 3062
+Thammana : 3063
+Thammennawa : 3064
+Thammita : 3065
+Thampanai Kulam : 3066
+Thanabaddegamagn : 3067
+Thanakoratuwa : 3068
+Thanamalvila : 3069
+Thandavanveely : 3070
+Thandikulam : 3071
+Thannamual : 3072
+Thanthamalai : 3073
+Thantirimale : 3074
+Thapassarakanda : 3075
+Thaqpassarakanda : 3076
+Thaqwa Nagar : 3077
+Tharakudivilluwa : 3078
+Tharanagolla : 3079
+Tharmakerny : 3080
+Tharmapuram East : 3081
+Tharumapuram West : 3082
+Thauvanpadu : 3083
+Thavady North : 3084
+Thavady South : 3085
+Thawalama : 3086
+Thebuwana West : 3087
+Thelambugahawatta : 3088
+Thelangapatha : 3089
+Thelbedda : 3090
+Thelhiriyawa : 3091
+Thempala : 3092
+Then Madduvil : 3093
+Thenipita : 3094
+Thenmaradchi Chavakachcheri : 3095
+Thennakongama : 3096
+Thennakumbura : 3097
+Theppanawa : 3098
+Therappahuwa : 3099
+Thethathivu North : 3100
+Thethathivu South : 3101
+Thevanpiddy : 3102
+Thevanuwara : 3103
+Thevapuram : 3104
+Thibbotugoda : 3105
+Thibbotuwawa : 3106
+Thibbotuwawa North : 3107
+Thihagoda : 3108
+Thihariya South : 3109
+Thikkanagar : 3110
+Thikkodal : 3111
+Thiladiya : 3112
+Thimbirigasyaya : 3113
+Thimbiripokuna : 3114
+Thimbiriyawa : 3115
+Thimbolketiya : 3116
+Thimilaithivu : 3117
+Thimilatheevu : 3118
+Thimprown Nagar : 3119
+Thiniyawala : 3120
+Thiraimadu : 3121
+Thirappane : 3122
+Thiriwanaketiya : 3123
+Thiruchenthoor : 3124
+Thirukadaloour : 3125
+Thirukkovil : 3126
+Thirumurikandy : 3127
+Thirunagar : 3128
+Thirunagar North : 3129
+Thirunagar South : 3130
+Thirunelevely North East : 3131
+Thirunelvely Centre North : 3132
+Thirunelvely North East : 3133
+Thirunelvely West : 3134
+Thirupperunthurai : 3135
+Thiruvaiaru : 3136
+Thiruvaiyaryu : 3137
+Thisaveerasirigarm : 3138
+Thissamaharama : 3139
+Thittawelpotha : 3140
+Thiyavadduvan : 3141
+Thiyawattuvan : 3142
+Thoddaveli : 3143
+Tholpuram East : 3144
+Tholpuram West : 3145
+Thomaspuri : 3146
+Thondamanaru South : 3147
+Thonikal : 3148
+Thopputhota : 3149
+Thorayaya : 3150
+Thudawa : 3151
+Thudawa South : 3152
+Thudella : 3153
+Thudella North : 3154
+Thudella South : 3155
+Thudella West : 3156
+Thuduwa : 3157
+Thuduwegedara : 3158
+Thuimpalai : 3159
+Thullukudiyruppu : 3160
+Thumbagoda : 3161
+Thumbe : 3162
+Thumbovila : 3163
+Thummodara East : 3164
+Thummodara West : 3165
+Thumpalai : 3166
+Thumpalai East : 3167
+Thumpane : 3168
+Thumpeliya : 3169
+Thunadahena : 3170
+Thunduwa East : 3171
+Thunduwa West : 3172
+Thunhiripaya : 3173
+Thunnalai South : 3174
+Thunnalai West : 3175
+Thunthota : 3176
+Thunukkai : 3177
+Thuraineelavani North : 3178
+Thuralneelavni South : 3179
+Thurendimadu : 3180
+Thurkkapuram : 3181
+Thuttiripitiya : 3182
+Tiriwanaketiya : 3183
+Tiriwanketiya : 3184
+Tiruvapperunthurai : 3185
+Tissamaharama : 3186
+Tissapura : 3187
+Tittamaluwa : 3188
+Tittapajjala : 3189
+Tittapattara : 3190
+Track Aralaganvila : 3191
+Trincomalee Town And Gravets : 3192
+Uda Aparekka : 3193
+Uda Arawa : 3194
+Uda Karavita : 3195
+Udadeniya : 3196
+Udadumbara : 3197
+Udagala : 3198
+Udagala North : 3199
+Udagama : 3200
+Udahakandara : 3201
+Udahena : 3202
+Udahenthenna : 3203
+Udakanampella North : 3204
+Udakanampella South : 3205
+Udakawa South : 3206
+Udamapitigama : 3207
+Udamapitigama South : 3208
+Udammita : 3209
+Udamulla : 3210
+Udangawa : 3211
+Udapalatha : 3212
+Udathula : 3213
+Udawala : 3214
+Udawalawa Track : 3215
+Udawela : 3216
+Udaweliketiya : 3217
+Udayarkaddu : 3218
+Uddakandara : 3219
+Udihitimulla : 3220
+Udubaddawa : 3221
+Udugala : 3222
+Udugala North : 3223
+Udumalagala : 3224
+Udumulla : 3225
+Udumulla North : 3226
+Udunuwara : 3227
+Udupeellegoda East : 3228
+Udupeellegoda West : 3229
+Udupihilla : 3230
+Uduppuwa : 3231
+Uduvil Centre : 3232
+Uduvil Centre North : 3233
+Uduvil North : 3234
+Uduvil South East : 3235
+Uduvil South West : 3236
+Uduvila : 3237
+Uduwa East : 3238
+Uduwa West : 3239
+Uduwaka : 3240
+Uduwara : 3241
+Uggala : 3242
+Uggashena : 3243
+Uhana : 3244
+Ukuwela : 3245
+Ukwatta East : 3246
+Ulapane North : 3247
+Ulhitiyawa : 3248
+Ulhitiyawa South : 3249
+Ullala East : 3250
+Ulpathwewa : 3251
+Uluvitike : 3252
+Umaiyalpuram : 3253
+Umayalpuram : 3254
+Unagalavehera : 3255
+Unagaswela : 3256
+Uninduwela : 3257
+Uooriyankaddu : 3258
+Upkat Lower : 3259
+Uppukkulam North : 3260
+Uppukkulam South : 3261
+Uppukulam North : 3262
+Uppukulam South : 3263
+Uppural : 3264
+Uppuveli : 3265
+Urapola West : 3266
+Urapotta : 3267
+Urithirapuram North : 3268
+Urithirapuram West : 3269
+Uriyan : 3270
+Uruvitiya : 3271
+Usmalagoda : 3272
+Usmudulawa : 3273
+Uswetakeiyawa : 3274
+Uthayanagar : 3275
+Uthucheani : 3276
+Uva Paranagama : 3277
+Uvaragala : 3278
+Uyana North : 3279
+Uyarappulam : 3280
+Vadaliadaippu : 3281
+Vadamaradchi East Maruthnkern : 3282
+Vadamaradchi North Point Pedr : 3283
+Vadamaradchi Southwest Karav : 3284
+Vadamunai : 3285
+Vaddan : 3286
+Vaddukoddai West : 3287
+Vakarai Central : 3288
+Vakarai North : 3289
+Vakarui : 3290
+Valachchenai : 3291
+Valachenai : 3292
+Valachenaib : 3293
+Valachenaid : 3294
+Valaichenai : 3295
+Valaichenaimuslim South : 3296
+Valaichenainorth Muslim : 3297
+Valikamam East Kopay : 3298
+Valikamam Northtellipallai : 3299
+Valikamam South Uduvil : 3300
+Valikamam South West Sandili : 3301
+Valikamam West Chankanai : 3302
+Valvettithurai North West : 3303
+Vanathavilluwa : 3304
+Vankalai East : 3305
+Vankalai North : 3306
+Vankalai West : 3307
+Vankalaipadu : 3308
+Vannarponnai : 3309
+Vannarponnai Nesouth : 3310
+Vannarponnai Nw West : 3311
+Vannarponnai Nwnorth : 3312
+Vannarponnai Nwwest : 3313
+Vannerikulam : 3314
+Vanninagar : 3315
+Vantharumoolai East : 3316
+Vantharumoolai West : 3317
+Varipathanchenai : 3318
+Varothayanagar : 3319
+Vasavilan : 3320
+Vattakanda : 3321
+Vavunatheevu : 3322
+Vavunativu : 3323
+Vavuniya : 3324
+Vavuniya North : 3325
+Vavuniya South : 3326
+Vavuniya Town : 3327
+Vavuniyatamil : 3328
+Vayavilan East : 3329
+Vayvilan East : 3330
+Vedarkudiyiuppu : 3331
+Vedducoddai East : 3332
+Vedducoddai North : 3333
+Vedducoddai South : 3334
+Veddukadu : 3335
+Veechchikalmunai : 3336
+Veerancholai : 3337
+Veheragala : 3338
+Veheragama : 3339
+Veheragoda : 3340
+Velikulam : 3341
+Vellankulam : 3342
+Vellaveli : 3343
+Veloor : 3344
+Vengalacheddikulam : 3345
+Vennanadaipu : 3346
+Veppankulam : 3347
+Veragama : 3348
+Veralugahamula : 3349
+Verheragala : 3350
+Verugal : 3351
+Verugal Echchalampattai : 3352
+Verugal Mugathuvaram : 3353
+Vethuchenai : 3354
+Vihara : 3355
+Viharagama : 3356
+Viharamahadevipura : 3357
+Vijayapura : 3358
+Vijithapura : 3359
+Vikadenigama : 3360
+Vilana Pallegama : 3361
+Vilana Udagama : 3362
+Vilanthoddam : 3363
+Vilathikulam : 3364
+Vilattawa Pahala : 3365
+Vilawada : 3366
+Vilbawa : 3367
+Villiyagama : 3368
+Vilorawatta : 3369
+Vilpola : 3370
+Vipulananda Mathiri Village : 3371
+Virippattanchenai : 3372
+Viruthodai : 3373
+Vishakawatta : 3374
+Vithahapuram : 3375
+Vithanagama : 3376
+Viyadiguna : 3377
+Viyaparimoolai : 3378
+Wadduwa East : 3379
+Wadduwa South : 3380
+Wadduwa West : 3381
+Wadulla : 3382
+Wadumunna : 3383
+Waduressa : 3384
+Wagamaduwa : 3385
+Waguruwela : 3386
+Waikkala : 3387
+Wakewatta : 3388
+Walagepiyadda : 3389
+Walahandoowa : 3390
+Walahena : 3391
+Walakada : 3392
+Walalgoda : 3393
+Walallavita : 3394
+Walana North : 3395
+Walangoda : 3396
+Walapane : 3397
+Walasmulla : 3398
+Walavita : 3399
+Walawwatta : 3400
+Walgama East : 3401
+Walgama Meda : 3402
+Wallahagoda : 3403
+Wallaketiya : 3404
+Walpala : 3405
+Walpaluwa : 3406
+Walpitagama : 3407
+Walpola : 3408
+Wanahapuwa : 3409
+Wanathamulla : 3410
+Wanawasala : 3411
+Wanawasala East : 3412
+Wanawasala West : 3413
+Wanchchawala : 3414
+Wandurawa : 3415
+Wanduressa : 3416
+Wanduressa Welgala : 3417
+Wanduruppa : 3418
+Wanniyawatta : 3419
+Waragashinna : 3420
+Warakagoda West : 3421
+Warakanatta : 3422
+Warakapola : 3423
+Warakawa : 3424
+Warapitiya : 3425
+Wariyapola : 3426
+Warunagama : 3427
+Wataddara South : 3428
+Watagedara : 3429
+Watagedaramulla : 3430
+Watapatha : 3431
+Watareka East : 3432
+Wathugala : 3433
+Wathukana : 3434
+Wathupitiya : 3435
+Wathupola : 3436
+Wathura : 3437
+Wathurawa : 3438
+Wathuyaya : 3439
+Wattakkaliya : 3440
+Wattala : 3441
+Wattegama : 3442
+Wattegama North : 3443
+Wattegama South : 3444
+Wedagama : 3445
+Wedamulla : 3446
+Weddagala East : 3447
+Weddagala West : 3448
+Wedikanda : 3449
+Weeduruwella : 3450
+Weerahela : 3451
+Weerahena East : 3452
+Weeraketiya : 3453
+Weerakkuttigoda : 3454
+Weeralanda : 3455
+Weerambugedara : 3456
+Weerana : 3457
+Weerapura : 3458
+Weeravila : 3459
+Wegama South : 3460
+Wegampola : 3461
+Wegapitiya : 3462
+Wegolla : 3463
+Wehera East : 3464
+Wekada North : 3465
+Weladura : 3466
+Welamitiyawa : 3467
+Welandagoda : 3468
+Welangolla : 3469
+Welegoda : 3470
+Welegoda West : 3471
+Welekumbura : 3472
+Welewatta : 3473
+Welewewa North : 3474
+Welgama : 3475
+Weli Ela : 3476
+Weli Oya : 3477
+Welibissagn : 3478
+Weligama : 3479
+Weligampitiya North : 3480
+Weligepola : 3481
+Weligodawatta : 3482
+Welihena : 3483
+Welihinda : 3484
+Welikada : 3485
+Welikada East : 3486
+Welikada North : 3487
+Welikada West : 3488
+Welikadamulla : 3489
+Welikanda : 3490
+Welikanda North : 3491
+Welikonda : 3492
+Welimada : 3493
+Welimaluwa : 3494
+Welipattewela : 3495
+Welipenna : 3496
+Welipenna East : 3497
+Welipenna East South : 3498
+Welipitimodara : 3499
+Welipitiya : 3500
+Welipothewela : 3501
+Weliptha : 3502
+Welivita : 3503
+Welivitiyadivithura : 3504
+Weliwatta : 3505
+Weliyaya : 3506
+Wellabada : 3507
+Wellaketiya : 3508
+Wellamankara : 3509
+Wellampitiya : 3510
+Wellana : 3511
+Wellawa : 3512
+Wellawatta North : 3513
+Wellawaya : 3514
+Wellethota : 3515
+Welmilla : 3516
+Welpalla : 3517
+Welusumanapura : 3518
+Welyaya : 3519
+Wembiyagoda : 3520
+Wenagama : 3521
+Wenamulla : 3522
+Wendala : 3523
+Wennappuwa : 3524
+Wennappuwa East : 3525
+Wennappuwa North : 3526
+Wennawatta : 3527
+Wepathaira North : 3528
+Wepathaira South : 3529
+Wepathaira West : 3530
+Weradoowa : 3531
+Weragala : 3532
+Weragampita : 3533
+Weragampitiya : 3534
+Werahera West : 3535
+Weralupa : 3536
+Weralupe : 3537
+Werathanna : 3538
+Werellahena : 3539
+Wessagiriya : 3540
+Wetakedeniya : 3541
+Wetakeyawa : 3542
+Wetakoluwewa : 3543
+Wevelkandura : 3544
+Weverly : 3545
+Wewagama : 3546
+Wewala : 3547
+Wewalagama : 3548
+Wewassa : 3549
+Wewathena : 3550
+Wewelkandura : 3551
+Wewessa : 3552
+Weyangalla : 3553
+Weyangalla West : 3554
+Wijayabapura : 3555
+Wijayanthakumbura : 3556
+Wijayapura : 3557
+Wijayarajapura : 3558
+Wilbawa : 3559
+Wilgamdematewa : 3560
+Wilgamuwa : 3561
+Windcorner : 3562
+Yabaraluwa North : 3563
+Yabaraluwa South : 3564
+Yagamwela : 3565
+Yagirala : 3566
+Yainna : 3567
+Yakabedda : 3568
+Yakadessawa : 3569
+Yakdehiwatta : 3570
+Yakkaduwa : 3571
+Yakkalamulla : 3572
+Yakkuragala South : 3573
+Yakupitiya : 3574
+Yalabowa : 3575
+Yalegama : 3576
+Yalkumbura : 3577
+Yalnahar : 3578
+Yatagama : 3579
+Yatagampitiya : 3580
+Yatagara : 3581
+Yatapana : 3582
+Yatawara South : 3583
+Yatawatta : 3584
+Yatigaloluwa : 3585
+Yatinuwara : 3586
+Yatipawwa : 3587
+Yatiyana : 3588
+Yatiyanthota : 3589
+Yayamulla : 3590
+Yodhakandiya : 3591
+Yogiyana : 3592
+Yudaganawa : 3593
