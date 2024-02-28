@@ -50,7 +50,7 @@ def predict_disaster(location,location1,location2,district,month,day,rainfall):
     rfr_prediction = np.round(rfr_model.predict(user_data),4)
     xgb_prediction = np.round(xgb_model.predict(user_data),4)
     
-    return rfr_prediction,xgb_prediction
+    return rfr_prediction[0],xgb_prediction[0]
 
 
 
