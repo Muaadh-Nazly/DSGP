@@ -33,8 +33,8 @@ public class CycloneActivity extends FragmentActivity implements OnMapReadyCallb
     @Override
     public void onMapReady(@NonNull GoogleMap googleMap) {
         this.gMap = googleMap;
-        LatLng mapIndia = new LatLng(20.5937 , 78.9629);
-        this.gMap.addMarker(new MarkerOptions().position(mapIndia).title("Marker in India"));
+        LatLng mapIndia = new LatLng(9.6615 , 80.0255);
+        this.gMap.addMarker(new MarkerOptions().position(mapIndia).title("Marker in Jaffna"));
         this.gMap.moveCamera(CameraUpdateFactory.newLatLng(mapIndia));
 
     }
