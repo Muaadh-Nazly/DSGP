@@ -3290,6 +3290,9 @@ id asConfigured
 id async
 id auto
 id autoComplete
+id autoCompleteTextView
+id autoCompleteTextView2
+id autoCompleteTextView3
 id autoCompleteToEnd
 id autoCompleteToStart
 id barrier
@@ -3695,6 +3698,9 @@ id tag_window_insets_animation_callback
 id text
 id text2
 id textEnd
+id textInputLayout
+id textInputLayout2
+id textInputLayout3
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
@@ -3883,6 +3889,7 @@ layout activity_settings
 layout activity_user
 layout activity_user_location
 layout activity_user_location_permission
+layout activity_user_selected_location
 layout app_navigation
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
@@ -4191,6 +4198,7 @@ style Animation_Material3_SideSheetDialog
 style Animation_Material3_SideSheetDialog_Left
 style Animation_Material3_SideSheetDialog_Right
 style Animation_MaterialComponents_BottomSheetDialog
+style AppTheme
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog

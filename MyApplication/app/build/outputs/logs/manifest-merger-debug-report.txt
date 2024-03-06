@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:2:1-113:12
-INJECTED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:2:1-113:12
-INJECTED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:2:1-113:12
-INJECTED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:2:1-113:12
+ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:2:1-110:12
+INJECTED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:2:1-110:12
+INJECTED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:2:1-110:12
+INJECTED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:2:1-110:12
 MERGED from [androidx.databinding:viewbinding:8.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\2c6fd16e15771d85032271c46eb41c1e\transformed\viewbinding-8.2.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\LENOVO\.gradle\caches\transforms-3\8b993108f9e9c05ce9444ef7a95862ee\transformed\material-1.11.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\LENOVO\.gradle\caches\transforms-3\6f531b4c779477ad21c16dfcd936b1c2\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
@@ -94,17 +94,17 @@ MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\LENOVO\
 MERGED from [io.grpc:grpc-android:1.57.2] C:\Users\LENOVO\.gradle\caches\transforms-3\4a89f1a6b9f00ebf00f4e95684fc63ae\transformed\grpc-android-1.57.2\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\b7b630c3cd19b29f05b72683f580e4c3\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
 	package
-		INJECTED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:3:5-51
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:5:5-67
+ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:5:5-67
 MERGED from [com.google.firebase:firebase-functions:20.4.0] C:\Users\LENOVO\.gradle\caches\transforms-3\5fe84b43fdcdca06445609eb9ba3f1b2\transformed\firebase-functions-20.4.0\AndroidManifest.xml:9:5-67
 MERGED from [com.google.firebase:firebase-functions:20.4.0] C:\Users\LENOVO\.gradle\caches\transforms-3\5fe84b43fdcdca06445609eb9ba3f1b2\transformed\firebase-functions-20.4.0\AndroidManifest.xml:9:5-67
 MERGED from [com.google.firebase:firebase-firestore:24.10.2] C:\Users\LENOVO\.gradle\caches\transforms-3\491b32df7c7c9c31a5e7923b1a97241b\transformed\firebase-firestore-24.10.2\AndroidManifest.xml:11:5-67
@@ -134,18 +134,18 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.5.1] C:
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\LENOVO\.gradle\caches\transforms-3\c9360664d4aead5d2b6d0b4db8ec6d65\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:25:5-67
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\LENOVO\.gradle\caches\transforms-3\c9360664d4aead5d2b6d0b4db8ec6d65\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:25:5-67
 	android:name
-		ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:6:5-79
+ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:6:5-79
 	android:name
-		ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:6:22-76
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:6:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:7:5-81
+ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:7:5-81
 	android:name
-		ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:7:22-78
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:7:22-78
 application
-ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:10:5-111:19
-INJECTED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:10:5-111:19
+ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:10:5-108:19
+INJECTED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:10:5-108:19
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\LENOVO\.gradle\caches\transforms-3\8b993108f9e9c05ce9444ef7a95862ee\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\LENOVO\.gradle\caches\transforms-3\8b993108f9e9c05ce9444ef7a95862ee\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\LENOVO\.gradle\caches\transforms-3\6f531b4c779477ad21c16dfcd936b1c2\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -225,113 +225,107 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\LENOVO\.gradle\cac
 MERGED from [org.tensorflow:tensorflow-lite:2.4.0] C:\Users\LENOVO\.gradle\caches\transforms-3\293d7d83b3dc01ab3de42d4b088332d6\transformed\tensorflow-lite-2.4.0\AndroidManifest.xml:10:5-20
 MERGED from [org.tensorflow:tensorflow-lite:2.4.0] C:\Users\LENOVO\.gradle\caches\transforms-3\293d7d83b3dc01ab3de42d4b088332d6\transformed\tensorflow-lite-2.4.0\AndroidManifest.xml:10:5-20
 	android:extractNativeLibs
-		INJECTED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.9.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c657543794b4bfda136d4d82f2cb3f17\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:17:9-35
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:17:9-35
 	android:label
-		ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:15:9-41
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:15:9-41
 	android:fullBackupContent
-		ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:13:9-54
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:13:9-54
 	android:roundIcon
-		ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:16:9-54
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:16:9-54
 	tools:targetApi
-		ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:19:9-28
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:19:9-28
 	android:icon
-		ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:14:9-43
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:14:9-43
 	android:allowBackup
-		ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:11:9-35
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:11:9-35
 	android:theme
-		ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:18:9-51
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:18:9-40
 	android:dataExtractionRules
-		ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:12:9-65
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:12:9-65
 activity#com.example.myapplication.UserActivity
-ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:33:9-35:39
+ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:33:9-35:39
 	android:exported
-		ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:35:13-36
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:35:13-36
 	android:name
-		ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:34:13-41
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:34:13-41
 activity#com.example.myapplication.AboutUsActivity
-ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:36:9-38:40
+ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:36:9-38:40
 	android:exported
-		ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:38:13-37
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:38:13-37
 	android:name
-		ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:37:13-44
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:37:13-44
 activity#com.example.myapplication.CycloneActivity
-ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:40:9-42:38
+ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:40:9-42:38
 	android:exported
-		ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:42:13-36
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:42:13-36
 	android:name
-		ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:41:13-44
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:41:13-44
 activity#com.example.myapplication.LandslideActivity
-ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:49:9-51:40
+ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:49:9-51:40
 	android:exported
-		ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:51:13-37
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:51:13-37
 	android:name
-		ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:50:13-46
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:50:13-46
 activity#com.example.myapplication.FloodActivity
-ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:52:9-54:40
+ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:52:9-54:40
 	android:exported
-		ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:54:13-37
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:54:13-37
 	android:name
-		ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:53:13-42
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:53:13-42
 activity#com.example.myapplication.RegisterActivity
-ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:55:9-57:39
+ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:55:9-57:39
 	android:exported
-		ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:57:13-36
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:57:13-36
 	android:name
-		ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:56:13-45
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:56:13-45
 activity#com.example.myapplication.UserLocationPermissionActivity
-ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:65:9-67:39
+ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:65:9-67:39
 	android:exported
-		ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:67:13-36
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:67:13-36
 	android:name
-		ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:66:13-59
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:66:13-59
 activity#com.example.myapplication.LoginActivity
-ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:77:9-79:39
+ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:77:9-79:39
 	android:exported
-		ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:79:13-36
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:79:13-36
 	android:name
-		ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:78:13-42
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:78:13-42
 activity#com.example.myapplication.MainActivity
-ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:81:9-88:20
+ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:81:9-83:38
 	android:exported
-		ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:83:13-36
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:83:13-36
 	android:name
-		ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:82:13-41
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:82:13-41
+activity#com.example.myapplication.SelectedLocation
+ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:90:9-97:20
+	android:exported
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:92:13-36
+	android:name
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:91:13-45
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:84:13-87:29
+ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:93:13-96:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:85:17-69
+ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:94:17-69
 	android:name
-		ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:85:25-66
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:94:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:86:17-77
+ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:95:17-77
 	android:name
-		ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:86:27-74
-activity#com.example.myapplication.ModelInput
-ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:90:9-92:39
-	android:exported
-		ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:92:13-36
-	android:name
-		ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:91:13-39
-activity#com.example.myapplication.Model
-ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:94:9-96:38
-	android:exported
-		ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:96:13-36
-	android:name
-		ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:95:13-34
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:95:27-74
 meta-data#preloaded_fonts
-ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:107:9-109:57
+ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:104:9-106:57
 	android:resource
-		ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:109:13-54
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:106:13-54
 	android:name
-		ADDED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml:108:13-43
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:105:13-43
 uses-sdk
-INJECTED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml
 MERGED from [androidx.databinding:viewbinding:8.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\2c6fd16e15771d85032271c46eb41c1e\transformed\viewbinding-8.2.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.databinding:viewbinding:8.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\2c6fd16e15771d85032271c46eb41c1e\transformed\viewbinding-8.2.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\LENOVO\.gradle\caches\transforms-3\8b993108f9e9c05ce9444ef7a95862ee\transformed\material-1.11.0\AndroidManifest.xml:20:5-44
@@ -513,10 +507,10 @@ MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\LEN
 	tools:overrideLibrary
 		ADDED from [com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\3b3154d3226f68767902f868bed4a6ea\transformed\firebase-auth-22.3.1\AndroidManifest.xml:23:9-61
 	android:targetSdkVersion
-		INJECTED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml
-		MERGED from C:\Users\LENOVO\Desktop\MyApplication\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml
+		MERGED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml
 service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [com.google.firebase:firebase-functions:20.4.0] C:\Users\LENOVO\.gradle\caches\transforms-3\5fe84b43fdcdca06445609eb9ba3f1b2\transformed\firebase-functions-20.4.0\AndroidManifest.xml:12:9-21:19
 MERGED from [com.google.firebase:firebase-firestore:24.10.2] C:\Users\LENOVO\.gradle\caches\transforms-3\491b32df7c7c9c31a5e7923b1a97241b\transformed\firebase-firestore-24.10.2\AndroidManifest.xml:14:9-23:19

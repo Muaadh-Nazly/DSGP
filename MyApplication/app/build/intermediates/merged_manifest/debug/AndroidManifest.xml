@@ -41,7 +41,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/Theme.MyApplication" >
+        android:theme="@style/AppTheme" >
 
         <!-- Activity declarations -->
         <!-- <activity -->
@@ -99,6 +99,15 @@
             android:exported="true" />
         <activity
             android:name="com.example.myapplication.MainActivity"
+            android:exported="true" />
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+
+        <activity
+            android:name="com.example.myapplication.SelectedLocation"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -106,18 +115,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.example.myapplication.ModelInput"
-            android:exported="true" />
-        <activity
-            android:name="com.example.myapplication.Model"
-            android:exported="true" />
-        <!-- <intent-filter> -->
-        <!-- <action android:name="android.intent.action.MAIN" /> -->
-        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-        <!-- </intent-filter> -->
-        <!-- </activity> &lt;!&ndash; This closing tag was missing for main &ndash;&gt; -->
-
 
         <!-- Meta-data declaration -->
         <meta-data

@@ -8,10 +8,6 @@
         "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.myapplication.app-merged_res-42:/layout_activity_settings.xml.flat",
-        "source": "com.example.myapplication.app-main-44:/layout/activity_settings.xml"
-    },
-    {
         "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\layout_activity_register.xml.flat",
         "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\layout\\activity_register.xml"
     },
@@ -38,10 +34,6 @@
     {
         "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\drawable_aboutus.png.flat",
         "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\drawable\\aboutus.png"
-    },
-    {
-        "merged": "com.example.myapplication.app-merged_res-42:/layout_activity_user.xml.flat",
-        "source": "com.example.myapplication.app-main-44:/layout/activity_user.xml"
     },
     {
         "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\mipmap-hdpi_ic_launcher.webp.flat",
@@ -98,6 +90,10 @@
     {
         "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-42:/layout_activity_user_selected_location.xml.flat",
+        "source": "com.example.myapplication.app-main-44:/layout/activity_user_selected_location.xml"
     },
     {
         "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\drawable_ic_launcher_foreground.xml.flat",
@@ -176,10 +172,6 @@
         "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\drawable\\wallpap.png"
     },
     {
-        "merged": "com.example.myapplication.app-merged_res-42:/layout_activity_user_location_permission.xml.flat",
-        "source": "com.example.myapplication.app-main-44:/layout/activity_user_location_permission.xml"
-    },
-    {
         "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
@@ -194,6 +186,10 @@
     {
         "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\layout_activity_user_selected_location.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-44:\\layout\\activity_user_selected_location.xml"
     },
     {
         "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-merged_res-42:\\drawable_facebook.png.flat",

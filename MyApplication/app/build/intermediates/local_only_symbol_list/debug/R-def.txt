@@ -94,6 +94,9 @@ id TitleFlood
 id TitleLandslide
 id UserSignOut
 id address
+id autoCompleteTextView
+id autoCompleteTextView2
+id autoCompleteTextView3
 id btn_contact
 id btn_rate_app
 id btn_send_email
@@ -135,6 +138,9 @@ id signUp
 id signUpButton
 id signUpInsteadSignIn
 id started_view
+id textInputLayout
+id textInputLayout2
+id textInputLayout3
 id textView
 id textView2
 id textView3
@@ -155,6 +161,7 @@ layout activity_settings
 layout activity_user
 layout activity_user_location
 layout activity_user_location_permission
+layout activity_user_selected_location
 layout app_navigation
 layout model
 mipmap ic_launcher
@@ -190,6 +197,7 @@ string sign_in
 string title_activity_login
 string welcome
 string welcome_to_natural_disaster_prediction_environment_be_ready
+style AppTheme
 style Base.Theme.MyApplication
 style Theme.ModernDashboard
 style Theme.MyApplication
