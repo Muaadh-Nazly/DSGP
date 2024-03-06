@@ -9,13 +9,13 @@ xgb_model, ref_columns, target = joblib.load('Cyclone_XGBModel.pkl')
 
 # Read the dictionary for districts and locations
 mapping_district = {}
-with open ('District_Mapped.txt','r+') as district_file:
+with open ('District_Mapped.txt','r') as district_file:
     for line in district_file:
         key,value = line.strip().split(':')
         mapping_district[key.strip()] = int(value.strip())
         
 mapping_location = {}
-with open ('Location_Mapped.txt','r+') as district_file:
+with open ('Location_Mapped.txt','r') as district_file:
     for line in district_file:
         key,value = line.strip().split(':')
         mapping_location[key.strip()] = int(value.strip())
@@ -56,8 +56,3 @@ def predict_cyclone(location,location1,location2,district,month,day,rainfall):
     xgb_prediction = np.round(np.clip(xgb_prediction[0],0.01,99.0),2)
     
     return rfr_prediction,xgb_prediction
-
-
-
-
-
