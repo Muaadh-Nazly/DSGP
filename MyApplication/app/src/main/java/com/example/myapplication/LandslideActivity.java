@@ -37,24 +37,32 @@ public class LandslideActivity extends FragmentActivity implements OnMapReadyCal
     @Override
     public void onMapReady(@NonNull GoogleMap googleMap) {
         this.gMap = googleMap;
-        LatLng mapSL = new LatLng(7.0412 , 80.1289);
-        Marker marker = this.gMap.addMarker(new MarkerOptions().position(mapSL).title("Marker in Gampaha"));
+        LatLng mapSL = new LatLng(7.0412, 80.1289);
+        Marker marker = this.gMap.addMarker(new MarkerOptions().position(mapSL).title("Marker in Kirindiwela"));
         this.gMap.moveCamera(CameraUpdateFactory.newLatLngZoom(mapSL, 10)); // Adjust the zoom level
 
         // Set a marker click listener
         gMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
             public boolean onMarkerClick(Marker marker) {
-                showBottomSheetDialog();
+                showBottomSheetDialog(marker);
                 return true;
             }
         });
     }
 
-    private void showBottomSheetDialog() {
-        View view = getLayoutInflater().inflate(R.layout.custom_info_window, null);
+    private void showBottomSheetDialog(Marker marker) {
+        // Inflate the view for the bottom sheet dialog
+        View view = LayoutInflater.from(this).inflate(R.layout.custom_info_window, null);
+
+        // Find and set the TextView to display the marker title
+        TextView titleTextView = view.findViewById(R.id.markerTitleTextView);
+        titleTextView.setText(marker.getTitle());
+
+        // Create and show the bottom sheet dialog
         BottomSheetDialog dialog = new BottomSheetDialog(this);
         dialog.setContentView(view);
+
         // Handle button click
         Button moreDetailsButton = view.findViewById(R.id.moreDetailsButton);
         moreDetailsButton.setOnClickListener(new View.OnClickListener() {
@@ -63,8 +71,11 @@ public class LandslideActivity extends FragmentActivity implements OnMapReadyCal
                 // Start another activity to load another XML page
                 Intent intent = new Intent(LandslideActivity.this, More_details.class);
                 startActivity(intent);
+                dialog.dismiss(); // Dismiss the dialog when navigating to another activity
             }
         });
+
         dialog.show();
     }
 }
+
