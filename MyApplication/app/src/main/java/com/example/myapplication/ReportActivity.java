@@ -69,7 +69,8 @@ public class ReportActivity extends FragmentActivity implements OnMapReadyCallba
             @Override
             public void onClick(View v) {
                 // Start another activity to load another XML page
-                Intent intent = new Intent(ReportActivity.this, More_details.class);
+                Intent intent = new Intent(ReportActivity.this, LoadingActivity.class);
+                intent.putExtra("targetActivity", More_details.class);
                 startActivity(intent);
                 dialog.dismiss(); // Dismiss the dialog when navigating to another activity
             }
