@@ -102,7 +102,8 @@ public class MainActivity extends AppCompatActivity {
         FloodCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, FloodActivity.class);
+                Intent intent = new Intent(MainActivity.this, LoadingActivity.class);
+                intent.putExtra("targetActivity",FloodActivity.class);
                 startActivity(intent);
             }
         });
@@ -110,7 +111,8 @@ public class MainActivity extends AppCompatActivity {
         LandslideCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, LandslideActivity.class);
+                Intent intent = new Intent(MainActivity.this, LoadingActivity.class);
+                intent.putExtra("targetActivity", LandslideActivity.class);
                 startActivity(intent);
             }
         });
@@ -118,7 +120,8 @@ public class MainActivity extends AppCompatActivity {
         cycloneCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, CycloneActivity.class);
+                Intent intent = new Intent(MainActivity.this, LoadingActivity.class);
+                intent.putExtra("targetActivity", CycloneActivity.class);
                 startActivity(intent);
             }
         });
@@ -126,7 +129,8 @@ public class MainActivity extends AppCompatActivity {
         ReportCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, ReportActivity.class);
+                Intent intent = new Intent(MainActivity.this, LoadingActivity.class);
+                intent.putExtra("targetActivity",ReportActivity.class);
                 startActivity(intent);
             }
         });
@@ -134,7 +138,8 @@ public class MainActivity extends AppCompatActivity {
         AboutUsCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, AboutUsActivity.class);
+                Intent intent = new Intent(MainActivity.this, LoadingActivity.class);
+                intent.putExtra("targetActivity",AboutUsActivity.class);
                 startActivity(intent);
             }
         });
@@ -142,7 +147,8 @@ public class MainActivity extends AppCompatActivity {
         UserCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, UserActivity.class);
+                Intent intent = new Intent(MainActivity.this, LoadingActivity.class);
+                intent.putExtra("targetActivity",UserActivity.class);
                 startActivity(intent);
             }
         });
