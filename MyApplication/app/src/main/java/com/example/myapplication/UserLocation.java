@@ -324,4 +324,25 @@ public class UserLocation extends AppCompatActivity {
         return averageDailyRainfalls;
     }
 
+    private void getCurrentLocationInfo(double latitude, double longitude) {
+        Log.d("LocationDetails", "Getting current location details...");
+        Geocoder geocoder = new Geocoder(MainActivity.this, Locale.getDefault());
+        try {
+            addresses = geocoder.getFromLocation(latitude, longitude, 1);
+
+            if (addresses != null && addresses.size() > 0) {
+                Log.d("LocationInfo", "Current Locality: " + addresses.get(0).getLocality());
+                Log.d("LocationInfo", "SubAdmin Area: " + addresses.get(0).getSubAdminArea());
+                double latitudeOffset = 0.01;
+                double longitudeOffset = 0.02;
+                getNearbyLocationNames(latitude + latitudeOffset, longitude + longitudeOffset);
+                getNearbyLocationNames(latitude - latitudeOffset, longitude - longitudeOffset);
+            } else {
+                Log.e("LocationInfo", "No address found for the location");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 
