@@ -283,4 +283,32 @@ public class UserLocation extends AppCompatActivity {
 
     }
 
+    private List<Double> getAverageRainfallData(String district, int currentMonth) {
+        List<Double> averageDailyRainfalls = new ArrayList<>();
+        
+        try (InputStream inputStream = getResources().getAssets().open("Rainfall_Daily_Average.csv")) {
+            CSVReader csvReader = new CSVReader(new InputStreamReader(inputStream));
+            List<String[]> csvData = csvReader.readAll();
+            for (String[] row : csvData) {
+                String csvDistrict = row[0].trim();
+                if (csvDistrict.equalsIgnoreCase(district)) {
+                    int currentMonthIndex = currentMonth;
+                    for (int j = 0; j < 3; j++) {
+                        if (currentMonthIndex >= 1 && currentMonthIndex <= 12) {
+                            double rainfall = Double.parseDouble(row[currentMonthIndex].trim());
+                            averageDailyRainfalls.add(rainfall);
+                        } else {
+                            averageDailyRainfalls.add(0.0);
+                        }
+                    }
+                    return averageDailyRainfalls;
+
+                }
+            }
+        } catch (IOException | CsvException e) {
+            e.printStackTrace();
+        }
+        return averageDailyRainfalls;
+    }
+
 
