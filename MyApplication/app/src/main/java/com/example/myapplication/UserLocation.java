@@ -263,6 +263,24 @@ public class UserLocation extends AppCompatActivity {
         int currentMonth = Calendar.getInstance().get(Calendar.MONTH) + 1;
         Log.d("CurrentMonth", "Current Month: " + currentMonth);
 
+        if (addresses != null && !addresses.isEmpty()) {
+            List<Double> averageDailyRainfalls = getAverageRainfallData(addresses.get(0).getSubAdminArea(), currentMonth);
+
+            day1Forecast.setText(String.format(Locale.getDefault(), "Day 1: Wind Speed - %.2f m/s, Rainfall - %.2f mm",
+                    dailyWindSpeeds.get(0),averageDailyRainfalls.get(0)));
+
+            day2Forecast.setText(String.format(Locale.getDefault(), "Day 2: Wind Speed - %.2f m/s, Rainfall - %.2f mm",
+                    dailyWindSpeeds.get(1),averageDailyRainfalls.get(1)));
+            
+            day3Forecast.setText(String.format(Locale.getDefault(), "Day 3: Wind Speed - %.2f m/s, Rainfall - %.2f mm",
+                    dailyWindSpeeds.get(2),averageDailyRainfalls.get(2)));
+
+
+            Log.d("WeatherData", "Received Average Daily Rainfalls: " + averageDailyRainfalls);
+        } else {
+            Log.e("WeatherData", "Addresses is null or empty");
+        }
+
     }
 
 
