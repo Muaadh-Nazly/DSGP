@@ -272,6 +272,46 @@ public class UserLocation extends AppCompatActivity {
 
     }
 
+    private void parseAndPredict(double currentWindSpeed, double currentRainfall, List<Double> dailyWindSpeeds) {
+        if (addresses != null && addresses.size() > 0) {
+            String currentLocality = addresses.get(0).getLocality();
+            String subAdminArea = addresses.get(0).getSubAdminArea();
+            
+            Log.d("ParsedData", "Current Locality: " + currentLocality);
+            Log.d("ParsedData", "SubAdminArea: " + subAdminArea);
+            Log.d("ParsedData", "Current Wind Speed: " + currentWindSpeed + " m/s");
+            Log.d("ParsedData", "Current Rainfall: " + currentRainfall + " mm");
+
+            for (int i = 0; i < dailyWindSpeeds.size(); i++) {
+                Log.d("ParsedData", String.format("Day %d Wind Speed: %.2f m/s", i + 1, dailyWindSpeeds.get(i)));
+            }
+            List<Double> averageDailyRainfalls = getAverageRainfallData(addresses.get(0).getSubAdminArea(), Calendar.getInstance().get(Calendar.MONTH) + 1);
+
+            for (int i = 0; i < averageDailyRainfalls.size(); i++) {
+                Log.d("ParsedData", String.format("Day %d Average Rainfall: %.2f mm", i + 1, averageDailyRainfalls.get(i)));
+            }
+
+            TextView nearbyCity1TextView = findViewById(R.id.nearbyCity1TextView);
+            TextView nearbyCity2TextView = findViewById(R.id.nearbyCity2TextView);
+            String nearbyCity1 = nearbyCity1TextView.getText().toString();
+            String nearbyCity2 = nearbyCity2TextView.getText().toString();
+
+            if (nearbyCity1.startsWith("Nearby City 1: ")) {
+                nearbyCity1 = nearbyCity1.substring("Nearby City 1: ".length());
+            }
+
+            if (nearbyCity2.startsWith("Nearby City 2: ")) {
+                nearbyCity2 = nearbyCity2.substring("Nearby City 1: ".length());
+            }
+
+            Log.d("ParsedData",nearbyCity1);
+            Log.d("ParsedData",nearbyCity2);
+        } else {
+
+            Log.e("ParsedData", "Addresses is null or empty");
+        }
+    }
+
 
 
     private double getCurrentWindSpeed(JsonObject weatherJson) {
@@ -324,25 +364,6 @@ public class UserLocation extends AppCompatActivity {
         return averageDailyRainfalls;
     }
 
-    private void getCurrentLocationInfo(double latitude, double longitude) {
-        Log.d("LocationDetails", "Getting current location details...");
-        Geocoder geocoder = new Geocoder(MainActivity.this, Locale.getDefault());
-        try {
-            addresses = geocoder.getFromLocation(latitude, longitude, 1);
 
-            if (addresses != null && addresses.size() > 0) {
-                Log.d("LocationInfo", "Current Locality: " + addresses.get(0).getLocality());
-                Log.d("LocationInfo", "SubAdmin Area: " + addresses.get(0).getSubAdminArea());
-                double latitudeOffset = 0.01;
-                double longitudeOffset = 0.02;
-                getNearbyLocationNames(latitude + latitudeOffset, longitude + longitudeOffset);
-                getNearbyLocationNames(latitude - latitudeOffset, longitude - longitudeOffset);
-            } else {
-                Log.e("LocationInfo", "No address found for the location");
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 
 
