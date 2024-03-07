@@ -169,6 +169,15 @@ public class UserLocation extends AppCompatActivity {
         return new NearbyCities("", "");
     }
 
+    private void updateNearbyCitiesUI(String city1, String city2) {
+        TextView nearbyCity1TextView = findViewById(R.id.nearbyCity1TextView);
+        TextView nearbyCity2TextView = findViewById(R.id.nearbyCity2TextView);
+
+        // Update UI with the two nearby cities
+        nearbyCity1TextView.setText("Nearby City 1: " + city1);
+        nearbyCity2TextView.setText("Nearby City 2: " + city2);
+    }
+
     public interface WeatherApi {
         @GET("data/2.5/weather")
         Call<JsonObject> getCurrentWeather(
