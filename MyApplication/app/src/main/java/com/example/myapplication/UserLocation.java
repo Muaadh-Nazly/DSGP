@@ -128,3 +128,19 @@ public class UserLocation extends AppCompatActivity {
             }
         }
     }
+
+    public interface WeatherApi {
+        @GET("data/2.5/weather")
+        Call<JsonObject> getCurrentWeather(
+                @Query("lat") double latitude,
+                @Query("lon") double longitude,
+                @Query("appid") String apiKey
+        );
+
+        @GET("data/2.5/forecast")
+        Call<JsonObject> getWeatherForecast(
+                @Query("lat") double latitude,
+                @Query("lon") double longitude,
+                @Query("appid") String apiKey
+        );
+    }
