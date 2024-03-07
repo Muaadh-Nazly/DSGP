@@ -64,27 +64,47 @@ public class UserLocation extends AppCompatActivity {
 
 
     }
-    private void getLastLocation() {
+    public void getLastLocation() {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+            LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 
             fusedLocationProviderClient.getLastLocation()
                     .addOnSuccessListener(new OnSuccessListener<Location>() {
                         @Override
                         public void onSuccess(Location location) {
                             if (location != null) {
+                                Log.d("Location", "Latitude: " + location.getLatitude() + ", Longitude: " + location.getLongitude());
                                 Geocoder geocoder = new Geocoder(MainActivity.this, Locale.getDefault());
-                                List<Address> addresses = null;
+                                //List<Address> addresses = null;
                                 try {
                                     addresses = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
-                                    latitude.setText("Latitude: " + addresses.get(0).getLatitude());
-                                    longitude.setText("Longitude: " + addresses.get(0).getLongitude());
-                                    address.setText("Address: " + addresses.get(0).getAddressLine(0));
-                                    city.setText("City: " + addresses.get(0).getLocality());
-                                    country.setText("Country: " + addresses.get(0).getCountryName());
+
+                                    if (addresses != null && addresses.size() > 0) {
+                                        Log.d("Location", "Latitude: " + location.getLatitude() + ", Longitude: " + location.getLongitude());
+                                        Log.d("Location", "Country: " + addresses.get(0).getCountryName());
+                                        Log.d("Location", "Address: " + addresses.get(0).getAddressLine(0));
+                                        city.setText("City: " + addresses.get(0).getLocality());
+                                        district.setText("District: " + addresses.get(0).getSubAdminArea());
+
+                                        getWeatherData(addresses.get(0).getLatitude(), addresses.get(0).getLongitude());
+
+                                        NearbyCities nearbyCities = getNearbyLocationNames(addresses.get(0).getLatitude(), addresses.get(0).getLongitude());
+                                        updateNearbyCitiesUI(nearbyCities.getCity1(), nearbyCities.getCity2());
+                                    } else {
+                                        Log.e("Location", "No address found for the location");
+                                    }
                                 } catch (IOException e) {
                                     e.printStackTrace();
                                 }
+                                processWeatherData(addresses.get(0).getLatitude(), addresses.get(0).getLongitude());
                             }
+                        }
+                    })
+                    .addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            // Handle failure to get last location
+                            Log.e("Location", "Failed to get last location: " + e.getMessage());
                         }
                     });
         } else {
