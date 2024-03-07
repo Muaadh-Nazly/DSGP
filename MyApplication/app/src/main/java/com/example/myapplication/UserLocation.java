@@ -36,9 +36,13 @@ import retrofit2.http.Query;
 public class UserLocation extends AppCompatActivity {
 
     FusedLocationProviderClient fusedLocationProviderClient;
-    TextView country, city, address, longitude, latitude;
+    TextView country, city, district, address, latitude, longitude;
     Button getLocation;
+    private TextView windSpeedTextView, rainfallTextView;
     private final static int REQUEST_CODE = 100;
+    private WeatherApi weatherApi;
+    private Retrofit retrofit;
+    private List<Address> addresses;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,6 +68,7 @@ public class UserLocation extends AppCompatActivity {
 
 
     }
+
     public void getLastLocation() {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
             LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
@@ -194,7 +199,7 @@ public class UserLocation extends AppCompatActivity {
         );
     }
 
-    public void getWeatherData (double latitude, double longitude){
+    public void getWeatherData(double latitude, double longitude) {
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://api.openweathermap.org/")
                 .addConverterFactory(GsonConverterFactory.create())
@@ -245,7 +250,7 @@ public class UserLocation extends AppCompatActivity {
 
                                     }
 
-                                    parseAndPredict(currentWindSpeed, currentRainfall,dailyWindSpeeds);
+                                    parseAndPredict(currentWindSpeed, currentRainfall, dailyWindSpeeds);
                                 } else {
                                     Toast.makeText(MainActivity.this, "Forecast data is empty", Toast.LENGTH_SHORT).show();
                                 }
@@ -276,7 +281,7 @@ public class UserLocation extends AppCompatActivity {
         if (addresses != null && addresses.size() > 0) {
             String currentLocality = addresses.get(0).getLocality();
             String subAdminArea = addresses.get(0).getSubAdminArea();
-            
+
             Log.d("ParsedData", "Current Locality: " + currentLocality);
             Log.d("ParsedData", "SubAdminArea: " + subAdminArea);
             Log.d("ParsedData", "Current Wind Speed: " + currentWindSpeed + " m/s");
@@ -304,14 +309,13 @@ public class UserLocation extends AppCompatActivity {
                 nearbyCity2 = nearbyCity2.substring("Nearby City 1: ".length());
             }
 
-            Log.d("ParsedData",nearbyCity1);
-            Log.d("ParsedData",nearbyCity2);
+            Log.d("ParsedData", nearbyCity1);
+            Log.d("ParsedData", nearbyCity2);
         } else {
 
             Log.e("ParsedData", "Addresses is null or empty");
         }
     }
-
 
 
     private double getCurrentWindSpeed(JsonObject weatherJson) {
@@ -364,6 +368,7 @@ public class UserLocation extends AppCompatActivity {
         return averageDailyRainfalls;
     }
 
+}
 
 
 
