@@ -222,3 +222,25 @@ public class UserLocation extends AppCompatActivity {
         });
 
     }
+
+    private double getCurrentWindSpeed(JsonObject weatherJson) {
+        if (weatherJson != null && weatherJson.has("wind")) {
+            JsonObject windJson = weatherJson.getAsJsonObject("wind");
+            if (windJson.has("speed")) {
+                double windSpeedInMetersPerSecond = windJson.get("speed").getAsDouble();
+                double windSpeedInMilesPerHour = windSpeedInMetersPerSecond * 2.23694;
+                return windSpeedInMilesPerHour;
+            }
+        }
+        return 0.0;
+    }
+
+    private double getCurrentRainfall(JsonObject weatherJson) {
+        if (weatherJson != null && weatherJson.has("rain")) {
+            JsonObject rainJson = weatherJson.getAsJsonObject("rain");
+            if (rainJson.has("1h")) {
+                return rainJson.get("1h").getAsDouble();
+            }
+        }
+        return 0.0;
+    }
