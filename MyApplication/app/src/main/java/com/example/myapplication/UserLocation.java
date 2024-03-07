@@ -223,6 +223,8 @@ public class UserLocation extends AppCompatActivity {
 
     }
 
+
+
     private double getCurrentWindSpeed(JsonObject weatherJson) {
         if (weatherJson != null && weatherJson.has("wind")) {
             JsonObject windJson = weatherJson.getAsJsonObject("wind");
@@ -244,3 +246,23 @@ public class UserLocation extends AppCompatActivity {
         }
         return 0.0;
     }
+
+    private void updateWindSpeedUI(double windSpeed) {
+        windSpeedTextView.setText("Wind Speed: " + windSpeed + " m/s");
+    }
+
+    private void updateRainfallUI(double rainfallVolume) {
+        rainfallTextView.setText("Rainfall: " + rainfallVolume + " mm");
+    }
+
+    private void updateDailyForecastUI(List<Double> dailyWindSpeeds, List<Double> dailyRainfalls) {
+        TextView day1Forecast = findViewById(R.id.day1Forecast);
+        TextView day2Forecast = findViewById(R.id.day2Forecast);
+        TextView day3Forecast = findViewById(R.id.day3Forecast);
+
+        int currentMonth = Calendar.getInstance().get(Calendar.MONTH) + 1;
+        Log.d("CurrentMonth", "Current Month: " + currentMonth);
+
+    }
+
+
