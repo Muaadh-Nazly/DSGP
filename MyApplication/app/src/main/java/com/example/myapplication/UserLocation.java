@@ -144,3 +144,81 @@ public class UserLocation extends AppCompatActivity {
                 @Query("appid") String apiKey
         );
     }
+
+    public void getWeatherData (double latitude, double longitude){
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("https://api.openweathermap.org/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        WeatherApi weatherApi = retrofit.create(WeatherApi.class);
+        String apiKey = "3747c6412373b23436ca611b8963f61c";
+
+        Call<JsonObject> currentWeatherCall = weatherApi.getCurrentWeather(latitude, longitude, apiKey);
+        currentWeatherCall.enqueue(new Callback<JsonObject>() {
+            @Override
+            public void onResponse(Call<JsonObject> call, Response<JsonObject> response) {
+                if (response.isSuccessful()) {
+                    JsonObject weatherJson = response.body();
+                    Log.d("WeatherData", "Current Weather JSON: " + weatherJson);
+                    double currentWindSpeed = getCurrentWindSpeed(weatherJson);
+                    double currentRainfall = getCurrentRainfall(weatherJson);
+                    Log.d("WeatherData", "Current Wind Speed: " + currentWindSpeed + " m/s");
+                    Log.d("WeatherData", "Current Rainfall: " + currentRainfall + " mm");
+
+                    Call<JsonObject> forecastCall = weatherApi.getWeatherForecast(latitude, longitude, apiKey);
+                    forecastCall.enqueue(new Callback<JsonObject>() {
+                        @Override
+                        public void onResponse(Call<JsonObject> call, Response<JsonObject> forecastResponse) {
+                            if (forecastResponse.isSuccessful()) {
+                                JsonObject forecastJson = forecastResponse.body();
+                                Log.d("WeatherData", "Forecast JSON: " + forecastJson);
+
+                                if (forecastJson != null && forecastJson.has("list")) {
+                                    JsonArray forecastList = forecastJson.getAsJsonArray("list");
+
+                                    List<Double> dailyWindSpeeds = new ArrayList<>();
+                                    List<Double> dailyRainfalls = new ArrayList<>();
+
+                                    for (int i = 0; i < Math.min(3, forecastList.size()); i++) {
+                                        JsonObject dayForecast = forecastList.get(i).getAsJsonObject();
+
+                                        if (dayForecast.has("wind")) {
+                                            JsonObject windJson = dayForecast.getAsJsonObject("wind");
+                                            if (windJson.has("speed")) {
+                                                double windSpeedInMetersPerSecond = windJson.get("speed").getAsDouble();
+                                                double windSpeedInMilesPerHour = windSpeedInMetersPerSecond * 2.23694;
+                                                dailyWindSpeeds.add(windSpeedInMilesPerHour);
+                                            }
+                                        } else {
+                                            dailyWindSpeeds.add(0.0);
+                                        }
+
+                                    }
+
+                                    parseAndPredict(currentWindSpeed, currentRainfall,dailyWindSpeeds);
+                                } else {
+                                    Toast.makeText(MainActivity.this, "Forecast data is empty", Toast.LENGTH_SHORT).show();
+                                }
+                            } else {
+                                Toast.makeText(MainActivity.this, "Failed to fetch forecast data", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+
+                        @Override
+                        public void onFailure(Call<JsonObject> call, Throwable t) {
+                            Toast.makeText(MainActivity.this, "Network error", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                } else {
+                    Toast.makeText(MainActivity.this, "Failed to fetch current weather data", Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<JsonObject> call, Throwable t) {
+                Toast.makeText(MainActivity.this, "Network error", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+    }
