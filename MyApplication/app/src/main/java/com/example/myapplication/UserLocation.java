@@ -129,6 +129,46 @@ public class UserLocation extends AppCompatActivity {
         }
     }
 
+    private NearbyCities getNearbyLocationNames(double latitude, double longitude) {
+        double latitudeOffset = 0.01;
+        double longitudeOffset = 0.02;
+
+        double nearbyLatitude1 = latitude + latitudeOffset;
+        double nearbyLongitude1 = longitude + longitudeOffset;
+
+        double nearbyLatitude2 = latitude - latitudeOffset;
+        double nearbyLongitude2 = longitude - longitudeOffset;
+
+        Geocoder geocoder = new Geocoder(MainActivity.this, Locale.getDefault());
+
+        try {
+            List<Address> nearbyAddresses1 = geocoder.getFromLocation(nearbyLatitude1, nearbyLongitude1, 1);
+            if (nearbyAddresses1 != null && nearbyAddresses1.size() > 0) {
+                String nearbyCity1 = nearbyAddresses1.get(0).getLocality();
+                Log.d("NearbyLocation", "Nearby City 1: " + nearbyCity1);
+
+                List<Address> nearbyAddresses2 = geocoder.getFromLocation(nearbyLatitude2, nearbyLongitude2, 1);
+                if (nearbyAddresses2 != null && nearbyAddresses2.size() > 0) {
+                    String nearbyCity2 = nearbyAddresses2.get(0).getLocality();
+                    if (!nearbyCity2.equals(nearbyCity1)) {
+                        Log.d("NearbyLocation", "Nearby City 2: " + nearbyCity2);
+                        return new NearbyCities(nearbyCity1, nearbyCity2);
+                    } else {
+                        Log.e("NearbyLocation", "City 2 is the same as City 1");
+                    }
+                } else {
+                    Log.e("NearbyLocation", "One or both of the cities is null");
+                }
+            } else {
+                Log.e("NearbyLocation", "No nearby addresses found for City 2");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return new NearbyCities("", "");
+    }
+
     public interface WeatherApi {
         @GET("data/2.5/weather")
         Call<JsonObject> getCurrentWeather(
@@ -246,7 +286,7 @@ public class UserLocation extends AppCompatActivity {
         }
         return 0.0;
     }
-    
+
     private List<Double> getAverageRainfallData(String district, int currentMonth) {
         List<Double> averageDailyRainfalls = new ArrayList<>();
 
