@@ -2,6 +2,39 @@
 plugins {
     id("com.android.application") version "8.2.0" apply false
 }
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.example.UserLocation'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.UserLocation"
+        minSdk 18
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+                targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
 
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
