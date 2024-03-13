@@ -23,7 +23,6 @@ with open ('Location_Mapped.txt','r') as district_file:
 # Function to predict the percentage
 def predict_landslide(location,district,month,day,rainfall,location1='None',location2='None'):
     found= False
-    print(location,location2,location1)
     locations = [location,location1,location2]
     for loc in locations:
         for keys in mapping_location.keys():
