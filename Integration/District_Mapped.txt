@@ -7,7 +7,7 @@ Galle : 5
 Gampaha : 6
 Hambantota : 7
 Jaffna : 8
-Kaluthara : 9
+Kalutara : 9
 Kandy : 10
 Kegalle : 11
 Kilinochchi : 12
@@ -18,7 +18,7 @@ Matara : 16
 Monaragala : 17
 Mullaitivu : 18
 Nuwara Eliya : 19
-Polannaruwa : 20
+Polonnaruwa : 20
 Puttalam : 21
 Ratnapura : 22
 Trincomalee : 23
