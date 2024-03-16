@@ -38,6 +38,7 @@ drawable location
 drawable lock
 drawable loginbkg
 drawable loginbkgh
+drawable progress_bar_custom
 drawable rounded_background
 drawable rounded_background_b
 drawable twitter
@@ -124,9 +125,13 @@ id landslideRiskLevelPercentage
 id lanslideLabel
 id latitude
 id location
+id map
+id markerTitleTextView
 id modelOutput
+id moreDetailsButton
 id passwordLogin
 id passwordLoginLayout
+id progressBar
 id registerPassword
 id registerPasswordLayout
 id registerUsername
@@ -148,13 +153,16 @@ id textView4
 id textView5
 id text_description
 id text_title
+id userSelectedSetLocationButton
 id user_Location_access
 id usernameLogin
 layout activity_about_us
 layout activity_cyclone
+layout activity_details
 layout activity_flood
 layout activity_get_started
 layout activity_landslide
+layout activity_loading
 layout activity_login
 layout activity_register
 layout activity_settings
@@ -163,6 +171,8 @@ layout activity_user_location
 layout activity_user_location_permission
 layout activity_user_selected_location
 layout app_navigation
+layout custom_info_window
+layout map
 layout model
 mipmap ic_launcher
 mipmap ic_launcher_round

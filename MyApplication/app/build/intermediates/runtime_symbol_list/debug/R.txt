@@ -129,6 +129,7 @@ int attr allowStacking 0x7f04002d
 int attr alpha 0x7f04002e
 int attr alphabeticModifiers 0x7f04002f
 int attr altSrc 0x7f040030
+int attr ambientEnabled 0x7f0404df
 int attr animateCircleAngleTo 0x7f040031
 int attr animateMenuItems 0x7f040032
 int attr animateNavigationIcon 0x7f040033
@@ -235,6 +236,13 @@ int attr buttonStyle 0x7f040097
 int attr buttonStyleSmall 0x7f040098
 int attr buttonTint 0x7f040099
 int attr buttonTintMode 0x7f04009a
+int attr cameraBearing 0x7f0404e0
+int attr cameraMaxZoomPreference 0x7f0404e1
+int attr cameraMinZoomPreference 0x7f0404e2
+int attr cameraTargetLat 0x7f0404e3
+int attr cameraTargetLng 0x7f0404e4
+int attr cameraTilt 0x7f0404e5
+int attr cameraZoom 0x7f0404e6
 int attr cardBackgroundColor 0x7f04009b
 int attr cardCornerRadius 0x7f04009c
 int attr cardElevation 0x7f04009d
@@ -703,6 +711,10 @@ int attr labelVisibilityMode 0x7f04026b
 int attr largeFontVerticalOffsetAdjustment 0x7f04026c
 int attr lastBaselineToBottomHeight 0x7f04026d
 int attr lastItemDecorated 0x7f04026e
+int attr latLngBoundsNorthEastLatitude 0x7f0404e7
+int attr latLngBoundsNorthEastLongitude 0x7f0404e8
+int attr latLngBoundsSouthWestLatitude 0x7f0404e9
+int attr latLngBoundsSouthWestLongitude 0x7f0404ea
 int attr layout 0x7f04026f
 int attr layoutDescription 0x7f040270
 int attr layoutDuringTransition 0x7f040271
@@ -798,10 +810,13 @@ int attr listPreferredItemPaddingEnd 0x7f0402ca
 int attr listPreferredItemPaddingLeft 0x7f0402cb
 int attr listPreferredItemPaddingRight 0x7f0402cc
 int attr listPreferredItemPaddingStart 0x7f0402cd
+int attr liteMode 0x7f0404eb
 int attr logo 0x7f0402ce
 int attr logoAdjustViewBounds 0x7f0402cf
 int attr logoDescription 0x7f0402d0
 int attr logoScaleType 0x7f0402d1
+int attr mapId 0x7f0404ec
+int attr mapType 0x7f0404ed
 int attr marginHorizontal 0x7f0402d2
 int attr marginLeftSystemWindowInsets 0x7f0402d3
 int attr marginRightSystemWindowInsets 0x7f0402d4
@@ -1293,10 +1308,19 @@ int attr triggerId 0x7f0404b9
 int attr triggerReceiver 0x7f0404ba
 int attr triggerSlack 0x7f0404bb
 int attr ttcIndex 0x7f0404bc
+int attr uiCompass 0x7f0404ee
+int attr uiMapToolbar 0x7f0404ef
+int attr uiRotateGestures 0x7f0404f0
+int attr uiScrollGestures 0x7f0404f1
+int attr uiScrollGesturesDuringRotateOrZoom 0x7f0404f2
+int attr uiTiltGestures 0x7f0404f3
+int attr uiZoomControls 0x7f0404f4
+int attr uiZoomGestures 0x7f0404f5
 int attr upDuration 0x7f0404bd
 int attr useCompatPadding 0x7f0404be
 int attr useDrawerArrowDrawable 0x7f0404bf
 int attr useMaterialThemeColors 0x7f0404c0
+int attr useViewLifecycle 0x7f0404f6
 int attr values 0x7f0404c1
 int attr verticalOffset 0x7f0404c2
 int attr verticalOffsetWithText 0x7f0404c3
@@ -1327,6 +1351,7 @@ int attr windowNoTitle 0x7f0404db
 int attr yearSelectedStyle 0x7f0404dc
 int attr yearStyle 0x7f0404dd
 int attr yearTodayStyle 0x7f0404de
+int attr zOrderOnTop 0x7f0404f7
 int bool abc_action_bar_embed_tabs 0x7f050000
 int bool abc_config_actionMenuItemAllCaps 0x7f050001
 int bool mtrl_btn_textappearance_all_caps 0x7f050002
@@ -3143,6 +3168,7 @@ int drawable notification_template_icon_bg 0x7f0800fe
 int drawable notification_template_icon_low_bg 0x7f0800ff
 int drawable notification_tile_bg 0x7f080100
 int drawable notify_panel_notification_icon_bg 0x7f080101
+int drawable progress_bar_custom 0x7f08010a
 int drawable rounded_background 0x7f080102
 int drawable rounded_background_b 0x7f080103
 int drawable test_level_drawable 0x7f080104
@@ -3445,6 +3471,7 @@ int id home 0x7f0a011c
 int id homeAsUp 0x7f0a011d
 int id honorRequest 0x7f0a011e
 int id horizontal_only 0x7f0a011f
+int id hybrid 0x7f0a025d
 int id icon 0x7f0a0120
 int id icon_group 0x7f0a0121
 int id icon_only 0x7f0a0122
@@ -3480,6 +3507,8 @@ int id listMode 0x7f0a013f
 int id list_item 0x7f0a0140
 int id location 0x7f0a0141
 int id m3_side_sheet 0x7f0a0142
+int id map 0x7f0a025e
+int id markerTitleTextView 0x7f0a025f
 int id marquee 0x7f0a0143
 int id masked 0x7f0a0144
 int id match_constraint 0x7f0a0145
@@ -3515,6 +3544,7 @@ int id month_navigation_fragment_toggle 0x7f0a0162
 int id month_navigation_next 0x7f0a0163
 int id month_navigation_previous 0x7f0a0164
 int id month_title 0x7f0a0165
+int id moreDetailsButton 0x7f0a0260
 int id motion_base 0x7f0a0166
 int id mtrl_anchor_parent 0x7f0a0167
 int id mtrl_calendar_day_selector_frame 0x7f0a0168
@@ -3595,6 +3625,7 @@ int id pin 0x7f0a01b2
 int id position 0x7f0a01b3
 int id postLayout 0x7f0a01b4
 int id pressed 0x7f0a01b5
+int id progressBar 0x7f0a0261
 int id progress_circular 0x7f0a01b6
 int id progress_horizontal 0x7f0a01b7
 int id radio 0x7f0a01b8
@@ -3612,6 +3643,7 @@ int id right_icon 0x7f0a01c3
 int id right_side 0x7f0a01c4
 int id rounded 0x7f0a01c5
 int id row_index_key 0x7f0a01c6
+int id satellite 0x7f0a0262
 int id save_non_transition_alpha 0x7f0a01c7
 int id save_overlay_view 0x7f0a01c8
 int id sawtooth 0x7f0a01c9
@@ -3694,6 +3726,7 @@ int id tag_transition_group 0x7f0a0215
 int id tag_unhandled_key_event_manager 0x7f0a0216
 int id tag_unhandled_key_listeners 0x7f0a0217
 int id tag_window_insets_animation_callback 0x7f0a0218
+int id terrain 0x7f0a0263
 int id text 0x7f0a0219
 int id text2 0x7f0a021a
 int id textEnd 0x7f0a021b
@@ -3741,6 +3774,7 @@ int id uniform 0x7f0a0244
 int id unlabeled 0x7f0a0245
 int id up 0x7f0a0246
 int id useLogo 0x7f0a0247
+int id userSelectedSetLocationButton 0x7f0a0264
 int id user_Location_access 0x7f0a0248
 int id usernameLogin 0x7f0a0249
 int id vertical_only 0x7f0a024a
@@ -3879,9 +3913,11 @@ int layout abc_select_dialog_material 0x7f0d001a
 int layout abc_tooltip 0x7f0d001b
 int layout activity_about_us 0x7f0d001c
 int layout activity_cyclone 0x7f0d001d
+int layout activity_details 0x7f0d0079
 int layout activity_flood 0x7f0d001e
 int layout activity_get_started 0x7f0d001f
 int layout activity_landslide 0x7f0d0020
+int layout activity_loading 0x7f0d007a
 int layout activity_login 0x7f0d0021
 int layout activity_register 0x7f0d0022
 int layout activity_settings 0x7f0d0023
@@ -3893,6 +3929,7 @@ int layout app_navigation 0x7f0d0028
 int layout browser_actions_context_menu_page 0x7f0d0029
 int layout browser_actions_context_menu_row 0x7f0d002a
 int layout custom_dialog 0x7f0d002b
+int layout custom_info_window 0x7f0d007b
 int layout design_bottom_navigation_item 0x7f0d002c
 int layout design_bottom_sheet_dialog 0x7f0d002d
 int layout design_layout_snackbar 0x7f0d002e
@@ -3913,6 +3950,7 @@ int layout m3_alert_dialog_actions 0x7f0d003c
 int layout m3_alert_dialog_title 0x7f0d003d
 int layout m3_auto_complete_simple_item 0x7f0d003e
 int layout m3_side_sheet_dialog 0x7f0d003f
+int layout map 0x7f0d007c
 int layout material_chip_input_combo 0x7f0d0040
 int layout material_clock_display 0x7f0d0041
 int layout material_clock_display_divider 0x7f0d0042
@@ -6603,6 +6641,33 @@ int[] styleable LoadingImageView { 0x7f0400d3, 0x7f040233, 0x7f040234 }
 int styleable LoadingImageView_circleCrop 0
 int styleable LoadingImageView_imageAspectRatio 1
 int styleable LoadingImageView_imageAspectRatioAdjust 2
+int[] styleable MapAttrs { 0x7f040048, 0x7f0404df, 0x7f0404e0, 0x7f0404e1, 0x7f0404e2, 0x7f0404e3, 0x7f0404e4, 0x7f0404e5, 0x7f0404e6, 0x7f0404e7, 0x7f0404e8, 0x7f0404e9, 0x7f0404ea, 0x7f0404eb, 0x7f0404ec, 0x7f0404ed, 0x7f0404ee, 0x7f0404ef, 0x7f0404f0, 0x7f0404f1, 0x7f0404f2, 0x7f0404f3, 0x7f0404f4, 0x7f0404f5, 0x7f0404f6, 0x7f0404f7 }
+int styleable MapAttrs_backgroundColor 0
+int styleable MapAttrs_ambientEnabled 1
+int styleable MapAttrs_cameraBearing 2
+int styleable MapAttrs_cameraMaxZoomPreference 3
+int styleable MapAttrs_cameraMinZoomPreference 4
+int styleable MapAttrs_cameraTargetLat 5
+int styleable MapAttrs_cameraTargetLng 6
+int styleable MapAttrs_cameraTilt 7
+int styleable MapAttrs_cameraZoom 8
+int styleable MapAttrs_latLngBoundsNorthEastLatitude 9
+int styleable MapAttrs_latLngBoundsNorthEastLongitude 10
+int styleable MapAttrs_latLngBoundsSouthWestLatitude 11
+int styleable MapAttrs_latLngBoundsSouthWestLongitude 12
+int styleable MapAttrs_liteMode 13
+int styleable MapAttrs_mapId 14
+int styleable MapAttrs_mapType 15
+int styleable MapAttrs_uiCompass 16
+int styleable MapAttrs_uiMapToolbar 17
+int styleable MapAttrs_uiRotateGestures 18
+int styleable MapAttrs_uiScrollGestures 19
+int styleable MapAttrs_uiScrollGesturesDuringRotateOrZoom 20
+int styleable MapAttrs_uiTiltGestures 21
+int styleable MapAttrs_uiZoomControls 22
+int styleable MapAttrs_uiZoomGestures 23
+int styleable MapAttrs_useViewLifecycle 24
+int styleable MapAttrs_zOrderOnTop 25
 int[] styleable MaterialAlertDialog { 0x7f040049, 0x7f04004a, 0x7f04004b, 0x7f04004c, 0x7f040050 }
 int styleable MaterialAlertDialog_backgroundInsetBottom 0
 int styleable MaterialAlertDialog_backgroundInsetEnd 1

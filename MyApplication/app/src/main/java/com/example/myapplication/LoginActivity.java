@@ -24,6 +24,7 @@ public class LoginActivity extends AppCompatActivity {
     Button signInButton;
     FirebaseAuth mAuth;
 
+
     @Override
     protected void onCreate(Bundle savedInstance) {
 

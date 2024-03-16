@@ -45,8 +45,8 @@ public class MainActivity extends AppCompatActivity {
         else {
 
 //        FirebaseAuth.getInstance().signOut();
-//        RegisterActivity();
-            UserActivity();
+        RegisterActivity();
+//            UserActivity();
 
 
         }

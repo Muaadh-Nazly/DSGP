@@ -76,6 +76,14 @@ public class UserActivity extends AppCompatActivity  {
 
         getLastLocation();
 
+        cycloneCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CycloneActivity();
+            }
+        });
+
+
 
         cycloneCard.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -199,6 +207,11 @@ public class UserActivity extends AppCompatActivity  {
 
     }
 
+
+    public void mapActivity(){
+        Intent intent = new Intent(this, FloodActivity.class);
+        startActivity(intent);
+    }
 
 
 }

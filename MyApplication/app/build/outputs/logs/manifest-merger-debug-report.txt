@@ -15,6 +15,7 @@ MERGED from [com.google.firebase:firebase-ml-modeldownloader:24.2.3] C:\Users\LE
 MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\181bf76e9e98449a9cda442dc9dfde03\transformed\firebase-database-20.3.0\AndroidManifest.xml:15:1-38:12
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\6cffa5c7ad5cf35856f2b4e521960a0b\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9cfee8fdc45e4b5be1ebd8efdf13cbb6\transformed\emoji2-1.2.0\AndroidManifest.xml:17:1-35:12
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\2c569c3e1b611fb7cd210380ce4df1f8\transformed\play-services-maps-18.2.0\AndroidManifest.xml:17:1-44:12
 MERGED from [com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\3b3154d3226f68767902f868bed4a6ea\transformed\firebase-auth-22.3.1\AndroidManifest.xml:17:1-75:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\19d46a9dd0fdb355e636bfd9d7201c89\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-location:21.1.0] C:\Users\LENOVO\.gradle\caches\transforms-3\406058d334523c38382c0bc7f3aace4a\transformed\play-services-location-21.1.0\AndroidManifest.xml:2:1-9:12
@@ -113,6 +114,8 @@ MERGED from [com.google.firebase:firebase-ml-modeldownloader:24.2.3] C:\Users\LE
 MERGED from [com.google.firebase:firebase-ml-modeldownloader:24.2.3] C:\Users\LENOVO\.gradle\caches\transforms-3\f1005ecf3fea4532fd502e723f69e83b\transformed\firebase-ml-modeldownloader-24.2.3\AndroidManifest.xml:20:5-67
 MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\181bf76e9e98449a9cda442dc9dfde03\transformed\firebase-database-20.3.0\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\181bf76e9e98449a9cda442dc9dfde03\transformed\firebase-database-20.3.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\2c569c3e1b611fb7cd210380ce4df1f8\transformed\play-services-maps-18.2.0\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\2c569c3e1b611fb7cd210380ce4df1f8\transformed\play-services-maps-18.2.0\AndroidManifest.xml:24:5-67
 MERGED from [com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\3b3154d3226f68767902f868bed4a6ea\transformed\firebase-auth-22.3.1\AndroidManifest.xml:25:5-67
 MERGED from [com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\3b3154d3226f68767902f868bed4a6ea\transformed\firebase-auth-22.3.1\AndroidManifest.xml:25:5-67
 MERGED from [com.google.firebase:firebase-iid:21.1.0] C:\Users\LENOVO\.gradle\caches\transforms-3\ac1daf118780a880585300f6017a8f43\transformed\firebase-iid-21.1.0\AndroidManifest.xml:23:5-67
@@ -160,6 +163,8 @@ MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\LENOVO\.grad
 MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\181bf76e9e98449a9cda442dc9dfde03\transformed\firebase-database-20.3.0\AndroidManifest.xml:25:5-36:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9cfee8fdc45e4b5be1ebd8efdf13cbb6\transformed\emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9cfee8fdc45e4b5be1ebd8efdf13cbb6\transformed\emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\2c569c3e1b611fb7cd210380ce4df1f8\transformed\play-services-maps-18.2.0\AndroidManifest.xml:36:5-42:19
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\2c569c3e1b611fb7cd210380ce4df1f8\transformed\play-services-maps-18.2.0\AndroidManifest.xml:36:5-42:19
 MERGED from [com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\3b3154d3226f68767902f868bed4a6ea\transformed\firebase-auth-22.3.1\AndroidManifest.xml:28:5-73:19
 MERGED from [com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\3b3154d3226f68767902f868bed4a6ea\transformed\firebase-auth-22.3.1\AndroidManifest.xml:28:5-73:19
 MERGED from [com.google.android.gms:play-services-location:21.1.0] C:\Users\LENOVO\.gradle\caches\transforms-3\406058d334523c38382c0bc7f3aace4a\transformed\play-services-location-21.1.0\AndroidManifest.xml:7:5-20
@@ -295,27 +300,21 @@ ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5
 	android:name
 		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:78:13-42
 activity#com.example.myapplication.MainActivity
-ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:81:9-83:38
+ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:81:9-88:20
 	android:exported
 		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:83:13-36
 	android:name
 		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:82:13-41
-activity#com.example.myapplication.SelectedLocation
-ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:90:9-97:20
-	android:exported
-		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:92:13-36
-	android:name
-		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:91:13-45
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:93:13-96:29
+ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:84:13-87:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:94:17-69
+ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:85:17-69
 	android:name
-		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:94:25-66
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:85:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:95:17-77
+ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:86:17-77
 	android:name
-		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:95:27-74
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:86:27-74
 meta-data#preloaded_fonts
 ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:104:9-106:57
 	android:resource
@@ -348,6 +347,8 @@ MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\LENOVO\.gradle\
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\6cffa5c7ad5cf35856f2b4e521960a0b\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9cfee8fdc45e4b5be1ebd8efdf13cbb6\transformed\emoji2-1.2.0\AndroidManifest.xml:21:5-44
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9cfee8fdc45e4b5be1ebd8efdf13cbb6\transformed\emoji2-1.2.0\AndroidManifest.xml:21:5-44
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\2c569c3e1b611fb7cd210380ce4df1f8\transformed\play-services-maps-18.2.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\2c569c3e1b611fb7cd210380ce4df1f8\transformed\play-services-maps-18.2.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\3b3154d3226f68767902f868bed4a6ea\transformed\firebase-auth-22.3.1\AndroidManifest.xml:21:5-23:64
 MERGED from [com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\3b3154d3226f68767902f868bed4a6ea\transformed\firebase-auth-22.3.1\AndroidManifest.xml:21:5-23:64
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\19d46a9dd0fdb355e636bfd9d7201c89\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
@@ -557,6 +558,8 @@ uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-firestore:24.10.2] C:\Users\LENOVO\.gradle\caches\transforms-3\491b32df7c7c9c31a5e7923b1a97241b\transformed\firebase-firestore-24.10.2\AndroidManifest.xml:10:5-79
 MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\181bf76e9e98449a9cda442dc9dfde03\transformed\firebase-database-20.3.0\AndroidManifest.xml:22:5-79
 MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\181bf76e9e98449a9cda442dc9dfde03\transformed\firebase-database-20.3.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\2c569c3e1b611fb7cd210380ce4df1f8\transformed\play-services-maps-18.2.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\2c569c3e1b611fb7cd210380ce4df1f8\transformed\play-services-maps-18.2.0\AndroidManifest.xml:23:5-79
 MERGED from [com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\3b3154d3226f68767902f868bed4a6ea\transformed\firebase-auth-22.3.1\AndroidManifest.xml:26:5-79
 MERGED from [com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\3b3154d3226f68767902f868bed4a6ea\transformed\firebase-auth-22.3.1\AndroidManifest.xml:26:5-79
 MERGED from [com.google.firebase:firebase-iid:21.1.0] C:\Users\LENOVO\.gradle\caches\transforms-3\ac1daf118780a880585300f6017a8f43\transformed\firebase-iid-21.1.0\AndroidManifest.xml:22:5-79
@@ -641,6 +644,24 @@ ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transfo
 		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9cfee8fdc45e4b5be1ebd8efdf13cbb6\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
 	android:name
 		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9cfee8fdc45e4b5be1ebd8efdf13cbb6\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\2c569c3e1b611fb7cd210380ce4df1f8\transformed\play-services-maps-18.2.0\AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\2c569c3e1b611fb7cd210380ce4df1f8\transformed\play-services-maps-18.2.0\AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\2c569c3e1b611fb7cd210380ce4df1f8\transformed\play-services-maps-18.2.0\AndroidManifest.xml:28:9-32
+queries
+ADDED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\2c569c3e1b611fb7cd210380ce4df1f8\transformed\play-services-maps-18.2.0\AndroidManifest.xml:30:5-34:15
+package#com.google.android.apps.maps
+ADDED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\2c569c3e1b611fb7cd210380ce4df1f8\transformed\play-services-maps-18.2.0\AndroidManifest.xml:33:9-64
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\2c569c3e1b611fb7cd210380ce4df1f8\transformed\play-services-maps-18.2.0\AndroidManifest.xml:33:18-61
+uses-library#org.apache.http.legacy
+ADDED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\2c569c3e1b611fb7cd210380ce4df1f8\transformed\play-services-maps-18.2.0\AndroidManifest.xml:39:9-41:40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\2c569c3e1b611fb7cd210380ce4df1f8\transformed\play-services-maps-18.2.0\AndroidManifest.xml:41:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\2c569c3e1b611fb7cd210380ce4df1f8\transformed\play-services-maps-18.2.0\AndroidManifest.xml:40:13-50
 activity#com.google.firebase.auth.internal.GenericIdpActivity
 ADDED from [com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\3b3154d3226f68767902f868bed4a6ea\transformed\firebase-auth-22.3.1\AndroidManifest.xml:29:9-46:20
 	android:excludeFromRecents
