@@ -4,6 +4,7 @@ package com.example.myapplication.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -31,6 +32,9 @@ public final class ActivityUserBinding implements ViewBinding {
 
   @NonNull
   public final TextView Settings;
+
+  @NonNull
+  public final CardView changeLocationCardView;
 
   @NonNull
   public final ConstraintLayout constraintLayout2;
@@ -69,6 +73,9 @@ public final class ActivityUserBinding implements ViewBinding {
   public final TextView home;
 
   @NonNull
+  public final ImageView imageView3;
+
+  @NonNull
   public final TextView landslideRiskLabel;
 
   @NonNull
@@ -78,23 +85,28 @@ public final class ActivityUserBinding implements ViewBinding {
   public final TextView lanslideLabel;
 
   @NonNull
-  public final TextView textView2;
+  public final TextView mapButton;
+
+  @NonNull
+  public final TextView textView6;
 
   private ActivityUserBinding(@NonNull ConstraintLayout rootView, @NonNull CardView CycloneCard,
       @NonNull CardView FloodCard, @NonNull CardView LandslideCard, @NonNull TextView Settings,
-      @NonNull ConstraintLayout constraintLayout2, @NonNull ConstraintLayout constraintLayout3,
-      @NonNull TextView currentDateTime, @NonNull TextView currentLocation,
-      @NonNull TextView cycloneLabel, @NonNull TextView cycloneRiskLevel,
-      @NonNull TextView cycloneRiskLevelPercentage, @NonNull TextView floodLabel,
-      @NonNull TextView floodRiskLevel, @NonNull TextView floodRiskLevelPercentage,
-      @NonNull TextView greetingsOfTheDay, @NonNull TextView home,
-      @NonNull TextView landslideRiskLabel, @NonNull TextView landslideRiskLevelPercentage,
-      @NonNull TextView lanslideLabel, @NonNull TextView textView2) {
+      @NonNull CardView changeLocationCardView, @NonNull ConstraintLayout constraintLayout2,
+      @NonNull ConstraintLayout constraintLayout3, @NonNull TextView currentDateTime,
+      @NonNull TextView currentLocation, @NonNull TextView cycloneLabel,
+      @NonNull TextView cycloneRiskLevel, @NonNull TextView cycloneRiskLevelPercentage,
+      @NonNull TextView floodLabel, @NonNull TextView floodRiskLevel,
+      @NonNull TextView floodRiskLevelPercentage, @NonNull TextView greetingsOfTheDay,
+      @NonNull TextView home, @NonNull ImageView imageView3, @NonNull TextView landslideRiskLabel,
+      @NonNull TextView landslideRiskLevelPercentage, @NonNull TextView lanslideLabel,
+      @NonNull TextView mapButton, @NonNull TextView textView6) {
     this.rootView = rootView;
     this.CycloneCard = CycloneCard;
     this.FloodCard = FloodCard;
     this.LandslideCard = LandslideCard;
     this.Settings = Settings;
+    this.changeLocationCardView = changeLocationCardView;
     this.constraintLayout2 = constraintLayout2;
     this.constraintLayout3 = constraintLayout3;
     this.currentDateTime = currentDateTime;
@@ -107,10 +119,12 @@ public final class ActivityUserBinding implements ViewBinding {
     this.floodRiskLevelPercentage = floodRiskLevelPercentage;
     this.greetingsOfTheDay = greetingsOfTheDay;
     this.home = home;
+    this.imageView3 = imageView3;
     this.landslideRiskLabel = landslideRiskLabel;
     this.landslideRiskLevelPercentage = landslideRiskLevelPercentage;
     this.lanslideLabel = lanslideLabel;
-    this.textView2 = textView2;
+    this.mapButton = mapButton;
+    this.textView6 = textView6;
   }
 
   @Override
@@ -161,6 +175,12 @@ public final class ActivityUserBinding implements ViewBinding {
       id = R.id.Settings;
       TextView Settings = ViewBindings.findChildViewById(rootView, id);
       if (Settings == null) {
+        break missingId;
+      }
+
+      id = R.id.changeLocationCardView;
+      CardView changeLocationCardView = ViewBindings.findChildViewById(rootView, id);
+      if (changeLocationCardView == null) {
         break missingId;
       }
 
@@ -236,6 +256,12 @@ public final class ActivityUserBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.imageView3;
+      ImageView imageView3 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView3 == null) {
+        break missingId;
+      }
+
       id = R.id.landslideRiskLabel;
       TextView landslideRiskLabel = ViewBindings.findChildViewById(rootView, id);
       if (landslideRiskLabel == null) {
@@ -254,17 +280,24 @@ public final class ActivityUserBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView2;
-      TextView textView2 = ViewBindings.findChildViewById(rootView, id);
-      if (textView2 == null) {
+      id = R.id.mapButton;
+      TextView mapButton = ViewBindings.findChildViewById(rootView, id);
+      if (mapButton == null) {
+        break missingId;
+      }
+
+      id = R.id.textView6;
+      TextView textView6 = ViewBindings.findChildViewById(rootView, id);
+      if (textView6 == null) {
         break missingId;
       }
 
       return new ActivityUserBinding((ConstraintLayout) rootView, CycloneCard, FloodCard,
-          LandslideCard, Settings, constraintLayout2, constraintLayout3, currentDateTime,
-          currentLocation, cycloneLabel, cycloneRiskLevel, cycloneRiskLevelPercentage, floodLabel,
-          floodRiskLevel, floodRiskLevelPercentage, greetingsOfTheDay, home, landslideRiskLabel,
-          landslideRiskLevelPercentage, lanslideLabel, textView2);
+          LandslideCard, Settings, changeLocationCardView, constraintLayout2, constraintLayout3,
+          currentDateTime, currentLocation, cycloneLabel, cycloneRiskLevel,
+          cycloneRiskLevelPercentage, floodLabel, floodRiskLevel, floodRiskLevelPercentage,
+          greetingsOfTheDay, home, imageView3, landslideRiskLabel, landslideRiskLevelPercentage,
+          lanslideLabel, mapButton, textView6);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

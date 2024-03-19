@@ -10,39 +10,42 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
-        android:text="Location Permission"
+        android:layout_marginTop="140dp"
+        android:text="Location Permission Request"
         android:textColor="@color/white"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.427"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="298dp"
-        android:layout_height="109dp"
+        android:layout_width="350dp"
+        android:layout_height="145dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="276dp"
-        android:text="In order to use our application \nresource we kindly request to allow access to
-        get your location We do not sell your location details to third parties Only for application best experience"
+        android:layout_marginTop="288dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="Please accept the location request to give best experience of the application"
         android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.267"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <Button
         android:id="@+id/user_Location_access"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="104dp"
-        android:text="Give Location Access"
+        android:layout_width="223dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="120dp"
+        android:background="@color/purple_700"
+        android:text="Accept"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.086" />
+        app:layout_constraintHorizontal_bias="0.404"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

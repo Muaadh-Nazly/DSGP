@@ -1,19 +1,22 @@
-#Sat Mar 16 11:13:30 IST 2024
+#Tue Mar 19 14:44:56 IST 2024
 base.0=C\:\\Users\\LENOVO\\Desktop\\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\\MyApplication\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\LENOVO\\Desktop\\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\\MyApplication\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.2=C\:\\Users\\LENOVO\\Desktop\\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\\MyApplication\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
-base.3=C\:\\Users\\LENOVO\\Desktop\\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\\MyApplication\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\5\\classes.dex
-base.4=C\:\\Users\\LENOVO\\Desktop\\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\\MyApplication\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
-base.5=C\:\\Users\\LENOVO\\Desktop\\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\\MyApplication\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
+base.2=C\:\\Users\\LENOVO\\Desktop\\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\\MyApplication\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
+base.3=C\:\\Users\\LENOVO\\Desktop\\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\\MyApplication\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
+base.4=C\:\\Users\\LENOVO\\Desktop\\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\\MyApplication\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\5\\classes.dex
+base.5=C\:\\Users\\LENOVO\\Desktop\\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\\MyApplication\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+base.6=C\:\\Users\\LENOVO\\Desktop\\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\\MyApplication\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
 path.0=classes.dex
 path.1=0/classes.dex
-path.2=2/classes.dex
-path.3=5/classes.dex
-path.4=classes2.dex
-path.5=classes3.dex
+path.2=12/classes.dex
+path.3=2/classes.dex
+path.4=5/classes.dex
+path.5=classes2.dex
+path.6=classes3.dex
 renamed.0=classes.dex
 renamed.1=classes2.dex
 renamed.2=classes3.dex
 renamed.3=classes4.dex
 renamed.4=classes5.dex
 renamed.5=classes6.dex
+renamed.6=classes7.dex

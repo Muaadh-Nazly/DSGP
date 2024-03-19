@@ -1,10 +1,14 @@
 package com.example.myapplication;
 
+import static java.lang.System.exit;
+
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -16,6 +20,7 @@ import androidx.core.content.ContextCompat;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -30,7 +35,47 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
-public class UserActivity extends AppCompatActivity  {
+
+
+import android.Manifest;
+import android.content.pm.PackageManager;
+import android.location.Address;
+import android.location.Geocoder;
+import android.location.Location;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+
+import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.gson.JsonObject;
+
+import org.w3c.dom.Text;
+
+import java.io.IOException;
+import java.util.List;
+import java.util.Locale;
+
+import retrofit2.Call;
+import retrofit2.Response;
+
+import retrofit2.Callback;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+import retrofit2.http.GET;
+import retrofit2.http.Query;
+
+
+
+public class UserActivity extends AppCompatActivity {
 
     FusedLocationProviderClient fusedLocationProviderClient;
     private final static int REQUEST_CODE = 100;
@@ -38,7 +83,7 @@ public class UserActivity extends AppCompatActivity  {
 
     String sending_application_User;
 
-    CardView cycloneCard,landslideCard,floodCard;
+    CardView cycloneCard, landslideCard, floodCard,changeLocationCardView;
     TextView greetingsOfTheDay;
     TextView currentLocation;
 
@@ -48,6 +93,15 @@ public class UserActivity extends AppCompatActivity  {
     String string_Address;
     String string_City;
     String string_Country;
+
+    TextView showMap;
+
+    TextView country, city, district, address, latitude, longitude;
+    Button getLocation;
+    private TextView windSpeedTextView, rainfallTextView;
+    //    private WeatherApi weatherApi;
+    private Retrofit retrofit;
+    private List<Address> addresses;
 
 
     @Override
@@ -60,10 +114,30 @@ public class UserActivity extends AppCompatActivity  {
         cycloneCard = findViewById(R.id.CycloneCard);
         landslideCard = findViewById(R.id.LandslideCard);
         floodCard = findViewById(R.id.FloodCard);
+        changeLocationCardView = findViewById(R.id.changeLocationCardView);
+
+        showMap = findViewById(R.id.mapButton);
+
 
         greetingsOfTheDay = findViewById(R.id.greetingsOfTheDay);
         currentLocation = findViewById(R.id.currentLocation);
 
+
+
+
+
+
+
+//        if (string_City != null) {
+//            Log.d("****************************", string_City);
+//
+//        }
+//
+//
+//        else {
+////            UserLocation2 userLocation2 = new UserLocation2();
+////            userLocation2.getLastLocation();
+//        }
 
         FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
         assert currentUser != null;
@@ -71,10 +145,77 @@ public class UserActivity extends AppCompatActivity  {
 
 
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
-
         greetingsOfTheDay.setText(getGreeting());
 
-        getLastLocation();
+
+
+        Intent intent = getIntent();
+        String selectedProvince = intent.getStringExtra("SELECTED_PROVINCE");
+        String selectedDistrict = intent.getStringExtra("SELECTED_DISTRICT");
+        String selectedCity = intent.getStringExtra("SELECTED_CITY");
+
+
+
+//
+//        UserLocation3 userLocation3 = new UserLocation3(this);
+//        // Example usage
+//        String address = UserLocation3.getAddressFromLocation(-34.603684, -58.381559);
+//
+//        Log.d("***************************************", "SELECTED_PROVINCE" + selectedProvince );
+
+
+
+//
+//        if (selectedCity == null) {
+//            getLastLocation();
+//            Log.d("***************************************", String.valueOf(currentLocation) );
+////            UserLocation2 userLocation2 = new UserLocation2();
+////            userLocation2.getLastLocation();
+//            UserLocation2();
+//
+//
+//        }
+//
+//        else {
+//            currentLocation.setText(selectedCity + "  Sri Lanka");
+//
+////
+//
+//
+//        }
+////
+//        }
+
+//        UserLocation2 userLocation2 = new UserLocation2();
+//        // Example coordinates for demonstration
+//        Double latitude = 40.712776;
+//        Double longitude = -74.005974;
+
+//        userLocation2.getLastLocation(latitude, longitude);
+
+//        Intent intent2 = getIntent();
+//        String rainfall = intent.getStringExtra("RAINFALL");
+//
+//        Log.d("**********************************",rainfall);
+//
+//
+//
+//        if (rainfall == null){
+//            Log.d("************************","null");
+//
+//        }
+//
+//        else{
+//            Log.d("************************","not null");
+//
+//        }
+//
+
+
+
+
+
+
 
         cycloneCard.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,11 +225,10 @@ public class UserActivity extends AppCompatActivity  {
         });
 
 
-
-        cycloneCard.setOnClickListener(new View.OnClickListener() {
+        changeLocationCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                CycloneActivity();
+                SelectedLocation();
             }
         });
 
@@ -97,7 +237,7 @@ public class UserActivity extends AppCompatActivity  {
             @Override
             public void onClick(View v) {
                 // Navigate to the RegisterActivity activity when Get Started is clicked
-               FloodActivity();
+                FloodActivity();
 
             }
         });
@@ -106,17 +246,23 @@ public class UserActivity extends AppCompatActivity  {
             @Override
             public void onClick(View v) {
                 // Navigate to the RegisterActivity activity when Get Started is clicked
-               LandslideActivity();
+                LandslideActivity();
+
+            }
+        });
+
+
+        showMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navigate to the RegisterActivity activity when Get Started is clicked
+                MapActivity();
 
             }
         });
 
 
     }
-
-
-
-
 
 
     private void getLastLocation() {
@@ -128,12 +274,17 @@ public class UserActivity extends AppCompatActivity  {
             fusedLocationProviderClient.getLastLocation().addOnSuccessListener(new OnSuccessListener<Location>() {
                 @Override
                 public void onSuccess(Location location) {
+
+                    Log.d("********************************", String.valueOf(location));
+
                     if (location != null) {
+
+                        Log.d("***********************************","success");
+
                         try {
                             Geocoder geocoder = new Geocoder(UserActivity.this, Locale.getDefault());
                             List<Address> addresses = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
                             if (addresses != null && !addresses.isEmpty()) {
-
 
 
                                 string_Address = addresses.get(0).getAddressLine(0);
@@ -152,6 +303,7 @@ public class UserActivity extends AppCompatActivity  {
                                 database2.child("Latitude").setValue(string_Latitude);
 
                                 currentLocation.setText(string_City + ", " + string_Country);
+                                Log.d("*****************************","WHY + " + string_City);
 
 
                             }
@@ -165,7 +317,7 @@ public class UserActivity extends AppCompatActivity  {
     }
 
 
-        private String getGreeting() {
+    private String getGreeting() {
 
         // Get the current time
         Calendar currentTime = Calendar.getInstance();
@@ -184,15 +336,14 @@ public class UserActivity extends AppCompatActivity  {
     }
 
 
-
-    public void CycloneActivity(){
+    public void CycloneActivity() {
 
         Intent intent = new Intent(this, CycloneActivity.class);
         startActivity(intent);
 
     }
 
-    public void LandslideActivity(){
+    public void LandslideActivity() {
 
         Intent intent = new Intent(this, LandslideActivity.class);
         startActivity(intent);
@@ -200,7 +351,7 @@ public class UserActivity extends AppCompatActivity  {
     }
 
 
-    public void FloodActivity(){
+    public void FloodActivity() {
 
         Intent intent = new Intent(this, FloodActivity.class);
         startActivity(intent);
@@ -208,167 +359,35 @@ public class UserActivity extends AppCompatActivity  {
     }
 
 
-    public void mapActivity(){
-        Intent intent = new Intent(this, FloodActivity.class);
+    public void MapActivity() {
+        Intent intent = new Intent(this, MapActivity.class);
         startActivity(intent);
     }
+
+
+    public void SelectedLocation() {
+        Intent intent = new Intent(this, SelectedLocation.class);
+        startActivity(intent);
+    }
+
+
+
+    public void UserLocation2(){
+        Intent intent = new Intent(this, UserLocation2.class);
+        startActivity(intent);
+
+    }
+
+    public void UserLocation(){
+        Intent intent = new Intent(this, UserLocation.class);
+        startActivity(intent);
+
+    }
+
+
+
+
+
 
 
 }
-
-
-/*
-
-//        Log.d("LOCATION",userLocationService.getStringCity());
-//        currentLocation.setText(userLocationService.getStringCity());
-//        Log.d("LOCATION",currentLocation.toString());
-
-
-////        intent.putExtra("string_City", cityValue); // cityValue is the actual city name
-//        Object location = getIntent().getStringExtra("string_City");
-//        if (location != null) {
-//            currentLocation.setText((CharSequence) location);
-//        } else {
-//            currentLocation.setText("Location not available"); // Fallback text
-//        }
-//
-//
-//
-//
-//        Intent intent = getIntent();
-//
-//
-//        if (intent != null) {
-//            String city = intent.getStringExtra("string_City");
-//
-//            // Set the retrieved values to TextViews
-//            currentLocation.setText(city);
-//        }
- */
-
-
-
-
-//        Log.d("The variable's type is: ", "Now here");
-//
-//        Intent serviceIntent = new Intent(this, UserLocationService.class);
-//        ContextCompat.startForegroundService(this, serviceIntent);
-
-
-//
-//        // Write a message to the database
-//        FirebaseDatabase database = FirebaseDatabase.getInstance("https://natural-disaster-predict-1-serctivity-a5951.asia-southeast1.firebasedatabase.app");
-//        DatabaseReference myRef = database.getReference();
-//        myRef.setValue("Hello,Man!");
-
-
-//
-//
-//        // These are Displaying Top of The each User Home Page
-//        currentDateTime = findViewById(R.id.currentDateTime);
-//        currentDateTime.setText(getGreeting());
-//
-//
-
-
-//        String userIdUpdate = userId.replace(".", ",");
-// Unique user ID
-//        UserLocationService userLocationService = new UserLocationService();
-//        userLocationService.getStringCity();
-
-
-//        Intent intent = new Intent(this, UserLocationService.class);
-//        startActivityForResult(intent, "string_City"); // SOME_REQUEST_CODE is an integer constant
-
-//    FirebaseAuth google_Account_Firebase_Authenticator_User_Instance;
-//    FirebaseUser application_User;
-
-// Adding a nested child reference and setting its value
-//                                database2.child("child1").child("nestedChild").setValue("nestedValue");
-
-
-//    FirebaseDatabase database = FirebaseDatabase.getInstance("https://natural-disaster-predict-1-serctivity-a5951.asia-southeast1.firebasedatabase.app");
-//    DatabaseReference myReference = database.getReference(userId);
-//                                myReference.setValue(string_City);
-
-//                                Log.d("*************************************","Am I here");
-//
-//                                database2.child("Address").setValue(string_Address);
-//                                database2.child("City").setValue(string_City);
-//                                database2.child("Country").setValue(string_Country);
-//                                database2.child("Longitude").setValue(string_Longitude);
-//                                database2.child("Latitude").setValue(string_Latitude);
-//
-
-
-
-
-//                                Log.d("****************Now what is it*",userId);
-// Assuming databaseRef is your existing reference
-
-/**
- *
- */
-
-//        cycloneCard.setOnClickListener(new View.OnClickListener() {
-//        @Override
-//        public void onClick(View v) {
-//            // Navigate to the RegisterActivity activity when Get Started is clicked
-//            CycloneActivity();
-//        }
-//    });
-//
-//
-//        floodCard.setOnClickListener(new View.OnClickListener() {
-//        @Override
-//        public void onClick(View v) {
-//            // Navigate to the RegisterActivity activity when Get Started is clicked
-//            FloodActivity();
-//        }
-//    });
-//
-//        landslideCard.setOnClickListener(new View.OnClickListener() {
-//        @Override
-//        public void onClick(View v) {
-//            // Navigate to the RegisterActivity activity when Get Started is clicked
-//            LandslideActivity();
-//        }
-//    });
-//
-//
-//}
-//
-//
-//    public void CycloneActivity(){
-//        Intent intent = new Intent(this, CycloneActivity.class);
-//        startActivity(intent);
-//    }
-//
-//    public void FloodActivity(){
-//        Intent intent = new Intent(this, FloodActivity.class);
-//        startActivity(intent);
-//    }
-//
-//    public void LandslideActivity(){
-//        Intent intent = new Intent(this, LandslideActivity.class);
-//        startActivity(intent);
-//    }
-//
-//
-//    private String getGreeting () {
-//
-//        // Get the current time
-//        Calendar currentTime = Calendar.getInstance();
-//        SimpleDateFormat hourFormat = new SimpleDateFormat("HH", Locale.getDefault());
-//        int hour = Integer.parseInt(hourFormat.format(currentTime.getTime()));
-//
-//
-//        if (hour >= 0 && hour < 12) {
-//            return "Good Morning User ";
-//        } else if (hour >= 12 && hour < 17) {
-//            return "Good Afternoon User ";
-//        } else {
-//            return "Good Evening User ";
-//        }
-//
-//    }

@@ -20,6 +20,14 @@
         "source": "com.example.myapplication.app-main-45:/layout/activity_settings.xml"
     },
     {
+        "merged": "com.example.myapplication.app-mergeDebugResources-42:/layout/activity_map.xml",
+        "source": "com.example.myapplication.app-main-45:/layout/activity_map.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeDebugResources-42:/layout/fragment_maps.xml",
+        "source": "com.example.myapplication.app-main-45:/layout/fragment_maps.xml"
+    },
+    {
         "merged": "com.example.myapplication.app-mergeDebugResources-42:/layout/activity_login.xml",
         "source": "com.example.myapplication.app-main-45:/layout/activity_login.xml"
     },
@@ -40,16 +48,16 @@
         "source": "com.example.myapplication.app-main-45:/layout/model.xml"
     },
     {
-        "merged": "com.example.myapplication.app-mergeDebugResources-42:/layout/map.xml",
-        "source": "com.example.myapplication.app-main-45:/layout/map.xml"
-    },
-    {
         "merged": "com.example.myapplication.app-mergeDebugResources-42:/layout/activity_cyclone.xml",
         "source": "com.example.myapplication.app-main-45:/layout/activity_cyclone.xml"
     },
     {
         "merged": "com.example.myapplication.app-mergeDebugResources-42:/layout/activity_get_started.xml",
         "source": "com.example.myapplication.app-main-45:/layout/activity_get_started.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeDebugResources-42:/layout/landslide.xml",
+        "source": "com.example.myapplication.app-main-45:/layout/landslide.xml"
     },
     {
         "merged": "com.example.myapplication.app-mergeDebugResources-42:/layout/activity_user.xml",
@@ -62,6 +70,10 @@
     {
         "merged": "com.example.myapplication.app-mergeDebugResources-42:/layout/activity_flood.xml",
         "source": "com.example.myapplication.app-main-45:/layout/activity_flood.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeDebugResources-42:/layout/user_location.xml",
+        "source": "com.example.myapplication.app-main-45:/layout/user_location.xml"
     },
     {
         "merged": "com.example.myapplication.app-mergeDebugResources-42:/layout/activity_register.xml",

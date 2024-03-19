@@ -3046,6 +3046,7 @@ drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable button_background
+drawable change_location
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -3321,6 +3322,7 @@ id autoCompleteTextView2
 id autoCompleteTextView3
 id autoCompleteToEnd
 id autoCompleteToStart
+id back
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3354,6 +3356,7 @@ id center_vertical
 id chain
 id chain2
 id chains
+id changeLocationCardView
 id checkbox
 id checked
 id chronometer
@@ -3389,8 +3392,13 @@ id cut
 id cycloneLabel
 id cycloneRiskLevel
 id cycloneRiskLevelPercentage
+id dailyForecastTitle
 id dark
 id date_picker_actions
+id day1Forecast
+id day2Forecast
+id day3Forecast
+id day4Forecast
 id decelerate
 id decelerateAndComplete
 id decor_content_parent
@@ -3410,6 +3418,7 @@ id disableIntraAutoTransition
 id disablePostScroll
 id disableScroll
 id disjoint
+id district
 id dragAnticlockwise
 id dragClockwise
 id dragDown
@@ -3481,6 +3490,7 @@ id ignore
 id ignoreRequest
 id image
 id imageView
+id imageView3
 id immediateStop
 id included
 id indeterminate
@@ -3507,8 +3517,12 @@ id linear
 id listMode
 id list_item
 id location
+id location1
+id location2
+id longitude
 id m3_side_sheet
 id map
+id mapButton
 id markerTitleTextView
 id marquee
 id masked
@@ -3578,6 +3592,8 @@ id navigation_bar_item_labels_group
 id navigation_bar_item_large_label_view
 id navigation_bar_item_small_label_view
 id navigation_header_container
+id nearbyCity1TextView
+id nearbyCity2TextView
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
@@ -3625,11 +3641,13 @@ id percent
 id pin
 id position
 id postLayout
+id predict
 id pressed
 id progressBar
 id progress_circular
 id progress_horizontal
 id radio
+id rainfall
 id ratio
 id rectangles
 id registerPassword
@@ -3638,6 +3656,10 @@ id registerUsername
 id relativeLayout
 id report_drawn
 id reverseSawtooth
+id rfrDay1
+id rfrDay2
+id rfrDay3
+id rfrToday
 id right
 id rightToLeft
 id right_icon
@@ -3739,10 +3761,10 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
-id textView2
 id textView3
 id textView4
 id textView5
+id textView6
 id text_description
 id text_input_end_icon
 id text_input_error_icon
@@ -3789,6 +3811,7 @@ id visible
 id visible_removing_fragment_view_tag
 id west
 id wide
+id windSpeed
 id withText
 id with_icon
 id withinBounds
@@ -3797,6 +3820,10 @@ id wrap_content
 id wrap_content_constrained
 id x_left
 id x_right
+id xgbDay1
+id xgbDay2
+id xgbDay3
+id xgbToday
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer app_bar_elevation_anim_duration
@@ -3920,6 +3947,7 @@ layout activity_get_started
 layout activity_landslide
 layout activity_loading
 layout activity_login
+layout activity_map
 layout activity_register
 layout activity_settings
 layout activity_user
@@ -3946,12 +3974,13 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_maps
+layout landslide
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
 layout m3_auto_complete_simple_item
 layout m3_side_sheet_dialog
-layout map
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider
@@ -4009,6 +4038,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+layout user_location
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
@@ -5422,7 +5452,7 @@ styleable LinearLayoutCompat_Layout android_layout_gravity android_layout_width 
 styleable LinearProgressIndicator indeterminateAnimationType indicatorDirectionLinear
 styleable ListPopupWindow android_dropDownHorizontalOffset android_dropDownVerticalOffset
 styleable LoadingImageView circleCrop imageAspectRatio imageAspectRatioAdjust
-styleable MapAttrs backgroundColor ambientEnabled cameraBearing cameraMaxZoomPreference cameraMinZoomPreference cameraTargetLat cameraTargetLng cameraTilt cameraZoom latLngBoundsNorthEastLatitude latLngBoundsNorthEastLongitude latLngBoundsSouthWestLatitude latLngBoundsSouthWestLongitude liteMode mapId mapType uiCompass uiMapToolbar uiRotateGestures uiScrollGestures uiScrollGesturesDuringRotateOrZoom uiTiltGestures uiZoomControls uiZoomGestures useViewLifecycle zOrderOnTop
+styleable MapAttrs ambientEnabled backgroundColor cameraBearing cameraMaxZoomPreference cameraMinZoomPreference cameraTargetLat cameraTargetLng cameraTilt cameraZoom latLngBoundsNorthEastLatitude latLngBoundsNorthEastLongitude latLngBoundsSouthWestLatitude latLngBoundsSouthWestLongitude liteMode mapId mapType uiCompass uiMapToolbar uiRotateGestures uiScrollGestures uiScrollGesturesDuringRotateOrZoom uiTiltGestures uiZoomControls uiZoomGestures useViewLifecycle zOrderOnTop
 styleable MaterialAlertDialog backgroundInsetBottom backgroundInsetEnd backgroundInsetStart backgroundInsetTop backgroundTint
 styleable MaterialAlertDialogTheme materialAlertDialogBodyTextStyle materialAlertDialogButtonSpacerVisibility materialAlertDialogTheme materialAlertDialogTitleIconStyle materialAlertDialogTitlePanelStyle materialAlertDialogTitleTextStyle
 styleable MaterialAutoCompleteTextView android_inputType android_popupElevation dropDownBackgroundTint simpleItemLayout simpleItemSelectedColor simpleItemSelectedRippleColor simpleItems

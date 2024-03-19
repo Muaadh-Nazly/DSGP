@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     RegisterActivity();
+//                    UserActivity();
                 }
 
             });
@@ -45,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         else {
 
 //        FirebaseAuth.getInstance().signOut();
-        RegisterActivity();
+            RegisterActivity();
 //            UserActivity();
 
 

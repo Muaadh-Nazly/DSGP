@@ -99,7 +99,7 @@
           <theme>@style/AppTheme</theme>
         </config>
       </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/map.xml">
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/landslide.xml">
         <config>
           <theme>@style/AppTheme</theme>
         </config>
@@ -107,6 +107,11 @@
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/model.xml">
         <config>
           <theme>@style/Theme.MyApplication</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/user_location.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
         </config>
       </layout>
     </layouts>
@@ -198,7 +203,7 @@
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/DSGP Git/Alisia/DSGP/MyApplication&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Live_Location_Two/Live_Location_Two&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -222,6 +227,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\LENOVO\Desktop\Git\compareDSPG\DSGP\MyApplication\app\src\main\res\layout" />
       <recent name="C:\Users\LENOVO\Desktop\Git\compareDSPG\DSGP\MyApplication\app" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main" />
     </key>
     <key name="android.template.1793264132">
       <recent name="com.example.myapplication" />
