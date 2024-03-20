@@ -1,7 +1,5 @@
 package com.example.myapplication;
 
-import static java.lang.System.exit;
-
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -13,11 +11,9 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
-
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -27,54 +23,19 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import android.Manifest;
-
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
-
-
-
-import android.Manifest;
-import android.content.pm.PackageManager;
-import android.location.Address;
-import android.location.Geocoder;
-import android.location.Location;
-import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
-
-import com.google.android.gms.location.FusedLocationProviderClient;
-import com.google.android.gms.location.LocationServices;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.gson.JsonObject;
-
-import org.w3c.dom.Text;
-
-import java.io.IOException;
-import java.util.List;
-import java.util.Locale;
-
-import retrofit2.Call;
-import retrofit2.Response;
-
-import retrofit2.Callback;
 import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
-import retrofit2.http.GET;
-import retrofit2.http.Query;
 
 
-
+/**
+ * Act as the User Home Page in the Application
+ */
 public class UserActivity extends AppCompatActivity {
 
     FusedLocationProviderClient fusedLocationProviderClient;
@@ -111,42 +72,25 @@ public class UserActivity extends AppCompatActivity {
         setContentView(R.layout.activity_user);
 
 
+
         cycloneCard = findViewById(R.id.CycloneCard);
         landslideCard = findViewById(R.id.LandslideCard);
         floodCard = findViewById(R.id.FloodCard);
         changeLocationCardView = findViewById(R.id.changeLocationCardView);
-
         showMap = findViewById(R.id.mapButton);
-
-
         greetingsOfTheDay = findViewById(R.id.greetingsOfTheDay);
         currentLocation = findViewById(R.id.currentLocation);
 
 
-
-
-
-
-
-//        if (string_City != null) {
-//            Log.d("****************************", string_City);
-//
-//        }
-//
-//
-//        else {
-////            UserLocation2 userLocation2 = new UserLocation2();
-////            userLocation2.getLastLocation();
-//        }
 
         FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
         assert currentUser != null;
         userId = currentUser.getUid();
 
 
+
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
         greetingsOfTheDay.setText(getGreeting());
-
 
 
         Intent intent = getIntent();
@@ -155,67 +99,17 @@ public class UserActivity extends AppCompatActivity {
         String selectedCity = intent.getStringExtra("SELECTED_CITY");
 
 
-
-//
-//        UserLocation3 userLocation3 = new UserLocation3(this);
-//        // Example usage
-//        String address = UserLocation3.getAddressFromLocation(-34.603684, -58.381559);
-//
-//        Log.d("***************************************", "SELECTED_PROVINCE" + selectedProvince );
-
-
-
-//
-//        if (selectedCity == null) {
-//            getLastLocation();
-//            Log.d("***************************************", String.valueOf(currentLocation) );
-////            UserLocation2 userLocation2 = new UserLocation2();
-////            userLocation2.getLastLocation();
-//            UserLocation2();
-//
-//
+        // Setting the user location or select user If user selected a location : Then it will display
+//        if (selectedCity != null){
+//            currentLocation.setText(selectedCity + " " + selectedDistrict );
 //        }
 //
 //        else {
-//            currentLocation.setText(selectedCity + "  Sri Lanka");
-//
-////
-//
-//
-//        }
-////
-//        }
-
-//        UserLocation2 userLocation2 = new UserLocation2();
-//        // Example coordinates for demonstration
-//        Double latitude = 40.712776;
-//        Double longitude = -74.005974;
-
-//        userLocation2.getLastLocation(latitude, longitude);
-
-//        Intent intent2 = getIntent();
-//        String rainfall = intent.getStringExtra("RAINFALL");
-//
-//        Log.d("**********************************",rainfall);
-//
-//
-//
-//        if (rainfall == null){
-//            Log.d("************************","null");
-//
-//        }
-//
-//        else{
-//            Log.d("************************","not null");
-//
+//            getLastLocation();
 //        }
 //
 
-
-
-
-
-
+        UserLocation();
 
         cycloneCard.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -265,6 +159,11 @@ public class UserActivity extends AppCompatActivity {
     }
 
 
+
+
+
+
+
     private void getLastLocation() {
 
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
@@ -306,6 +205,8 @@ public class UserActivity extends AppCompatActivity {
                                 Log.d("*****************************","WHY + " + string_City);
 
 
+
+
                             }
                         } catch (IOException e) {
                             e.printStackTrace();
@@ -340,14 +241,12 @@ public class UserActivity extends AppCompatActivity {
 
         Intent intent = new Intent(this, CycloneActivity.class);
         startActivity(intent);
-
     }
 
     public void LandslideActivity() {
 
         Intent intent = new Intent(this, LandslideActivity.class);
         startActivity(intent);
-
     }
 
 
@@ -355,7 +254,6 @@ public class UserActivity extends AppCompatActivity {
 
         Intent intent = new Intent(this, FloodActivity.class);
         startActivity(intent);
-
     }
 
 
@@ -371,23 +269,10 @@ public class UserActivity extends AppCompatActivity {
     }
 
 
-
-    public void UserLocation2(){
-        Intent intent = new Intent(this, UserLocation2.class);
-        startActivity(intent);
-
-    }
-
     public void UserLocation(){
         Intent intent = new Intent(this, UserLocation.class);
         startActivity(intent);
-
     }
-
-
-
-
-
 
 
 }
