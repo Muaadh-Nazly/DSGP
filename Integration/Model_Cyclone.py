@@ -22,7 +22,7 @@ with open ('Location_Mapped.txt','r') as district_file:
         
 
 # Function to predict the percentage
-def predict_cyclone(location,location1,location2,district,month,day,rainfall):
+def predict_cyclone(location,location1,location2,district,month,day,wind_speed):
     found= False
     locations = [location,location1,location2]
     for loc in locations:
@@ -46,7 +46,7 @@ def predict_cyclone(location,location1,location2,district,month,day,rainfall):
         'District' : district_code,
         'Month' : int(month),
         'Day' : int(day),
-        'Wind Speed(mph)': float(rainfall)
+        'Wind Speed(mph)': float(windspeed)
     },index=[0])
     
     rfr_prediction = rfr_model.predict(user_data)*100
