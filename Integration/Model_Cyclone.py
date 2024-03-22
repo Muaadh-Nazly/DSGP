@@ -46,7 +46,7 @@ def predict_cyclone(location,location1,location2,district,month,day,wind_speed):
         'District' : district_code,
         'Month' : int(month),
         'Day' : int(day),
-        'Wind Speed(mph)': float(windspeed)
+        'Wind Speed(mph)': float(wind_speed)
     },index=[0])
     
     rfr_prediction = rfr_model.predict(user_data)*100
