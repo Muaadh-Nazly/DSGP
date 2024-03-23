@@ -30,7 +30,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="72dp"
         android:background="@drawable/button_background"
-        android:backgroundTint="@color/purple"
+        android:backgroundTint="@color/button"
         android:clickable="true"
         android:text="Sign Up"
         android:textAlignment="center"

@@ -20,11 +20,18 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
 import android.Manifest;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
@@ -57,12 +64,14 @@ public class UserActivity extends AppCompatActivity {
 
     TextView showMap;
 
-    TextView country, city, district, address, latitude, longitude;
+    TextView country, city, district, address, latitude, longitude, currentDateTime;
     Button getLocation;
     private TextView windSpeedTextView, rainfallTextView;
-    //    private WeatherApi weatherApi;
     private Retrofit retrofit;
     private List<Address> addresses;
+
+
+    static boolean isFirstTimeLoad;
 
 
     @Override
@@ -80,17 +89,17 @@ public class UserActivity extends AppCompatActivity {
         showMap = findViewById(R.id.mapButton);
         greetingsOfTheDay = findViewById(R.id.greetingsOfTheDay);
         currentLocation = findViewById(R.id.currentLocation);
-
-
-
-        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
-        assert currentUser != null;
-        userId = currentUser.getUid();
-
-
+        currentDateTime = findViewById(R.id.currentDateTime);
 
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
         greetingsOfTheDay.setText(getGreeting());
+
+        // Displaying time on Dash Board
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            LocalDate currentDate = LocalDate.now();
+            currentDateTime.setText(String.valueOf(currentDate));
+
+        }
 
 
         Intent intent = getIntent();
@@ -99,17 +108,30 @@ public class UserActivity extends AppCompatActivity {
         String selectedCity = intent.getStringExtra("SELECTED_CITY");
 
 
-        // Setting the user location or select user If user selected a location : Then it will display
-//        if (selectedCity != null){
-//            currentLocation.setText(selectedCity + " " + selectedDistrict );
-//        }
-//
-//        else {
-//            getLastLocation();
-//        }
-//
 
-        UserLocation();
+
+        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+        assert currentUser != null;
+        userId = currentUser.getUid();
+
+
+        if (isFirstTimeLoad == false){
+            Log.d("******************************","CAME 1");
+            getLastLocation();
+            UserLocation();
+            isFirstTimeLoad = true;
+        }
+
+        else {
+            Log.d("******************************","CAME 2");
+            if (selectedCity != null){
+                currentLocation.setText(selectedCity + " " + selectedDistrict );
+            }
+            else {
+                getLastLocation();
+            }
+        }
+
 
         cycloneCard.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -154,14 +176,7 @@ public class UserActivity extends AppCompatActivity {
 
             }
         });
-
-
     }
-
-
-
-
-
 
 
     private void getLastLocation() {
@@ -202,7 +217,7 @@ public class UserActivity extends AppCompatActivity {
                                 database2.child("Latitude").setValue(string_Latitude);
 
                                 currentLocation.setText(string_City + ", " + string_Country);
-                                Log.d("*****************************","WHY + " + string_City);
+                                Log.d("*****************************","" + string_City);
 
 
 
@@ -235,6 +250,9 @@ public class UserActivity extends AppCompatActivity {
         }
 
     }
+
+
+
 
 
     public void CycloneActivity() {

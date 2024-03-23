@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Geocoder;
@@ -87,6 +88,7 @@ public class UserLocation extends AppCompatActivity {
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
 
         getLocationDetails();
+        UserActivity();
 
     }
 
@@ -564,5 +566,15 @@ public class UserLocation extends AppCompatActivity {
         // Handle the case where the district data is not found
         return averageDailyRainfalls;
     }
+
+
+
+    public void  UserActivity(){
+        Intent intent = new Intent(this, UserActivity.class);
+        startActivity(intent);
+    }
+
+
+
 
 }
