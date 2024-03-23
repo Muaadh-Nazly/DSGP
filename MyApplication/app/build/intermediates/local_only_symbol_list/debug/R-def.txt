@@ -4,7 +4,11 @@ array com_google_android_gms_fonts_certs
 array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
 array preloaded_fonts
+color azure
+color background
 color black
+color button
+color cerulean_Blue
 color colorAccent
 color colorPrimary
 color colorPrimaryDark
@@ -198,6 +202,9 @@ layout activity_user
 layout activity_user_location
 layout activity_user_location_permission
 layout activity_user_selected_location
+layout acyclone
+layout aflood
+layout alandslide
 layout app_navigation
 layout custom_info_window
 layout fragment_maps
@@ -236,7 +243,6 @@ string settings
 string sign_in
 string title_activity_login
 string welcome
-string welcome_to_natural_disaster_prediction_environment_be_ready
 style AppTheme
 style Base.Theme.MyApplication
 style Theme.ModernDashboard

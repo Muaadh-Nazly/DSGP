@@ -264,15 +264,31 @@ public class UserLocation extends AppCompatActivity {
                     String nearbyCity2 = nearbyAddresses2.get(0).getLocality();
                     Log.d("************************************","came here 4");
 
-                    if ( nearbyCity2 == null) {
+                    if ( nearbyCity2 != null) {
                         Log.d("*********************************","nearbyCity2 null");
 
 //                    if (!nearbyCity2.equals(nearbyCity1)) {
 //                        Log.d("*****************************************NearbyLocation", "Nearby City 2: " + nearbyCity2);
                         Log.d("********************************************NOT NULL CHECK", nearbyCity1 +  nearbyCity2);
+
+
+                        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+                        assert currentUser != null;
+                        userId = currentUser.getUid();
+
+
+                        DatabaseReference database2 = FirebaseDatabase.getInstance("https://natural-disaster-predict-1838a-4532a.firebaseio.com").getReference().child(userId);
+                        database2.child("Near By City 1").setValue(nearbyCity1);
+                        database2.child("Near By City 2").setValue(nearbyCity2);
+
                         return new NearbyCities(nearbyCity1, nearbyCity2);
+
+
+
                     } else {
                         Log.e("NearbyLocation", "City 2 is the same as City 1");
+                        Log.d("********************************************NOT NULL CHECK", nearbyCity1 +  nearbyCity2);
+
                         // Handle the case where City 2 is the same as City 1
                         // You may consider adjusting the offset values to ensure diversity in cities
                     }
@@ -446,17 +462,8 @@ public class UserLocation extends AppCompatActivity {
             }
 
 
+
             Log.d("**********************", rainfall_Data.toString() + "Final");
-
-
-            FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
-            assert currentUser != null;
-            userId = currentUser.getUid();
-
-
-            DatabaseReference database2 = FirebaseDatabase.getInstance("https://natural-disaster-predict-1838a-4532a.firebaseio.com").getReference().child(userId);
-            database2.child("Rainfall data").setValue(rainfall_Data);
-            database2.child("WindSpeed data").setValue(wind_Speed_Data);
 
 
             // Get UI values for nearby cities
@@ -472,6 +479,20 @@ public class UserLocation extends AppCompatActivity {
             if (nearbyCity2.startsWith("Nearby City 2: ")) {
                 nearbyCity2 = nearbyCity2.substring("Nearby City 1: ".length());
             }
+
+
+            FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+            assert currentUser != null;
+            userId = currentUser.getUid();
+
+
+            DatabaseReference database2 = FirebaseDatabase.getInstance("https://natural-disaster-predict-1838a-4532a.firebaseio.com").getReference().child(userId);
+            database2.child("Rainfall data").setValue(rainfall_Data);
+            database2.child("WindSpeed data").setValue(wind_Speed_Data);
+            database2.child("Near By City 1").setValue(nearbyCity1);
+            database2.child("Near By City 2").setValue(nearbyCity2);
+
+
 
             // Log UI values for nearby cities
             Log.d("ParsedData", nearbyCity1);

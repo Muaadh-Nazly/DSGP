@@ -1385,6 +1385,8 @@ color accent_material_dark
 color accent_material_light
 color androidx_core_ripple_material_light
 color androidx_core_secondary_text_default_material_light
+color azure
+color background
 color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
@@ -1400,12 +1402,14 @@ color browser_actions_bg_grey
 color browser_actions_divider_color
 color browser_actions_text_color
 color browser_actions_title_color
+color button
 color button_material_dark
 color button_material_light
 color cardview_dark_background
 color cardview_light_background
 color cardview_shadow_end_color
 color cardview_shadow_start_color
+color cerulean_Blue
 color colorAccent
 color colorPrimary
 color colorPrimaryDark
@@ -3954,6 +3958,9 @@ layout activity_user
 layout activity_user_location
 layout activity_user_location_permission
 layout activity_user_selected_location
+layout acyclone
+layout aflood
+layout alandslide
 layout app_navigation
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
@@ -4254,7 +4261,6 @@ string sign_in
 string status_bar_notification_info_overflow
 string title_activity_login
 string welcome
-string welcome_to_natural_disaster_prediction_environment_be_ready
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

@@ -20,7 +20,6 @@
     <string name="greetings">Good Morning</string>
     <string name="Location">Mahargama, Colombo</string>
     <string name="date">2024/02/02</string>
-    <string name="welcome_to_natural_disaster_prediction_environment_be_ready">Welcome to Natural Disaster Prediction Environment Be Ready....</string>
     <string name="sign_in">Sign In</string>
     <string name="PermissionParagaraph">In order to use our application resource\n we kindly request to allow access to
         get your location \n We do not sell your location details to third parties\n Only for application best experience

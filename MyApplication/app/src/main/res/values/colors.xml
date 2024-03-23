@@ -10,4 +10,16 @@
     <color name="grey">#222222</color>
     <color name="white">#FFFFFF</color>
     <color name="lavender">#8692f7</color>
+
+
+
+    <color name="cerulean_Blue">#35318e</color>
+    <color name="azure">#007FFF</color>
+
+    <color name="background">#35318e</color>
+    <color name="button">#007FFF</color>
+
+
+
+
 </resources>

@@ -1384,6 +1384,8 @@ int color accent_material_dark 0x7f060019
 int color accent_material_light 0x7f06001a
 int color androidx_core_ripple_material_light 0x7f06001b
 int color androidx_core_secondary_text_default_material_light 0x7f06001c
+int color azure 0x7f06031c
+int color background 0x7f06031d
 int color background_floating_material_dark 0x7f06001d
 int color background_floating_material_light 0x7f06001e
 int color background_material_dark 0x7f06001f
@@ -1399,12 +1401,14 @@ int color browser_actions_bg_grey 0x7f060028
 int color browser_actions_divider_color 0x7f060029
 int color browser_actions_text_color 0x7f06002a
 int color browser_actions_title_color 0x7f06002b
+int color button 0x7f06031e
 int color button_material_dark 0x7f06002c
 int color button_material_light 0x7f06002d
 int color cardview_dark_background 0x7f06002e
 int color cardview_light_background 0x7f06002f
 int color cardview_shadow_end_color 0x7f060030
 int color cardview_shadow_start_color 0x7f060031
+int color cerulean_Blue 0x7f06031f
 int color colorAccent 0x7f060032
 int color colorPrimary 0x7f060033
 int color colorPrimaryDark 0x7f060034
@@ -3953,6 +3957,9 @@ int layout activity_user 0x7f0d0027
 int layout activity_user_location 0x7f0d0028
 int layout activity_user_location_permission 0x7f0d0029
 int layout activity_user_selected_location 0x7f0d002a
+int layout acyclone 0x7f0d0080
+int layout aflood 0x7f0d0081
+int layout alandslide 0x7f0d0082
 int layout app_navigation 0x7f0d002b
 int layout browser_actions_context_menu_page 0x7f0d002c
 int layout browser_actions_context_menu_row 0x7f0d002d
@@ -4253,7 +4260,6 @@ int string sign_in 0x7f1200cf
 int string status_bar_notification_info_overflow 0x7f1200d0
 int string title_activity_login 0x7f1200d1
 int string welcome 0x7f1200d2
-int string welcome_to_natural_disaster_prediction_environment_be_ready 0x7f1200d3
 int style AlertDialog_AppCompat 0x7f130000
 int style AlertDialog_AppCompat_Light 0x7f130001
 int style Animation_AppCompat_Dialog 0x7f130002
