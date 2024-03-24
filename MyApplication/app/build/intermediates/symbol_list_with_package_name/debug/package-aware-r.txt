@@ -3188,10 +3188,6 @@ id CTRL
 id CycloneCard
 id CycloneCard1
 id CycloneCard2
-id CycloneCard3
-id CycloneNeuralNetworkAccuracyPercentage
-id CycloneNeuralNetworkPredictedOutput
-id CycloneNeuralNetworkText
 id CycloneRandomForestAccuracyPercentage
 id CycloneRandomForestPredictedValue
 id CycloneRandomForestText
@@ -3202,10 +3198,6 @@ id FUNCTION
 id FloodCard
 id FloodCard1
 id FloodCard2
-id FloodCard3
-id FloodNeuralNetworkAccuracyPercentage
-id FloodNeuralNetworkPredictedOutput
-id FloodNeuralNetworkText
 id FloodRandomForestAccuracyPercentage
 id FloodRandomForestPredictedValue
 id FloodRandomForestText
@@ -3215,10 +3207,6 @@ id FloodXGBoostText
 id LandslideCard
 id LandslideCard1
 id LandslideCard2
-id LandslideCard3
-id LandslideNeuralNetworkAccuracyPercentage
-id LandslideNeuralNetworkPredictedOutput
-id LandslideNeuralNetworkText
 id LandslideRandomForestAccuracyPercentage
 id LandslideRandomForestPredictedValue
 id LandslideRandomForestText

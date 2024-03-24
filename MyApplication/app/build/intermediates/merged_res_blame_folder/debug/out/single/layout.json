@@ -1,15 +1,19 @@
 [
     {
+        "merged": "com.example.myapplication.app-mergeDebugResources-42:/layout/activity_user_selected_location.xml",
+        "source": "com.example.myapplication.app-main-45:/layout/activity_user_selected_location.xml"
+    },
+    {
         "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-mergeDebugResources-42:\\layout\\model.xml",
         "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-45:\\layout\\model.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-mergeDebugResources-42:\\layout\\custom_info_window.xml",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-45:\\layout\\custom_info_window.xml"
-    },
-    {
         "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-mergeDebugResources-42:\\layout\\activity_about_us.xml",
         "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-45:\\layout\\activity_about_us.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-mergeDebugResources-42:\\layout\\custom_info_window.xml",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-45:\\layout\\custom_info_window.xml"
     },
     {
         "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-mergeDebugResources-42:\\layout\\activity_register.xml",
@@ -28,8 +32,16 @@
         "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-45:\\layout\\activity_settings.xml"
     },
     {
+        "merged": "com.example.myapplication.app-mergeDebugResources-42:/layout/activity_cyclone.xml",
+        "source": "com.example.myapplication.app-main-45:/layout/activity_cyclone.xml"
+    },
+    {
         "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-mergeDebugResources-42:\\layout\\activity_cyclone.xml",
         "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-45:\\layout\\activity_cyclone.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeDebugResources-42:/layout/activity_flood.xml",
+        "source": "com.example.myapplication.app-main-45:/layout/activity_flood.xml"
     },
     {
         "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-mergeDebugResources-42:\\layout\\alandslide.xml",
@@ -52,10 +64,6 @@
         "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-45:\\layout\\landslide.xml"
     },
     {
-        "merged": "com.example.myapplication.app-mergeDebugResources-42:/layout/activity_user_location_permission.xml",
-        "source": "com.example.myapplication.app-main-45:/layout/activity_user_location_permission.xml"
-    },
-    {
         "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-mergeDebugResources-42:\\layout\\activity_user.xml",
         "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-45:\\layout\\activity_user.xml"
     },
@@ -74,6 +82,10 @@
     {
         "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-mergeDebugResources-42:\\layout\\activity_loading.xml",
         "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-main-45:\\layout\\activity_loading.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeDebugResources-42:/layout/activity_landslide.xml",
+        "source": "com.example.myapplication.app-main-45:/layout/activity_landslide.xml"
     },
     {
         "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.2\\com.example.myapplication.app-mergeDebugResources-42:\\layout\\user_location.xml",

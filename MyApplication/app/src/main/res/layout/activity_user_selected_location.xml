@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SelectedLocation"
-    android:background="@color/grey">
+    android:background="@color/background">
 
 
     <com.google.android.material.textfield.TextInputLayout
@@ -71,7 +71,7 @@
             android:id="@+id/autoCompleteTextView3"
             android:layout_width="305dp"
             android:layout_height="match_parent"
-            android:hint="Select the Province"
+            android:hint="Select the City"
             android:inputType="none"
             android:textColorHint="@android:color/white" />
 
@@ -83,6 +83,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="110dp"
         android:text="Set the location"
+        android:textColor="@color/white"
+        android:background="@color/button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

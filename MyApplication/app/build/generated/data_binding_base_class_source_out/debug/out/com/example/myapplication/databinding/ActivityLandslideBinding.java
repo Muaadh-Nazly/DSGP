@@ -26,18 +26,6 @@ public final class ActivityLandslideBinding implements ViewBinding {
   public final ConstraintLayout LandslideCard2;
 
   @NonNull
-  public final ConstraintLayout LandslideCard3;
-
-  @NonNull
-  public final TextView LandslideNeuralNetworkAccuracyPercentage;
-
-  @NonNull
-  public final TextView LandslideNeuralNetworkPredictedOutput;
-
-  @NonNull
-  public final TextView LandslideNeuralNetworkText;
-
-  @NonNull
   public final TextView LandslideRandomForestAccuracyPercentage;
 
   @NonNull
@@ -63,10 +51,6 @@ public final class ActivityLandslideBinding implements ViewBinding {
 
   private ActivityLandslideBinding(@NonNull ConstraintLayout rootView,
       @NonNull ConstraintLayout LandslideCard1, @NonNull ConstraintLayout LandslideCard2,
-      @NonNull ConstraintLayout LandslideCard3,
-      @NonNull TextView LandslideNeuralNetworkAccuracyPercentage,
-      @NonNull TextView LandslideNeuralNetworkPredictedOutput,
-      @NonNull TextView LandslideNeuralNetworkText,
       @NonNull TextView LandslideRandomForestAccuracyPercentage,
       @NonNull TextView LandslideRandomForestPredictedValue,
       @NonNull TextView LandslideRandomForestText,
@@ -76,10 +60,6 @@ public final class ActivityLandslideBinding implements ViewBinding {
     this.rootView = rootView;
     this.LandslideCard1 = LandslideCard1;
     this.LandslideCard2 = LandslideCard2;
-    this.LandslideCard3 = LandslideCard3;
-    this.LandslideNeuralNetworkAccuracyPercentage = LandslideNeuralNetworkAccuracyPercentage;
-    this.LandslideNeuralNetworkPredictedOutput = LandslideNeuralNetworkPredictedOutput;
-    this.LandslideNeuralNetworkText = LandslideNeuralNetworkText;
     this.LandslideRandomForestAccuracyPercentage = LandslideRandomForestAccuracyPercentage;
     this.LandslideRandomForestPredictedValue = LandslideRandomForestPredictedValue;
     this.LandslideRandomForestText = LandslideRandomForestText;
@@ -129,30 +109,6 @@ public final class ActivityLandslideBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.LandslideCard3;
-      ConstraintLayout LandslideCard3 = ViewBindings.findChildViewById(rootView, id);
-      if (LandslideCard3 == null) {
-        break missingId;
-      }
-
-      id = R.id.LandslideNeuralNetworkAccuracyPercentage;
-      TextView LandslideNeuralNetworkAccuracyPercentage = ViewBindings.findChildViewById(rootView, id);
-      if (LandslideNeuralNetworkAccuracyPercentage == null) {
-        break missingId;
-      }
-
-      id = R.id.LandslideNeuralNetworkPredictedOutput;
-      TextView LandslideNeuralNetworkPredictedOutput = ViewBindings.findChildViewById(rootView, id);
-      if (LandslideNeuralNetworkPredictedOutput == null) {
-        break missingId;
-      }
-
-      id = R.id.LandslideNeuralNetworkText;
-      TextView LandslideNeuralNetworkText = ViewBindings.findChildViewById(rootView, id);
-      if (LandslideNeuralNetworkText == null) {
-        break missingId;
-      }
-
       id = R.id.LandslideRandomForestAccuracyPercentage;
       TextView LandslideRandomForestAccuracyPercentage = ViewBindings.findChildViewById(rootView, id);
       if (LandslideRandomForestAccuracyPercentage == null) {
@@ -198,11 +154,10 @@ public final class ActivityLandslideBinding implements ViewBinding {
       ConstraintLayout relativeLayout = (ConstraintLayout) rootView;
 
       return new ActivityLandslideBinding((ConstraintLayout) rootView, LandslideCard1,
-          LandslideCard2, LandslideCard3, LandslideNeuralNetworkAccuracyPercentage,
-          LandslideNeuralNetworkPredictedOutput, LandslideNeuralNetworkText,
-          LandslideRandomForestAccuracyPercentage, LandslideRandomForestPredictedValue,
-          LandslideRandomForestText, LandslideXGBoostAccuracyPercentage,
-          LandslideXGBoostPredictedValue, LandslideXGBoostText, TitleLandslide, relativeLayout);
+          LandslideCard2, LandslideRandomForestAccuracyPercentage,
+          LandslideRandomForestPredictedValue, LandslideRandomForestText,
+          LandslideXGBoostAccuracyPercentage, LandslideXGBoostPredictedValue, LandslideXGBoostText,
+          TitleLandslide, relativeLayout);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

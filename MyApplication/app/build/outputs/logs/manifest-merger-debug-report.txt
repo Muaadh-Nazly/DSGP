@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:2:1-115:12
-INJECTED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:2:1-115:12
-INJECTED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:2:1-115:12
-INJECTED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:2:1-115:12
+ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:2:1-125:12
+INJECTED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:2:1-125:12
+INJECTED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:2:1-125:12
+INJECTED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:2:1-125:12
 MERGED from [androidx.databinding:viewbinding:8.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\89c414a81f1d29a7ea153afa142368be\transformed\viewbinding-8.2.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\LENOVO\.gradle\caches\transforms-3\db6fde338683fd4e8c040b9112b0a8e0\transformed\material-1.11.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\LENOVO\.gradle\caches\transforms-3\dd4a0bc1aa3726927dbd20c7d3a29c31\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
@@ -187,8 +187,8 @@ MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Us
 	android:name
 		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:9:22-64
 application
-ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:11:5-113:19
-INJECTED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:11:5-113:19
+ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:11:5-123:19
+INJECTED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:11:5-123:19
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\LENOVO\.gradle\caches\transforms-3\db6fde338683fd4e8c040b9112b0a8e0\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\LENOVO\.gradle\caches\transforms-3\db6fde338683fd4e8c040b9112b0a8e0\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\LENOVO\.gradle\caches\transforms-3\dd4a0bc1aa3726927dbd20c7d3a29c31\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -391,12 +391,18 @@ ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5
 		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:101:13-36
 	android:name
 		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:100:13-41
-meta-data#preloaded_fonts
-ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:110:9-112:57
-	android:resource
-		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:112:13-54
+activity#com.example.myapplication.New
+ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:108:9-110:39
+	android:exported
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:110:13-36
 	android:name
-		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:111:13-43
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:109:13-32
+meta-data#preloaded_fonts
+ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:120:9-122:57
+	android:resource
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:122:13-54
+	android:name
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:121:13-43
 uses-sdk
 INJECTED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml

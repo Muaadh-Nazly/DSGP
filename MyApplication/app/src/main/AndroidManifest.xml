@@ -105,6 +105,16 @@
         <!-- </activity> -->
         <!-- Meta-data declaration -->
 
+        <activity
+            android:name=".New"
+            android:exported="true" />
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <!-- Meta-data declaration -->
+
 
 
         <meta-data

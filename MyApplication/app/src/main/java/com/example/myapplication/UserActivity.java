@@ -82,6 +82,7 @@ public class UserActivity extends AppCompatActivity {
 
 
 
+
         cycloneCard = findViewById(R.id.CycloneCard);
         landslideCard = findViewById(R.id.LandslideCard);
         floodCard = findViewById(R.id.FloodCard);
@@ -132,6 +133,9 @@ public class UserActivity extends AppCompatActivity {
             }
         }
 
+
+        New NEWCLASS = new  New();
+        NEWCLASS.user_details();
 
         cycloneCard.setOnClickListener(new View.OnClickListener() {
             @Override

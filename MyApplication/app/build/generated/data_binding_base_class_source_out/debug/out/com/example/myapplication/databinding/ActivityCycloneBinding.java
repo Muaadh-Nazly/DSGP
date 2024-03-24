@@ -26,18 +26,6 @@ public final class ActivityCycloneBinding implements ViewBinding {
   public final ConstraintLayout CycloneCard2;
 
   @NonNull
-  public final ConstraintLayout CycloneCard3;
-
-  @NonNull
-  public final TextView CycloneNeuralNetworkAccuracyPercentage;
-
-  @NonNull
-  public final TextView CycloneNeuralNetworkPredictedOutput;
-
-  @NonNull
-  public final TextView CycloneNeuralNetworkText;
-
-  @NonNull
   public final TextView CycloneRandomForestAccuracyPercentage;
 
   @NonNull
@@ -63,10 +51,6 @@ public final class ActivityCycloneBinding implements ViewBinding {
 
   private ActivityCycloneBinding(@NonNull ConstraintLayout rootView,
       @NonNull ConstraintLayout CycloneCard1, @NonNull ConstraintLayout CycloneCard2,
-      @NonNull ConstraintLayout CycloneCard3,
-      @NonNull TextView CycloneNeuralNetworkAccuracyPercentage,
-      @NonNull TextView CycloneNeuralNetworkPredictedOutput,
-      @NonNull TextView CycloneNeuralNetworkText,
       @NonNull TextView CycloneRandomForestAccuracyPercentage,
       @NonNull TextView CycloneRandomForestPredictedValue,
       @NonNull TextView CycloneRandomForestText, @NonNull TextView CycloneXGBoostAccuracyPercentage,
@@ -75,10 +59,6 @@ public final class ActivityCycloneBinding implements ViewBinding {
     this.rootView = rootView;
     this.CycloneCard1 = CycloneCard1;
     this.CycloneCard2 = CycloneCard2;
-    this.CycloneCard3 = CycloneCard3;
-    this.CycloneNeuralNetworkAccuracyPercentage = CycloneNeuralNetworkAccuracyPercentage;
-    this.CycloneNeuralNetworkPredictedOutput = CycloneNeuralNetworkPredictedOutput;
-    this.CycloneNeuralNetworkText = CycloneNeuralNetworkText;
     this.CycloneRandomForestAccuracyPercentage = CycloneRandomForestAccuracyPercentage;
     this.CycloneRandomForestPredictedValue = CycloneRandomForestPredictedValue;
     this.CycloneRandomForestText = CycloneRandomForestText;
@@ -128,30 +108,6 @@ public final class ActivityCycloneBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.CycloneCard3;
-      ConstraintLayout CycloneCard3 = ViewBindings.findChildViewById(rootView, id);
-      if (CycloneCard3 == null) {
-        break missingId;
-      }
-
-      id = R.id.CycloneNeuralNetworkAccuracyPercentage;
-      TextView CycloneNeuralNetworkAccuracyPercentage = ViewBindings.findChildViewById(rootView, id);
-      if (CycloneNeuralNetworkAccuracyPercentage == null) {
-        break missingId;
-      }
-
-      id = R.id.CycloneNeuralNetworkPredictedOutput;
-      TextView CycloneNeuralNetworkPredictedOutput = ViewBindings.findChildViewById(rootView, id);
-      if (CycloneNeuralNetworkPredictedOutput == null) {
-        break missingId;
-      }
-
-      id = R.id.CycloneNeuralNetworkText;
-      TextView CycloneNeuralNetworkText = ViewBindings.findChildViewById(rootView, id);
-      if (CycloneNeuralNetworkText == null) {
-        break missingId;
-      }
-
       id = R.id.CycloneRandomForestAccuracyPercentage;
       TextView CycloneRandomForestAccuracyPercentage = ViewBindings.findChildViewById(rootView, id);
       if (CycloneRandomForestAccuracyPercentage == null) {
@@ -197,11 +153,9 @@ public final class ActivityCycloneBinding implements ViewBinding {
       ConstraintLayout relativeLayout = (ConstraintLayout) rootView;
 
       return new ActivityCycloneBinding((ConstraintLayout) rootView, CycloneCard1, CycloneCard2,
-          CycloneCard3, CycloneNeuralNetworkAccuracyPercentage, CycloneNeuralNetworkPredictedOutput,
-          CycloneNeuralNetworkText, CycloneRandomForestAccuracyPercentage,
-          CycloneRandomForestPredictedValue, CycloneRandomForestText,
-          CycloneXGBoostAccuracyPercentage, CycloneXGBoostPredictedValue, CycloneXGBoostText,
-          TitleCyclone, relativeLayout);
+          CycloneRandomForestAccuracyPercentage, CycloneRandomForestPredictedValue,
+          CycloneRandomForestText, CycloneXGBoostAccuracyPercentage, CycloneXGBoostPredictedValue,
+          CycloneXGBoostText, TitleCyclone, relativeLayout);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

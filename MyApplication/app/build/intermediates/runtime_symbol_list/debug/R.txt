@@ -3187,10 +3187,6 @@ int id CTRL 0x7f0a0003
 int id CycloneCard 0x7f0a0004
 int id CycloneCard1 0x7f0a0005
 int id CycloneCard2 0x7f0a0006
-int id CycloneCard3 0x7f0a0007
-int id CycloneNeuralNetworkAccuracyPercentage 0x7f0a0008
-int id CycloneNeuralNetworkPredictedOutput 0x7f0a0009
-int id CycloneNeuralNetworkText 0x7f0a000a
 int id CycloneRandomForestAccuracyPercentage 0x7f0a000b
 int id CycloneRandomForestPredictedValue 0x7f0a000c
 int id CycloneRandomForestText 0x7f0a000d
@@ -3201,10 +3197,6 @@ int id FUNCTION 0x7f0a0011
 int id FloodCard 0x7f0a0012
 int id FloodCard1 0x7f0a0013
 int id FloodCard2 0x7f0a0014
-int id FloodCard3 0x7f0a0015
-int id FloodNeuralNetworkAccuracyPercentage 0x7f0a0016
-int id FloodNeuralNetworkPredictedOutput 0x7f0a0017
-int id FloodNeuralNetworkText 0x7f0a0018
 int id FloodRandomForestAccuracyPercentage 0x7f0a0019
 int id FloodRandomForestPredictedValue 0x7f0a001a
 int id FloodRandomForestText 0x7f0a001b
@@ -3214,10 +3206,6 @@ int id FloodXGBoostText 0x7f0a001e
 int id LandslideCard 0x7f0a001f
 int id LandslideCard1 0x7f0a0020
 int id LandslideCard2 0x7f0a0021
-int id LandslideCard3 0x7f0a0022
-int id LandslideNeuralNetworkAccuracyPercentage 0x7f0a0023
-int id LandslideNeuralNetworkPredictedOutput 0x7f0a0024
-int id LandslideNeuralNetworkText 0x7f0a0025
 int id LandslideRandomForestAccuracyPercentage 0x7f0a0026
 int id LandslideRandomForestPredictedValue 0x7f0a0027
 int id LandslideRandomForestText 0x7f0a0028

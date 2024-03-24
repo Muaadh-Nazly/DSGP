@@ -26,18 +26,6 @@ public final class ActivityFloodBinding implements ViewBinding {
   public final ConstraintLayout FloodCard2;
 
   @NonNull
-  public final ConstraintLayout FloodCard3;
-
-  @NonNull
-  public final TextView FloodNeuralNetworkAccuracyPercentage;
-
-  @NonNull
-  public final TextView FloodNeuralNetworkPredictedOutput;
-
-  @NonNull
-  public final TextView FloodNeuralNetworkText;
-
-  @NonNull
   public final TextView FloodRandomForestAccuracyPercentage;
 
   @NonNull
@@ -63,8 +51,6 @@ public final class ActivityFloodBinding implements ViewBinding {
 
   private ActivityFloodBinding(@NonNull ConstraintLayout rootView,
       @NonNull ConstraintLayout FloodCard1, @NonNull ConstraintLayout FloodCard2,
-      @NonNull ConstraintLayout FloodCard3, @NonNull TextView FloodNeuralNetworkAccuracyPercentage,
-      @NonNull TextView FloodNeuralNetworkPredictedOutput, @NonNull TextView FloodNeuralNetworkText,
       @NonNull TextView FloodRandomForestAccuracyPercentage,
       @NonNull TextView FloodRandomForestPredictedValue, @NonNull TextView FloodRandomForestText,
       @NonNull TextView FloodXGBoostAccuracyPercentage,
@@ -73,10 +59,6 @@ public final class ActivityFloodBinding implements ViewBinding {
     this.rootView = rootView;
     this.FloodCard1 = FloodCard1;
     this.FloodCard2 = FloodCard2;
-    this.FloodCard3 = FloodCard3;
-    this.FloodNeuralNetworkAccuracyPercentage = FloodNeuralNetworkAccuracyPercentage;
-    this.FloodNeuralNetworkPredictedOutput = FloodNeuralNetworkPredictedOutput;
-    this.FloodNeuralNetworkText = FloodNeuralNetworkText;
     this.FloodRandomForestAccuracyPercentage = FloodRandomForestAccuracyPercentage;
     this.FloodRandomForestPredictedValue = FloodRandomForestPredictedValue;
     this.FloodRandomForestText = FloodRandomForestText;
@@ -126,30 +108,6 @@ public final class ActivityFloodBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.FloodCard3;
-      ConstraintLayout FloodCard3 = ViewBindings.findChildViewById(rootView, id);
-      if (FloodCard3 == null) {
-        break missingId;
-      }
-
-      id = R.id.FloodNeuralNetworkAccuracyPercentage;
-      TextView FloodNeuralNetworkAccuracyPercentage = ViewBindings.findChildViewById(rootView, id);
-      if (FloodNeuralNetworkAccuracyPercentage == null) {
-        break missingId;
-      }
-
-      id = R.id.FloodNeuralNetworkPredictedOutput;
-      TextView FloodNeuralNetworkPredictedOutput = ViewBindings.findChildViewById(rootView, id);
-      if (FloodNeuralNetworkPredictedOutput == null) {
-        break missingId;
-      }
-
-      id = R.id.FloodNeuralNetworkText;
-      TextView FloodNeuralNetworkText = ViewBindings.findChildViewById(rootView, id);
-      if (FloodNeuralNetworkText == null) {
-        break missingId;
-      }
-
       id = R.id.FloodRandomForestAccuracyPercentage;
       TextView FloodRandomForestAccuracyPercentage = ViewBindings.findChildViewById(rootView, id);
       if (FloodRandomForestAccuracyPercentage == null) {
@@ -195,10 +153,9 @@ public final class ActivityFloodBinding implements ViewBinding {
       ConstraintLayout relativeLayout = (ConstraintLayout) rootView;
 
       return new ActivityFloodBinding((ConstraintLayout) rootView, FloodCard1, FloodCard2,
-          FloodCard3, FloodNeuralNetworkAccuracyPercentage, FloodNeuralNetworkPredictedOutput,
-          FloodNeuralNetworkText, FloodRandomForestAccuracyPercentage,
-          FloodRandomForestPredictedValue, FloodRandomForestText, FloodXGBoostAccuracyPercentage,
-          FloodXGBoostPredictedValue, FloodXGBoostText, TitleFlood, relativeLayout);
+          FloodRandomForestAccuracyPercentage, FloodRandomForestPredictedValue,
+          FloodRandomForestText, FloodXGBoostAccuracyPercentage, FloodXGBoostPredictedValue,
+          FloodXGBoostText, TitleFlood, relativeLayout);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
