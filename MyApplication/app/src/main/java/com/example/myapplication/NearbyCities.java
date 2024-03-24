@@ -1,5 +1,9 @@
 package com.example.myapplication;
 
+
+/**
+ *  Author : Alisia
+ */
 public class NearbyCities {
     private String city1;
     private String city2;

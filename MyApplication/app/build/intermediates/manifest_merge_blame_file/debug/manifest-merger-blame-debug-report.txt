@@ -85,10 +85,10 @@
 46        android:extractNativeLibs="false"
 47        android:fullBackupContent="@xml/backup_rules"
 47-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:14:9-54
-48        android:icon="@mipmap/ic_launcher"
-48-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:15:9-43
-49        android:label="Disaster Safeguard"
-49-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:16:9-43
+48        android:icon="@drawable/logo"
+48-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:15:9-38
+49        android:label="Disaster Safe"
+49-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:16:9-38
 50        android:roundIcon="@mipmap/ic_launcher_round"
 50-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:17:9-54
 51        android:supportsRtl="true"

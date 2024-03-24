@@ -36,6 +36,8 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
+import java.util.Objects;
+
 import android.widget.Button;
 import retrofit2.Retrofit;
 
@@ -56,11 +58,10 @@ public class UserActivity extends AppCompatActivity {
     TextView currentLocation;
 
 
+
     double string_Latitude;
     double string_Longitude;
-    String string_Address;
-    String string_City;
-    String string_Country;
+    String string_Address,string_City,string_Country;
 
     TextView showMap;
 
@@ -80,9 +81,6 @@ public class UserActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user);
 
-
-
-
         cycloneCard = findViewById(R.id.CycloneCard);
         landslideCard = findViewById(R.id.LandslideCard);
         floodCard = findViewById(R.id.FloodCard);
@@ -95,27 +93,29 @@ public class UserActivity extends AppCompatActivity {
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
         greetingsOfTheDay.setText(getGreeting());
 
-        // Displaying time on Dash Board
+        // Displaying time on User's Dash Board
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
             LocalDate currentDate = LocalDate.now();
             currentDateTime.setText(String.valueOf(currentDate));
-
         }
 
 
+        // If the user selected a location instead of current location
         Intent intent = getIntent();
         String selectedProvince = intent.getStringExtra("SELECTED_PROVINCE");
         String selectedDistrict = intent.getStringExtra("SELECTED_DISTRICT");
         String selectedCity = intent.getStringExtra("SELECTED_CITY");
+        String selected_latitude = intent.getStringExtra("SELECTED_LATITUDE");
+        String selected_longitude = intent.getStringExtra("SELECTED_LONGITUDE");
 
 
-
-
+        // User Details
         FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
         assert currentUser != null;
         userId = currentUser.getUid();
 
 
+        // If 1st time loading user cant select a location so current location results will display
         if (isFirstTimeLoad == false){
             Log.d("******************************","CAME 1");
             getLastLocation();
@@ -123,10 +123,12 @@ public class UserActivity extends AppCompatActivity {
             isFirstTimeLoad = true;
         }
 
+
         else {
             Log.d("******************************","CAME 2");
             if (selectedCity != null){
                 currentLocation.setText(selectedCity + " " + selectedDistrict );
+//                UserLocation();
             }
             else {
                 getLastLocation();
@@ -254,8 +256,6 @@ public class UserActivity extends AppCompatActivity {
         }
 
     }
-
-
 
 
 

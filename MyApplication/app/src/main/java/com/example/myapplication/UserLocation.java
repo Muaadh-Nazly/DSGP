@@ -88,10 +88,11 @@ public class UserLocation extends AppCompatActivity {
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
 
         getLocationDetails();
+//        getLocationDetails(selectedOrCurrent_userLatitude,selectedOrCurrent_userLongitude);
         UserActivity();
 
     }
-
+//    public void getLocationDetails(double selectedOrCurrent_userLatitude, double selectedOrCurrent_userLongitude){
     public void getLocationDetails(){
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
             LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
@@ -103,7 +104,7 @@ public class UserLocation extends AppCompatActivity {
                             if (location != null) {
                                 Log.d("Location", "Latitude: " + location.getLatitude() + ", Longitude: " + location.getLongitude());
                                 Geocoder geocoder = new Geocoder(UserLocation.this, Locale.getDefault());
-                                //List<Address> addresses = null;
+
                                 try {
                                     addresses = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
 
@@ -118,7 +119,7 @@ public class UserLocation extends AppCompatActivity {
 
                                         // Call the getWeatherData method with obtained latitude and longitude
                                         //getCurrentLocationInfo(addresses.get(0).getLatitude(), addresses.get(0).getLongitude());
-                                        getWeatherData(addresses.get(0).getLatitude(), addresses.get(0).getLongitude());
+                                        getWeatherData(addresses.get(0).getLatitude(),addresses.get(0).getLongitude());
 
                                         NearbyCities nearbyCities = getNearbyLocationNames(addresses.get(0).getLatitude(), addresses.get(0).getLongitude());
                                         updateNearbyCitiesUI(nearbyCities.getCity1(), nearbyCities.getCity2());
@@ -131,7 +132,7 @@ public class UserLocation extends AppCompatActivity {
                                     e.printStackTrace();
                                 }
                                 // Call the method to process weather data
-                                processWeatherData(addresses.get(0).getLatitude(), addresses.get(0).getLongitude());
+                                getWeatherData(addresses.get(0).getLatitude(), addresses.get(0).getLongitude());
                             }
                         }
                     })
@@ -148,92 +149,6 @@ public class UserLocation extends AppCompatActivity {
 
 
 
-
-
-
-
-
-
-
-
-
-    }
-
-
-
-
-
-
-
-
-
-
-    public void getLastLocation() {
-        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
-            LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-
-            fusedLocationProviderClient.getLastLocation()
-                    .addOnSuccessListener(new OnSuccessListener<Location>() {
-                        @Override
-                        public void onSuccess(Location location) {
-                            if (location != null) {
-                                Log.d("Location", "Latitude: " + location.getLatitude() + ", Longitude: " + location.getLongitude());
-                                Geocoder geocoder = new Geocoder(UserLocation.this, Locale.getDefault());
-                                //List<Address> addresses = null;
-                                try {
-                                    addresses = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
-
-                                    if (addresses != null && addresses.size() > 0) {
-                                        // Update UI with location details
-                                        Log.d("Location", "Latitude: " + location.getLatitude() + ", Longitude: " + location.getLongitude());
-                                        Log.d("Location", "Country: " + addresses.get(0).getCountryName());
-                                        Log.d("Location", "Address: " + addresses.get(0).getAddressLine(0));
-                                        city.setText("City: " + addresses.get(0).getLocality());
-                                        district.setText("District: " + addresses.get(0).getSubAdminArea());
-
-
-                                        // Call the getWeatherData method with obtained latitude and longitude
-                                        //getCurrentLocationInfo(addresses.get(0).getLatitude(), addresses.get(0).getLongitude());
-                                        getWeatherData(addresses.get(0).getLatitude(), addresses.get(0).getLongitude());
-
-                                        // Get near locations by adjusting latitude and longitude
-//                                        double latitudeOffset = 0.01;
-//                                        double longitudeOffset = 0.02;
-
-                                        NearbyCities nearbyCities = getNearbyLocationNames(addresses.get(0).getLatitude(), addresses.get(0).getLongitude());
-                                        updateNearbyCitiesUI(nearbyCities.getCity1(), nearbyCities.getCity2());
-                                    } else {
-                                        // Handle the case where no address is found
-                                        Log.e("Location", "No address found for the location");
-                                    }
-                                } catch (IOException e) {
-                                    e.printStackTrace();
-                                }
-                                // Call the method to process weather data
-                                processWeatherData(addresses.get(0).getLatitude(), addresses.get(0).getLongitude());
-                            }
-                        }
-                    })
-                    .addOnFailureListener(new OnFailureListener() {
-                        @Override
-                        public void onFailure(@NonNull Exception e) {
-                            // Handle failure to get last location
-                            Log.e("Location", "Failed to get last location: " + e.getMessage());
-                        }
-                    });
-        } else {
-            // If permission is not granted, request it
-        }
-    }
-
-
-
-    private void processWeatherData(double latitude, double longitude) {
-        // Call the method to get weather data
-        getWeatherData(latitude, longitude);
-
-        // Call the method to get current location information
-        //getCurrentLocationInfo(latitude, longitude);
     }
 
     private NearbyCities getNearbyLocationNames(double latitude, double longitude) {

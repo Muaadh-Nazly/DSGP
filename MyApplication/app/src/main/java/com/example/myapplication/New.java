@@ -104,18 +104,9 @@ public class New {
                 }
             }
         });
-        
+
         Log.d("********************************", "finsihed NEW CLASS" + windSpeedValues );
         Log.d("********************************", "finsihed NEW CLASS" + rainfallData );
-
-
-
-
-
-
-
-
-
 
 
     }

@@ -13,30 +13,22 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import java.util.Arrays;
 
+
+/**
+ *  User will select a desired location to get prediction; Only location selection is available here
+ */
+
 public class SelectedLocation extends AppCompatActivity {
 
-    private DatabaseReference mDatabase;
-    String provinces;
-    String districs;
-    String cities;
-
-
-    String selected_provinces;
-    String selected_district;
-    String selected_cities;
-
-
+    String provinces, districts,cities,selected_provinces,selected_district,selected_cities;
+    String selected_latitude,selected_longitude;
     AutoCompleteTextView autoCompleteTextView, autoCompleteTextView2, autoCompleteTextView3;
     Button userSelectedSetLocationButton;
-    private String userId;
 
 
     @Override
@@ -54,12 +46,19 @@ public class SelectedLocation extends AppCompatActivity {
 
         getProvincesData();
 
+        Log.d("******************************","SHHHHHH HERE?");
+
+
+
+
 
         userSelectedSetLocationButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 Log.d("************************************ Sleceted Location ","***" + selected_provinces + selected_district + selected_cities );
+                getLatitudeLongitudeData(selected_district,selected_cities);
+                Log.d("******************************","SHHHHHH FINISHED?");
                 UserActivity();
             }
         });
@@ -120,12 +119,12 @@ public class SelectedLocation extends AppCompatActivity {
                 if (!task.isSuccessful()) {
                     Log.e("Firebase", "Error getting data", task.getException());
                 } else {
-                    districs = String.valueOf(task.getResult().getValue());
-                    Log.d("***************************************Districts", districs);
+                    districts = String.valueOf(task.getResult().getValue());
+                    Log.d("***************************************Districts", districts);
                     Log.d("***********************Ref", String.valueOf(westernRef));
 
                     // Split the string by comma and trim each value
-                    String[] districsArray = districs.split(",");
+                    String[] districsArray = districts.split(",");
                     for (int i = 0; i < districsArray.length; i++) {
                         districsArray[i] = districsArray[i].trim().replace("{", "").replace("}", "").replace("=", "");
 
@@ -196,42 +195,49 @@ public class SelectedLocation extends AppCompatActivity {
                 }
             }
         });
+
     }
 
+    public void getLatitudeLongitudeData(String selected_district, String selected_cities){
 
 
 
+        FirebaseDatabase database = FirebaseDatabase.getInstance("https://natural-disaster-predict-1838a-19dc1.firebaseio.com/");
+        DatabaseReference userRef = database.getReference("cities").child(selected_district).child(selected_cities);
 
+        userRef.get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<DataSnapshot> task) {
+                if (task.isSuccessful()) {
+                    // Successfully retrieved the data
+                    DataSnapshot dataSnapshot = task.getResult();
 
+                    // Assuming the values are stored as strings in Firebase. If they're not, adjust accordingly.
+                    selected_latitude = dataSnapshot.child("Latitude").getValue(String.class);
+                    selected_longitude = dataSnapshot.child("Longitude").getValue(String.class);
 
+                    Log.d("************************************************", "Longitude: " + selected_longitude + ", Latitude: " + selected_latitude);
 
+                } else {
+                    // Failed to retrieve the data
+                    Log.e("*********************************************", "Error getting user data", task.getException());
+                }
+            }
+        });
 
-
-
-
-
-
-
-
-
-
+    }
     public void UserActivity() {
 
         Intent intent = new Intent(this, UserActivity.class);
         intent.putExtra("SELECTED_PROVINCE", selected_provinces);
         intent.putExtra("SELECTED_DISTRICT", selected_district);
         intent.putExtra("SELECTED_CITY", selected_cities);
+        intent.putExtra("SELECTED_LATITUDE", selected_latitude);
+        intent.putExtra("SELECTED_LONGITUDE", selected_longitude);
+
         startActivity(intent);
         finish();
 
     }
-
-
-
-
-
-
-
-
 }
 

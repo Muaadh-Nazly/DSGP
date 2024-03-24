@@ -276,7 +276,7 @@ MERGED from [org.tensorflow:tensorflow-lite:2.4.0] C:\Users\LENOVO\.gradle\cache
 	android:supportsRtl
 		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:18:9-35
 	android:label
-		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:16:9-43
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:16:9-38
 	android:fullBackupContent
 		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:14:9-54
 	android:roundIcon
@@ -284,7 +284,7 @@ MERGED from [org.tensorflow:tensorflow-lite:2.4.0] C:\Users\LENOVO\.gradle\cache
 	tools:targetApi
 		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:20:9-28
 	android:icon
-		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:15:9-43
+		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:15:9-38
 	android:allowBackup
 		ADDED from C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:12:9-35
 	android:theme

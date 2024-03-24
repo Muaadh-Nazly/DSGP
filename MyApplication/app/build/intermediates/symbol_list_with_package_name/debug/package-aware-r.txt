@@ -3095,6 +3095,7 @@ drawable location
 drawable lock
 drawable loginbkg
 drawable loginbkgh
+drawable logo
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
 drawable m3_bottom_sheet_drag_handle
@@ -3327,6 +3328,7 @@ id btn_contact
 id btn_rate_app
 id btn_send_email
 id btn_send_message
+id btn_submit_rating
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3632,6 +3634,7 @@ id progress_circular
 id progress_horizontal
 id radio
 id rainfall
+id ratingBar
 id ratio
 id rectangles
 id registerPassword
@@ -3961,6 +3964,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialog_rate_app
 layout fragment_maps
 layout landslide
 layout m3_alert_dialog

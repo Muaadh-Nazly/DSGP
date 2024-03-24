@@ -19,6 +19,9 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 
 
+/**
+ * User Sign Up Page
+ */
 public class RegisterActivity extends AppCompatActivity {
 
 
