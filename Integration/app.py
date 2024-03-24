@@ -108,5 +108,34 @@ def cyclone_predict():
                     f'Prediction for {date1} RFR':float(rfr_prediction_day1),f'Prediction for {date1} XGB':float(xgb_prediction_day1),
                     f'Prediction for {date2} RFR':float(rfr_prediction_day2),f'Prediction for {date2} XGB':float(xgb_prediction_day2),
                     f'Prediction for {date3} RFR':float(rfr_prediction_day3),f'Prediction for {date3} XGB':float(xgb_prediction_day3)})
+    
+@app.route('/predict_three',methods=['POST'])
+def predict_three():
+    location = request.form.get('Location')
+    location1 = request.form.get('Location1')
+    location2 = request.form.get('Location2')
+    district = request.form.get('District')
+    rainfall = request.form.get('Rainfall(mm)')
+    wind_speed = float(request.form.get('Wind Speed(mph)'))
+    
+    date = dt.date.today() 
+    flood_rfr_prediction,flood_xgb_prediction = predict_flood(location=location,location1=location1,location2=location2,
+                                                     district=district,month=date.month,day=date.day,rainfall=rainfall) 
+    
+    
+    landslide_rfr_prediction , landslide_xgb_prediction = predict_landslide(location=location,location1=location1,location2=location2,
+                                                     district=district,month=date.month,day=date.day,rainfall=rainfall) 
+    
+
+    cyclone_rfr_prediction , cyclone_xgb_prediction = predict_cyclone(location=location,location1=location1,location2=location2,
+                                                     district=district,month=date.month,day=date.day,wind_speed=wind_speed) 
+    
+
+     
+    
+    return jsonify({f'Prediction for {date} Flood RFR':float(flood_rfr_prediction),f"Prediction for {date} flood XGB":float(flood_xgb_prediction),
+                    f'Prediction for {date} Landslide RFR':float(landslide_rfr_prediction),f'Prediction for {date} Landslide XGB':float(landslide_xgb_prediction),
+                    f'Prediction for {date} Cyclone RFR':float(cyclone_rfr_prediction),f'Prediction for {date} Cyclone XGB':float(cyclone_xgb_prediction)
+                    })
 if __name__=='__main__':
     app.run(debug=True)
