@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, LoadingActivity.class);
-                intent.putExtra("targetActivity",FloodActivity.class);
+                intent.putExtra("targetActivity", LandslideActivity.class);
                 startActivity(intent);
             }
         });

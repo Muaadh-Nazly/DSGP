@@ -35,7 +35,7 @@
             android:name=".LandslideActivity"
             android:exported="false" />
         <activity
-            android:name=".FloodActivity"
+            android:name=".LandslideActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
@@ -63,7 +63,7 @@
             android:resource="@array/preloaded_fonts" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDYqY3BI2e53Nx2yr5UUjyPMTUT-wuZ4-4" />
+            android:value="AIzaSyBFqEgkW1tsb76goacQvrR5eaORkIxtmpI" />
     </application>
 
 </manifest>
