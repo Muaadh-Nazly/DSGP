@@ -85,7 +85,7 @@ public class ReportActivity extends FragmentActivity implements OnMapReadyCallba
             @Override
             public boolean onMarkerClick(Marker marker) {
                 progressDialog.show();
-                StringRequest floodStringRequest = new StringRequest(Request.Method.POST, floodURL,
+                StringRequest stringRequest = new StringRequest(Request.Method.POST, floodURL,
                         new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
@@ -93,97 +93,18 @@ public class ReportActivity extends FragmentActivity implements OnMapReadyCallba
                                     JSONObject jsonObject = new JSONObject(response);
                                     String floodRFR = jsonObject.getString("Prediction for " + Today + " RFR");
                                     String floodXGB = jsonObject.getString("Prediction for " + Today + " XGB");
-
-                                    Log.d("*********",floodRFR);
-                                    predictions.add(floodRFR);
-                                    predictions.add(floodXGB);
-                                    Log.d("*********",predictions.get(0));
-
-
-
-                                } catch (JSONException e) {
-                                    e.printStackTrace();
-
-                                }
-                            }
-                        },
-                        new Response.ErrorListener() {
-                            @Override
-                            public void onErrorResponse(VolleyError error) {
-                                Toast.makeText(ReportActivity.this, error.getMessage(), Toast.LENGTH_SHORT).show();
-                            }
-
-                        }) {
-                    @Override
-                    protected Map<String, String> getParams() {
-                        Map<String, String> params = new HashMap<String, String>();
-                        params.put("Location", Location);
-                        params.put("Location1", Location1);
-                        params.put("Location2", Location2);
-                        params.put("District", District);
-                        params.put("Rainfall(mm)", Rainfall);
-
-                        return params;
-                    }
-                };
-
-                RequestQueue floodQueue = Volley.newRequestQueue(ReportActivity.this);
-                floodQueue.add(floodStringRequest);
-                StringRequest landslideStringRequest = new StringRequest(Request.Method.POST, landslideURL,
-                        new Response.Listener<String>() {
-                            @Override
-                            public void onResponse(String response) {
-                                try {
-                                    JSONObject jsonObject = new JSONObject(response);
                                     String landslideRFR = jsonObject.getString("Prediction for " + Today + " RFR");
                                     String landslideXGB = jsonObject.getString("Prediction for " + Today + " XGB");
-                                    Log.d("*********",landslideRFR);
-                                    predictions.add(landslideRFR);
-                                    predictions.add(landslideXGB);
-                                    Log.d("*********",predictions.get(2));
-
-                                } catch (JSONException e) {
-                                    e.printStackTrace();
-
-                                }
-                            }
-                        },
-                        new Response.ErrorListener() {
-                            @Override
-                            public void onErrorResponse(VolleyError error) {
-                                Toast.makeText(ReportActivity.this, error.getMessage(), Toast.LENGTH_SHORT).show();
-                            }
-
-                        }) {
-                    @Override
-                    protected Map<String, String> getParams() {
-                        Map<String, String> params = new HashMap<String, String>();
-                        params.put("Location", Location);
-                        params.put("Location1", Location1);
-                        params.put("Location2", Location2);
-                        params.put("District", District);
-                        params.put("Rainfall(mm)", Rainfall);
-
-                        return params;
-                    }
-                };
-
-                RequestQueue landslideQueue = Volley.newRequestQueue(ReportActivity.this);
-                landslideQueue.add(landslideStringRequest);
-
-                StringRequest cycloneStringRequest = new StringRequest(Request.Method.POST, cycloneURL,
-                        new Response.Listener<String>() {
-                            @Override
-                            public void onResponse(String response) {
-                                try {
-                                    JSONObject jsonObject = new JSONObject(response);
                                     String cycloneRFR = jsonObject.getString("Prediction for " + Today + " RFR");
                                     String cycloneXGB = jsonObject.getString("Prediction for " + Today + " XGB");
 
-                                    Log.d("*********",cycloneRFR);
+                                    predictions.add(floodRFR);
+                                    predictions.add(floodXGB);
+                                    predictions.add(landslideRFR);
+                                    predictions.add(landslideXGB);
                                     predictions.add(cycloneRFR);
                                     predictions.add(cycloneXGB);
-                                    Log.d("*********",predictions.get(4));
+
                                     showBottomSheetDialog(marker);
 
                                 } catch (JSONException e) {
@@ -206,14 +127,16 @@ public class ReportActivity extends FragmentActivity implements OnMapReadyCallba
                         params.put("Location1", Location1);
                         params.put("Location2", Location2);
                         params.put("District", District);
+                        params.put("Rainfall(mm)", Rainfall);
                         params.put("Wind Speed(mph)", WindSpeed);
 
                         return params;
                     }
                 };
 
-                RequestQueue cycloneQueue = Volley.newRequestQueue(ReportActivity.this);
-                cycloneQueue.add(cycloneStringRequest);
+                RequestQueue queue = Volley.newRequestQueue(ReportActivity.this);
+                queue.add(stringRequest);
+
                 return true;
             }
         });
@@ -222,14 +145,15 @@ public class ReportActivity extends FragmentActivity implements OnMapReadyCallba
     @SuppressLint("SetTextI18n")
     private void showBottomSheetDialog(Marker marker) {
         progressDialog.dismiss();
+        for(String pred:predictions){
+            Log.d("************",pred);
+        }
         // Inflate the view for the bottom sheet dialog
         View view = LayoutInflater.from(this).inflate(R.layout.custom_info_window, null);
 
         Button moreDetails = view.findViewById(R.id.moreDetailsButton);
         ViewGroup parentLayout = (ViewGroup) moreDetails.getParent();
         parentLayout.removeView(moreDetails);
-
-
 
         // Find and set the TextView to display the marker title
         TextView floodRFR = view.findViewById(R.id.tdyRFR);
@@ -238,18 +162,17 @@ public class ReportActivity extends FragmentActivity implements OnMapReadyCallba
         TextView landslideXGB = view.findViewById(R.id.landslideXGB);
         TextView cycloneRFR = view.findViewById(R.id.cycloneRFR);
         TextView cycloneXGB = view.findViewById(R.id.cycloneXGB);
-
-        if (predictions.size() >= 6) {
-            floodRFR.setText("Prediction for " + Today + " Flood RFR " + predictions.get(0));
-            floodXGB.setText("Prediction for " + Today + " Flood XGB " + predictions.get(1));
-            landslideRFR.setText("Prediction for " + Today + " Landslide RFR " + predictions.get(2));
-            landslideXGB.setText("Prediction for " + Today + " Landslide XGB " + predictions.get(3));
-            cycloneRFR.setText("Prediction for " + Today + " Cyclone RFR " + predictions.get(4));
-            cycloneXGB.setText("Prediction for " + Today + " Cyclone XGB " + predictions.get(5));
-        } else {
-            // Handle the case where predictions list doesn't have enough elements
-            Toast.makeText(this, "Predictions data is incomplete", Toast.LENGTH_SHORT).show();
+        for(String pred:predictions){
+            Log.d("**********",pred);
         }
+
+        floodRFR.setText("Prediction for " + Today + " Flood RFR " + predictions.get(0)+"%");
+        floodXGB.setText("Prediction for " + Today + " Flood XGB " + predictions.get(1)+"%");
+        landslideRFR.setText("Prediction for " + Today + " Landslide RFR " + predictions.get(2)+"%");
+        landslideXGB.setText("Prediction for " + Today + " Landslide XGB " + predictions.get(3)+"%");
+        cycloneRFR.setText("Prediction for " + Today + " Cyclone RFR " + predictions.get(4)+"%");
+        cycloneXGB.setText("Prediction for " + Today + " Cyclone XGB " + predictions.get(5)+"%");
+
         // Create and show the bottom sheet dialog
         BottomSheetDialog dialog = new BottomSheetDialog(this);
         dialog.setContentView(view);
