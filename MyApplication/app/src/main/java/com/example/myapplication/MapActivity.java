@@ -117,37 +117,37 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         gMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
             public boolean onMarkerClick(Marker marker) {
-                showBottomSheetDialog(marker);
+//                showBottomSheetDialog(marker);
                 return true;
             }
         });
     }
 
-    private void showBottomSheetDialog(Marker marker) {
-        // Inflate the view for the bottom sheet dialog
-        View view = LayoutInflater.from(this).inflate(R.layout.custom_info_window, null);
-
-        // Find and set the TextView to display the marker title
-        TextView titleTextView = view.findViewById(R.id.markerTitleTextView);
-        titleTextView.setText(marker.getTitle());
-
-        // Create and show the bottom sheet dialog
-        BottomSheetDialog dialog = new BottomSheetDialog(this);
-        dialog.setContentView(view);
-
-        // Handle button click
-        Button moreDetailsButton = view.findViewById(R.id.moreDetailsButton);
-        moreDetailsButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Start another activity to load another XML page
-                Intent intent = new Intent(MapActivity.this, LoadingActivity.class);
-                intent.putExtra("targetActivity", More_details.class);
-                startActivity(intent);
-                dialog.dismiss(); // Dismiss the dialog when navigating to another activity
-            }
-        });
-
-        dialog.show();
-    }
+//    private void showBottomSheetDialog(Marker marker) {
+//        // Inflate the view for the bottom sheet dialog
+//        View view = LayoutInflater.from(this).inflate(R.layout.custom_info_window, null);
+//
+//        // Find and set the TextView to display the marker title
+//        TextView titleTextView = view.findViewById(R.id.markerTitleTextView);
+//        titleTextView.setText(marker.getTitle());
+//
+//        // Create and show the bottom sheet dialog
+//        BottomSheetDialog dialog = new BottomSheetDialog(this);
+//        dialog.setContentView(view);
+//
+//        // Handle button click
+//        Button moreDetailsButton = view.findViewById(R.id.moreDetailsButton);
+//        moreDetailsButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                // Start another activity to load another XML page
+//                Intent intent = new Intent(MapActivity.this, LoadingActivity.class);
+//                intent.putExtra("targetActivity", More_details.class);
+//                startActivity(intent);
+//                dialog.dismiss(); // Dismiss the dialog when navigating to another activity
+//            }
+//        });
+//
+//        dialog.show();
+//    }
 }

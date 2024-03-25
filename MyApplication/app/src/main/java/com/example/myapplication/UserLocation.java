@@ -87,6 +87,8 @@ public class UserLocation extends AppCompatActivity {
 
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
 
+
+//        getWeatheD
         getLocationDetails();
 //        getLocationDetails(selectedOrCurrent_userLatitude,selectedOrCurrent_userLongitude);
         UserActivity();

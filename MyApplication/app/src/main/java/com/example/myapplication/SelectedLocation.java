@@ -29,6 +29,7 @@ public class SelectedLocation extends AppCompatActivity {
     String selected_latitude,selected_longitude;
     AutoCompleteTextView autoCompleteTextView, autoCompleteTextView2, autoCompleteTextView3;
     Button userSelectedSetLocationButton;
+    FirebaseDatabase database = FirebaseDatabase.getInstance("https://natural-disaster-predict-1838a-af750.firebaseio.com/");
 
 
     @Override
@@ -41,6 +42,9 @@ public class SelectedLocation extends AppCompatActivity {
         autoCompleteTextView2 = findViewById(R.id.autoCompleteTextView2);
         autoCompleteTextView3 = findViewById(R.id.autoCompleteTextView3);
         userSelectedSetLocationButton = findViewById(R.id.userSelectedSetLocationButton);
+
+
+
 
         Log.d("******************************","HEEEEEEEEEEEEEEEEEE");
 
@@ -67,7 +71,6 @@ public class SelectedLocation extends AppCompatActivity {
 
 
     private void getProvincesData() {
-        FirebaseDatabase database = FirebaseDatabase.getInstance("https://natural-disaster-predict-1838a-af750.firebaseio.com/");
         DatabaseReference myRef = database.getReference("Provinces");
 
         myRef.get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
@@ -108,7 +111,6 @@ public class SelectedLocation extends AppCompatActivity {
 
     public void getDistrictData(String selected_provinces) {
         Log.d("***************************** selected Item", selected_provinces);
-        FirebaseDatabase database = FirebaseDatabase.getInstance("https://natural-disaster-predict-1838a-af750.firebaseio.com/");
         DatabaseReference districtsRef = database.getReference("Districts");
         DatabaseReference westernRef = districtsRef.child(selected_provinces);
 
@@ -154,7 +156,6 @@ public class SelectedLocation extends AppCompatActivity {
     public void getCityData(String selected_district){
 
         Log.d("***************************** selected Item", selected_district);
-        FirebaseDatabase database = FirebaseDatabase.getInstance("https://natural-disaster-predict-1838a-af750.firebaseio.com/");
         DatabaseReference districtsRef = database.getReference("Cities");
         DatabaseReference westernRef = districtsRef.child(selected_district);
 
@@ -200,8 +201,6 @@ public class SelectedLocation extends AppCompatActivity {
 
     public void getLatitudeLongitudeData(String selected_district, String selected_cities){
 
-
-
         FirebaseDatabase database = FirebaseDatabase.getInstance("https://natural-disaster-predict-1838a-19dc1.firebaseio.com/");
         DatabaseReference userRef = database.getReference("cities").child(selected_district).child(selected_cities);
 
@@ -229,12 +228,12 @@ public class SelectedLocation extends AppCompatActivity {
     public void UserActivity() {
 
         Intent intent = new Intent(this, UserActivity.class);
+
         intent.putExtra("SELECTED_PROVINCE", selected_provinces);
         intent.putExtra("SELECTED_DISTRICT", selected_district);
         intent.putExtra("SELECTED_CITY", selected_cities);
         intent.putExtra("SELECTED_LATITUDE", selected_latitude);
         intent.putExtra("SELECTED_LONGITUDE", selected_longitude);
-
         startActivity(intent);
         finish();
 

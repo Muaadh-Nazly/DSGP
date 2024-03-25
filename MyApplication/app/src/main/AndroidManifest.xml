@@ -21,12 +21,21 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCBkZNaooYIyuSRRY-RROJEOPDKahifN4w" />
+            android:value="AIzaSyBFqEgkW1tsb76goacQvrR5eaORkIxtmpI" />
 
 
         <activity
             android:name=".UserActivity"
-            android:exported="true" />
+            android:exported="true" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+
+
+
+
         <activity
             android:name=".AboutUsActivity"
             android:exported="false" />
@@ -62,23 +71,31 @@
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="true"/>
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
         <activity
             android:name=".SelectedLocation"
             android:exported="true" />
-        <activity
-            android:name=".Landslide"
-            android:exported="true" /> <!-- <intent-filter> -->
-        <!-- <action android:name="android.intent.action.MAIN" /> -->
-        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-        <!-- </intent-filter> -->
-        <!-- </activity> -->
+<!--        <intent-filter>-->
+<!--            <action android:name="android.intent.action.MAIN" />-->
+<!--            <category android:name="android.intent.category.LAUNCHER" />-->
+<!--        </intent-filter>-->
+<!--        </activity>-->
+
+
+
+<!--        <activity-->
+<!--            android:name=".Landslide"-->
+<!--            android:exported="true" /> &lt;!&ndash; <intent-filter> &ndash;&gt;-->
+<!--         <action android:name="android.intent.action.MAIN" /> -->
+<!--         <category android:name="android.intent.category.LAUNCHER" /> -->
+<!--         </intent-filter> -->
+<!--         </activity> -->
         <activity
             android:name=".UserLocation"
             android:exported="true" /> <!-- <intent-filter> -->
@@ -96,9 +113,9 @@
         <!-- </activity> -->
         <!-- Meta-data declaration -->
 
-        <activity
-            android:name=".MapsFragment"
-            android:exported="true" /> <!-- <intent-filter> -->
+<!--        <activity-->
+<!--            android:name=".MapsFragment"-->
+<!--            android:exported="true" /> &lt;!&ndash; <intent-filter> &ndash;&gt;-->
         <!-- <action android:name="android.intent.action.MAIN" /> -->
         <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
         <!-- </intent-filter> -->

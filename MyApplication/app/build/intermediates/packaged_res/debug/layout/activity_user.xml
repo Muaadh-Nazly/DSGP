@@ -15,15 +15,13 @@
         android:id="@+id/FloodCard"
         android:layout_width="337dp"
         android:layout_height="125dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="32dp"
-        app:cardBackgroundColor="@color/black"
+        android:layout_marginTop="24dp"
+        app:cardBackgroundColor="@color/button"
         app:cardCornerRadius="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/LandslideCard"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/CycloneCard"
-        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints">
 
 
@@ -32,9 +30,12 @@
             android:layout_width="306dp"
             android:layout_height="match_parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/constraintLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.5">
+            app:layout_constraintVertical_bias="0.5"
+            tools:layout_editor_absoluteX="15dp">
 
             <TextView
                 android:id="@+id/floodRiskLevel"
@@ -81,12 +82,11 @@
         android:layout_width="337dp"
         android:layout_height="125dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="68dp"
         android:layout_marginEnd="40dp"
-        app:cardBackgroundColor="@color/black"
+        app:cardBackgroundColor="@color/button"
         app:cardCornerRadius="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/currentLocation"
         tools:ignore="MissingConstraints">
@@ -140,11 +140,12 @@
         android:id="@+id/LandslideCard"
         android:layout_width="342dp"
         android:layout_height="122dp"
-        android:layout_marginTop="22dp"
-        android:layout_marginEnd="32dp"
-        app:cardBackgroundColor="@color/black"
+        android:layout_marginTop="52dp"
+        app:cardBackgroundColor="@color/button"
         app:cardCornerRadius="30dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/FloodCard"
         tools:ignore="MissingConstraints">
 
@@ -200,8 +201,8 @@
         android:id="@+id/greetingsOfTheDay"
         android:layout_width="108dp"
         android:layout_height="21dp"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="32dp"
         android:text="@string/greetings"
         android:textColor="@color/white"
         app:layout_constraintDimensionRatio="h,1:1"
@@ -213,10 +214,11 @@
         android:id="@+id/currentLocation"
         android:layout_width="254dp"
         android:layout_height="43dp"
-        android:layout_marginStart="132dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="36dp"
         android:text="Location"
         android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/greetingsOfTheDay" />
 

@@ -9,20 +9,20 @@
 9        android:targetSdkVersion="34" />
 10
 11    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-11-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:5:5-81
-11-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:5:22-78
+11-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:5:5-81
+11-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:5:22-78
 12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-12-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:6:5-79
-12-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:6:22-76
+12-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:6:5-79
+12-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:6:22-76
 13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-13-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:7:5-79
-13-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:7:22-76
+13-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:7:5-79
+13-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:7:22-76
 14    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-14-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:8:5-76
-14-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:8:22-73
+14-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:8:5-76
+14-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:8:22-73
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:9:5-67
-15-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:9:22-64
+15-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:9:5-67
+15-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:9:22-64
 16
 17    <uses-feature
 17-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9a66cf390c85bc6ed33be25ef2e0a5e3\transformed\play-services-maps-18.2.0\AndroidManifest.xml:26:5-28:35
@@ -74,531 +74,540 @@
 39-->[androidx.core:core:1.9.0] C:\Users\LENOVO\.gradle\caches\transforms-3\defe3c2543aaab84875deb44f92d6658\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 40
 41    <application
-41-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:11:5-123:19
+41-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:11:5-140:19
 42        android:allowBackup="true"
-42-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:12:9-35
+42-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:12:9-35
 43        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 43-->[androidx.core:core:1.9.0] C:\Users\LENOVO\.gradle\caches\transforms-3\defe3c2543aaab84875deb44f92d6658\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 44        android:dataExtractionRules="@xml/data_extraction_rules"
-44-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:13:9-65
+44-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:13:9-65
 45        android:debuggable="true"
 46        android:extractNativeLibs="false"
 47        android:fullBackupContent="@xml/backup_rules"
-47-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:14:9-54
+47-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:14:9-54
 48        android:icon="@drawable/logo"
-48-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:15:9-38
+48-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:15:9-38
 49        android:label="Disaster Safe"
-49-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:16:9-38
+49-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:16:9-38
 50        android:roundIcon="@mipmap/ic_launcher_round"
-50-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:17:9-54
+50-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:17:9-54
 51        android:supportsRtl="true"
-51-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:18:9-35
+51-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:18:9-35
 52        android:testOnly="true"
 53        android:theme="@style/AppTheme" >
-53-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:19:9-40
+53-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:19:9-40
 54        <meta-data
-54-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:22:9-24:71
+54-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:22:9-24:71
 55            android:name="com.google.android.geo.API_KEY"
-55-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:23:13-58
-56            android:value="AIzaSyCBkZNaooYIyuSRRY-RROJEOPDKahifN4w" />
-56-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:24:13-68
+55-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:23:13-58
+56            android:value="AIzaSyBFqEgkW1tsb76goacQvrR5eaORkIxtmpI" />
+56-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:24:13-68
 57
 58        <activity
-58-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:27:9-29:39
+58-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:27:9-34:20
 59            android:name="com.example.myapplication.UserActivity"
-59-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:28:13-41
-60            android:exported="true" />
-60-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:29:13-36
-61        <activity
-61-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:30:9-32:40
-62            android:name="com.example.myapplication.AboutUsActivity"
-62-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:31:13-44
-63            android:exported="false" />
-63-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:32:13-37
-64        <activity
-64-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:33:9-35:39
-65            android:name="com.example.myapplication.CycloneActivity"
-65-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:34:13-44
-66            android:exported="true" /> <!-- <intent-filter> -->
-66-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:35:13-36
-67        <!-- <action android:name="android.intent.action.MAIN" /> -->
-68        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-69        <!-- </intent-filter> -->
-70        <!-- </activity> -->
-71        <activity
-71-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:40:9-42:40
-72            android:name="com.example.myapplication.LandslideActivity"
-72-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:41:13-46
-73            android:exported="false" />
-73-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:42:13-37
-74        <activity
-74-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:43:9-45:40
-75            android:name="com.example.myapplication.FloodActivity"
-75-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:44:13-42
-76            android:exported="false" />
-76-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:45:13-37
+59-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:28:13-41
+60            android:exported="true" >
+60-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:29:13-36
+61            <intent-filter>
+61-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:30:9-33:25
+62                <action android:name="android.intent.action.MAIN" />
+62-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:31:13-65
+62-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:31:21-62
+63
+64                <category android:name="android.intent.category.LAUNCHER" />
+64-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:32:13-73
+64-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:32:23-70
+65            </intent-filter>
+66        </activity>
+67        <activity
+67-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:39:9-41:40
+68            android:name="com.example.myapplication.AboutUsActivity"
+68-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:40:13-44
+69            android:exported="false" />
+69-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:41:13-37
+70        <activity
+70-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:42:9-44:39
+71            android:name="com.example.myapplication.CycloneActivity"
+71-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:43:13-44
+72            android:exported="true" /> <!-- <intent-filter> -->
+72-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:44:13-36
+73        <!-- <action android:name="android.intent.action.MAIN" /> -->
+74        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+75        <!-- </intent-filter> -->
+76        <!-- </activity> -->
 77        <activity
-77-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:46:9-48:39
-78            android:name="com.example.myapplication.RegisterActivity"
-78-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:47:13-45
-79            android:exported="true" /> <!-- <intent-filter> -->
-79-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:48:13-36
-80        <!-- <action android:name="android.intent.action.MAIN" /> -->
-81        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-82        <!-- </intent-filter> -->
-83        <!-- </activity> -->
-84        <activity
-84-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:53:9-55:39
-85            android:name="com.example.myapplication.UserLocationPermissionActivity"
-85-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:54:13-59
-86            android:exported="true" /> <!-- <intent-filter> -->
-86-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:55:13-36
-87        <!-- <action android:name="android.intent.action.MAIN" /> -->
-88        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-89        <!-- </intent-filter> -->
-90        <!-- </activity> -->
-91        <activity
-91-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:60:9-62:39
-92            android:name="com.example.myapplication.LoginActivity"
-92-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:61:13-42
-93            android:exported="true" />
-93-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:62:13-36
-94        <activity
-94-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:63:9-71:20
-95            android:name="com.example.myapplication.MainActivity"
-95-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:64:13-41
-96            android:exported="true" >
-96-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:65:13-36
-97            <intent-filter>
-97-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:66:13-70:29
-98                <action android:name="android.intent.action.MAIN" />
-98-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:67:17-69
-98-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:67:25-66
-99
-100                <category android:name="android.intent.category.LAUNCHER" />
-100-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:69:17-77
-100-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:69:27-74
-101            </intent-filter>
-102        </activity>
-103        <activity
-103-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:72:9-74:39
-104            android:name="com.example.myapplication.SelectedLocation"
-104-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:73:13-45
-105            android:exported="true" />
-105-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:74:13-36
-106        <activity
-106-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:75:9-77:39
-107            android:name="com.example.myapplication.Landslide"
-107-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:76:13-38
-108            android:exported="true" /> <!-- <intent-filter> -->
-108-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:77:13-36
-109        <!-- <action android:name="android.intent.action.MAIN" /> -->
-110        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-111        <!-- </intent-filter> -->
-112        <!-- </activity> -->
-113        <activity
-113-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:82:9-84:39
-114            android:name="com.example.myapplication.UserLocation"
-114-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:83:13-41
-115            android:exported="true" /> <!-- <intent-filter> -->
-115-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:84:13-36
-116        <!-- <action android:name="android.intent.action.MAIN" /> -->
-117        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-118        <!-- </intent-filter> -->
-119        <!-- </activity> -->
-120
-121        <activity
-121-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:90:9-92:39
-122            android:name="com.example.myapplication.MapActivity"
-122-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:91:13-40
-123            android:exported="true" /> <!-- <intent-filter> -->
-123-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:92:13-36
-124        <!-- <action android:name="android.intent.action.MAIN" /> -->
-125        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-126        <!-- </intent-filter> -->
-127        <!-- </activity> -->
-128        <!-- Meta-data declaration -->
-129
-130        <activity
-130-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:99:9-101:39
-131            android:name="com.example.myapplication.MapsFragment"
-131-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:100:13-41
-132            android:exported="true" /> <!-- <intent-filter> -->
-132-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:101:13-36
-133        <!-- <action android:name="android.intent.action.MAIN" /> -->
-134        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-135        <!-- </intent-filter> -->
-136        <!-- </activity> -->
-137        <!-- Meta-data declaration -->
-138
-139        <activity
-139-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:108:9-110:39
-140            android:name="com.example.myapplication.New"
-140-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:109:13-32
-141            android:exported="true" />
-141-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:110:13-36
-142        <!-- <intent-filter> -->
-143        <!-- <action android:name="android.intent.action.MAIN" /> -->
-144        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-145        <!-- </intent-filter> -->
-146        <!-- </activity> -->
-147        <!-- Meta-data declaration -->
-148
-149        <meta-data
-149-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:120:9-122:57
-150            android:name="preloaded_fonts"
-150-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:121:13-43
-151            android:resource="@array/preloaded_fonts" />
-151-->C:\Users\LENOVO\Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:122:13-54
-152
-153        <service
-153-->[com.google.firebase:firebase-functions:20.4.0] C:\Users\LENOVO\.gradle\caches\transforms-3\824eb5e8f891068fc942ba6d8cb061cb\transformed\firebase-functions-20.4.0\AndroidManifest.xml:12:9-21:19
-154            android:name="com.google.firebase.components.ComponentDiscoveryService"
-154-->[com.google.firebase:firebase-functions:20.4.0] C:\Users\LENOVO\.gradle\caches\transforms-3\824eb5e8f891068fc942ba6d8cb061cb\transformed\firebase-functions-20.4.0\AndroidManifest.xml:13:13-84
-155            android:directBootAware="true"
-155-->[com.google.firebase:firebase-common:20.4.2] C:\Users\LENOVO\.gradle\caches\transforms-3\9a24715b51240a4a374c5924058e5e33\transformed\firebase-common-20.4.2\AndroidManifest.xml:32:13-43
-156            android:exported="false" >
-156-->[com.google.firebase:firebase-functions:20.4.0] C:\Users\LENOVO\.gradle\caches\transforms-3\824eb5e8f891068fc942ba6d8cb061cb\transformed\firebase-functions-20.4.0\AndroidManifest.xml:14:13-37
-157            <meta-data
-157-->[com.google.firebase:firebase-functions:20.4.0] C:\Users\LENOVO\.gradle\caches\transforms-3\824eb5e8f891068fc942ba6d8cb061cb\transformed\firebase-functions-20.4.0\AndroidManifest.xml:15:13-17:85
-158                android:name="com.google.firebase.components:com.google.firebase.functions.FirebaseFunctionsKtxRegistrar"
-158-->[com.google.firebase:firebase-functions:20.4.0] C:\Users\LENOVO\.gradle\caches\transforms-3\824eb5e8f891068fc942ba6d8cb061cb\transformed\firebase-functions-20.4.0\AndroidManifest.xml:16:17-122
-159                android:value="com.google.firebase.components.ComponentRegistrar" />
-159-->[com.google.firebase:firebase-functions:20.4.0] C:\Users\LENOVO\.gradle\caches\transforms-3\824eb5e8f891068fc942ba6d8cb061cb\transformed\firebase-functions-20.4.0\AndroidManifest.xml:17:17-82
-160            <meta-data
-160-->[com.google.firebase:firebase-functions:20.4.0] C:\Users\LENOVO\.gradle\caches\transforms-3\824eb5e8f891068fc942ba6d8cb061cb\transformed\firebase-functions-20.4.0\AndroidManifest.xml:18:13-20:85
-161                android:name="com.google.firebase.components:com.google.firebase.functions.FunctionsRegistrar"
-161-->[com.google.firebase:firebase-functions:20.4.0] C:\Users\LENOVO\.gradle\caches\transforms-3\824eb5e8f891068fc942ba6d8cb061cb\transformed\firebase-functions-20.4.0\AndroidManifest.xml:19:17-111
-162                android:value="com.google.firebase.components.ComponentRegistrar" />
-162-->[com.google.firebase:firebase-functions:20.4.0] C:\Users\LENOVO\.gradle\caches\transforms-3\824eb5e8f891068fc942ba6d8cb061cb\transformed\firebase-functions-20.4.0\AndroidManifest.xml:20:17-82
-163            <meta-data
-163-->[com.google.firebase:firebase-firestore:24.10.2] C:\Users\LENOVO\.gradle\caches\transforms-3\e73144b5419ab6dc0827b9b9d8b9ae78\transformed\firebase-firestore-24.10.2\AndroidManifest.xml:17:13-19:85
-164                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
-164-->[com.google.firebase:firebase-firestore:24.10.2] C:\Users\LENOVO\.gradle\caches\transforms-3\e73144b5419ab6dc0827b9b9d8b9ae78\transformed\firebase-firestore-24.10.2\AndroidManifest.xml:18:17-122
-165                android:value="com.google.firebase.components.ComponentRegistrar" />
-165-->[com.google.firebase:firebase-firestore:24.10.2] C:\Users\LENOVO\.gradle\caches\transforms-3\e73144b5419ab6dc0827b9b9d8b9ae78\transformed\firebase-firestore-24.10.2\AndroidManifest.xml:19:17-82
-166            <meta-data
-166-->[com.google.firebase:firebase-firestore:24.10.2] C:\Users\LENOVO\.gradle\caches\transforms-3\e73144b5419ab6dc0827b9b9d8b9ae78\transformed\firebase-firestore-24.10.2\AndroidManifest.xml:20:13-22:85
-167                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-167-->[com.google.firebase:firebase-firestore:24.10.2] C:\Users\LENOVO\.gradle\caches\transforms-3\e73144b5419ab6dc0827b9b9d8b9ae78\transformed\firebase-firestore-24.10.2\AndroidManifest.xml:21:17-111
-168                android:value="com.google.firebase.components.ComponentRegistrar" />
-168-->[com.google.firebase:firebase-firestore:24.10.2] C:\Users\LENOVO\.gradle\caches\transforms-3\e73144b5419ab6dc0827b9b9d8b9ae78\transformed\firebase-firestore-24.10.2\AndroidManifest.xml:22:17-82
-169            <meta-data
-169-->[com.google.firebase:firebase-ml-modeldownloader:24.2.3] C:\Users\LENOVO\.gradle\caches\transforms-3\802a11e284f150b407adebc6d6678e4a\transformed\firebase-ml-modeldownloader-24.2.3\AndroidManifest.xml:26:13-28:85
-170                android:name="com.google.firebase.components:com.google.firebase.ml.modeldownloader.FirebaseMlModelDownloaderKtxRegistrar"
-170-->[com.google.firebase:firebase-ml-modeldownloader:24.2.3] C:\Users\LENOVO\.gradle\caches\transforms-3\802a11e284f150b407adebc6d6678e4a\transformed\firebase-ml-modeldownloader-24.2.3\AndroidManifest.xml:27:17-139
-171                android:value="com.google.firebase.components.ComponentRegistrar" />
-171-->[com.google.firebase:firebase-ml-modeldownloader:24.2.3] C:\Users\LENOVO\.gradle\caches\transforms-3\802a11e284f150b407adebc6d6678e4a\transformed\firebase-ml-modeldownloader-24.2.3\AndroidManifest.xml:28:17-82
+77-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:49:9-51:40
+78            android:name="com.example.myapplication.LandslideActivity"
+78-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:50:13-46
+79            android:exported="false" />
+79-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:51:13-37
+80        <activity
+80-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:52:9-54:40
+81            android:name="com.example.myapplication.FloodActivity"
+81-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:53:13-42
+82            android:exported="false" />
+82-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:54:13-37
+83        <activity
+83-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:55:9-57:39
+84            android:name="com.example.myapplication.RegisterActivity"
+84-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:56:13-45
+85            android:exported="true" /> <!-- <intent-filter> -->
+85-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:57:13-36
+86        <!-- <action android:name="android.intent.action.MAIN" /> -->
+87        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+88        <!-- </intent-filter> -->
+89        <!-- </activity> -->
+90        <activity
+90-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:62:9-64:39
+91            android:name="com.example.myapplication.UserLocationPermissionActivity"
+91-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:63:13-59
+92            android:exported="true" /> <!-- <intent-filter> -->
+92-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:64:13-36
+93        <!-- <action android:name="android.intent.action.MAIN" /> -->
+94        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+95        <!-- </intent-filter> -->
+96        <!-- </activity> -->
+97        <activity
+97-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:69:9-71:39
+98            android:name="com.example.myapplication.LoginActivity"
+98-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:70:13-42
+99            android:exported="true" />
+99-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:71:13-36
+100        <activity
+100-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:72:9-74:38
+101            android:name="com.example.myapplication.MainActivity"
+101-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:73:13-41
+102            android:exported="true" />
+102-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:74:13-36
+103        <!-- <intent-filter> -->
+104        <!-- <action android:name="android.intent.action.MAIN" /> -->
+105
+106
+107        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+108        <!-- </intent-filter> -->
+109        <!-- </activity> -->
+110        <activity
+110-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:81:9-83:39
+111            android:name="com.example.myapplication.SelectedLocation"
+111-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:82:13-45
+112            android:exported="true" />
+112-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:83:13-36
+113        <!-- <intent-filter> -->
+114        <!-- <action android:name="android.intent.action.MAIN" /> -->
+115        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+116        <!-- </intent-filter> -->
+117        <!-- </activity> -->
+118
+119
+120        <!-- <activity -->
+121        <!-- android:name=".Landslide" -->
+122        <!-- android:exported="true" /> &lt;!&ndash; <intent-filter> &ndash;&gt; -->
+123        <!-- <action android:name="android.intent.action.MAIN" /> -->
+124        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+125        <!-- </intent-filter> -->
+126        <!-- </activity> -->
+127        <activity
+127-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:99:9-101:39
+128            android:name="com.example.myapplication.UserLocation"
+128-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:100:13-41
+129            android:exported="true" /> <!-- <intent-filter> -->
+129-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:101:13-36
+130        <!-- <action android:name="android.intent.action.MAIN" /> -->
+131        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+132        <!-- </intent-filter> -->
+133        <!-- </activity> -->
+134
+135        <activity
+135-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:107:9-109:39
+136            android:name="com.example.myapplication.MapActivity"
+136-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:108:13-40
+137            android:exported="true" /> <!-- <intent-filter> -->
+137-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:109:13-36
+138        <!-- <action android:name="android.intent.action.MAIN" /> -->
+139        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+140        <!-- </intent-filter> -->
+141        <!-- </activity> -->
+142        <!-- Meta-data declaration -->
+143
+144
+145        <!-- <activity -->
+146        <!-- android:name=".MapsFragment" -->
+147        <!-- android:exported="true" /> &lt;!&ndash; <intent-filter> &ndash;&gt; -->
+148        <!-- <action android:name="android.intent.action.MAIN" /> -->
+149        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+150        <!-- </intent-filter> -->
+151        <!-- </activity> -->
+152        <!-- Meta-data declaration -->
+153
+154        <activity
+154-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:125:9-127:39
+155            android:name="com.example.myapplication.New"
+155-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:126:13-32
+156            android:exported="true" />
+156-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:127:13-36
+157        <!-- <intent-filter> -->
+158        <!-- <action android:name="android.intent.action.MAIN" /> -->
+159        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+160        <!-- </intent-filter> -->
+161        <!-- </activity> -->
+162        <!-- Meta-data declaration -->
+163
+164        <meta-data
+164-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:137:9-139:57
+165            android:name="preloaded_fonts"
+165-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:138:13-43
+166            android:resource="@array/preloaded_fonts" />
+166-->D:\New Desktop\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\MyApplication\app\src\main\AndroidManifest.xml:139:13-54
+167
+168        <service
+168-->[com.google.firebase:firebase-functions:20.4.0] C:\Users\LENOVO\.gradle\caches\transforms-3\824eb5e8f891068fc942ba6d8cb061cb\transformed\firebase-functions-20.4.0\AndroidManifest.xml:12:9-21:19
+169            android:name="com.google.firebase.components.ComponentDiscoveryService"
+169-->[com.google.firebase:firebase-functions:20.4.0] C:\Users\LENOVO\.gradle\caches\transforms-3\824eb5e8f891068fc942ba6d8cb061cb\transformed\firebase-functions-20.4.0\AndroidManifest.xml:13:13-84
+170            android:directBootAware="true"
+170-->[com.google.firebase:firebase-common:20.4.2] C:\Users\LENOVO\.gradle\caches\transforms-3\9a24715b51240a4a374c5924058e5e33\transformed\firebase-common-20.4.2\AndroidManifest.xml:32:13-43
+171            android:exported="false" >
+171-->[com.google.firebase:firebase-functions:20.4.0] C:\Users\LENOVO\.gradle\caches\transforms-3\824eb5e8f891068fc942ba6d8cb061cb\transformed\firebase-functions-20.4.0\AndroidManifest.xml:14:13-37
 172            <meta-data
-172-->[com.google.firebase:firebase-ml-modeldownloader:24.2.3] C:\Users\LENOVO\.gradle\caches\transforms-3\802a11e284f150b407adebc6d6678e4a\transformed\firebase-ml-modeldownloader-24.2.3\AndroidManifest.xml:29:13-31:85
-173                android:name="com.google.firebase.components:com.google.firebase.ml.modeldownloader.FirebaseModelDownloaderRegistrar"
-173-->[com.google.firebase:firebase-ml-modeldownloader:24.2.3] C:\Users\LENOVO\.gradle\caches\transforms-3\802a11e284f150b407adebc6d6678e4a\transformed\firebase-ml-modeldownloader-24.2.3\AndroidManifest.xml:30:17-134
+172-->[com.google.firebase:firebase-functions:20.4.0] C:\Users\LENOVO\.gradle\caches\transforms-3\824eb5e8f891068fc942ba6d8cb061cb\transformed\firebase-functions-20.4.0\AndroidManifest.xml:15:13-17:85
+173                android:name="com.google.firebase.components:com.google.firebase.functions.FirebaseFunctionsKtxRegistrar"
+173-->[com.google.firebase:firebase-functions:20.4.0] C:\Users\LENOVO\.gradle\caches\transforms-3\824eb5e8f891068fc942ba6d8cb061cb\transformed\firebase-functions-20.4.0\AndroidManifest.xml:16:17-122
 174                android:value="com.google.firebase.components.ComponentRegistrar" />
-174-->[com.google.firebase:firebase-ml-modeldownloader:24.2.3] C:\Users\LENOVO\.gradle\caches\transforms-3\802a11e284f150b407adebc6d6678e4a\transformed\firebase-ml-modeldownloader-24.2.3\AndroidManifest.xml:31:17-82
+174-->[com.google.firebase:firebase-functions:20.4.0] C:\Users\LENOVO\.gradle\caches\transforms-3\824eb5e8f891068fc942ba6d8cb061cb\transformed\firebase-functions-20.4.0\AndroidManifest.xml:17:17-82
 175            <meta-data
-175-->[com.google.firebase:firebase-database:20.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\dd5a917cf67e130dd285db2751368a85\transformed\firebase-database-20.3.0\AndroidManifest.xml:29:13-31:85
-176                android:name="com.google.firebase.components:com.google.firebase.database.FirebaseDatabaseKtxRegistrar"
-176-->[com.google.firebase:firebase-database:20.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\dd5a917cf67e130dd285db2751368a85\transformed\firebase-database-20.3.0\AndroidManifest.xml:30:17-120
+175-->[com.google.firebase:firebase-functions:20.4.0] C:\Users\LENOVO\.gradle\caches\transforms-3\824eb5e8f891068fc942ba6d8cb061cb\transformed\firebase-functions-20.4.0\AndroidManifest.xml:18:13-20:85
+176                android:name="com.google.firebase.components:com.google.firebase.functions.FunctionsRegistrar"
+176-->[com.google.firebase:firebase-functions:20.4.0] C:\Users\LENOVO\.gradle\caches\transforms-3\824eb5e8f891068fc942ba6d8cb061cb\transformed\firebase-functions-20.4.0\AndroidManifest.xml:19:17-111
 177                android:value="com.google.firebase.components.ComponentRegistrar" />
-177-->[com.google.firebase:firebase-database:20.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\dd5a917cf67e130dd285db2751368a85\transformed\firebase-database-20.3.0\AndroidManifest.xml:31:17-82
+177-->[com.google.firebase:firebase-functions:20.4.0] C:\Users\LENOVO\.gradle\caches\transforms-3\824eb5e8f891068fc942ba6d8cb061cb\transformed\firebase-functions-20.4.0\AndroidManifest.xml:20:17-82
 178            <meta-data
-178-->[com.google.firebase:firebase-database:20.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\dd5a917cf67e130dd285db2751368a85\transformed\firebase-database-20.3.0\AndroidManifest.xml:32:13-34:85
-179                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-179-->[com.google.firebase:firebase-database:20.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\dd5a917cf67e130dd285db2751368a85\transformed\firebase-database-20.3.0\AndroidManifest.xml:33:17-109
+178-->[com.google.firebase:firebase-firestore:24.10.2] C:\Users\LENOVO\.gradle\caches\transforms-3\e73144b5419ab6dc0827b9b9d8b9ae78\transformed\firebase-firestore-24.10.2\AndroidManifest.xml:17:13-19:85
+179                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+179-->[com.google.firebase:firebase-firestore:24.10.2] C:\Users\LENOVO\.gradle\caches\transforms-3\e73144b5419ab6dc0827b9b9d8b9ae78\transformed\firebase-firestore-24.10.2\AndroidManifest.xml:18:17-122
 180                android:value="com.google.firebase.components.ComponentRegistrar" />
-180-->[com.google.firebase:firebase-database:20.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\dd5a917cf67e130dd285db2751368a85\transformed\firebase-database-20.3.0\AndroidManifest.xml:34:17-82
+180-->[com.google.firebase:firebase-firestore:24.10.2] C:\Users\LENOVO\.gradle\caches\transforms-3\e73144b5419ab6dc0827b9b9d8b9ae78\transformed\firebase-firestore-24.10.2\AndroidManifest.xml:19:17-82
 181            <meta-data
-181-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:69:13-71:85
-182                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-182-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:70:17-109
+181-->[com.google.firebase:firebase-firestore:24.10.2] C:\Users\LENOVO\.gradle\caches\transforms-3\e73144b5419ab6dc0827b9b9d8b9ae78\transformed\firebase-firestore-24.10.2\AndroidManifest.xml:20:13-22:85
+182                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+182-->[com.google.firebase:firebase-firestore:24.10.2] C:\Users\LENOVO\.gradle\caches\transforms-3\e73144b5419ab6dc0827b9b9d8b9ae78\transformed\firebase-firestore-24.10.2\AndroidManifest.xml:21:17-111
 183                android:value="com.google.firebase.components.ComponentRegistrar" />
-183-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:71:17-82
+183-->[com.google.firebase:firebase-firestore:24.10.2] C:\Users\LENOVO\.gradle\caches\transforms-3\e73144b5419ab6dc0827b9b9d8b9ae78\transformed\firebase-firestore-24.10.2\AndroidManifest.xml:22:17-82
 184            <meta-data
-184-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\LENOVO\.gradle\caches\transforms-3\51f4399fac205a3a7aa41b2c4285f0bd\transformed\firebase-iid-21.1.0\AndroidManifest.xml:32:13-34:85
-185                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-185-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\LENOVO\.gradle\caches\transforms-3\51f4399fac205a3a7aa41b2c4285f0bd\transformed\firebase-iid-21.1.0\AndroidManifest.xml:33:17-96
+184-->[com.google.firebase:firebase-ml-modeldownloader:24.2.3] C:\Users\LENOVO\.gradle\caches\transforms-3\802a11e284f150b407adebc6d6678e4a\transformed\firebase-ml-modeldownloader-24.2.3\AndroidManifest.xml:26:13-28:85
+185                android:name="com.google.firebase.components:com.google.firebase.ml.modeldownloader.FirebaseMlModelDownloaderKtxRegistrar"
+185-->[com.google.firebase:firebase-ml-modeldownloader:24.2.3] C:\Users\LENOVO\.gradle\caches\transforms-3\802a11e284f150b407adebc6d6678e4a\transformed\firebase-ml-modeldownloader-24.2.3\AndroidManifest.xml:27:17-139
 186                android:value="com.google.firebase.components.ComponentRegistrar" />
-186-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\LENOVO\.gradle\caches\transforms-3\51f4399fac205a3a7aa41b2c4285f0bd\transformed\firebase-iid-21.1.0\AndroidManifest.xml:34:17-82
+186-->[com.google.firebase:firebase-ml-modeldownloader:24.2.3] C:\Users\LENOVO\.gradle\caches\transforms-3\802a11e284f150b407adebc6d6678e4a\transformed\firebase-ml-modeldownloader-24.2.3\AndroidManifest.xml:28:17-82
 187            <meta-data
-187-->[com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\LENOVO\.gradle\caches\transforms-3\ada62f2b9ac3e48a415a7bdbad6b52cd\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:37:13-39:85
-188                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-188-->[com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\LENOVO\.gradle\caches\transforms-3\ada62f2b9ac3e48a415a7bdbad6b52cd\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:38:17-139
+187-->[com.google.firebase:firebase-ml-modeldownloader:24.2.3] C:\Users\LENOVO\.gradle\caches\transforms-3\802a11e284f150b407adebc6d6678e4a\transformed\firebase-ml-modeldownloader-24.2.3\AndroidManifest.xml:29:13-31:85
+188                android:name="com.google.firebase.components:com.google.firebase.ml.modeldownloader.FirebaseModelDownloaderRegistrar"
+188-->[com.google.firebase:firebase-ml-modeldownloader:24.2.3] C:\Users\LENOVO\.gradle\caches\transforms-3\802a11e284f150b407adebc6d6678e4a\transformed\firebase-ml-modeldownloader-24.2.3\AndroidManifest.xml:30:17-134
 189                android:value="com.google.firebase.components.ComponentRegistrar" />
-189-->[com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\LENOVO\.gradle\caches\transforms-3\ada62f2b9ac3e48a415a7bdbad6b52cd\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:39:17-82
+189-->[com.google.firebase:firebase-ml-modeldownloader:24.2.3] C:\Users\LENOVO\.gradle\caches\transforms-3\802a11e284f150b407adebc6d6678e4a\transformed\firebase-ml-modeldownloader-24.2.3\AndroidManifest.xml:31:17-82
 190            <meta-data
-190-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\361e6264b85b7cf4ef9c003dc8edf5a6\transformed\firebase-installations-17.2.0\AndroidManifest.xml:15:13-17:85
-191                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
-191-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\361e6264b85b7cf4ef9c003dc8edf5a6\transformed\firebase-installations-17.2.0\AndroidManifest.xml:16:17-130
+190-->[com.google.firebase:firebase-database:20.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\dd5a917cf67e130dd285db2751368a85\transformed\firebase-database-20.3.0\AndroidManifest.xml:29:13-31:85
+191                android:name="com.google.firebase.components:com.google.firebase.database.FirebaseDatabaseKtxRegistrar"
+191-->[com.google.firebase:firebase-database:20.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\dd5a917cf67e130dd285db2751368a85\transformed\firebase-database-20.3.0\AndroidManifest.xml:30:17-120
 192                android:value="com.google.firebase.components.ComponentRegistrar" />
-192-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\361e6264b85b7cf4ef9c003dc8edf5a6\transformed\firebase-installations-17.2.0\AndroidManifest.xml:17:17-82
+192-->[com.google.firebase:firebase-database:20.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\dd5a917cf67e130dd285db2751368a85\transformed\firebase-database-20.3.0\AndroidManifest.xml:31:17-82
 193            <meta-data
-193-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\361e6264b85b7cf4ef9c003dc8edf5a6\transformed\firebase-installations-17.2.0\AndroidManifest.xml:18:13-20:85
-194                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-194-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\361e6264b85b7cf4ef9c003dc8edf5a6\transformed\firebase-installations-17.2.0\AndroidManifest.xml:19:17-127
+193-->[com.google.firebase:firebase-database:20.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\dd5a917cf67e130dd285db2751368a85\transformed\firebase-database-20.3.0\AndroidManifest.xml:32:13-34:85
+194                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+194-->[com.google.firebase:firebase-database:20.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\dd5a917cf67e130dd285db2751368a85\transformed\firebase-database-20.3.0\AndroidManifest.xml:33:17-109
 195                android:value="com.google.firebase.components.ComponentRegistrar" />
-195-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\361e6264b85b7cf4ef9c003dc8edf5a6\transformed\firebase-installations-17.2.0\AndroidManifest.xml:20:17-82
+195-->[com.google.firebase:firebase-database:20.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\dd5a917cf67e130dd285db2751368a85\transformed\firebase-database-20.3.0\AndroidManifest.xml:34:17-82
 196            <meta-data
-196-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\LENOVO\.gradle\caches\transforms-3\9b7bb44ff58eb7bf3593faf8c86f196a\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:12:13-14:85
-197                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
-197-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\LENOVO\.gradle\caches\transforms-3\9b7bb44ff58eb7bf3593faf8c86f196a\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:13:17-116
+196-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:69:13-71:85
+197                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+197-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:70:17-109
 198                android:value="com.google.firebase.components.ComponentRegistrar" />
-198-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\LENOVO\.gradle\caches\transforms-3\9b7bb44ff58eb7bf3593faf8c86f196a\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:14:17-82
+198-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:71:17-82
 199            <meta-data
-199-->[com.google.firebase:firebase-common:20.4.2] C:\Users\LENOVO\.gradle\caches\transforms-3\9a24715b51240a4a374c5924058e5e33\transformed\firebase-common-20.4.2\AndroidManifest.xml:35:13-37:85
-200                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
-200-->[com.google.firebase:firebase-common:20.4.2] C:\Users\LENOVO\.gradle\caches\transforms-3\9a24715b51240a4a374c5924058e5e33\transformed\firebase-common-20.4.2\AndroidManifest.xml:36:17-109
+199-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\LENOVO\.gradle\caches\transforms-3\51f4399fac205a3a7aa41b2c4285f0bd\transformed\firebase-iid-21.1.0\AndroidManifest.xml:32:13-34:85
+200                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+200-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\LENOVO\.gradle\caches\transforms-3\51f4399fac205a3a7aa41b2c4285f0bd\transformed\firebase-iid-21.1.0\AndroidManifest.xml:33:17-96
 201                android:value="com.google.firebase.components.ComponentRegistrar" />
-201-->[com.google.firebase:firebase-common:20.4.2] C:\Users\LENOVO\.gradle\caches\transforms-3\9a24715b51240a4a374c5924058e5e33\transformed\firebase-common-20.4.2\AndroidManifest.xml:37:17-82
+201-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\LENOVO\.gradle\caches\transforms-3\51f4399fac205a3a7aa41b2c4285f0bd\transformed\firebase-iid-21.1.0\AndroidManifest.xml:34:17-82
 202            <meta-data
-202-->[com.google.firebase:firebase-datatransport:18.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7ddbf373b43aab0ab74aabff0862615e\transformed\firebase-datatransport-18.2.0\AndroidManifest.xml:25:13-27:85
-203                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
-203-->[com.google.firebase:firebase-datatransport:18.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7ddbf373b43aab0ab74aabff0862615e\transformed\firebase-datatransport-18.2.0\AndroidManifest.xml:26:17-115
+202-->[com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\LENOVO\.gradle\caches\transforms-3\ada62f2b9ac3e48a415a7bdbad6b52cd\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:37:13-39:85
+203                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+203-->[com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\LENOVO\.gradle\caches\transforms-3\ada62f2b9ac3e48a415a7bdbad6b52cd\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:38:17-139
 204                android:value="com.google.firebase.components.ComponentRegistrar" />
-204-->[com.google.firebase:firebase-datatransport:18.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7ddbf373b43aab0ab74aabff0862615e\transformed\firebase-datatransport-18.2.0\AndroidManifest.xml:27:17-82
-205        </service>
-206
-207        <provider
-207-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\6c1091a9448f48ca9ea5f39ae6e7334f\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-208            android:name="androidx.startup.InitializationProvider"
-208-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\6c1091a9448f48ca9ea5f39ae6e7334f\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-209            android:authorities="com.example.myapplication.androidx-startup"
-209-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\6c1091a9448f48ca9ea5f39ae6e7334f\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-210            android:exported="false" >
-210-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\6c1091a9448f48ca9ea5f39ae6e7334f\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+204-->[com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\LENOVO\.gradle\caches\transforms-3\ada62f2b9ac3e48a415a7bdbad6b52cd\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:39:17-82
+205            <meta-data
+205-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\361e6264b85b7cf4ef9c003dc8edf5a6\transformed\firebase-installations-17.2.0\AndroidManifest.xml:15:13-17:85
+206                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+206-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\361e6264b85b7cf4ef9c003dc8edf5a6\transformed\firebase-installations-17.2.0\AndroidManifest.xml:16:17-130
+207                android:value="com.google.firebase.components.ComponentRegistrar" />
+207-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\361e6264b85b7cf4ef9c003dc8edf5a6\transformed\firebase-installations-17.2.0\AndroidManifest.xml:17:17-82
+208            <meta-data
+208-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\361e6264b85b7cf4ef9c003dc8edf5a6\transformed\firebase-installations-17.2.0\AndroidManifest.xml:18:13-20:85
+209                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+209-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\361e6264b85b7cf4ef9c003dc8edf5a6\transformed\firebase-installations-17.2.0\AndroidManifest.xml:19:17-127
+210                android:value="com.google.firebase.components.ComponentRegistrar" />
+210-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\361e6264b85b7cf4ef9c003dc8edf5a6\transformed\firebase-installations-17.2.0\AndroidManifest.xml:20:17-82
 211            <meta-data
-211-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\6c1091a9448f48ca9ea5f39ae6e7334f\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-212                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-212-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\6c1091a9448f48ca9ea5f39ae6e7334f\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-213                android:value="androidx.startup" />
-213-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\6c1091a9448f48ca9ea5f39ae6e7334f\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+211-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\LENOVO\.gradle\caches\transforms-3\9b7bb44ff58eb7bf3593faf8c86f196a\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:12:13-14:85
+212                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+212-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\LENOVO\.gradle\caches\transforms-3\9b7bb44ff58eb7bf3593faf8c86f196a\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:13:17-116
+213                android:value="com.google.firebase.components.ComponentRegistrar" />
+213-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\LENOVO\.gradle\caches\transforms-3\9b7bb44ff58eb7bf3593faf8c86f196a\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:14:17-82
 214            <meta-data
-214-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\LENOVO\.gradle\caches\transforms-3\61e083c99c53f10010f15feff93dac5c\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
-215                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-215-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\LENOVO\.gradle\caches\transforms-3\61e083c99c53f10010f15feff93dac5c\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
-216                android:value="androidx.startup" />
-216-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\LENOVO\.gradle\caches\transforms-3\61e083c99c53f10010f15feff93dac5c\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+214-->[com.google.firebase:firebase-common:20.4.2] C:\Users\LENOVO\.gradle\caches\transforms-3\9a24715b51240a4a374c5924058e5e33\transformed\firebase-common-20.4.2\AndroidManifest.xml:35:13-37:85
+215                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+215-->[com.google.firebase:firebase-common:20.4.2] C:\Users\LENOVO\.gradle\caches\transforms-3\9a24715b51240a4a374c5924058e5e33\transformed\firebase-common-20.4.2\AndroidManifest.xml:36:17-109
+216                android:value="com.google.firebase.components.ComponentRegistrar" />
+216-->[com.google.firebase:firebase-common:20.4.2] C:\Users\LENOVO\.gradle\caches\transforms-3\9a24715b51240a4a374c5924058e5e33\transformed\firebase-common-20.4.2\AndroidManifest.xml:37:17-82
 217            <meta-data
-217-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
-218                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-218-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
-219                android:value="androidx.startup" />
-219-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
-220        </provider> <!-- Needs to be explicitly declared on P+ -->
-221        <uses-library
-221-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9a66cf390c85bc6ed33be25ef2e0a5e3\transformed\play-services-maps-18.2.0\AndroidManifest.xml:39:9-41:40
-222            android:name="org.apache.http.legacy"
-222-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9a66cf390c85bc6ed33be25ef2e0a5e3\transformed\play-services-maps-18.2.0\AndroidManifest.xml:40:13-50
-223            android:required="false" />
-223-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9a66cf390c85bc6ed33be25ef2e0a5e3\transformed\play-services-maps-18.2.0\AndroidManifest.xml:41:13-37
-224
-225        <activity
-225-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:29:9-46:20
-226            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-226-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:30:13-80
-227            android:excludeFromRecents="true"
-227-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:31:13-46
-228            android:exported="true"
-228-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:32:13-36
-229            android:launchMode="singleTask"
-229-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:33:13-44
-230            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-230-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:34:13-72
-231            <intent-filter>
-231-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:35:13-45:29
-232                <action android:name="android.intent.action.VIEW" />
-232-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:36:17-69
-232-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:36:25-66
-233
-234                <category android:name="android.intent.category.DEFAULT" />
-234-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:38:17-76
-234-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:38:27-73
-235                <category android:name="android.intent.category.BROWSABLE" />
-235-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:39:17-78
-235-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:39:27-75
-236
-237                <data
-237-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:41:17-44:51
-238                    android:host="firebase.auth"
-238-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:42:21-49
-239                    android:path="/"
-239-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:43:21-37
-240                    android:scheme="genericidp" />
-240-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:44:21-48
-241            </intent-filter>
-242        </activity>
-243        <activity
-243-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:47:9-64:20
-244            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-244-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:48:13-79
-245            android:excludeFromRecents="true"
-245-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:49:13-46
-246            android:exported="true"
-246-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:50:13-36
-247            android:launchMode="singleTask"
-247-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:51:13-44
-248            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-248-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:52:13-72
-249            <intent-filter>
-249-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:53:13-63:29
-250                <action android:name="android.intent.action.VIEW" />
-250-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:36:17-69
-250-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:36:25-66
+217-->[com.google.firebase:firebase-datatransport:18.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7ddbf373b43aab0ab74aabff0862615e\transformed\firebase-datatransport-18.2.0\AndroidManifest.xml:25:13-27:85
+218                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+218-->[com.google.firebase:firebase-datatransport:18.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7ddbf373b43aab0ab74aabff0862615e\transformed\firebase-datatransport-18.2.0\AndroidManifest.xml:26:17-115
+219                android:value="com.google.firebase.components.ComponentRegistrar" />
+219-->[com.google.firebase:firebase-datatransport:18.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7ddbf373b43aab0ab74aabff0862615e\transformed\firebase-datatransport-18.2.0\AndroidManifest.xml:27:17-82
+220        </service>
+221
+222        <provider
+222-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\6c1091a9448f48ca9ea5f39ae6e7334f\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+223            android:name="androidx.startup.InitializationProvider"
+223-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\6c1091a9448f48ca9ea5f39ae6e7334f\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+224            android:authorities="com.example.myapplication.androidx-startup"
+224-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\6c1091a9448f48ca9ea5f39ae6e7334f\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+225            android:exported="false" >
+225-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\6c1091a9448f48ca9ea5f39ae6e7334f\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+226            <meta-data
+226-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\6c1091a9448f48ca9ea5f39ae6e7334f\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+227                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+227-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\6c1091a9448f48ca9ea5f39ae6e7334f\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+228                android:value="androidx.startup" />
+228-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\6c1091a9448f48ca9ea5f39ae6e7334f\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+229            <meta-data
+229-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\LENOVO\.gradle\caches\transforms-3\61e083c99c53f10010f15feff93dac5c\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+230                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+230-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\LENOVO\.gradle\caches\transforms-3\61e083c99c53f10010f15feff93dac5c\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+231                android:value="androidx.startup" />
+231-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\LENOVO\.gradle\caches\transforms-3\61e083c99c53f10010f15feff93dac5c\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+232            <meta-data
+232-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+233                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+233-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+234                android:value="androidx.startup" />
+234-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+235        </provider> <!-- Needs to be explicitly declared on P+ -->
+236        <uses-library
+236-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9a66cf390c85bc6ed33be25ef2e0a5e3\transformed\play-services-maps-18.2.0\AndroidManifest.xml:39:9-41:40
+237            android:name="org.apache.http.legacy"
+237-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9a66cf390c85bc6ed33be25ef2e0a5e3\transformed\play-services-maps-18.2.0\AndroidManifest.xml:40:13-50
+238            android:required="false" />
+238-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9a66cf390c85bc6ed33be25ef2e0a5e3\transformed\play-services-maps-18.2.0\AndroidManifest.xml:41:13-37
+239
+240        <activity
+240-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:29:9-46:20
+241            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+241-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:30:13-80
+242            android:excludeFromRecents="true"
+242-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:31:13-46
+243            android:exported="true"
+243-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:32:13-36
+244            android:launchMode="singleTask"
+244-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:33:13-44
+245            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+245-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:34:13-72
+246            <intent-filter>
+246-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:35:13-45:29
+247                <action android:name="android.intent.action.VIEW" />
+247-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:36:17-69
+247-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:36:25-66
+248
+249                <category android:name="android.intent.category.DEFAULT" />
+249-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:38:17-76
+249-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:38:27-73
+250                <category android:name="android.intent.category.BROWSABLE" />
+250-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:39:17-78
+250-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:39:27-75
 251
-252                <category android:name="android.intent.category.DEFAULT" />
-252-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:38:17-76
-252-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:38:27-73
-253                <category android:name="android.intent.category.BROWSABLE" />
-253-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:39:17-78
-253-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:39:27-75
-254
-255                <data
-255-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:41:17-44:51
-256                    android:host="firebase.auth"
-256-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:42:21-49
-257                    android:path="/"
-257-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:43:21-37
-258                    android:scheme="recaptcha" />
-258-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:44:21-48
-259            </intent-filter>
-260        </activity>
-261        <activity
-261-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\530300ce12aa58243f5443ef44f26fa2\transformed\play-services-base-18.3.0\AndroidManifest.xml:20:9-22:45
-262            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-262-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\530300ce12aa58243f5443ef44f26fa2\transformed\play-services-base-18.3.0\AndroidManifest.xml:20:19-85
-263            android:exported="false"
-263-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\530300ce12aa58243f5443ef44f26fa2\transformed\play-services-base-18.3.0\AndroidManifest.xml:22:19-43
-264            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-264-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\530300ce12aa58243f5443ef44f26fa2\transformed\play-services-base-18.3.0\AndroidManifest.xml:21:19-78
-265
-266        <property
-266-->[com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\LENOVO\.gradle\caches\transforms-3\ada62f2b9ac3e48a415a7bdbad6b52cd\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:30:9-32:61
-267            android:name="android.adservices.AD_SERVICES_CONFIG"
-267-->[com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\LENOVO\.gradle\caches\transforms-3\ada62f2b9ac3e48a415a7bdbad6b52cd\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:31:13-65
-268            android:resource="@xml/ga_ad_services_config" />
-268-->[com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\LENOVO\.gradle\caches\transforms-3\ada62f2b9ac3e48a415a7bdbad6b52cd\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:32:13-58
+252                <data
+252-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:41:17-44:51
+253                    android:host="firebase.auth"
+253-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:42:21-49
+254                    android:path="/"
+254-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:43:21-37
+255                    android:scheme="genericidp" />
+255-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:44:21-48
+256            </intent-filter>
+257        </activity>
+258        <activity
+258-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:47:9-64:20
+259            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+259-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:48:13-79
+260            android:excludeFromRecents="true"
+260-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:49:13-46
+261            android:exported="true"
+261-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:50:13-36
+262            android:launchMode="singleTask"
+262-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:51:13-44
+263            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+263-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:52:13-72
+264            <intent-filter>
+264-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:53:13-63:29
+265                <action android:name="android.intent.action.VIEW" />
+265-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:36:17-69
+265-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:36:25-66
+266
+267                <category android:name="android.intent.category.DEFAULT" />
+267-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:38:17-76
+267-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:38:27-73
+268                <category android:name="android.intent.category.BROWSABLE" />
+268-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:39:17-78
+268-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:39:27-75
 269
-270        <provider
-270-->[com.google.firebase:firebase-common:20.4.2] C:\Users\LENOVO\.gradle\caches\transforms-3\9a24715b51240a4a374c5924058e5e33\transformed\firebase-common-20.4.2\AndroidManifest.xml:23:9-28:39
-271            android:name="com.google.firebase.provider.FirebaseInitProvider"
-271-->[com.google.firebase:firebase-common:20.4.2] C:\Users\LENOVO\.gradle\caches\transforms-3\9a24715b51240a4a374c5924058e5e33\transformed\firebase-common-20.4.2\AndroidManifest.xml:24:13-77
-272            android:authorities="com.example.myapplication.firebaseinitprovider"
-272-->[com.google.firebase:firebase-common:20.4.2] C:\Users\LENOVO\.gradle\caches\transforms-3\9a24715b51240a4a374c5924058e5e33\transformed\firebase-common-20.4.2\AndroidManifest.xml:25:13-72
-273            android:directBootAware="true"
-273-->[com.google.firebase:firebase-common:20.4.2] C:\Users\LENOVO\.gradle\caches\transforms-3\9a24715b51240a4a374c5924058e5e33\transformed\firebase-common-20.4.2\AndroidManifest.xml:26:13-43
-274            android:exported="false"
-274-->[com.google.firebase:firebase-common:20.4.2] C:\Users\LENOVO\.gradle\caches\transforms-3\9a24715b51240a4a374c5924058e5e33\transformed\firebase-common-20.4.2\AndroidManifest.xml:27:13-37
-275            android:initOrder="100" />
-275-->[com.google.firebase:firebase-common:20.4.2] C:\Users\LENOVO\.gradle\caches\transforms-3\9a24715b51240a4a374c5924058e5e33\transformed\firebase-common-20.4.2\AndroidManifest.xml:28:13-36
-276
-277        <receiver
-277-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\LENOVO\.gradle\caches\transforms-3\4da39c689ed9fb3a4aa6066b157568d3\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:29:9-33:20
-278            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-278-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\LENOVO\.gradle\caches\transforms-3\4da39c689ed9fb3a4aa6066b157568d3\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:30:13-85
-279            android:enabled="true"
-279-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\LENOVO\.gradle\caches\transforms-3\4da39c689ed9fb3a4aa6066b157568d3\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:31:13-35
-280            android:exported="false" >
-280-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\LENOVO\.gradle\caches\transforms-3\4da39c689ed9fb3a4aa6066b157568d3\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:32:13-37
-281        </receiver>
-282
-283        <service
-283-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\LENOVO\.gradle\caches\transforms-3\4da39c689ed9fb3a4aa6066b157568d3\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:35:9-38:40
-284            android:name="com.google.android.gms.measurement.AppMeasurementService"
-284-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\LENOVO\.gradle\caches\transforms-3\4da39c689ed9fb3a4aa6066b157568d3\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:36:13-84
-285            android:enabled="true"
-285-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\LENOVO\.gradle\caches\transforms-3\4da39c689ed9fb3a4aa6066b157568d3\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:37:13-35
-286            android:exported="false" />
-286-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\LENOVO\.gradle\caches\transforms-3\4da39c689ed9fb3a4aa6066b157568d3\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:38:13-37
-287        <service
-287-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\LENOVO\.gradle\caches\transforms-3\4da39c689ed9fb3a4aa6066b157568d3\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:39:9-43:72
-288            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-288-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\LENOVO\.gradle\caches\transforms-3\4da39c689ed9fb3a4aa6066b157568d3\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:40:13-87
-289            android:enabled="true"
-289-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\LENOVO\.gradle\caches\transforms-3\4da39c689ed9fb3a4aa6066b157568d3\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:41:13-35
-290            android:exported="false"
-290-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\LENOVO\.gradle\caches\transforms-3\4da39c689ed9fb3a4aa6066b157568d3\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:42:13-37
-291            android:permission="android.permission.BIND_JOB_SERVICE" />
-291-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\LENOVO\.gradle\caches\transforms-3\4da39c689ed9fb3a4aa6066b157568d3\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:43:13-69
-292
-293        <uses-library
-293-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\LENOVO\.gradle\caches\transforms-3\45a9b134e6a799600fc9bf68e303026d\transformed\ads-adservices-1.0.0-beta05\AndroidManifest.xml:23:9-25:40
-294            android:name="android.ext.adservices"
-294-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\LENOVO\.gradle\caches\transforms-3\45a9b134e6a799600fc9bf68e303026d\transformed\ads-adservices-1.0.0-beta05\AndroidManifest.xml:24:13-50
-295            android:required="false" />
-295-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\LENOVO\.gradle\caches\transforms-3\45a9b134e6a799600fc9bf68e303026d\transformed\ads-adservices-1.0.0-beta05\AndroidManifest.xml:25:13-37
-296
-297        <meta-data
-297-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\5711896c2afcad94d6c1d9e3e469e70c\transformed\play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
-298            android:name="com.google.android.gms.version"
-298-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\5711896c2afcad94d6c1d9e3e469e70c\transformed\play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
-299            android:value="@integer/google_play_services_version" />
-299-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\5711896c2afcad94d6c1d9e3e469e70c\transformed\play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
-300
-301        <service
-301-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\LENOVO\.gradle\caches\transforms-3\876d09095477f881aa5d83bf0befcc90\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:28:9-34:19
-302            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-302-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\LENOVO\.gradle\caches\transforms-3\876d09095477f881aa5d83bf0befcc90\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:29:13-103
-303            android:exported="false" >
-303-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\LENOVO\.gradle\caches\transforms-3\876d09095477f881aa5d83bf0befcc90\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:30:13-37
-304            <meta-data
-304-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\LENOVO\.gradle\caches\transforms-3\876d09095477f881aa5d83bf0befcc90\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:31:13-33:39
-305                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-305-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\LENOVO\.gradle\caches\transforms-3\876d09095477f881aa5d83bf0befcc90\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:32:17-94
-306                android:value="cct" />
-306-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\LENOVO\.gradle\caches\transforms-3\876d09095477f881aa5d83bf0befcc90\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:33:17-36
-307        </service>
-308        <service
-308-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\LENOVO\.gradle\caches\transforms-3\1f60b579b57666c6f47160481f488aee\transformed\transport-runtime-3.1.9\AndroidManifest.xml:26:9-30:19
-309            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-309-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\LENOVO\.gradle\caches\transforms-3\1f60b579b57666c6f47160481f488aee\transformed\transport-runtime-3.1.9\AndroidManifest.xml:27:13-117
-310            android:exported="false"
-310-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\LENOVO\.gradle\caches\transforms-3\1f60b579b57666c6f47160481f488aee\transformed\transport-runtime-3.1.9\AndroidManifest.xml:28:13-37
-311            android:permission="android.permission.BIND_JOB_SERVICE" >
-311-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\LENOVO\.gradle\caches\transforms-3\1f60b579b57666c6f47160481f488aee\transformed\transport-runtime-3.1.9\AndroidManifest.xml:29:13-69
-312        </service>
-313
-314        <receiver
-314-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\LENOVO\.gradle\caches\transforms-3\1f60b579b57666c6f47160481f488aee\transformed\transport-runtime-3.1.9\AndroidManifest.xml:32:9-34:40
-315            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-315-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\LENOVO\.gradle\caches\transforms-3\1f60b579b57666c6f47160481f488aee\transformed\transport-runtime-3.1.9\AndroidManifest.xml:33:13-132
-316            android:exported="false" />
-316-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\LENOVO\.gradle\caches\transforms-3\1f60b579b57666c6f47160481f488aee\transformed\transport-runtime-3.1.9\AndroidManifest.xml:34:13-37
-317        <receiver
-317-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
-318            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-318-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
-319            android:directBootAware="false"
-319-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
-320            android:enabled="true"
-320-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
-321            android:exported="true"
-321-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
-322            android:permission="android.permission.DUMP" >
-322-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
-323            <intent-filter>
-323-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
-324                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-324-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
-324-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
-325            </intent-filter>
-326            <intent-filter>
-326-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
-327                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-327-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
-327-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
-328            </intent-filter>
-329            <intent-filter>
-329-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
-330                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-330-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
-330-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
-331            </intent-filter>
-332            <intent-filter>
-332-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
-333                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-333-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
-333-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
-334            </intent-filter>
-335        </receiver>
-336    </application>
-337
-338</manifest>
+270                <data
+270-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:41:17-44:51
+271                    android:host="firebase.auth"
+271-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:42:21-49
+272                    android:path="/"
+272-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:43:21-37
+273                    android:scheme="recaptcha" />
+273-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\94f5225f42c5bd488916d5b7e8f760b3\transformed\firebase-auth-22.3.1\AndroidManifest.xml:44:21-48
+274            </intent-filter>
+275        </activity>
+276        <activity
+276-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\530300ce12aa58243f5443ef44f26fa2\transformed\play-services-base-18.3.0\AndroidManifest.xml:20:9-22:45
+277            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+277-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\530300ce12aa58243f5443ef44f26fa2\transformed\play-services-base-18.3.0\AndroidManifest.xml:20:19-85
+278            android:exported="false"
+278-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\530300ce12aa58243f5443ef44f26fa2\transformed\play-services-base-18.3.0\AndroidManifest.xml:22:19-43
+279            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+279-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\530300ce12aa58243f5443ef44f26fa2\transformed\play-services-base-18.3.0\AndroidManifest.xml:21:19-78
+280
+281        <property
+281-->[com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\LENOVO\.gradle\caches\transforms-3\ada62f2b9ac3e48a415a7bdbad6b52cd\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:30:9-32:61
+282            android:name="android.adservices.AD_SERVICES_CONFIG"
+282-->[com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\LENOVO\.gradle\caches\transforms-3\ada62f2b9ac3e48a415a7bdbad6b52cd\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:31:13-65
+283            android:resource="@xml/ga_ad_services_config" />
+283-->[com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\LENOVO\.gradle\caches\transforms-3\ada62f2b9ac3e48a415a7bdbad6b52cd\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:32:13-58
+284
+285        <provider
+285-->[com.google.firebase:firebase-common:20.4.2] C:\Users\LENOVO\.gradle\caches\transforms-3\9a24715b51240a4a374c5924058e5e33\transformed\firebase-common-20.4.2\AndroidManifest.xml:23:9-28:39
+286            android:name="com.google.firebase.provider.FirebaseInitProvider"
+286-->[com.google.firebase:firebase-common:20.4.2] C:\Users\LENOVO\.gradle\caches\transforms-3\9a24715b51240a4a374c5924058e5e33\transformed\firebase-common-20.4.2\AndroidManifest.xml:24:13-77
+287            android:authorities="com.example.myapplication.firebaseinitprovider"
+287-->[com.google.firebase:firebase-common:20.4.2] C:\Users\LENOVO\.gradle\caches\transforms-3\9a24715b51240a4a374c5924058e5e33\transformed\firebase-common-20.4.2\AndroidManifest.xml:25:13-72
+288            android:directBootAware="true"
+288-->[com.google.firebase:firebase-common:20.4.2] C:\Users\LENOVO\.gradle\caches\transforms-3\9a24715b51240a4a374c5924058e5e33\transformed\firebase-common-20.4.2\AndroidManifest.xml:26:13-43
+289            android:exported="false"
+289-->[com.google.firebase:firebase-common:20.4.2] C:\Users\LENOVO\.gradle\caches\transforms-3\9a24715b51240a4a374c5924058e5e33\transformed\firebase-common-20.4.2\AndroidManifest.xml:27:13-37
+290            android:initOrder="100" />
+290-->[com.google.firebase:firebase-common:20.4.2] C:\Users\LENOVO\.gradle\caches\transforms-3\9a24715b51240a4a374c5924058e5e33\transformed\firebase-common-20.4.2\AndroidManifest.xml:28:13-36
+291
+292        <receiver
+292-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\LENOVO\.gradle\caches\transforms-3\4da39c689ed9fb3a4aa6066b157568d3\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:29:9-33:20
+293            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+293-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\LENOVO\.gradle\caches\transforms-3\4da39c689ed9fb3a4aa6066b157568d3\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:30:13-85
+294            android:enabled="true"
+294-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\LENOVO\.gradle\caches\transforms-3\4da39c689ed9fb3a4aa6066b157568d3\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:31:13-35
+295            android:exported="false" >
+295-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\LENOVO\.gradle\caches\transforms-3\4da39c689ed9fb3a4aa6066b157568d3\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:32:13-37
+296        </receiver>
+297
+298        <service
+298-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\LENOVO\.gradle\caches\transforms-3\4da39c689ed9fb3a4aa6066b157568d3\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:35:9-38:40
+299            android:name="com.google.android.gms.measurement.AppMeasurementService"
+299-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\LENOVO\.gradle\caches\transforms-3\4da39c689ed9fb3a4aa6066b157568d3\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:36:13-84
+300            android:enabled="true"
+300-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\LENOVO\.gradle\caches\transforms-3\4da39c689ed9fb3a4aa6066b157568d3\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:37:13-35
+301            android:exported="false" />
+301-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\LENOVO\.gradle\caches\transforms-3\4da39c689ed9fb3a4aa6066b157568d3\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:38:13-37
+302        <service
+302-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\LENOVO\.gradle\caches\transforms-3\4da39c689ed9fb3a4aa6066b157568d3\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:39:9-43:72
+303            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+303-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\LENOVO\.gradle\caches\transforms-3\4da39c689ed9fb3a4aa6066b157568d3\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:40:13-87
+304            android:enabled="true"
+304-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\LENOVO\.gradle\caches\transforms-3\4da39c689ed9fb3a4aa6066b157568d3\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:41:13-35
+305            android:exported="false"
+305-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\LENOVO\.gradle\caches\transforms-3\4da39c689ed9fb3a4aa6066b157568d3\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:42:13-37
+306            android:permission="android.permission.BIND_JOB_SERVICE" />
+306-->[com.google.android.gms:play-services-measurement:21.5.1] C:\Users\LENOVO\.gradle\caches\transforms-3\4da39c689ed9fb3a4aa6066b157568d3\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:43:13-69
+307
+308        <uses-library
+308-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\LENOVO\.gradle\caches\transforms-3\45a9b134e6a799600fc9bf68e303026d\transformed\ads-adservices-1.0.0-beta05\AndroidManifest.xml:23:9-25:40
+309            android:name="android.ext.adservices"
+309-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\LENOVO\.gradle\caches\transforms-3\45a9b134e6a799600fc9bf68e303026d\transformed\ads-adservices-1.0.0-beta05\AndroidManifest.xml:24:13-50
+310            android:required="false" />
+310-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\LENOVO\.gradle\caches\transforms-3\45a9b134e6a799600fc9bf68e303026d\transformed\ads-adservices-1.0.0-beta05\AndroidManifest.xml:25:13-37
+311
+312        <meta-data
+312-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\5711896c2afcad94d6c1d9e3e469e70c\transformed\play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+313            android:name="com.google.android.gms.version"
+313-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\5711896c2afcad94d6c1d9e3e469e70c\transformed\play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+314            android:value="@integer/google_play_services_version" />
+314-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\5711896c2afcad94d6c1d9e3e469e70c\transformed\play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+315
+316        <service
+316-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\LENOVO\.gradle\caches\transforms-3\876d09095477f881aa5d83bf0befcc90\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:28:9-34:19
+317            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+317-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\LENOVO\.gradle\caches\transforms-3\876d09095477f881aa5d83bf0befcc90\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:29:13-103
+318            android:exported="false" >
+318-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\LENOVO\.gradle\caches\transforms-3\876d09095477f881aa5d83bf0befcc90\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:30:13-37
+319            <meta-data
+319-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\LENOVO\.gradle\caches\transforms-3\876d09095477f881aa5d83bf0befcc90\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:31:13-33:39
+320                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+320-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\LENOVO\.gradle\caches\transforms-3\876d09095477f881aa5d83bf0befcc90\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:32:17-94
+321                android:value="cct" />
+321-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\LENOVO\.gradle\caches\transforms-3\876d09095477f881aa5d83bf0befcc90\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:33:17-36
+322        </service>
+323        <service
+323-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\LENOVO\.gradle\caches\transforms-3\1f60b579b57666c6f47160481f488aee\transformed\transport-runtime-3.1.9\AndroidManifest.xml:26:9-30:19
+324            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+324-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\LENOVO\.gradle\caches\transforms-3\1f60b579b57666c6f47160481f488aee\transformed\transport-runtime-3.1.9\AndroidManifest.xml:27:13-117
+325            android:exported="false"
+325-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\LENOVO\.gradle\caches\transforms-3\1f60b579b57666c6f47160481f488aee\transformed\transport-runtime-3.1.9\AndroidManifest.xml:28:13-37
+326            android:permission="android.permission.BIND_JOB_SERVICE" >
+326-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\LENOVO\.gradle\caches\transforms-3\1f60b579b57666c6f47160481f488aee\transformed\transport-runtime-3.1.9\AndroidManifest.xml:29:13-69
+327        </service>
+328
+329        <receiver
+329-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\LENOVO\.gradle\caches\transforms-3\1f60b579b57666c6f47160481f488aee\transformed\transport-runtime-3.1.9\AndroidManifest.xml:32:9-34:40
+330            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+330-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\LENOVO\.gradle\caches\transforms-3\1f60b579b57666c6f47160481f488aee\transformed\transport-runtime-3.1.9\AndroidManifest.xml:33:13-132
+331            android:exported="false" />
+331-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\LENOVO\.gradle\caches\transforms-3\1f60b579b57666c6f47160481f488aee\transformed\transport-runtime-3.1.9\AndroidManifest.xml:34:13-37
+332        <receiver
+332-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+333            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+333-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+334            android:directBootAware="false"
+334-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+335            android:enabled="true"
+335-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+336            android:exported="true"
+336-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+337            android:permission="android.permission.DUMP" >
+337-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+338            <intent-filter>
+338-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+339                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+339-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+339-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+340            </intent-filter>
+341            <intent-filter>
+341-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+342                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+342-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+342-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+343            </intent-filter>
+344            <intent-filter>
+344-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+345                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+345-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+345-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+346            </intent-filter>
+347            <intent-filter>
+347-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+348                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+348-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+348-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\7790453f000c88b0b6244b24e69e1af1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+349            </intent-filter>
+350        </receiver>
+351    </application>
+352
+353</manifest>

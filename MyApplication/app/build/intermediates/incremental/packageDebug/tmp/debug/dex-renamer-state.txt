@@ -1,11 +1,11 @@
-#Sun Mar 24 15:28:30 IST 2024
-base.0=C\:\\Users\\LENOVO\\Desktop\\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\\MyApplication\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=C\:\\Users\\LENOVO\\Desktop\\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\\MyApplication\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.2=C\:\\Users\\LENOVO\\Desktop\\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\\MyApplication\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
-base.3=C\:\\Users\\LENOVO\\Desktop\\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\\MyApplication\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
-base.4=C\:\\Users\\LENOVO\\Desktop\\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\\MyApplication\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\5\\classes.dex
-base.5=C\:\\Users\\LENOVO\\Desktop\\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\\MyApplication\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
-base.6=C\:\\Users\\LENOVO\\Desktop\\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\\MyApplication\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
+#Sun Mar 24 22:11:45 IST 2024
+base.0=D\:\\New Desktop\\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\\MyApplication\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=D\:\\New Desktop\\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\\MyApplication\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=D\:\\New Desktop\\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\\MyApplication\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
+base.3=D\:\\New Desktop\\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\\MyApplication\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
+base.4=D\:\\New Desktop\\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\\MyApplication\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\5\\classes.dex
+base.5=D\:\\New Desktop\\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\\MyApplication\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+base.6=D\:\\New Desktop\\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\\MyApplication\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=12/classes.dex

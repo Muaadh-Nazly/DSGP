@@ -7,6 +7,7 @@ import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -139,12 +140,6 @@ public class UserActivity extends AppCompatActivity {
         New NEWCLASS = new  New();
         NEWCLASS.user_details();
 
-        cycloneCard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                CycloneActivity();
-            }
-        });
 
 
         changeLocationCardView.setOnClickListener(new View.OnClickListener() {
@@ -157,31 +152,46 @@ public class UserActivity extends AppCompatActivity {
 
         floodCard.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                // Navigate to the RegisterActivity activity when Get Started is clicked
-                FloodActivity();
-
+            public void onClick(View view) {
+                Intent intent = new Intent(UserActivity.this, LoadingActivity.class);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    intent.putExtra("targetActivity", FloodActivity.class);
+                }
+                startActivity(intent);
             }
         });
 
         landslideCard.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                // Navigate to the RegisterActivity activity when Get Started is clicked
-                LandslideActivity();
-
+            public void onClick(View view) {
+                Intent intent = new Intent(UserActivity.this, LoadingActivity.class);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    intent.putExtra("targetActivity", LandslideActivity.class);
+                }
+                startActivity(intent);
             }
         });
 
-
-        showMap.setOnClickListener(new View.OnClickListener() {
+        cycloneCard.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                // Navigate to the RegisterActivity activity when Get Started is clicked
-                MapActivity();
-
+            public void onClick(View view) {
+                Intent intent = new Intent(UserActivity.this, LoadingActivity.class);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    intent.putExtra("targetActivity", CycloneActivity.class);
+                }
+                startActivity(intent);
             }
         });
+
+
+//        showMap.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                // Navigate to the RegisterActivity activity when Get Started is clicked
+//                MapActivity();
+//
+//            }
+//        });
     }
 
 
@@ -261,20 +271,29 @@ public class UserActivity extends AppCompatActivity {
 
     public void CycloneActivity() {
 
-        Intent intent = new Intent(this, CycloneActivity.class);
+        Intent intent = null;
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            intent = new Intent(this, CycloneActivity.class);
+        }
         startActivity(intent);
     }
 
     public void LandslideActivity() {
 
-        Intent intent = new Intent(this, LandslideActivity.class);
+        Intent intent = null;
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            intent = new Intent(this, LandslideActivity.class);
+        }
         startActivity(intent);
     }
 
 
     public void FloodActivity() {
 
-        Intent intent = new Intent(this, FloodActivity.class);
+        Intent intent = null;
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            intent = new Intent(this, FloodActivity.class);
+        }
         startActivity(intent);
     }
 

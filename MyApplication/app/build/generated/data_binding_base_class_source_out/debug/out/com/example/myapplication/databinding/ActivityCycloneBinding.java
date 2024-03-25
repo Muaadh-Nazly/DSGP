@@ -4,74 +4,24 @@ package com.example.myapplication.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
-import androidx.viewbinding.ViewBindings;
 import com.example.myapplication.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
-import java.lang.String;
 
 public final class ActivityCycloneBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final View rootView;
 
-  @NonNull
-  public final ConstraintLayout CycloneCard1;
-
-  @NonNull
-  public final ConstraintLayout CycloneCard2;
-
-  @NonNull
-  public final TextView CycloneRandomForestAccuracyPercentage;
-
-  @NonNull
-  public final TextView CycloneRandomForestPredictedValue;
-
-  @NonNull
-  public final TextView CycloneRandomForestText;
-
-  @NonNull
-  public final TextView CycloneXGBoostAccuracyPercentage;
-
-  @NonNull
-  public final TextView CycloneXGBoostPredictedValue;
-
-  @NonNull
-  public final TextView CycloneXGBoostText;
-
-  @NonNull
-  public final TextView TitleCyclone;
-
-  @NonNull
-  public final ConstraintLayout relativeLayout;
-
-  private ActivityCycloneBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ConstraintLayout CycloneCard1, @NonNull ConstraintLayout CycloneCard2,
-      @NonNull TextView CycloneRandomForestAccuracyPercentage,
-      @NonNull TextView CycloneRandomForestPredictedValue,
-      @NonNull TextView CycloneRandomForestText, @NonNull TextView CycloneXGBoostAccuracyPercentage,
-      @NonNull TextView CycloneXGBoostPredictedValue, @NonNull TextView CycloneXGBoostText,
-      @NonNull TextView TitleCyclone, @NonNull ConstraintLayout relativeLayout) {
+  private ActivityCycloneBinding(@NonNull View rootView) {
     this.rootView = rootView;
-    this.CycloneCard1 = CycloneCard1;
-    this.CycloneCard2 = CycloneCard2;
-    this.CycloneRandomForestAccuracyPercentage = CycloneRandomForestAccuracyPercentage;
-    this.CycloneRandomForestPredictedValue = CycloneRandomForestPredictedValue;
-    this.CycloneRandomForestText = CycloneRandomForestText;
-    this.CycloneXGBoostAccuracyPercentage = CycloneXGBoostAccuracyPercentage;
-    this.CycloneXGBoostPredictedValue = CycloneXGBoostPredictedValue;
-    this.CycloneXGBoostText = CycloneXGBoostText;
-    this.TitleCyclone = TitleCyclone;
-    this.relativeLayout = relativeLayout;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public View getRoot() {
     return rootView;
   }
 
@@ -92,72 +42,10 @@ public final class ActivityCycloneBinding implements ViewBinding {
 
   @NonNull
   public static ActivityCycloneBinding bind(@NonNull View rootView) {
-    // The body of this method is generated in a way you would not otherwise write.
-    // This is done to optimize the compiled bytecode for size and performance.
-    int id;
-    missingId: {
-      id = R.id.CycloneCard1;
-      ConstraintLayout CycloneCard1 = ViewBindings.findChildViewById(rootView, id);
-      if (CycloneCard1 == null) {
-        break missingId;
-      }
-
-      id = R.id.CycloneCard2;
-      ConstraintLayout CycloneCard2 = ViewBindings.findChildViewById(rootView, id);
-      if (CycloneCard2 == null) {
-        break missingId;
-      }
-
-      id = R.id.CycloneRandomForestAccuracyPercentage;
-      TextView CycloneRandomForestAccuracyPercentage = ViewBindings.findChildViewById(rootView, id);
-      if (CycloneRandomForestAccuracyPercentage == null) {
-        break missingId;
-      }
-
-      id = R.id.CycloneRandomForestPredictedValue;
-      TextView CycloneRandomForestPredictedValue = ViewBindings.findChildViewById(rootView, id);
-      if (CycloneRandomForestPredictedValue == null) {
-        break missingId;
-      }
-
-      id = R.id.CycloneRandomForestText;
-      TextView CycloneRandomForestText = ViewBindings.findChildViewById(rootView, id);
-      if (CycloneRandomForestText == null) {
-        break missingId;
-      }
-
-      id = R.id.CycloneXGBoostAccuracyPercentage;
-      TextView CycloneXGBoostAccuracyPercentage = ViewBindings.findChildViewById(rootView, id);
-      if (CycloneXGBoostAccuracyPercentage == null) {
-        break missingId;
-      }
-
-      id = R.id.CycloneXGBoostPredictedValue;
-      TextView CycloneXGBoostPredictedValue = ViewBindings.findChildViewById(rootView, id);
-      if (CycloneXGBoostPredictedValue == null) {
-        break missingId;
-      }
-
-      id = R.id.CycloneXGBoostText;
-      TextView CycloneXGBoostText = ViewBindings.findChildViewById(rootView, id);
-      if (CycloneXGBoostText == null) {
-        break missingId;
-      }
-
-      id = R.id.TitleCyclone;
-      TextView TitleCyclone = ViewBindings.findChildViewById(rootView, id);
-      if (TitleCyclone == null) {
-        break missingId;
-      }
-
-      ConstraintLayout relativeLayout = (ConstraintLayout) rootView;
-
-      return new ActivityCycloneBinding((ConstraintLayout) rootView, CycloneCard1, CycloneCard2,
-          CycloneRandomForestAccuracyPercentage, CycloneRandomForestPredictedValue,
-          CycloneRandomForestText, CycloneXGBoostAccuracyPercentage, CycloneXGBoostPredictedValue,
-          CycloneXGBoostText, TitleCyclone, relativeLayout);
+    if (rootView == null) {
+      throw new NullPointerException("rootView");
     }
-    String missingId = rootView.getResources().getResourceName(id);
-    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
+
+    return new ActivityCycloneBinding(rootView);
   }
 }

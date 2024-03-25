@@ -4,7 +4,7 @@
             "outputFile": "com.example.myapplication.app-mergeDebugResources-41:/values-w1240dp-v13/values-w1240dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\LENOVO\\Desktop\\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\\MyApplication\\app\\src\\main\\res\\values-w1240dp\\dimens.xml",
+                    "source": "D:\\New Desktop\\DSGP-11651fe7db4dbceb4cf203b4036cb0b8b7be00b5\\MyApplication\\app\\src\\main\\res\\values-w1240dp\\dimens.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",

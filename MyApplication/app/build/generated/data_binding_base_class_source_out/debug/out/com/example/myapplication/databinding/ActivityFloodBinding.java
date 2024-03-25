@@ -4,74 +4,24 @@ package com.example.myapplication.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
-import androidx.viewbinding.ViewBindings;
 import com.example.myapplication.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
-import java.lang.String;
 
 public final class ActivityFloodBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final View rootView;
 
-  @NonNull
-  public final ConstraintLayout FloodCard1;
-
-  @NonNull
-  public final ConstraintLayout FloodCard2;
-
-  @NonNull
-  public final TextView FloodRandomForestAccuracyPercentage;
-
-  @NonNull
-  public final TextView FloodRandomForestPredictedValue;
-
-  @NonNull
-  public final TextView FloodRandomForestText;
-
-  @NonNull
-  public final TextView FloodXGBoostAccuracyPercentage;
-
-  @NonNull
-  public final TextView FloodXGBoostPredictedValue;
-
-  @NonNull
-  public final TextView FloodXGBoostText;
-
-  @NonNull
-  public final TextView TitleFlood;
-
-  @NonNull
-  public final ConstraintLayout relativeLayout;
-
-  private ActivityFloodBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ConstraintLayout FloodCard1, @NonNull ConstraintLayout FloodCard2,
-      @NonNull TextView FloodRandomForestAccuracyPercentage,
-      @NonNull TextView FloodRandomForestPredictedValue, @NonNull TextView FloodRandomForestText,
-      @NonNull TextView FloodXGBoostAccuracyPercentage,
-      @NonNull TextView FloodXGBoostPredictedValue, @NonNull TextView FloodXGBoostText,
-      @NonNull TextView TitleFlood, @NonNull ConstraintLayout relativeLayout) {
+  private ActivityFloodBinding(@NonNull View rootView) {
     this.rootView = rootView;
-    this.FloodCard1 = FloodCard1;
-    this.FloodCard2 = FloodCard2;
-    this.FloodRandomForestAccuracyPercentage = FloodRandomForestAccuracyPercentage;
-    this.FloodRandomForestPredictedValue = FloodRandomForestPredictedValue;
-    this.FloodRandomForestText = FloodRandomForestText;
-    this.FloodXGBoostAccuracyPercentage = FloodXGBoostAccuracyPercentage;
-    this.FloodXGBoostPredictedValue = FloodXGBoostPredictedValue;
-    this.FloodXGBoostText = FloodXGBoostText;
-    this.TitleFlood = TitleFlood;
-    this.relativeLayout = relativeLayout;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public View getRoot() {
     return rootView;
   }
 
@@ -92,72 +42,10 @@ public final class ActivityFloodBinding implements ViewBinding {
 
   @NonNull
   public static ActivityFloodBinding bind(@NonNull View rootView) {
-    // The body of this method is generated in a way you would not otherwise write.
-    // This is done to optimize the compiled bytecode for size and performance.
-    int id;
-    missingId: {
-      id = R.id.FloodCard1;
-      ConstraintLayout FloodCard1 = ViewBindings.findChildViewById(rootView, id);
-      if (FloodCard1 == null) {
-        break missingId;
-      }
-
-      id = R.id.FloodCard2;
-      ConstraintLayout FloodCard2 = ViewBindings.findChildViewById(rootView, id);
-      if (FloodCard2 == null) {
-        break missingId;
-      }
-
-      id = R.id.FloodRandomForestAccuracyPercentage;
-      TextView FloodRandomForestAccuracyPercentage = ViewBindings.findChildViewById(rootView, id);
-      if (FloodRandomForestAccuracyPercentage == null) {
-        break missingId;
-      }
-
-      id = R.id.FloodRandomForestPredictedValue;
-      TextView FloodRandomForestPredictedValue = ViewBindings.findChildViewById(rootView, id);
-      if (FloodRandomForestPredictedValue == null) {
-        break missingId;
-      }
-
-      id = R.id.FloodRandomForestText;
-      TextView FloodRandomForestText = ViewBindings.findChildViewById(rootView, id);
-      if (FloodRandomForestText == null) {
-        break missingId;
-      }
-
-      id = R.id.FloodXGBoostAccuracyPercentage;
-      TextView FloodXGBoostAccuracyPercentage = ViewBindings.findChildViewById(rootView, id);
-      if (FloodXGBoostAccuracyPercentage == null) {
-        break missingId;
-      }
-
-      id = R.id.FloodXGBoostPredictedValue;
-      TextView FloodXGBoostPredictedValue = ViewBindings.findChildViewById(rootView, id);
-      if (FloodXGBoostPredictedValue == null) {
-        break missingId;
-      }
-
-      id = R.id.FloodXGBoostText;
-      TextView FloodXGBoostText = ViewBindings.findChildViewById(rootView, id);
-      if (FloodXGBoostText == null) {
-        break missingId;
-      }
-
-      id = R.id.TitleFlood;
-      TextView TitleFlood = ViewBindings.findChildViewById(rootView, id);
-      if (TitleFlood == null) {
-        break missingId;
-      }
-
-      ConstraintLayout relativeLayout = (ConstraintLayout) rootView;
-
-      return new ActivityFloodBinding((ConstraintLayout) rootView, FloodCard1, FloodCard2,
-          FloodRandomForestAccuracyPercentage, FloodRandomForestPredictedValue,
-          FloodRandomForestText, FloodXGBoostAccuracyPercentage, FloodXGBoostPredictedValue,
-          FloodXGBoostText, TitleFlood, relativeLayout);
+    if (rootView == null) {
+      throw new NullPointerException("rootView");
     }
-    String missingId = rootView.getResources().getResourceName(id);
-    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
+
+    return new ActivityFloodBinding(rootView);
   }
 }

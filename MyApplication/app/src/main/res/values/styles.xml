@@ -1,5 +1,4 @@
 <resources>
-    <!-- Base application theme -->
     <style name="App.MyApplication" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Add other customizations if needed -->
         <item name="colorPrimary">@color/colorPrimary</item>
