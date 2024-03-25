@@ -1,0 +1,3 @@
+[submodule "disaster-predictor"]
+	path = disaster-predictor
+	url = https://git.heroku.com/disaster-predictor.git

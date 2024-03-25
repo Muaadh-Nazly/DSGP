@@ -14,13 +14,14 @@
         android:layout_gravity="center"
         android:numStars="5"
         android:rating="0"
-        android:stepSize="1" />
+        android:stepSize="1"
+        android:progressBackgroundTint="#B0B0B0"/>
 
     <Button
         android:id="@+id/btn_submit_rating"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/rounded_background_b"
+        android:background="@drawable/button_background"
         android:text="Submit Rating"
         android:textColor="@color/white"/>
 

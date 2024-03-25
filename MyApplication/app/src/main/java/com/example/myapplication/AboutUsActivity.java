@@ -66,28 +66,28 @@ public class AboutUsActivity extends AppCompatActivity {
         });
 
         emailButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    // Open Gmail app to send email
-                    Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
-                    emailIntent.setData(Uri.parse("mailto:example@gmail.com"));
-                    emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Subject");
+            @Override
+            public void onClick(View v) {
+                // Open Gmail app to send email
+                Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
+                emailIntent.setData(Uri.parse("mailto:example@gmail.com"));
+                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Subject");
 
-                    // Explicitly set the package name of the Gmail app to ensure it's opened
-                    emailIntent.setPackage("com.google.android.gm");
+                // Explicitly set the package name of the Gmail app to ensure it's opened
+                emailIntent.setPackage("com.google.android.gm");
 
-                    // Verify that there's an activity to handle the intent
-                    if (emailIntent.resolveActivity(getPackageManager()) != null) {
-                        startActivity(emailIntent);
-                    } else {
-                        // Gmail app not found, fall back to any email client
-                        Intent fallbackIntent = new Intent(Intent.ACTION_SEND);
-                        fallbackIntent.setType("message/rfc822");
-                        fallbackIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"example@gmail.com"});
-                        fallbackIntent.putExtra(Intent.EXTRA_SUBJECT, "Subject");
-                        startActivity(Intent.createChooser(fallbackIntent, "Send Email"));
-                    }
+                // Verify that there's an activity to handle the intent
+                if (emailIntent.resolveActivity(getPackageManager()) != null) {
+                    startActivity(emailIntent);
+                } else {
+                    // Gmail app not found, fall back to any email client
+                    Intent fallbackIntent = new Intent(Intent.ACTION_SEND);
+                    fallbackIntent.setType("message/rfc822");
+                    fallbackIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"example@gmail.com"});
+                    fallbackIntent.putExtra(Intent.EXTRA_SUBJECT, "Subject");
+                    startActivity(Intent.createChooser(fallbackIntent, "Send Email"));
                 }
+            }
         });
 
         messageButton.setOnClickListener(new View.OnClickListener() {
