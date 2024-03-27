@@ -15,7 +15,7 @@ Models used in the project implemented using Python language and models are
 
     Random Forest 
     XGBoost 
-    Artificial Neural Network
+    
 
 
 Project is developed by group of 4 students in 2nd year Artificial Intelligence & Data Science at Informatics Intitute of Information Technology in Sri Lanka affiliated by Robert Gordon univeristy Abreden, Scottland for the module CM2603 Data Scienece Group Project
