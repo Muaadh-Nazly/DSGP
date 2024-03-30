@@ -137,12 +137,18 @@ public class FloodActivity extends FragmentActivity implements OnMapReadyCallbac
                 if (dataSnapshot.exists()) {
                     account_user_latitue = (double) dataSnapshot.getValue(); // Assuming it's a string
                     System.out.println("*******************************latitude: " + account_user_latitue);
-                    LatLng mapSL = new LatLng(account_user_latitue, account_user_longitude);
-                    Log.d("***************************************User Location on map", String.valueOf(account_user_latitue + account_user_longitude));
 
+
+                    // Due to asynchronize have to add here
+                    LatLng mapSL = new LatLng(account_user_latitue, account_user_longitude);
                     Marker marker = this.gMap.addMarker(new MarkerOptions().position(mapSL).title("Marker in " + account_user_latitue));
-                    this.gMap.moveCamera(CameraUpdateFactory.newLatLngZoom(mapSL, 10)); // Adjust the zoom level
-                } else {
+                    this.gMap.moveCamera(CameraUpdateFactory.newLatLngZoom(mapSL, 10));
+
+
+
+                }
+
+                else {
                     System.out.println("*********************************latitude data not found");
                 }
             } else {
