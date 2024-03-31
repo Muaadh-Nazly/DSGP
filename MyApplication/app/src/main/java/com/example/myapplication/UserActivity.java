@@ -184,21 +184,7 @@ public class UserActivity extends AppCompatActivity {
         });
 
 
-//        showMap.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                // Navigate to the RegisterActivity activity when Get Started is clicked
-//                MapActivity();
-//
-//            }
-//        });
-
-
     }
-
-
-
-
 
 
 
@@ -245,6 +231,9 @@ public class UserActivity extends AppCompatActivity {
 
                                 Log.d("*****************************","WHY + " + string_City);
                                 Log.d("*****************************","WHY + " + string_District);
+
+                                //currentLocation.setText(string_City + "  " + string_District);
+
 
 
 
@@ -300,10 +289,6 @@ public class UserActivity extends AppCompatActivity {
     }
 
 
-//    public void MapActivity() {
-//        Intent intent = new Intent(this, MapActivity.class);
-//        startActivity(intent);
-//    }
 
 
     public void SelectedLocation() {

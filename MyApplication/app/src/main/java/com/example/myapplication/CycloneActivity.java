@@ -55,14 +55,10 @@ public class CycloneActivity extends FragmentActivity implements OnMapReadyCallb
     FrameLayout map;
 
 
-
     double account_user_latitue;
     double account_user_longitude;
     String account_user_city;
     private String userId;
-
-
-
 
 
 
@@ -71,6 +67,11 @@ public class CycloneActivity extends FragmentActivity implements OnMapReadyCallb
     String Location2;
     String District;
     String WindSpeed;
+    String WindSpeed1;
+    String WindSpeed2;
+    String WindSpeed3;
+
+
     String Rainfall;
 
 
@@ -82,26 +83,42 @@ public class CycloneActivity extends FragmentActivity implements OnMapReadyCallb
     LocalDate Day3 = LocalDate.now().plusDays(3);
     String url = "https://disaster-predictor-409bdbd99295.herokuapp.com/predict_cyclone";
 
+
+
     public static List<String> cyclone_predictions =new ArrayList<>();
+
+
     ProgressDialog progressDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cyclone);
+
         map = findViewById(R.id.map);
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
-        mapFragment.getMapAsync(this);
 
         progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("Loading...");
         progressDialog.setCancelable(true);
+
+        // Fetch user data and then initialize the map
+        fetchUserData(() -> {
+            SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
+            if (mapFragment != null) {
+                Log.d("******************************************************","MY 2  " + Location1);
+
+                mapFragment.getMapAsync(CycloneActivity.this);
+            }
+        });
     }
+
 
     @Override
     public void onMapReady(@NonNull GoogleMap googleMap) {
 
-
         this.gMap = googleMap;
+        LatLng mapSL = new LatLng(account_user_latitue, account_user_longitude);
+        Marker marker = this.gMap.addMarker(new MarkerOptions().position(mapSL).title(Location));
+        this.gMap.moveCamera(CameraUpdateFactory.newLatLngZoom(mapSL, 10)); // Adjust the zoom level
 
 
         // Set a marker click listener
@@ -156,6 +173,12 @@ public class CycloneActivity extends FragmentActivity implements OnMapReadyCallb
                         params.put("Location2", Location2);
                         params.put("District", District);
                         params.put("Wind Speed(mph)", WindSpeed);
+                        params.put("Wind Speed(mph)1", WindSpeed1);
+                        params.put("Wind Speed(mph)2", WindSpeed2);
+                        params.put("Wind Speed(mph)3", WindSpeed3);
+
+
+
 
                         return params;
                     }
@@ -249,10 +272,15 @@ public class CycloneActivity extends FragmentActivity implements OnMapReadyCallb
         Task<DataSnapshot> location1Task = database3.child("Near By City 1").get();
         Task<DataSnapshot> location2Task = database3.child("Near By City 2").get();
         Task<DataSnapshot> rainfallTask = database3.child("Rainfall data").child("0").get(); // Make sure this path is correct
+
         Task<DataSnapshot> windSpeedTask = database3.child("WindSpeed data").child("0").get(); // Make sure this path is correct
+        Task<DataSnapshot> windSpeedTask1 = database3.child("WindSpeed data").child("1").get();
+        Task<DataSnapshot> windSpeedTask2 = database3.child("WindSpeed data").child("2").get(); // Make sure this path is correct
+        Task<DataSnapshot> windSpeedTask3 = database3.child("WindSpeed data").child("3").get(); // Make sure this path is correct
 
 
-        Tasks.whenAll(latitudeTask, longitudeTask, location1Task, location2Task, rainfallTask).addOnCompleteListener(task -> {
+
+        Tasks.whenAll(latitudeTask, longitudeTask, location1Task, location2Task, rainfallTask,windSpeedTask,windSpeedTask1,windSpeedTask2,windSpeedTask3).addOnCompleteListener(task -> {
             if (task.isSuccessful() && latitudeTask.getResult() != null && longitudeTask.getResult() != null  && rainfallTask.getResult() != null) {
 
                 account_user_latitue = latitudeTask.getResult().getValue(Double.class);
@@ -264,6 +292,11 @@ public class CycloneActivity extends FragmentActivity implements OnMapReadyCallb
                 Location2 = location2Task.getResult().getValue(String.class);
                 Rainfall = String.valueOf(rainfallTask.getResult().getValue(Double.class)); // Ensure this correctly fetches the value
 
+                WindSpeed = String.valueOf(windSpeedTask.getResult().getValue(Double.class));
+                WindSpeed1 = String.valueOf(windSpeedTask1.getResult().getValue(Double.class));
+                WindSpeed2 = String.valueOf(windSpeedTask2.getResult().getValue(Double.class));
+                WindSpeed3 = String.valueOf(windSpeedTask3.getResult().getValue(Double.class));
+
 
                 Log.d("******************************************************","MY loc  " + Location);
 
@@ -271,6 +304,11 @@ public class CycloneActivity extends FragmentActivity implements OnMapReadyCallb
                 Log.d("******************************************************","MY   " + Location1);
                 Log.d("******************************************************","MY   " + Location2);
                 Log.d("******************************************************","MY Rainfall <> " + Rainfall);
+                Log.d("******************************************************","MY wind <> " + WindSpeed);
+                Log.d("******************************************************","MY wind1 <> " + WindSpeed1);
+                Log.d("******************************************************","MY wind2 <> " + WindSpeed2);
+                Log.d("******************************************************","MY wind3 <> " + WindSpeed3);
+
 
 
                 // Data fetched, now proceed with dependent operations
@@ -283,7 +321,5 @@ public class CycloneActivity extends FragmentActivity implements OnMapReadyCallb
         });
     }
 
-
-
-
 }
+

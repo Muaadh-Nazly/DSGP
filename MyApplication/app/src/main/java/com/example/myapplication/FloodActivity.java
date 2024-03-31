@@ -121,7 +121,7 @@ public class FloodActivity extends FragmentActivity implements OnMapReadyCallbac
 
         this.gMap = googleMap;
         LatLng mapSL = new LatLng(account_user_latitue, account_user_longitude);
-        Marker marker = this.gMap.addMarker(new MarkerOptions().position(mapSL).title("Marker in Kirindiwela"));
+        Marker marker = this.gMap.addMarker(new MarkerOptions().position(mapSL).title(Location));
         this.gMap.moveCamera(CameraUpdateFactory.newLatLngZoom(mapSL, 10)); // Adjust the zoom level
 
         // Set a marker click listener
@@ -259,6 +259,10 @@ public class FloodActivity extends FragmentActivity implements OnMapReadyCallbac
     }
 
     public void fetchUserData(final Runnable onDataFetchedCallback) {
+
+        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+        assert currentUser != null;
+        userId = currentUser.getUid();
 
         DatabaseReference database2 = FirebaseDatabase.getInstance("https://natural-disaster-predict-1-serctivity-a5951.asia-southeast1.firebasedatabase.app/").getReference().child(userId);
         DatabaseReference database3 = FirebaseDatabase.getInstance("https://natural-disaster-predict-1838a-4532a.firebaseio.com/").getReference().child(userId);

@@ -90,6 +90,8 @@ public class LandslideActivity extends FragmentActivity implements OnMapReadyCal
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_landslide);
 
+        map = findViewById(R.id.map);
+
 
         progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("Loading...");
@@ -106,20 +108,12 @@ public class LandslideActivity extends FragmentActivity implements OnMapReadyCal
         });
     }
 
-
-
-
-
-
-
-
-
     @Override
     public void onMapReady(@NonNull GoogleMap googleMap) {
 
         this.gMap = googleMap;
         LatLng mapSL = new LatLng(account_user_latitue, account_user_longitude);
-        Marker marker = this.gMap.addMarker(new MarkerOptions().position(mapSL).title("Marker in Kirindiwela"));
+        Marker marker = this.gMap.addMarker(new MarkerOptions().position(mapSL).title(Location));
         this.gMap.moveCamera(CameraUpdateFactory.newLatLngZoom(mapSL, 10)); // Adjust the zoom level
 
         // Set a marker click listener
@@ -301,11 +295,6 @@ public class LandslideActivity extends FragmentActivity implements OnMapReadyCal
             }
         });
     }
-
-
-
-
-
 
 
 

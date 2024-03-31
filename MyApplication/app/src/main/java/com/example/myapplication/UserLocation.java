@@ -296,7 +296,7 @@ public class UserLocation extends AppCompatActivity {
                                     List<Double> dailyRainfalls = new ArrayList<>();
 
                                     // Extract daily forecast data for the next 4 days
-                                    for (int i = 0; i < Math.min(3, forecastList.size()); i++) {
+                                    for (int i = 0; i < Math.min(4, forecastList.size()); i++) {
                                         JsonObject dayForecast = forecastList.get(i).getAsJsonObject();
 
                                         // Extract wind speed for the day
@@ -362,6 +362,8 @@ public class UserLocation extends AppCompatActivity {
             Log.d("ParsedData", "Current Rainfall: " + currentRainfall + " mm");
 
 
+            Log.d("************************************", "Array size " + dailyWindSpeeds.size());
+
             // The wind speed for the upcoming 4 days
             for (int i = 0; i < dailyWindSpeeds.size(); i++) {
                 Log.d("ParsedData", String.format("Day %d Wind Speed: %.2f m/s", i + 1, dailyWindSpeeds.get(i)));
@@ -369,6 +371,11 @@ public class UserLocation extends AppCompatActivity {
 
 
             }
+
+
+
+
+
             Log.d("**********************", wind_Speed_Data.toString() + "Final");
 
 
@@ -382,7 +389,7 @@ public class UserLocation extends AppCompatActivity {
 
 
 
-            Log.d("**********************", rainfall_Data.toString() + "Final");
+            Log.d("**********************", rainfall_Data.toString() );
 
 
             // Get UI values for nearby cities
