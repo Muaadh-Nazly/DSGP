@@ -80,6 +80,8 @@ public class FloodActivity extends FragmentActivity implements OnMapReadyCallbac
     double account_user_longitude;
     double account_user_latitue;
 
+
+
     LocalDate Today = LocalDate.now();
     LocalDate Day1 = LocalDate.now().plusDays(1);
     LocalDate Day2 = LocalDate.now().plusDays(2);
@@ -96,9 +98,7 @@ public class FloodActivity extends FragmentActivity implements OnMapReadyCallbac
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_flood);
 
-        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
-        assert currentUser != null;
-        userId = currentUser.getUid();
+        map = findViewById(R.id.map);
 
         progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("Loading...");
@@ -305,5 +305,3 @@ public class FloodActivity extends FragmentActivity implements OnMapReadyCallbac
 
 
 }
-
-
