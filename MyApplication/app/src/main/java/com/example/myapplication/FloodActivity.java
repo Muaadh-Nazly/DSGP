@@ -65,25 +65,19 @@ import com.google.firebase.database.FirebaseDatabase;
 
 
 
-
 public class FloodActivity extends FragmentActivity implements OnMapReadyCallback {
-
-    double account_user_latitue;
-    double account_user_longitude;
-    String account_user_city;
-    private String userId;
-
-
-
     GoogleMap gMap;
     FrameLayout map;
-
-
     String Location ;
-    String Location1;
+    String Location1 ;
     String Location2;
-    String District = "Colombo";
+    String District;
     String Rainfall;
+    String userId;
+
+
+    double account_user_longitude;
+    double account_user_latitue;
 
     LocalDate Today = LocalDate.now();
     LocalDate Day1 = LocalDate.now().plusDays(1);
@@ -91,25 +85,15 @@ public class FloodActivity extends FragmentActivity implements OnMapReadyCallbac
     LocalDate Day3 = LocalDate.now().plusDays(3);
     String url = "https://disaster-predictor-409bdbd99295.herokuapp.com/predict_flood";
 
-    public static List<String> flood_predictions = new ArrayList<>();
+    public static List<String> flood_predictions=new ArrayList<>();
     private ProgressDialog progressDialog;
-
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_flood);
 
-        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
-        assert currentUser != null;
-        userId = currentUser.getUid();
-
-        Log.d("*************************************************", "Fetch user data before");
         fetchUserData();
-        Log.d("*************************************************", "Fetch user data after");
-
 
 
         map = findViewById(R.id.map);
@@ -130,7 +114,6 @@ public class FloodActivity extends FragmentActivity implements OnMapReadyCallbac
         LatLng mapSL = new LatLng(account_user_latitue, account_user_longitude);
         Marker marker = this.gMap.addMarker(new MarkerOptions().position(mapSL).title("Marker in Kirindiwela"));
         this.gMap.moveCamera(CameraUpdateFactory.newLatLngZoom(mapSL, 10)); // Adjust the zoom level
-
 
         // Set a marker click listener
         gMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
@@ -180,11 +163,17 @@ public class FloodActivity extends FragmentActivity implements OnMapReadyCallbac
                     @Override
                     protected Map<String, String> getParams() {
                         Map<String, String> params = new HashMap<String, String>();
-                        params.put("Location", Location);
-                        params.put("Location1", Location1);
-                        params.put("Location2", Location2);
-                        params.put("District", District);
-                        params.put("Rainfall(mm)", Rainfall);
+                        if (Location != null && Location1 != null && Location2 != null && District != null && Rainfall != null) {
+                            params.put("Location", Location);
+                            params.put("Location1", Location1);
+                            params.put("Location2", Location2);
+                            params.put("District", District);
+                            params.put("Rainfall(mm)", Rainfall);
+                        } else {
+
+                            Log.d("******************************************","THE  VALUS ARE NULL");
+
+                        }
 
                         return params;
                     }
@@ -195,125 +184,7 @@ public class FloodActivity extends FragmentActivity implements OnMapReadyCallbac
                 return true;
             }
         });
-
-
     }
-
-
-    public void fetchUserData() {
-        DatabaseReference database2 = FirebaseDatabase.getInstance("https://natural-disaster-predict-1-serctivity-a5951.asia-southeast1.firebasedatabase.app/").getReference().child(userId);
-        DatabaseReference database3 = FirebaseDatabase.getInstance("https://natural-disaster-predict-1838a-4532a.firebaseio.com/").getReference().child(userId);
-
-        Task<DataSnapshot> latitudeTask = database2.child("Latitude").get();
-        Task<DataSnapshot> longitudeTask = database2.child("Longitude").get();
-        Task<DataSnapshot> location1Task = database3.child("Near By City 1").get();
-        Task<DataSnapshot> location2Task = database3.child("Near By City 2").get();
-        Task<DataSnapshot> rainfallTask = database3.child("City").child("0").get();
-
-        Tasks.whenAll(latitudeTask, longitudeTask, location1Task, location2Task, rainfallTask).addOnCompleteListener(task -> {
-            if (!task.isSuccessful()) {
-                Log.d("FetchUserData", "Failed to fetch user data due to a task failure.");
-                return;
-            }
-
-            try {
-
-                account_user_latitue = latitudeTask.getResult().getValue(Double.class);
-                account_user_longitude = longitudeTask.getResult().getValue(Double.class);
-                Location1 = location1Task.getResult().getValue(String.class);
-                Location2 = location2Task.getResult().getValue(String.class);
-                Rainfall = rainfallTask.getResult().getValue(String.class);
-                Log.d("*************************************************","Longitude " + account_user_longitude);
-
-
-                updateUIMap();
-
-
-            } catch (Exception e) {
-                Log.d("***********************************", " Fetch user data An error occurred while fetching data: " + e.getMessage());
-            }
-        });
-
-        Log.d("*************************************************","Fetch user data inside");
-
-
-
-    }
-
-    public void updateUIMap(){
-
-            LatLng mapSL = new LatLng(account_user_latitue, account_user_longitude);
-            Marker marker = this.gMap.addMarker(new MarkerOptions().position(mapSL).title("Marker in Kirindiwela"));
-            this.gMap.moveCamera(CameraUpdateFactory.newLatLngZoom(mapSL, 10)); // Adjust the zoom level
-
-
-            // Set a marker click listener
-            gMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
-
-                @Override
-                public boolean onMarkerClick(Marker marker) {
-                    progressDialog.show();
-
-                    StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
-                            new Response.Listener<String>() {
-                                @Override
-                                public void onResponse(String response) {
-                                    try {
-                                        JSONObject jsonObject = new JSONObject(response);
-                                        String tdyRFR = jsonObject.getString("Prediction for " + Today + " RFR");
-                                        String tdyXGB = jsonObject.getString("Prediction for " + Today + " XGB");
-                                        String day1RFR = jsonObject.getString("Prediction for " + Day1 + " RFR");
-                                        String day1XGB = jsonObject.getString("Prediction for " + Day1 + " XGB");
-                                        String day2RFR = jsonObject.getString("Prediction for " + Day2 + " RFR");
-                                        String day2XGB = jsonObject.getString("Prediction for " + Day2 + " XGB");
-                                        String day3RFR = jsonObject.getString("Prediction for " + Day3 + " RFR");
-                                        String day3XGB = jsonObject.getString("Prediction for " + Day3 + " XGB");
-
-                                        flood_predictions.add(tdyRFR);
-                                        flood_predictions.add(tdyXGB);
-                                        flood_predictions.add(day1RFR);
-                                        flood_predictions.add(day1XGB);
-                                        flood_predictions.add(day2RFR);
-                                        flood_predictions.add(day2XGB);
-                                        flood_predictions.add(day3RFR);
-                                        flood_predictions.add(day3XGB);
-
-                                        showBottomSheetDialog(marker);
-                                    } catch (JSONException e) {
-                                        e.printStackTrace();
-
-                                    }
-                                }
-                            },
-                            new Response.ErrorListener() {
-                                @Override
-                                public void onErrorResponse(VolleyError error) {
-                                    Toast.makeText(FloodActivity.this, error.getMessage(), Toast.LENGTH_SHORT).show();
-                                }
-
-                            }) {
-                        @Override
-                        protected Map<String, String> getParams() {
-                            Map<String, String> params = new HashMap<String, String>();
-                            params.put("Location", Location);
-                            params.put("Location1", Location1);
-                            params.put("Location2", Location2);
-                            params.put("District", District);
-                            params.put("Rainfall(mm)", Rainfall);
-
-                            return params;
-                        }
-                    };
-
-                    RequestQueue queue = Volley.newRequestQueue(FloodActivity.this);
-                    queue.add(stringRequest);
-                    return true;
-                }
-            });
-
-
-        }
-
     @SuppressLint("SetTextI18n")
     private void showBottomSheetDialog(Marker marker) {
         progressDialog.dismiss();
@@ -373,8 +244,105 @@ public class FloodActivity extends FragmentActivity implements OnMapReadyCallbac
 
 
 
+    public void fetchUserData() {
+
+
+        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+        assert currentUser != null;
+        userId = currentUser.getUid();
+
+
+        DatabaseReference database2 = FirebaseDatabase.getInstance("https://natural-disaster-predict-1-serctivity-a5951.asia-southeast1.firebasedatabase.app/").getReference().child(userId);
+        DatabaseReference database3 = FirebaseDatabase.getInstance("https://natural-disaster-predict-1838a-4532a.firebaseio.com/").getReference().child(userId);
+
+        Task<DataSnapshot> latitudeTask = database2.child("Latitude").get();
+        Task<DataSnapshot> longitudeTask = database2.child("Longitude").get();
+        Task<DataSnapshot> location1Task = database3.child("Near By City 1").get();
+        Task<DataSnapshot> location2Task = database3.child("Near By City 2").get();
+        Task<DataSnapshot> rainfallTask = database3.child("City").child("0").get();
+
+        Tasks.whenAll(latitudeTask, longitudeTask, location1Task, location2Task, rainfallTask).addOnCompleteListener(task -> {
+            if (!task.isSuccessful()) {
+                Log.d("FetchUserData", "Failed to fetch user data due to a task failure.");
+                return;
+            }
+
+            try {
+
+                account_user_latitue = latitudeTask.getResult().getValue(Double.class);
+                account_user_longitude = longitudeTask.getResult().getValue(Double.class);
+                Location1 = location1Task.getResult().getValue(String.class);
+                Location2 = location2Task.getResult().getValue(String.class);
+                Rainfall = rainfallTask.getResult().getValue(String.class);
+                Log.d("*************************************************","Longitude " + account_user_longitude);
+
+
+            } catch (Exception e) {
+                Log.d("***********************************", " Fetch user data An error occurred while fetching data: " + e.getMessage());
+            }
+        });
+
+        Log.d("*************************************************","Fetch user data inside");
+
+
+
+    }
+
+
+    private void fetchFloodPredictions(Marker marker) {
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        try {
+                            JSONObject jsonObject = new JSONObject(response);
+                            // Extract predictions and add them to the list
+                            // ...
+
+                            // After successful data fetching, show the dialog
+                            showBottomSheetDialog(marker);
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        Toast.makeText(FloodActivity.this, error.getMessage(), Toast.LENGTH_SHORT).show();
+                    }
+                }) {
+            @Override
+            protected Map<String, String> getParams() {
+                Map<String, String> params = new HashMap<>();
+                if (Location != null && Location1 != null && Location2 != null && District != null && Rainfall != null) {
+                    params.put("Location", Location);
+                    params.put("Location1", Location1);
+                    params.put("Location2", Location2);
+                    params.put("District", District);
+                    params.put("Rainfall(mm)", Rainfall);
+                } else {
+                    Log.d("FetchFloodPredictions", "One or more parameters are null.");
+                }
+                return params;
+            }
+        };
+
+        RequestQueue queue = Volley.newRequestQueue(FloodActivity.this);
+        queue.add(stringRequest);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
-
-
