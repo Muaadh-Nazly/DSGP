@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+
 import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.app.ProgressDialog;
@@ -72,7 +73,7 @@ public class FloodActivity extends FragmentActivity implements OnMapReadyCallbac
     String Location1 ;
     String Location2;
     String District;
-    String Rainfall;
+    String Rainfall ;
     String userId;
 
 
@@ -85,30 +86,38 @@ public class FloodActivity extends FragmentActivity implements OnMapReadyCallbac
     LocalDate Day3 = LocalDate.now().plusDays(3);
     String url = "https://disaster-predictor-409bdbd99295.herokuapp.com/predict_flood";
 
+
     public static List<String> flood_predictions=new ArrayList<>();
     private ProgressDialog progressDialog;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_flood);
 
-        fetchUserData();
-
-
-        map = findViewById(R.id.map);
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
-        mapFragment.getMapAsync(this);
+        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+        assert currentUser != null;
+        userId = currentUser.getUid();
 
         progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("Loading...");
         progressDialog.setCancelable(true);
 
+        // Fetch user data and then initialize the map
+        fetchUserData(() -> {
+            SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
+            if (mapFragment != null) {
+                Log.d("******************************************************","MY 2  " + Location1);
+
+                mapFragment.getMapAsync(FloodActivity.this);
+            }
+        });
     }
+
 
     @Override
     public void onMapReady(@NonNull GoogleMap googleMap) {
-
 
         this.gMap = googleMap;
         LatLng mapSL = new LatLng(account_user_latitue, account_user_longitude);
@@ -146,8 +155,14 @@ public class FloodActivity extends FragmentActivity implements OnMapReadyCallbac
                                     flood_predictions.add(day3RFR);
                                     flood_predictions.add(day3XGB);
 
+                                    for(String pred: flood_predictions){
+                                        Log.d("******************************","Prediction here" + pred);
+                                    }
+
                                     showBottomSheetDialog(marker);
                                 } catch (JSONException e) {
+
+                                    Log.d("**********************************","My ERROR arg");
                                     e.printStackTrace();
 
                                 }
@@ -156,6 +171,7 @@ public class FloodActivity extends FragmentActivity implements OnMapReadyCallbac
                         new Response.ErrorListener() {
                             @Override
                             public void onErrorResponse(VolleyError error) {
+
                                 Toast.makeText(FloodActivity.this, error.getMessage(), Toast.LENGTH_SHORT).show();
                             }
 
@@ -163,17 +179,14 @@ public class FloodActivity extends FragmentActivity implements OnMapReadyCallbac
                     @Override
                     protected Map<String, String> getParams() {
                         Map<String, String> params = new HashMap<String, String>();
-                        if (Location != null && Location1 != null && Location2 != null && District != null && Rainfall != null) {
-                            params.put("Location", Location);
-                            params.put("Location1", Location1);
-                            params.put("Location2", Location2);
-                            params.put("District", District);
-                            params.put("Rainfall(mm)", Rainfall);
-                        } else {
 
-                            Log.d("******************************************","THE  VALUS ARE NULL");
+                        Log.d("***********************************************","MY 3 " + Location1);
 
-                        }
+                        params.put("Location", Location);
+                        params.put("Location1", Location1);
+                        params.put("Location2", Location2);
+                        params.put("District", District);
+                        params.put("Rainfall(mm)", Rainfall);
 
                         return params;
                     }
@@ -184,7 +197,11 @@ public class FloodActivity extends FragmentActivity implements OnMapReadyCallbac
                 return true;
             }
         });
+
     }
+
+
+
     @SuppressLint("SetTextI18n")
     private void showBottomSheetDialog(Marker marker) {
         progressDialog.dismiss();
@@ -241,108 +258,52 @@ public class FloodActivity extends FragmentActivity implements OnMapReadyCallbac
         dialog.show();
     }
 
-
-
-
-    public void fetchUserData() {
-
-
-        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
-        assert currentUser != null;
-        userId = currentUser.getUid();
-
+    public void fetchUserData(final Runnable onDataFetchedCallback) {
 
         DatabaseReference database2 = FirebaseDatabase.getInstance("https://natural-disaster-predict-1-serctivity-a5951.asia-southeast1.firebasedatabase.app/").getReference().child(userId);
         DatabaseReference database3 = FirebaseDatabase.getInstance("https://natural-disaster-predict-1838a-4532a.firebaseio.com/").getReference().child(userId);
 
         Task<DataSnapshot> latitudeTask = database2.child("Latitude").get();
         Task<DataSnapshot> longitudeTask = database2.child("Longitude").get();
+        Task<DataSnapshot> locationTask = database2.child("City").get();
+        Task<DataSnapshot> districtTask = database2.child("District").get();
+
         Task<DataSnapshot> location1Task = database3.child("Near By City 1").get();
         Task<DataSnapshot> location2Task = database3.child("Near By City 2").get();
-        Task<DataSnapshot> rainfallTask = database3.child("City").child("0").get();
+        Task<DataSnapshot> rainfallTask = database3.child("Rainfall data").child("0").get(); // Make sure this path is correct
 
         Tasks.whenAll(latitudeTask, longitudeTask, location1Task, location2Task, rainfallTask).addOnCompleteListener(task -> {
-            if (!task.isSuccessful()) {
-                Log.d("FetchUserData", "Failed to fetch user data due to a task failure.");
-                return;
-            }
-
-            try {
+            if (task.isSuccessful() && latitudeTask.getResult() != null && longitudeTask.getResult() != null  && rainfallTask.getResult() != null) {
 
                 account_user_latitue = latitudeTask.getResult().getValue(Double.class);
                 account_user_longitude = longitudeTask.getResult().getValue(Double.class);
+                District = districtTask.getResult().getValue(String.class);
+                Location = locationTask.getResult().getValue(String.class);
+
                 Location1 = location1Task.getResult().getValue(String.class);
                 Location2 = location2Task.getResult().getValue(String.class);
-                Rainfall = rainfallTask.getResult().getValue(String.class);
-                Log.d("*************************************************","Longitude " + account_user_longitude);
+                Rainfall = String.valueOf(rainfallTask.getResult().getValue(Double.class)); // Ensure this correctly fetches the value
 
 
-            } catch (Exception e) {
-                Log.d("***********************************", " Fetch user data An error occurred while fetching data: " + e.getMessage());
+                Log.d("******************************************************","MY loc  " + Location);
+
+
+                Log.d("******************************************************","MY   " + Location1);
+                Log.d("******************************************************","MY   " + Location2);
+                Log.d("******************************************************","MY Rainfall <> " + Rainfall);
+
+
+                // Data fetched, now proceed with dependent operations
+                if (onDataFetchedCallback != null) {
+                    onDataFetchedCallback.run();
+                }
+            } else {
+                Log.d("FetchUserData", "Failed to fetch user data due to a task failure or incorrect database path.");
             }
         });
-
-        Log.d("*************************************************","Fetch user data inside");
-
-
-
     }
-
-
-    private void fetchFloodPredictions(Marker marker) {
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
-                new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-                        try {
-                            JSONObject jsonObject = new JSONObject(response);
-                            // Extract predictions and add them to the list
-                            // ...
-
-                            // After successful data fetching, show the dialog
-                            showBottomSheetDialog(marker);
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                },
-                new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        Toast.makeText(FloodActivity.this, error.getMessage(), Toast.LENGTH_SHORT).show();
-                    }
-                }) {
-            @Override
-            protected Map<String, String> getParams() {
-                Map<String, String> params = new HashMap<>();
-                if (Location != null && Location1 != null && Location2 != null && District != null && Rainfall != null) {
-                    params.put("Location", Location);
-                    params.put("Location1", Location1);
-                    params.put("Location2", Location2);
-                    params.put("District", District);
-                    params.put("Rainfall(mm)", Rainfall);
-                } else {
-                    Log.d("FetchFloodPredictions", "One or more parameters are null.");
-                }
-                return params;
-            }
-        };
-
-        RequestQueue queue = Volley.newRequestQueue(FloodActivity.this);
-        queue.add(stringRequest);
-    }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }
+
+

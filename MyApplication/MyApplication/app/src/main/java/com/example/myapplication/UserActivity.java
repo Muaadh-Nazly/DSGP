@@ -54,6 +54,7 @@ public class UserActivity extends AppCompatActivity {
     String string_Address;
     String string_City;
     String string_Country;
+    String string_District;
 
     TextView showMap;
 
@@ -226,6 +227,8 @@ public class UserActivity extends AppCompatActivity {
                                 string_Address = addresses.get(0).getAddressLine(0);
                                 string_City = addresses.get(0).getLocality();
                                 string_Country = addresses.get(0).getCountryName();
+                                string_District = addresses.get(0).getSubAdminArea();
+
 
                                 string_Latitude = location.getLatitude();
                                 string_Longitude = location.getLongitude();
@@ -237,8 +240,12 @@ public class UserActivity extends AppCompatActivity {
                                 database2.child("Country").setValue(string_Country);
                                 database2.child("Longitude").setValue(string_Longitude);
                                 database2.child("Latitude").setValue(string_Latitude);
+                                database2.child("District").setValue(string_District);
+
 
                                 Log.d("*****************************","WHY + " + string_City);
+                                Log.d("*****************************","WHY + " + string_District);
+
 
 
 
