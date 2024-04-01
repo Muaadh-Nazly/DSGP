@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -44,7 +45,7 @@ public class UserActivity extends AppCompatActivity {
 
     String sending_application_User;
 
-    CardView cycloneCard, landslideCard, floodCard,changeLocationCardView;
+    CardView cycloneCard, landslideCard, floodCard,fullReportCard,aboutusCard,userCard;
     TextView greetingsOfTheDay;
     TextView currentLocation;
 
@@ -70,6 +71,7 @@ public class UserActivity extends AppCompatActivity {
 
 
 
+    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -81,6 +83,9 @@ public class UserActivity extends AppCompatActivity {
         cycloneCard = findViewById(R.id.CycloneCard);
         landslideCard = findViewById(R.id.landslideCard);
         floodCard = findViewById(R.id.floodCard);
+        fullReportCard = findViewById(R.id.fullreportCard);
+        aboutusCard = findViewById(R.id.aboutusCard);
+        userCard = findViewById(R.id.userCard);
 //        changeLocationCardView = findViewById(R.id.changeLocationCardView);
         greetingsOfTheDay = findViewById(R.id.greetName);
 
@@ -183,6 +188,25 @@ public class UserActivity extends AppCompatActivity {
             }
         });
 
+        fullReportCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ReportActivity();
+            }
+        });
+
+        userCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                UserSettings();
+            }
+        });
+        aboutusCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AboutUsActivity();
+            }
+        });
 
     }
 
@@ -288,6 +312,22 @@ public class UserActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void ReportActivity() {
+
+        Intent intent = new Intent(this, ReportActivity.class);
+        startActivity(intent);
+    }
+
+    public void AboutUsActivity() {
+
+        Intent intent = new Intent(this, AboutUsActivity.class);
+        startActivity(intent);
+    }
+    public void UserSettings() {
+
+        Intent intent = new Intent(this, UserSettings.class);
+        startActivity(intent);
+    }
 
 
 

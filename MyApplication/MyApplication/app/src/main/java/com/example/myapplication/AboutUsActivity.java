@@ -24,8 +24,8 @@ public class AboutUsActivity extends AppCompatActivity {
 
         // Set description
         TextView descriptionTextView = findViewById(R.id.text_description);
-        descriptionTextView.setText("© 2024 Your Company Name. All rights reserved.\n\n" +
-                "This app is copyrighted by Your Company Name. " +
+        descriptionTextView.setText("© 2024 Disaster Safeguard. All rights reserved.\n\n" +
+                "This app is copyrighted by Disaster Safeguard. " +
                 "No part of this application may be reproduced, distributed, " +
                 "or transmitted in any form or by any means, without the prior " +
                 "written permission of the publisher.");
@@ -40,7 +40,7 @@ public class AboutUsActivity extends AppCompatActivity {
         contactButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String phoneNumber = "0778945321"; // Replace with your default phone number
+                String phoneNumber = "+94 778945321";
 
                 Intent intent = new Intent(Intent.ACTION_DIAL);
                 intent.setData(Uri.parse("tel:" + phoneNumber));

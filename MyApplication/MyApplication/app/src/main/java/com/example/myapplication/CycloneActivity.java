@@ -168,6 +168,22 @@ public class CycloneActivity extends FragmentActivity implements OnMapReadyCallb
                     @Override
                     protected Map<String, String> getParams() {
                         Map<String, String> params = new HashMap<String, String>();
+                        Log.d("***********4",Location+" "+Location1+" "+Location2);
+                        if(Location==null & Location1==null & Location2==null)
+                            Location = Location1 = Location2 = "Not a value";
+                        else if(Location==null & Location1==null)
+                            Location = Location1 = Location2;
+                        else if (Location==null & Location2==null)
+                            Location = Location2 = Location1;
+                        else if(Location1==null & Location2==null)
+                            Location1 = Location2 = Location;
+                        else if(Location==null)
+                            Location = Location1;
+                        else if(Location1==null)
+                            Location1 = Location2;
+                        else if(Location2==null)
+                            Location2 = Location;
+
                         params.put("Location", Location);
                         params.put("Location1", Location1);
                         params.put("Location2", Location2);
@@ -176,9 +192,7 @@ public class CycloneActivity extends FragmentActivity implements OnMapReadyCallb
                         params.put("Wind Speed(mph)1", WindSpeed1);
                         params.put("Wind Speed(mph)2", WindSpeed2);
                         params.put("Wind Speed(mph)3", WindSpeed3);
-
-
-
+                        Log.d("*********",Location+" "+Location1+" "+Location2+" "+District+" "+WindSpeed+" "+WindSpeed1+" "+WindSpeed2+" "+WindSpeed3);
 
                         return params;
                     }
@@ -198,6 +212,8 @@ public class CycloneActivity extends FragmentActivity implements OnMapReadyCallb
     @SuppressLint("SetTextI18n")
     private void showBottomSheetDialog(Marker marker) {
         progressDialog.dismiss();
+
+
         // Inflate the view for the bottom sheet dialog
         View view = LayoutInflater.from(this).inflate(R.layout.custom_info_window, null);
 

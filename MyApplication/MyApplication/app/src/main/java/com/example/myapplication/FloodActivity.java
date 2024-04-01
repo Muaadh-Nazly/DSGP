@@ -108,8 +108,6 @@ public class FloodActivity extends FragmentActivity implements OnMapReadyCallbac
         fetchUserData(() -> {
             SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
             if (mapFragment != null) {
-                Log.d("******************************************************","MY 2  " + Location1);
-
                 mapFragment.getMapAsync(FloodActivity.this);
             }
         });
@@ -118,6 +116,7 @@ public class FloodActivity extends FragmentActivity implements OnMapReadyCallbac
 
     @Override
     public void onMapReady(@NonNull GoogleMap googleMap) {
+        Log.d("***********1",Location+" "+Location1+" "+Location2);
 
         this.gMap = googleMap;
         LatLng mapSL = new LatLng(account_user_latitue, account_user_longitude);
@@ -130,12 +129,16 @@ public class FloodActivity extends FragmentActivity implements OnMapReadyCallbac
             @Override
             public boolean onMarkerClick(Marker marker) {
                 progressDialog.show();
+                Log.d("***********2",Location+" "+Location1+" "+Location2);
 
                 StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
+
                         new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
                                 try {
+                                    Log.d("***********3",Location+" "+Location1+" "+Location2);
+
                                     JSONObject jsonObject = new JSONObject(response);
                                     String tdyRFR = jsonObject.getString("Prediction for " + Today + " RFR");
                                     String tdyXGB = jsonObject.getString("Prediction for " + Today + " XGB");
@@ -179,14 +182,28 @@ public class FloodActivity extends FragmentActivity implements OnMapReadyCallbac
                     @Override
                     protected Map<String, String> getParams() {
                         Map<String, String> params = new HashMap<String, String>();
-
-                        Log.d("***********************************************","MY 3 " + Location1);
+                        Log.d("***********4",Location+" "+Location1+" "+Location2);
+                        if(Location==null & Location1==null & Location2==null)
+                            Location = Location1 = Location2 = "Not a value";
+                        else if(Location==null & Location1==null)
+                            Location = Location1 = Location2;
+                        else if (Location==null & Location2==null)
+                            Location = Location2 = Location1;
+                        else if(Location1==null & Location2==null)
+                            Location1 = Location2 = Location;
+                        else if(Location==null)
+                            Location = Location1;
+                        else if(Location1==null)
+                            Location1 = Location2;
+                        else if(Location2==null)
+                            Location2 = Location;
 
                         params.put("Location", Location);
                         params.put("Location1", Location1);
                         params.put("Location2", Location2);
                         params.put("District", District);
                         params.put("Rainfall(mm)", Rainfall);
+                        Log.d("*********",Location+" "+Location1+" "+Location2+" "+District+" "+Rainfall);
 
                         return params;
                     }
@@ -263,7 +280,6 @@ public class FloodActivity extends FragmentActivity implements OnMapReadyCallbac
         FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
         assert currentUser != null;
         userId = currentUser.getUid();
-
         DatabaseReference database2 = FirebaseDatabase.getInstance("https://natural-disaster-predict-1-serctivity-a5951.asia-southeast1.firebasedatabase.app/").getReference().child(userId);
         DatabaseReference database3 = FirebaseDatabase.getInstance("https://natural-disaster-predict-1838a-4532a.firebaseio.com/").getReference().child(userId);
 
@@ -289,12 +305,6 @@ public class FloodActivity extends FragmentActivity implements OnMapReadyCallbac
                 Rainfall = String.valueOf(rainfallTask.getResult().getValue(Double.class)); // Ensure this correctly fetches the value
 
 
-                Log.d("******************************************************","MY loc  " + Location);
-
-
-                Log.d("******************************************************","MY   " + Location1);
-                Log.d("******************************************************","MY   " + Location2);
-                Log.d("******************************************************","MY Rainfall <> " + Rainfall);
 
 
                 // Data fetched, now proceed with dependent operations

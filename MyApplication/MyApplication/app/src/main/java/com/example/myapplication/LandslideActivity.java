@@ -171,14 +171,28 @@ public class LandslideActivity extends FragmentActivity implements OnMapReadyCal
                     @Override
                     protected Map<String, String> getParams() {
                         Map<String, String> params = new HashMap<String, String>();
-
-                        Log.d("***********************************************","MY 3 " + Location1);
+                        Log.d("***********4",Location+" "+Location1+" "+Location2);
+                        if(Location==null & Location1==null & Location2==null)
+                            Location = Location1 = Location2 = "Not a value";
+                        else if(Location==null & Location1==null)
+                            Location = Location1 = Location2;
+                        else if (Location==null & Location2==null)
+                            Location = Location2 = Location1;
+                        else if(Location1==null & Location2==null)
+                            Location1 = Location2 = Location;
+                        else if(Location==null)
+                            Location = Location1;
+                        else if(Location1==null)
+                            Location1 = Location2;
+                        else if(Location2==null)
+                            Location2 = Location;
 
                         params.put("Location", Location);
                         params.put("Location1", Location1);
                         params.put("Location2", Location2);
                         params.put("District", District);
                         params.put("Rainfall(mm)", Rainfall);
+                        Log.d("*********",Location+" "+Location1+" "+Location2+" "+District+" "+Rainfall);
 
                         return params;
                     }
