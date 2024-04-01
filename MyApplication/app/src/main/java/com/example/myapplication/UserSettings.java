@@ -5,18 +5,24 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 public class UserSettings extends AppCompatActivity {
 
     private ImageView profileImage;
     private TextView usernameTextView;
     private TextView emailTextView;
+    private Button logoutButton;
 
     private static final int REQUEST_CALL_PHONE = 1;
 
@@ -29,14 +35,37 @@ public class UserSettings extends AppCompatActivity {
         profileImage = findViewById(R.id.profileImage);
         usernameTextView = findViewById(R.id.usernameTextView);
         emailTextView = findViewById(R.id.emailTextView);
+        logoutButton = findViewById(R.id.logoutButton);
+
+
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        assert user != null;
+        String user_name = user.getDisplayName();
+        String User_email = user.getEmail();
+
+        Log.d("******************************************","name" + user_name);
 
         // Set dummy data (replace with actual user data)
         profileImage.setImageResource(R.drawable.baseline_person_24);
-        usernameTextView.setText("John Doe");
-        emailTextView.setText("john.doe@example.com");
+        usernameTextView.setText(user_name);
+        emailTextView.setText(User_email);
 
         // Add OnClickListener to emergencyTextView
         TextView emergencyTextView = findViewById(R.id.emergencyTextView);
+
+
+
+
+
+        logoutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                RegisterActivity();
+            }
+        });
+
+
+
         emergencyTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -80,4 +109,14 @@ public class UserSettings extends AppCompatActivity {
             }
         }
     }
+
+
+    public void RegisterActivity(){
+        FirebaseAuth.getInstance().signOut();
+        Intent intent = new Intent(this, RegisterActivity.class);
+        startActivity(intent);
+
+    }
+
+
 }

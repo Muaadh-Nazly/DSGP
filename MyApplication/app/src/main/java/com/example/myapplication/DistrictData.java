@@ -1,4 +1,4 @@
-package com.example.live_location_two;
+package com.example.myapplication;
 
 import java.util.List;
 
