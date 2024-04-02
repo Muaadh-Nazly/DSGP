@@ -21,6 +21,10 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import java.util.Arrays;
 
+
+/**
+ * User selecting its own location to see disaster predictions in that selected region
+ */
 public class SelectedLocation extends AppCompatActivity {
 
     private DatabaseReference mDatabase;

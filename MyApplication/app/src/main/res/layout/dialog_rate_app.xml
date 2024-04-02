@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:background="@drawable/rounded_background"
+    android:background="@color/background"
     android:padding="16dp">
 
     <RatingBar
@@ -21,7 +21,7 @@
         android:id="@+id/btn_submit_rating"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/button_background"
+        android:background="@color/button"
         android:text="Submit Rating"
         android:textColor="@color/white"/>
 

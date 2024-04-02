@@ -17,6 +17,10 @@ import androidx.core.app.ActivityCompat;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+
+/**
+ * User Settings class
+ */
 public class UserSettings extends AppCompatActivity {
 
     private ImageView profileImage;

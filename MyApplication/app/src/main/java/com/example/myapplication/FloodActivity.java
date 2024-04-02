@@ -64,8 +64,9 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 
-
-
+/**
+ * Show the flood map
+ */
 public class FloodActivity extends FragmentActivity implements OnMapReadyCallback {
     GoogleMap gMap;
     FrameLayout map;

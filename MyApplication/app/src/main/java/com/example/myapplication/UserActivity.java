@@ -70,8 +70,6 @@ public class UserActivity extends AppCompatActivity {
     static boolean isFirstTimeLoad;
 
 
-
-    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -86,8 +84,7 @@ public class UserActivity extends AppCompatActivity {
         fullReportCard = findViewById(R.id.fullreportCard);
         aboutusCard = findViewById(R.id.aboutusCard);
         userCard = findViewById(R.id.userCard);
-//        changeLocationCardView = findViewById(R.id.changeLocationCardView);
-        greetingsOfTheDay = findViewById(R.id.greetName);
+        currentLocation = findViewById(R.id.currentLocation);
 
 
 
@@ -98,59 +95,7 @@ public class UserActivity extends AppCompatActivity {
 
 
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
-        greetingsOfTheDay.setText(getGreeting());
-
-
-        Intent intent = getIntent();
-        String selectedProvince = intent.getStringExtra("SELECTED_PROVINCE");
-        String selectedDistrict = intent.getStringExtra("SELECTED_DISTRICT");
-        String selectedCity = intent.getStringExtra("SELECTED_CITY");
-
-
-        // Setting the user location or select user If user selected a location : Then it will display
-//        if (selectedCity != null){
-//            currentLocation.setText(selectedCity + " " + selectedDistrict );
-//        }
-//
-//        else {
-//            getLastLocation();
-//        }
-//
-
-        //UserLocation();
-
-
-        if (isFirstTimeLoad == false){
-            Log.d("******************************","CAME 1");
-            getLastLocation();
-            UserLocation();
-            isFirstTimeLoad = true;
-        }
-
-
-        else {
-            Log.d("******************************","CAME 2");
-            if (selectedCity != null){
-                currentLocation.setText(selectedCity + " " + selectedDistrict );
-//                UserLocation();
-            }
-            else {
-                getLastLocation();
-            }
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
+//        greetingsOfTheDay.setText(getGreeting());
 
 
 
@@ -161,32 +106,17 @@ public class UserActivity extends AppCompatActivity {
             }
         });
 
-
-//        changeLocationCardView.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                SelectedLocation();
-//            }
-//        });
-
-
         floodCard.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                // Navigate to the RegisterActivity activity when Get Started is clicked
-                FloodActivity();
-
+            public void onClick(View v) { FloodActivity();
             }
         });
 
         landslideCard.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                // Navigate to the RegisterActivity activity when Get Started is clicked
-                LandslideActivity();
-
-            }
+            public void onClick(View v) { LandslideActivity();}
         });
+
 
         fullReportCard.setOnClickListener(new View.OnClickListener() {
             @Override

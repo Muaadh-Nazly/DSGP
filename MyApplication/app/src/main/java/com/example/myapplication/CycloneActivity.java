@@ -49,6 +49,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+
+/**
+ * Shows the cyclone prediction map
+ */
 public class CycloneActivity extends FragmentActivity implements OnMapReadyCallback {
 
     GoogleMap gMap;
@@ -215,7 +219,7 @@ public class CycloneActivity extends FragmentActivity implements OnMapReadyCallb
 
 
         // Inflate the view for the bottom sheet dialog
-        View view = LayoutInflater.from(this).inflate(R.layout.custom_info_window, null);
+        View view = LayoutInflater.from(this).inflate(R.layout.custom_info_window,null);
 
         TextView floodRFR = view.findViewById(R.id.cycloneRFR);
         TextView floodXGB = view.findViewById(R.id.cycloneXGB);

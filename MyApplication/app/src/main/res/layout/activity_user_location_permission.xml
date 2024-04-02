@@ -10,11 +10,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/wallpap"
+        android:src="@color/background"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent" />
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
@@ -32,7 +33,7 @@
         android:layout_width="350dp"
         android:layout_height="145dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="204dp"
+        android:layout_marginTop="100dp"
         android:fontFamily="sans-serif"
         android:gravity="center"
         android:text="Please accept the location request to give best experience of the application"
@@ -47,14 +48,16 @@
         android:id="@+id/user_Location_access"
         android:layout_width="223dp"
         android:layout_height="57dp"
-        android:layout_marginBottom="120dp"
-        android:background="#1F2227"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="72dp"
+        android:background="@color/button"
         android:text="Accept"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.404"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

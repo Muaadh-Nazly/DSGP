@@ -49,6 +49,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+
+/**
+ * Shows the Landslide Map
+ */
 public class LandslideActivity extends FragmentActivity implements OnMapReadyCallback {
 
     GoogleMap gMap;

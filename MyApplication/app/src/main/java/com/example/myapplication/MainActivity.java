@@ -9,6 +9,9 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 
+/**
+ * Application Starts from here :  Get Started ---> User Registration or User Activity
+ */
 public class MainActivity extends AppCompatActivity {
 
 

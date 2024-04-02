@@ -14,9 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="28dp"
-        android:background="@drawable/wallpap"
-        android:visibility="visible"
-        tools:layout_conversion_absoluteHeight="736dp"
+        android:background="@color/background"
         tools:layout_conversion_absoluteWidth="411dp">
 
         <LinearLayout
@@ -39,8 +37,9 @@
                 app:cardElevation="20dp">
 
                 <RelativeLayout
-                    android:layout_width="164dp"
-                    android:layout_height="129dp">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/button">
 
                     <TextView
                         android:id="@+id/floodName"
@@ -51,7 +50,7 @@
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/poppins_semibold"
                         android:text="Flood"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
@@ -61,7 +60,7 @@
                         android:layout_height="70dp"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="15dp"
-                        tools:srcCompat="@drawable/flood" />
+                        android:src="@drawable/floodedhouse" />
 
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -77,7 +76,8 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:background="@color/button">
 
                     <TextView
                         android:id="@+id/landslideName"
@@ -88,7 +88,7 @@
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/poppins_semibold"
                         android:text="Landslide"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
@@ -98,7 +98,7 @@
                         android:layout_height="70dp"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="15dp"
-                        tools:srcCompat="@drawable/landslide" />
+                        android:src="@drawable/landslideicon" />
 
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -108,11 +108,11 @@
             android:id="@+id/row2"
             android:layout_width="0dp"
             android:layout_height="175dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="12dp"
             android:orientation="horizontal"
             android:padding="10dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/row1">
 
@@ -127,7 +127,8 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:background="@color/button">
 
                     <TextView
                         android:id="@+id/Cyclone"
@@ -138,17 +139,17 @@
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/poppins_semibold"
                         android:text="Cyclone"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
                     <ImageView
                         android:id="@+id/image_3"
-                        android:layout_width="70dp"
+                        android:layout_width="74dp"
                         android:layout_height="70dp"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="15dp"
-                        tools:srcCompat="@drawable/cyclone" />
+                        android:src="@drawable/hurricane" />
 
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -164,7 +165,8 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:background="@color/button">
 
                     <TextView
                         android:id="@+id/fullreport"
@@ -175,7 +177,7 @@
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/poppins_semibold"
                         android:text="Full Report"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
@@ -185,7 +187,7 @@
                         android:layout_height="70dp"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="15dp"
-                        tools:srcCompat="@drawable/fullreport" />
+                        android:src="@drawable/seoreport" />
 
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -217,7 +219,8 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:background="@color/button">
 
                     <TextView
                         android:id="@+id/aboutus"
@@ -228,7 +231,7 @@
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/poppins_semibold"
                         android:text="About Us"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
@@ -238,7 +241,7 @@
                         android:layout_height="70dp"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="15dp"
-                        tools:srcCompat="@drawable/aboutus" />
+                        android:src="@drawable/group" />
 
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -254,7 +257,8 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:background="@color/button">
 
                     <TextView
                         android:id="@+id/user"
@@ -265,7 +269,7 @@
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/poppins_semibold"
                         android:text="User Settings"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
@@ -275,7 +279,7 @@
                         android:layout_height="70dp"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="15dp"
-                        tools:srcCompat="@drawable/images" />
+                        android:src="@drawable/useraccount" />
 
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -285,7 +289,7 @@
             android:layout_width="411dp"
             android:layout_height="175dp"
             android:layout_marginStart="1dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="8dp"
             android:orientation="horizontal"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -300,31 +304,36 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:background="@color/othercolor">
 
                     <ImageView
                         android:id="@+id/imageView9"
-                        android:layout_width="133dp"
-                        android:layout_height="138dp"
+                        android:layout_width="84dp"
+                        android:layout_height="86dp"
                         android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
                         android:layout_alignParentBottom="true"
                         android:layout_marginStart="32dp"
-                        android:layout_marginBottom="7dp"
-                        app:srcCompat="@drawable/user" />
+                        android:layout_marginTop="38dp"
+                        android:layout_marginBottom="31dp"
+                        app:srcCompat="@drawable/locationgoogle" />
 
                     <TextView
-                        android:id="@+id/greetName"
-                        android:layout_width="156dp"
-                        android:layout_height="92dp"
+                        android:id="@+id/currentLocation"
+                        android:layout_width="239dp"
+                        android:layout_height="65dp"
+                        android:layout_alignParentTop="true"
                         android:layout_alignParentEnd="true"
                         android:layout_alignParentBottom="true"
-                        android:layout_marginEnd="52dp"
-                        android:layout_marginBottom="19dp"
+                        android:layout_marginTop="63dp"
+                        android:layout_marginEnd="22dp"
+                        android:layout_marginBottom="27dp"
                         android:fontFamily="@font/poppins_semibold"
-                        android:text=""
+                        android:text="Your Location"
                         android:textAlignment="center"
-                        android:textColor="@color/black"
-                        android:textSize="20dp"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
 
                 </RelativeLayout>
