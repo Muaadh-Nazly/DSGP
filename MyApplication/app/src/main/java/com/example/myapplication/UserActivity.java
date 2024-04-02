@@ -67,7 +67,7 @@ public class UserActivity extends AppCompatActivity {
     private List<Address> addresses;
 
 
-    static boolean isFirstTimeLoad;
+    static boolean isFirstTimeLoad = false;
 
 
     @Override
@@ -92,11 +92,15 @@ public class UserActivity extends AppCompatActivity {
         assert currentUser != null;
         userId = currentUser.getUid();
 
+        getLastLocation();
 
+        Log.d("********************************************","Location details before ");
 
-        fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
-//        greetingsOfTheDay.setText(getGreeting());
-
+        if (!isFirstTimeLoad){
+            Log.d("********************************************","Location details ");
+            isFirstTimeLoad = true;
+            LocationDetails();
+        }
 
 
         cycloneCard.setOnClickListener(new View.OnClickListener() {
@@ -144,6 +148,8 @@ public class UserActivity extends AppCompatActivity {
 
     private void getLastLocation() {
 
+        fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
+
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             System.out.println();
 
@@ -186,7 +192,7 @@ public class UserActivity extends AppCompatActivity {
                                 Log.d("*****************************","WHY + " + string_City);
                                 Log.d("*****************************","WHY + " + string_District);
 
-                                //currentLocation.setText(string_City + "  " + string_District);
+                                currentLocation.setText(string_City + "  " + string_District);
 
 
 
@@ -203,24 +209,6 @@ public class UserActivity extends AppCompatActivity {
         }
     }
 
-
-    private String getGreeting() {
-
-        // Get the current time
-        Calendar currentTime = Calendar.getInstance();
-        SimpleDateFormat hourFormat = new SimpleDateFormat("HH", Locale.getDefault());
-        int hour = Integer.parseInt(hourFormat.format(currentTime.getTime()));
-
-
-        if (hour >= 0 && hour < 12) {
-            return "Good Morning User ";
-        } else if (hour >= 12 && hour < 17) {
-            return "Good Afternoon User ";
-        } else {
-            return "Good Evening User ";
-        }
-
-    }
 
 
     public void CycloneActivity() {
@@ -267,8 +255,8 @@ public class UserActivity extends AppCompatActivity {
     }
 
 
-    public void UserLocation(){
-        Intent intent = new Intent(this, UserLocation.class);
+    public void LocationDetails(){
+        Intent intent = new Intent(this, LocationDetails.class);
         startActivity(intent);
     }
 
