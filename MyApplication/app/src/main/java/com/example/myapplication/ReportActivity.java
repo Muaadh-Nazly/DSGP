@@ -87,6 +87,7 @@ public class ReportActivity extends FragmentActivity implements OnMapReadyCallba
         });
     }
 
+    // Set user location in map
     @Override
     public void onMapReady(@NonNull GoogleMap googleMap) {
         Log.d("***********1",Location+" "+Location1+" "+Location2);
@@ -96,7 +97,7 @@ public class ReportActivity extends FragmentActivity implements OnMapReadyCallba
         Marker marker = this.gMap.addMarker(new MarkerOptions().position(mapSL).title(Location));
         this.gMap.moveCamera(CameraUpdateFactory.newLatLngZoom(mapSL, 10)); // Adjust the zoom level
 
-        // Set a marker click listener
+        // Set a marker on user location
         gMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
             public boolean onMarkerClick(Marker marker) {
@@ -175,18 +176,17 @@ public class ReportActivity extends FragmentActivity implements OnMapReadyCallba
         });
     }
 
+    // Bottom panel to display predictions
     @SuppressLint("SetTextI18n")
     private void showBottomSheetDialog(Marker marker) {
         progressDialog.dismiss();
 
-        // Inflate the view for the bottom sheet dialog
         View view = LayoutInflater.from(this).inflate(R.layout.custom_info_window, null);
 
         Button moreDetails = view.findViewById(R.id.moreDetailsButton);
         ViewGroup parentLayout = (ViewGroup) moreDetails.getParent();
         parentLayout.removeView(moreDetails);
 
-        // Find and set the TextView to display the marker title
         TextView floodRFR = view.findViewById(R.id.tdyRFR);
         TextView floodXGB = view.findViewById(R.id.tdyXGB);
         TextView landslideRFR = view.findViewById(R.id.landslideRFR);
@@ -201,13 +201,13 @@ public class ReportActivity extends FragmentActivity implements OnMapReadyCallba
         cycloneRFR.setText("Prediction for " + Today + " Cyclone RFR " + predictions.get(4)+"%");
         cycloneXGB.setText("Prediction for " + Today + " Cyclone XGB " + predictions.get(5)+"%");
 
-        // Create and show the bottom sheet dialog
         BottomSheetDialog dialog = new BottomSheetDialog(this);
         dialog.setContentView(view);
 
         dialog.show();
     }
 
+    // Fetch Firebase Data
     public void fetchUserData(final Runnable onDataFetchedCallback) {
 
         FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
@@ -232,7 +232,6 @@ public class ReportActivity extends FragmentActivity implements OnMapReadyCallba
 
                 account_user_latitue = latitudeTask.getResult().getValue(Double.class);
                 account_user_longitude = longitudeTask.getResult().getValue(Double.class);
-//                Log.d("*********",account_user_latitue,account)
                 District = districtTask.getResult().getValue(String.class);
                 Location = locationTask.getResult().getValue(String.class);
 
@@ -240,8 +239,6 @@ public class ReportActivity extends FragmentActivity implements OnMapReadyCallba
                 Location2 = location2Task.getResult().getValue(String.class);
                 Rainfall = String.valueOf(rainfallTask.getResult().getValue(Double.class)); // Ensure this correctly fetches the value
                 WindSpeed = String.valueOf(windSpeedTask.getResult().getValue(Double.class));
-
-                Log.d("**************54",Location+" "+Location1+" "+Location2+" "+District+" "+Rainfall+" "+WindSpeed);
 
                 // Data fetched, now proceed with dependent operations
                 if (onDataFetchedCallback != null) {

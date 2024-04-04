@@ -103,7 +103,7 @@ public class AboutUsActivity extends AppCompatActivity {
                     // Try to open Google Messages
                     Intent googleMessagesIntent = new Intent(Intent.ACTION_VIEW);
                     googleMessagesIntent.setData(Uri.parse("sms:0778945321"));
-                    googleMessagesIntent.putExtra("sms_body", "Hello from your app!"); // Set default message
+                    googleMessagesIntent.putExtra("sms_body", "Hello from your app!");
                     googleMessagesIntent.setPackage("com.google.android.apps.messaging");
 
                     if (googleMessagesIntent.resolveActivity(getPackageManager()) != null) {
@@ -123,6 +123,7 @@ public class AboutUsActivity extends AppCompatActivity {
             }
         });
     }
+    // Rating Panel
     private void showRatingDialog() {
         BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(this);
         View dialogView = LayoutInflater.from(this).inflate(R.layout.dialog_rate_app, null);
@@ -142,6 +143,7 @@ public class AboutUsActivity extends AppCompatActivity {
 
         bottomSheetDialog.show();
     }
+    // Rating Funtion
     private void sendRatingByEmail(float rating) {
         String toEmail = "recipient@gmail.com";
         String fromEmail = "sender@gmail.com";
@@ -164,6 +166,7 @@ public class AboutUsActivity extends AppCompatActivity {
 
 
     private static final int REQUEST_PHONE_PERMISSION = 1;
+    // Calling Function
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);

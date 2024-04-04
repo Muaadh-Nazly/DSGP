@@ -1,13 +1,11 @@
 package com.example.myapplication;
 
-import android.annotation.SuppressLint;
-import android.content.Context;
+
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
-import android.location.LocationManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -17,7 +15,6 @@ import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
-import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -25,9 +22,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import android.Manifest;
 import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 import android.widget.Button;
@@ -40,13 +34,10 @@ import retrofit2.Retrofit;
 public class UserActivity extends AppCompatActivity {
 
     FusedLocationProviderClient fusedLocationProviderClient;
-    private final static int REQUEST_CODE = 100;
     private String userId;
 
-    String sending_application_User;
 
     CardView cycloneCard, landslideCard, floodCard,fullReportCard,aboutusCard,userCard;
-    TextView greetingsOfTheDay;
     TextView currentLocation;
 
 
@@ -56,16 +47,6 @@ public class UserActivity extends AppCompatActivity {
     String string_City;
     String string_Country;
     String string_District;
-
-    TextView showMap;
-
-    TextView country, city, district, address, latitude, longitude;
-    Button getLocation;
-    private TextView windSpeedTextView, rainfallTextView;
-    //    private WeatherApi weatherApi;
-    private Retrofit retrofit;
-    private List<Address> addresses;
-
 
     static boolean isFirstTimeLoad = false;
 
@@ -94,10 +75,7 @@ public class UserActivity extends AppCompatActivity {
 
         getLastLocation();
 
-        Log.d("********************************************","Location details before ");
-
         if (!isFirstTimeLoad){
-            Log.d("********************************************","Location details ");
             isFirstTimeLoad = true;
             LocationDetails();
         }
@@ -158,11 +136,8 @@ public class UserActivity extends AppCompatActivity {
                 @Override
                 public void onSuccess(Location location) {
 
-                    Log.d("********************************", String.valueOf(location));
 
                     if (location != null) {
-
-                        Log.d("***********************************","success");
 
                         try {
                             Geocoder geocoder = new Geocoder(UserActivity.this, Locale.getDefault());
@@ -188,16 +163,7 @@ public class UserActivity extends AppCompatActivity {
                                 database2.child("Latitude").setValue(string_Latitude);
                                 database2.child("District").setValue(string_District);
 
-
-                                Log.d("*****************************","WHY + " + string_City);
-                                Log.d("*****************************","WHY + " + string_District);
-
                                 currentLocation.setText(string_City + "  " + string_District);
-
-
-
-
-
 
                             }
                         } catch (IOException e) {
@@ -208,8 +174,6 @@ public class UserActivity extends AppCompatActivity {
             });
         }
     }
-
-
 
     public void CycloneActivity() {
 
@@ -247,18 +211,9 @@ public class UserActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-
-
-    public void SelectedLocation() {
-        Intent intent = new Intent(this, SelectedLocation.class);
-        startActivity(intent);
-    }
-
-
     public void LocationDetails(){
         Intent intent = new Intent(this, LocationDetails.class);
         startActivity(intent);
     }
-
 
 }

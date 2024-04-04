@@ -2,9 +2,7 @@ package com.example.myapplication;
 
 
 import android.annotation.SuppressLint;
-import android.app.Dialog;
 import android.app.ProgressDialog;
-import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -15,7 +13,6 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.RequiresApi;
 import androidx.fragment.app.FragmentActivity;
 import androidx.annotation.NonNull;
 
@@ -33,7 +30,6 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.gms.tasks.Tasks;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
@@ -47,16 +43,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
-
-import com.google.android.gms.maps.CameraUpdateFactory;
-import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.Marker;
-import com.google.android.gms.maps.model.MarkerOptions;
-import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -77,11 +63,8 @@ public class FloodActivity extends FragmentActivity implements OnMapReadyCallbac
     String Rainfall ;
     String userId;
 
-
     double account_user_longitude;
     double account_user_latitue;
-
-
 
     LocalDate Today = LocalDate.now();
     LocalDate Day1 = LocalDate.now().plusDays(1);
@@ -114,7 +97,7 @@ public class FloodActivity extends FragmentActivity implements OnMapReadyCallbac
         });
     }
 
-
+    // Show user location in the map
     @Override
     public void onMapReady(@NonNull GoogleMap googleMap) {
         Log.d("***********1",Location+" "+Location1+" "+Location2);
@@ -124,16 +107,13 @@ public class FloodActivity extends FragmentActivity implements OnMapReadyCallbac
         Marker marker = this.gMap.addMarker(new MarkerOptions().position(mapSL).title(Location));
         this.gMap.moveCamera(CameraUpdateFactory.newLatLngZoom(mapSL, 10)); // Adjust the zoom level
 
-        // Set a marker click listener
+        // Set a marker on user location
         gMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
 
             @Override
             public boolean onMarkerClick(Marker marker) {
                 progressDialog.show();
-                Log.d("***********2",Location+" "+Location1+" "+Location2);
-
                 StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
-
                         new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
@@ -159,14 +139,8 @@ public class FloodActivity extends FragmentActivity implements OnMapReadyCallbac
                                     flood_predictions.add(day3RFR);
                                     flood_predictions.add(day3XGB);
 
-                                    for(String pred: flood_predictions){
-                                        Log.d("******************************","Prediction here" + pred);
-                                    }
-
                                     showBottomSheetDialog(marker);
                                 } catch (JSONException e) {
-
-                                    Log.d("**********************************","My ERROR arg");
                                     e.printStackTrace();
 
                                 }
@@ -218,8 +192,7 @@ public class FloodActivity extends FragmentActivity implements OnMapReadyCallbac
 
     }
 
-
-
+    // Show Bottom Dialog
     @SuppressLint("SetTextI18n")
     private void showBottomSheetDialog(Marker marker) {
         progressDialog.dismiss();
@@ -237,19 +210,16 @@ public class FloodActivity extends FragmentActivity implements OnMapReadyCallbac
         parentLayout.removeView(cycloneRFR);
         parentLayout.removeView(cycloneXGB);
 
-        // Find and set the TextView to display the marker title
         TextView floodTdyRFR = view.findViewById(R.id.tdyRFR);
         TextView floodTdyXGB = view.findViewById(R.id.tdyXGB);
 
         floodTdyRFR.setText("Prediction for "+Today+" RFR "+flood_predictions.get(0)+"%");
         floodTdyXGB.setText("Prediction for "+Today+" XGB "+flood_predictions.get(1)+"%");
 
-        // Create and show the bottom sheet dialog
         BottomSheetDialog dialog = new BottomSheetDialog(this);
         dialog.setContentView(view);
 
 
-        // Handle button click
         Button moreDetailsButton = view.findViewById(R.id.moreDetailsButton);
         moreDetailsButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -276,6 +246,7 @@ public class FloodActivity extends FragmentActivity implements OnMapReadyCallbac
         dialog.show();
     }
 
+    // Fetch Firebase data
     public void fetchUserData(final Runnable onDataFetchedCallback) {
 
         FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();

@@ -58,8 +58,6 @@ public class LocationDetails extends AppCompatActivity {
     private WeatherApi weatherApi;
     private Retrofit retrofit;
     private List<Address> addresses;
-
-
     List<Double> rainfall_Data = new ArrayList<>();
     List<Double> wind_Speed_Data = new ArrayList<>();
 
@@ -86,13 +84,10 @@ public class LocationDetails extends AppCompatActivity {
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
 
 
-//        getWeatheD
         getLocationDetails();
-//        getLocationDetails(selectedOrCurrent_userLatitude,selectedOrCurrent_userLongitude);
         UserActivity();
 
     }
-    //    public void getLocationDetails(double selectedOrCurrent_userLatitude, double selectedOrCurrent_userLongitude){
     public void getLocationDetails(){
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
             LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
@@ -110,15 +105,8 @@ public class LocationDetails extends AppCompatActivity {
 
                                     if (addresses != null && addresses.size() > 0) {
                                         // Update UI with location details
-                                        Log.d("Location", "Latitude: " + location.getLatitude() + ", Longitude: " + location.getLongitude());
-                                        Log.d("Location", "Country: " + addresses.get(0).getCountryName());
-                                        Log.d("Location", "Address: " + addresses.get(0).getAddressLine(0));
                                         city.setText("City: " + addresses.get(0).getLocality());
                                         district.setText("District: " + addresses.get(0).getSubAdminArea());
-
-
-                                        // Call the getWeatherData method with obtained latitude and longitude
-                                        //getCurrentLocationInfo(addresses.get(0).getLatitude(), addresses.get(0).getLongitude());
                                         getWeatherData(addresses.get(0).getLatitude(),addresses.get(0).getLongitude());
 
                                         NearbyCities nearbyCities = getNearbyLocationNames(addresses.get(0).getLatitude(), addresses.get(0).getLongitude());
@@ -144,7 +132,7 @@ public class LocationDetails extends AppCompatActivity {
                         }
                     });
         } else {
-            // If permission is not granted, request it
+            Toast.makeText(LocationDetails.this, "Location is required", Toast.LENGTH_SHORT).show();
         }
 
 
@@ -170,25 +158,14 @@ public class LocationDetails extends AppCompatActivity {
             List<Address> nearbyAddresses1 = geocoder.getFromLocation(nearbyLatitude1, nearbyLongitude1, 1);
             if (nearbyAddresses1 != null && nearbyAddresses1.size() > 0) {
                 String nearbyCity1 = nearbyAddresses1.get(0).getLocality();
-                Log.d("************************************************NearbyLocation", "Nearby City 1: " + nearbyCity1);
 
                 // Get the second nearby location
                 List<Address> nearbyAddresses2 = geocoder.getFromLocation(nearbyLatitude2, nearbyLongitude2, 1);
-                Log.d("************************************","came here ");
                 if (nearbyAddresses2 != null && nearbyAddresses2.size() > 0) {
-                    Log.d("************************************","came here 2");
 
                     String nearbyCity2 = nearbyAddresses2.get(0).getLocality();
-                    Log.d("************************************","came here 4");
 
                     if ( nearbyCity2 != null) {
-                        Log.d("*********************************","nearbyCity2 null");
-
-//                    if (!nearbyCity2.equals(nearbyCity1)) {
-//                        Log.d("*****************************************NearbyLocation", "Nearby City 2: " + nearbyCity2);
-                        Log.d("********************************************NOT NULL CHECK", nearbyCity1 +  nearbyCity2);
-
-
                         FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
                         assert currentUser != null;
                         userId = currentUser.getUid();
@@ -200,14 +177,8 @@ public class LocationDetails extends AppCompatActivity {
 
                         return new NearbyCities(nearbyCity1, nearbyCity2);
 
-
-
                     } else {
                         Log.e("NearbyLocation", "City 2 is the same as City 1");
-                        Log.d("********************************************NOT NULL CHECK", nearbyCity1 +  nearbyCity2);
-
-                        // Handle the case where City 2 is the same as City 1
-                        // You may consider adjusting the offset values to ensure diversity in cities
                     }
                 } else {
                     Log.e("NearbyLocation", "One or both of the cities is null");
@@ -223,7 +194,6 @@ public class LocationDetails extends AppCompatActivity {
         return new NearbyCities("", "");
     }
 
-    // Add this method to your activity to update the UI
     private void updateNearbyCitiesUI(String city1, String city2) {
         TextView nearbyCity1TextView = findViewById(R.id.nearbyCity1TextView);
         TextView nearbyCity2TextView = findViewById(R.id.nearbyCity2TextView);
@@ -249,8 +219,6 @@ public class LocationDetails extends AppCompatActivity {
         );
     }
 
-
-    // Inside your MainActivity
     public void getWeatherData(double latitude, double longitude) {
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://api.openweathermap.org/")
@@ -272,11 +240,6 @@ public class LocationDetails extends AppCompatActivity {
                     double currentWindSpeed = getCurrentWindSpeed(weatherJson);
                     double currentRainfall = getCurrentRainfall(weatherJson);
 
-                    // Log the current wind speed and rainfall
-                    Log.d("WeatherData", "Current Wind Speed: " + currentWindSpeed + " m/s");
-                    Log.d("WeatherData", "Current Rainfall: " + currentRainfall + " mm");
-
-
                     // Call to get weather forecast
                     Call<JsonObject> forecastCall = weatherApi.getWeatherForecast(latitude, longitude, apiKey);
                     forecastCall.enqueue(new Callback<JsonObject>() {
@@ -289,7 +252,6 @@ public class LocationDetails extends AppCompatActivity {
                                 if (forecastJson != null && forecastJson.has("list")) {
                                     JsonArray forecastList = forecastJson.getAsJsonArray("list");
 
-                                    // Initialize variables to store daily forecast data
                                     List<Double> dailyWindSpeeds = new ArrayList<>();
                                     List<Double> dailyRainfalls = new ArrayList<>();
 
@@ -318,7 +280,6 @@ public class LocationDetails extends AppCompatActivity {
                                     int currentMonth = Calendar.getInstance().get(Calendar.MONTH) + 1;
 
                                     // Update UI with daily forecast values
-                                    //updateDailyForecastUI(dailyWindSpeeds, dailyRainfalls);
                                     parseAndPredict(currentWindSpeed, currentRainfall, dailyWindSpeeds);
                                 } else {
                                     // Handle the case where forecastList is empty
@@ -353,29 +314,12 @@ public class LocationDetails extends AppCompatActivity {
             String currentLocality = addresses.get(0).getLocality();
             String subAdminArea = addresses.get(0).getSubAdminArea();
 
-            // For simplicity, you can display the extracted parameters
-            Log.d("ParsedData", "Current Locality: " + currentLocality);
-            Log.d("ParsedData", "SubAdminArea: " + subAdminArea);
-            Log.d("ParsedData", "Current Wind Speed: " + currentWindSpeed + " m/s");
-            Log.d("ParsedData", "Current Rainfall: " + currentRainfall + " mm");
-
-
-            Log.d("************************************", "Array size " + dailyWindSpeeds.size());
-
             // The wind speed for the upcoming 4 days
             for (int i = 0; i < dailyWindSpeeds.size(); i++) {
-                Log.d("ParsedData", String.format("Day %d Wind Speed: %.2f m/s", i + 1, dailyWindSpeeds.get(i)));
                 wind_Speed_Data.add(dailyWindSpeeds.get(i));
 
 
             }
-
-
-
-
-
-            Log.d("**********************", wind_Speed_Data.toString() + "Final");
-
 
             // The average rainfall for the upcoming 4 days
             List<Double> averageDailyRainfalls = getAverageRainfallData(addresses.get(0).getSubAdminArea(), Calendar.getInstance().get(Calendar.MONTH) + 1);
@@ -384,11 +328,6 @@ public class LocationDetails extends AppCompatActivity {
                 Log.d("ParsedData", String.format("Day %d Average Rainfall: %.2f mm", i + 1, averageDailyRainfalls.get(i)));
                 rainfall_Data.add(averageDailyRainfalls.get(i));
             }
-
-
-
-            Log.d("**********************", rainfall_Data.toString() );
-
 
             // Get UI values for nearby cities
             TextView nearbyCity1TextView = findViewById(R.id.nearbyCity1TextView);
@@ -403,20 +342,14 @@ public class LocationDetails extends AppCompatActivity {
             if (nearbyCity2.startsWith("Nearby City 2: ")) {
                 nearbyCity2 = nearbyCity2.substring("Nearby City 1: ".length());
             }
-
-
             FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
             assert currentUser != null;
             userId = currentUser.getUid();
-
-
             DatabaseReference database2 = FirebaseDatabase.getInstance("https://natural-disaster-predict-1838a-4532a.firebaseio.com").getReference().child(userId);
             database2.child("Rainfall data").setValue(rainfall_Data);
             database2.child("WindSpeed data").setValue(wind_Speed_Data);
             database2.child("Near By City 1").setValue(nearbyCity1);
             database2.child("Near By City 2").setValue(nearbyCity2);
-
-
 
             // Log UI values for nearby cities
             Log.d("ParsedData", nearbyCity1);
@@ -456,24 +389,19 @@ public class LocationDetails extends AppCompatActivity {
     private List<Double> getAverageRainfallData(String district, int currentMonth) {
         List<Double> averageDailyRainfalls = new ArrayList<>();
 
-        // Read and parse your CSV file to get average daily rainfall data
-        // Replace the following lines with your actual logic to read and parse the CSV file
         try (InputStream inputStream = getResources().getAssets().open("Rainfall_Daily_Average.csv")) {
             CSVReader csvReader = new CSVReader(new InputStreamReader(inputStream));
             List<String[]> csvData = csvReader.readAll();
 
-            // Assuming the CSV structure is like: District, Month1, Month2, ..., Month12
             for (String[] row : csvData) {
                 String csvDistrict = row[0].trim();
                 if (csvDistrict.equalsIgnoreCase(district)) {
-                    // Assuming 12 months of data starting from index 1
-                    int currentMonthIndex = currentMonth; // Use the current month index
+                    int currentMonthIndex = currentMonth;
                     for (int j = 0; j < 3; j++) {
                         if (currentMonthIndex >= 1 && currentMonthIndex <= 12) {
                             double rainfall = Double.parseDouble(row[currentMonthIndex].trim());
                             averageDailyRainfalls.add(rainfall);
                         } else {
-                            // Handle the case where the month index is not in the valid range
                             averageDailyRainfalls.add(0.0);
                         }
                     }
@@ -489,14 +417,8 @@ public class LocationDetails extends AppCompatActivity {
         return averageDailyRainfalls;
     }
 
-
-
     public void  UserActivity(){
         Intent intent = new Intent(this, UserActivity.class);
         startActivity(intent);
     }
-
-
-
-
 }

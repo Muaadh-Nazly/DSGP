@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="@color/background">
+    android:background="#081235">
 
     <TextView
         android:id="@+id/tdyRFR"
@@ -29,7 +29,7 @@
         android:id="@+id/moreDetailsButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/button"
+        android:background="#250F9B"
         android:text="More Details"
         android:textColor="@color/white"
         android:layout_marginTop="16dp"/>

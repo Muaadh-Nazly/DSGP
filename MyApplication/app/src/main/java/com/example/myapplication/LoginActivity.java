@@ -37,10 +37,8 @@ public class LoginActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
 
         usernameLogin = findViewById(R.id.usernameLogin);
-        usernameLogin.setText("test4@iit.ac.lk");
 
         passwordLogin = findViewById(R.id.passwordLogin);
-        passwordLogin.setText("PerfLog55");
 
         signInButton = findViewById(R.id.signInButton);
         signUpInsteadSignIn = findViewById(R.id.signUpInsteadSignIn);

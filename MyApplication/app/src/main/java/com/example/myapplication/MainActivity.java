@@ -47,10 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
         // User is signed in, directly navigate to UserActivity
         else {
-
-//        FirebaseAuth.getInstance().signOut();
             RegisterActivity();
-//            UserActivity();
 
 
         }
@@ -73,7 +70,3 @@ public class MainActivity extends AppCompatActivity {
 
 
 }
-
-
-//      FirebaseAuth.getInstance().signOut(); // Sign out the user
-//     ClassActivity classActivity = new ClassActivity();

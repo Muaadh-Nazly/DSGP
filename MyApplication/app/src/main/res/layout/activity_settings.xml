@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/background"
+    android:background="@drawable/wallpap"
     tools:context=".UserSettings">
 
     <TextView
@@ -92,7 +92,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="122dp"
         android:layout_marginBottom="16dp"
-        android:background="@color/button"
+        android:background="#12084A"
         android:text="Log Out"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"

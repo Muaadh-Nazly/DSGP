@@ -2,7 +2,6 @@ package com.example.myapplication;
 
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
-import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -13,7 +12,6 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.RequiresApi;
 import androidx.fragment.app.FragmentActivity;
 import androidx.annotation.NonNull;
 
@@ -57,28 +55,16 @@ public class LandslideActivity extends FragmentActivity implements OnMapReadyCal
 
     GoogleMap gMap;
     FrameLayout map;
-
-
-
     double account_user_latitue;
     double account_user_longitude;
     String account_user_city;
     private String userId;
-
-
-
-
-
-
-
 
     String Location;
     String Location1;
     String Location2;
     String District;
     String Rainfall;
-
-
     LocalDate Today = LocalDate.now();
     LocalDate Day1 = LocalDate.now().plusDays(1);
     LocalDate Day2 = LocalDate.now().plusDays(2);
@@ -112,6 +98,7 @@ public class LandslideActivity extends FragmentActivity implements OnMapReadyCal
         });
     }
 
+    // Showing user location in map
     @Override
     public void onMapReady(@NonNull GoogleMap googleMap) {
 
@@ -120,7 +107,7 @@ public class LandslideActivity extends FragmentActivity implements OnMapReadyCal
         Marker marker = this.gMap.addMarker(new MarkerOptions().position(mapSL).title(Location));
         this.gMap.moveCamera(CameraUpdateFactory.newLatLngZoom(mapSL, 10)); // Adjust the zoom level
 
-        // Set a marker click listener
+        // Set a marker on user location
         gMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
 
             @Override
@@ -151,14 +138,8 @@ public class LandslideActivity extends FragmentActivity implements OnMapReadyCal
                                     landslide_predictions.add(day3RFR);
                                     landslide_predictions.add(day3XGB);
 
-                                    for(String pred:  landslide_predictions){
-                                        Log.d("******************************","Prediction here" + pred);
-                                    }
-
                                     showBottomSheetDialog(marker);
                                 } catch (JSONException e) {
-
-                                    Log.d("**********************************","My ERROR arg");
                                     e.printStackTrace();
 
                                 }
@@ -209,6 +190,7 @@ public class LandslideActivity extends FragmentActivity implements OnMapReadyCal
         });
 
     }
+    // Show Bottom panel of predictions
     @SuppressLint("SetTextI18n")
     private void showBottomSheetDialog(Marker marker) {
         progressDialog.dismiss();
@@ -231,13 +213,9 @@ public class LandslideActivity extends FragmentActivity implements OnMapReadyCal
         landslideTdyRFR.setText("Prediction for "+Today+" RFR "+ landslide_predictions.get(0)+"%");
         landslideTdyXGB.setText("Prediction for "+Today+" XGB "+ landslide_predictions.get(1)+"%");
 
-
-
-        // Create and show the bottom sheet dialog
         BottomSheetDialog dialog = new BottomSheetDialog(this);
         dialog.setContentView(view);
 
-        // Handle button click
         Button moreDetailsButton = view.findViewById(R.id.moreDetailsButton);
         moreDetailsButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -265,6 +243,7 @@ public class LandslideActivity extends FragmentActivity implements OnMapReadyCal
     }
 
 
+    // Fetch Firebase data
     public void fetchUserData(final Runnable onDataFetchedCallback) {
 
         FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
@@ -295,15 +274,6 @@ public class LandslideActivity extends FragmentActivity implements OnMapReadyCal
                 Location2 = location2Task.getResult().getValue(String.class);
                 Rainfall = String.valueOf(rainfallTask.getResult().getValue(Double.class)); // Ensure this correctly fetches the value
 
-
-                Log.d("******************************************************","MY loc  " + Location);
-
-
-                Log.d("******************************************************","MY   " + Location1);
-                Log.d("******************************************************","MY   " + Location2);
-                Log.d("******************************************************","MY Rainfall <> " + Rainfall);
-
-
                 // Data fetched, now proceed with dependent operations
                 if (onDataFetchedCallback != null) {
                     onDataFetchedCallback.run();
@@ -313,7 +283,5 @@ public class LandslideActivity extends FragmentActivity implements OnMapReadyCal
             }
         });
     }
-
-
 
 }

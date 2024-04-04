@@ -47,19 +47,11 @@ public class UserSettings extends AppCompatActivity {
         String user_name = user.getDisplayName();
         String User_email = user.getEmail();
 
-        Log.d("******************************************","name" + user_name);
-
-        // Set dummy data (replace with actual user data)
         profileImage.setImageResource(R.drawable.baseline_person_24);
         usernameTextView.setText(user_name);
         emailTextView.setText(User_email);
 
-        // Add OnClickListener to emergencyTextView
         TextView emergencyTextView = findViewById(R.id.emergencyTextView);
-
-
-
-
 
         logoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -99,7 +91,6 @@ public class UserSettings extends AppCompatActivity {
         }
     }
 
-    // Handle permission request result
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
