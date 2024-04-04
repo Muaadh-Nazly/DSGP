@@ -9,6 +9,9 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 
+/**
+ * Application Starts from here :  Get Started ---> User Registration or User Activity
+ */
 public class MainActivity extends AppCompatActivity {
 
 
@@ -44,10 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
         // User is signed in, directly navigate to UserActivity
         else {
-
-//        FirebaseAuth.getInstance().signOut();
             RegisterActivity();
-//            UserActivity();
 
 
         }
@@ -70,7 +70,3 @@ public class MainActivity extends AppCompatActivity {
 
 
 }
-
-
-//      FirebaseAuth.getInstance().signOut(); // Sign out the user
-//     ClassActivity classActivity = new ClassActivity();

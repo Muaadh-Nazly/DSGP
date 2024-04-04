@@ -13,11 +13,13 @@
 
 
 
-    <color name="cerulean_Blue">#35318e</color>
     <color name="azure">#007FFF</color>
 
-    <color name="background">#35318e</color>
-    <color name="button">#007FFF</color>
+<!--    <color name="background">#35318e</color>-->
+    <color name="background">#1E2952</color>
+    <color name="button">#002fa7</color>
+    <color name="othercolor">#35318e</color>
+
 
 
 

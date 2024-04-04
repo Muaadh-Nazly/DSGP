@@ -17,6 +17,10 @@ import androidx.core.app.ActivityCompat;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 
+
+/**
+ * Asking from user to give location permission to the application
+ */
 public class UserLocationPermissionActivity extends AppCompatActivity {
 
 

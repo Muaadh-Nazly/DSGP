@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="#081235">
 
     <TextView
         android:id="@+id/tdyRFR"
@@ -28,9 +29,9 @@
         android:id="@+id/moreDetailsButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/rounded_background"
+        android:background="#250F9B"
         android:text="More Details"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:layout_marginTop="16dp"/>
 
     <TextView

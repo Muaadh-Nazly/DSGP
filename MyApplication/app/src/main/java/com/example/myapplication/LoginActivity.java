@@ -17,6 +17,9 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
+/**
+ * User login page
+ */
 public class LoginActivity extends AppCompatActivity {
 
     TextInputEditText usernameLogin, passwordLogin;
@@ -34,10 +37,8 @@ public class LoginActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
 
         usernameLogin = findViewById(R.id.usernameLogin);
-        usernameLogin.setText("test4@iit.ac.lk");
 
         passwordLogin = findViewById(R.id.passwordLogin);
-        passwordLogin.setText("PerfLog55");
 
         signInButton = findViewById(R.id.signInButton);
         signUpInsteadSignIn = findViewById(R.id.signUpInsteadSignIn);
@@ -108,18 +109,3 @@ public class LoginActivity extends AppCompatActivity {
     }
 
 }
-
-
-
-//    @Override
-//    public void onStart() {
-//        super.onStart();
-//        // Check if user is signed in (non-null) and update UI accordingly.
-//        FirebaseUser currentUser = mAuth.getCurrentUser();
-//        if(currentUser != null){
-//            Intent intent = new Intent(getApplicationContext(), UserActivity.class);
-//            startActivity(intent);
-//            finish();
-//
-//        }
-//    }

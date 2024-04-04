@@ -1,8 +1,8 @@
 package com.example.myapplication;
 
-
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -13,8 +13,9 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.fragment.app.FragmentActivity;
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
+import androidx.fragment.app.FragmentActivity;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -22,7 +23,6 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -33,6 +33,11 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.Task;
 import com.google.android.gms.tasks.Tasks;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -43,39 +48,24 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 
-
-/**
- * Show the flood map
- */
-public class FloodActivity extends FragmentActivity implements OnMapReadyCallback {
-    GoogleMap gMap;
-    FrameLayout map;
-    String Location ;
+@RequiresApi(api = Build.VERSION_CODES.O)
+public class ReportActivity extends FragmentActivity implements OnMapReadyCallback {
+    String Location;
     String Location1 ;
-    String Location2;
+    String Location2 ;
     String District;
     String Rainfall ;
-    String userId;
-
+    String WindSpeed ;
+    LocalDate Today = LocalDate.now();
+    GoogleMap gMap;
     double account_user_longitude;
     double account_user_latitue;
-
-    LocalDate Today = LocalDate.now();
-    LocalDate Day1 = LocalDate.now().plusDays(1);
-    LocalDate Day2 = LocalDate.now().plusDays(2);
-    LocalDate Day3 = LocalDate.now().plusDays(3);
-    String url = "https://disaster-predictor-409bdbd99295.herokuapp.com/predict_flood";
-
-
-    public static List<String> flood_predictions=new ArrayList<>();
-    private ProgressDialog progressDialog;
-
+    String userId;
+    FrameLayout map;
+    String url = "https://disaster-predictor-409bdbd99295.herokuapp.com/predict_three";
+    public static List<String> predictions = new ArrayList<>();
+    ProgressDialog progressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -92,12 +82,12 @@ public class FloodActivity extends FragmentActivity implements OnMapReadyCallbac
         fetchUserData(() -> {
             SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
             if (mapFragment != null) {
-                mapFragment.getMapAsync(FloodActivity.this);
+                mapFragment.getMapAsync(ReportActivity.this);
             }
         });
     }
 
-    // Show user location in the map
+    // Set user location in map
     @Override
     public void onMapReady(@NonNull GoogleMap googleMap) {
         Log.d("***********1",Location+" "+Location1+" "+Location2);
@@ -109,7 +99,6 @@ public class FloodActivity extends FragmentActivity implements OnMapReadyCallbac
 
         // Set a marker on user location
         gMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
-
             @Override
             public boolean onMarkerClick(Marker marker) {
                 progressDialog.show();
@@ -118,28 +107,23 @@ public class FloodActivity extends FragmentActivity implements OnMapReadyCallbac
                             @Override
                             public void onResponse(String response) {
                                 try {
-                                    Log.d("***********3",Location+" "+Location1+" "+Location2);
-
                                     JSONObject jsonObject = new JSONObject(response);
-                                    String tdyRFR = jsonObject.getString("Prediction for " + Today + " RFR");
-                                    String tdyXGB = jsonObject.getString("Prediction for " + Today + " XGB");
-                                    String day1RFR = jsonObject.getString("Prediction for " + Day1 + " RFR");
-                                    String day1XGB = jsonObject.getString("Prediction for " + Day1 + " XGB");
-                                    String day2RFR = jsonObject.getString("Prediction for " + Day2 + " RFR");
-                                    String day2XGB = jsonObject.getString("Prediction for " + Day2 + " XGB");
-                                    String day3RFR = jsonObject.getString("Prediction for " + Day3 + " RFR");
-                                    String day3XGB = jsonObject.getString("Prediction for " + Day3 + " XGB");
+                                    String floodRFR = jsonObject.getString("Prediction for Flood RFR");
+                                    String floodXGB = jsonObject.getString("Prediction for Flood XGB");
+                                    String landslideRFR = jsonObject.getString("Prediction for Landslide RFR");
+                                    String landslideXGB = jsonObject.getString("Prediction for Landslide XGB");
+                                    String cycloneRFR = jsonObject.getString("Prediction for Cyclone RFR");
+                                    String cycloneXGB = jsonObject.getString("Prediction for Cyclone XGB");
 
-                                    flood_predictions.add(tdyRFR);
-                                    flood_predictions.add(tdyXGB);
-                                    flood_predictions.add(day1RFR);
-                                    flood_predictions.add(day1XGB);
-                                    flood_predictions.add(day2RFR);
-                                    flood_predictions.add(day2XGB);
-                                    flood_predictions.add(day3RFR);
-                                    flood_predictions.add(day3XGB);
+                                    predictions.add(floodRFR);
+                                    predictions.add(floodXGB);
+                                    predictions.add(landslideRFR);
+                                    predictions.add(landslideXGB);
+                                    predictions.add(cycloneRFR);
+                                    predictions.add(cycloneXGB);
 
                                     showBottomSheetDialog(marker);
+
                                 } catch (JSONException e) {
                                     e.printStackTrace();
 
@@ -149,15 +133,14 @@ public class FloodActivity extends FragmentActivity implements OnMapReadyCallbac
                         new Response.ErrorListener() {
                             @Override
                             public void onErrorResponse(VolleyError error) {
-
-                                Toast.makeText(FloodActivity.this, error.getMessage(), Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ReportActivity.this, error.getMessage(), Toast.LENGTH_SHORT).show();
                             }
 
                         }) {
                     @Override
                     protected Map<String, String> getParams() {
                         Map<String, String> params = new HashMap<String, String>();
-                        Log.d("***********4",Location+" "+Location1+" "+Location2);
+                        Log.d("************3",Location+" "+Location1+" "+Location2);
                         if(Location==null & Location1==null & Location2==null)
                             Location = Location1 = Location2 = "Not a value";
                         else if(Location==null & Location1==null)
@@ -178,80 +161,59 @@ public class FloodActivity extends FragmentActivity implements OnMapReadyCallbac
                         params.put("Location2", Location2);
                         params.put("District", District);
                         params.put("Rainfall(mm)", Rainfall);
-                        Log.d("*********",Location+" "+Location1+" "+Location2+" "+District+" "+Rainfall);
+                        params.put("Wind Speed(mph)", WindSpeed);
+                        Log.d("**************55",Location+" "+Location1+" "+Location2+" "+District+" "+Rainfall+" "+WindSpeed);
 
                         return params;
                     }
                 };
 
-                RequestQueue queue = Volley.newRequestQueue(FloodActivity.this);
+                RequestQueue queue = Volley.newRequestQueue(ReportActivity.this);
                 queue.add(stringRequest);
+
                 return true;
             }
         });
-
     }
 
-    // Show Bottom Dialog
+    // Bottom panel to display predictions
     @SuppressLint("SetTextI18n")
     private void showBottomSheetDialog(Marker marker) {
         progressDialog.dismiss();
-        // Inflate the view for the bottom sheet dialog
+
         View view = LayoutInflater.from(this).inflate(R.layout.custom_info_window, null);
 
+        Button moreDetails = view.findViewById(R.id.moreDetailsButton);
+        ViewGroup parentLayout = (ViewGroup) moreDetails.getParent();
+        parentLayout.removeView(moreDetails);
+
+        TextView floodRFR = view.findViewById(R.id.tdyRFR);
+        TextView floodXGB = view.findViewById(R.id.tdyXGB);
         TextView landslideRFR = view.findViewById(R.id.landslideRFR);
         TextView landslideXGB = view.findViewById(R.id.landslideXGB);
-        ViewGroup parentLayout = (ViewGroup) landslideRFR.getParent();
-        parentLayout.removeView(landslideRFR);
-        parentLayout.removeView(landslideXGB);
-
         TextView cycloneRFR = view.findViewById(R.id.cycloneRFR);
         TextView cycloneXGB = view.findViewById(R.id.cycloneXGB);
-        parentLayout.removeView(cycloneRFR);
-        parentLayout.removeView(cycloneXGB);
 
-        TextView floodTdyRFR = view.findViewById(R.id.tdyRFR);
-        TextView floodTdyXGB = view.findViewById(R.id.tdyXGB);
-
-        floodTdyRFR.setText("Prediction for "+Today+" RFR "+flood_predictions.get(0)+"%");
-        floodTdyXGB.setText("Prediction for "+Today+" XGB "+flood_predictions.get(1)+"%");
+        floodRFR.setText("Prediction for " + Today + " Flood RFR " + predictions.get(0)+"%");
+        floodXGB.setText("Prediction for " + Today + " Flood XGB " + predictions.get(1)+"%");
+        landslideRFR.setText("Prediction for " + Today + " Landslide RFR " + predictions.get(2)+"%");
+        landslideXGB.setText("Prediction for " + Today + " Landslide XGB " + predictions.get(3)+"%");
+        cycloneRFR.setText("Prediction for " + Today + " Cyclone RFR " + predictions.get(4)+"%");
+        cycloneXGB.setText("Prediction for " + Today + " Cyclone XGB " + predictions.get(5)+"%");
 
         BottomSheetDialog dialog = new BottomSheetDialog(this);
         dialog.setContentView(view);
 
-
-        Button moreDetailsButton = view.findViewById(R.id.moreDetailsButton);
-        moreDetailsButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Start another activity to load another XML page
-                setContentView(R.layout.activity_details);
-                TextView day1RFR = findViewById(R.id.day1RFR);
-                TextView day1XGB = findViewById(R.id.day1XGB);
-                TextView day2RFR = findViewById(R.id.day2RFR);
-                TextView day2XGB = findViewById(R.id.day2XGB);
-                TextView day3RFR = findViewById(R.id.day3RFR);
-                TextView day3XGB = findViewById(R.id.day3XGB);
-
-                day1RFR.setText("Prediction for "+Day1+" RFR "+flood_predictions.get(2)+"%");
-                day1XGB.setText("Prediction for "+Day1+" XGB "+flood_predictions.get(3)+"%");
-                day2RFR.setText("Prediction for "+Day2+" RFR "+flood_predictions.get(4)+"%");
-                day2XGB.setText("Prediction for "+Day2+" XGB "+flood_predictions.get(5)+"%");
-                day3RFR.setText("Prediction for "+Day3+" RFR "+flood_predictions.get(6)+"%");
-                day3XGB.setText("Prediction for "+Day3+" XGB "+flood_predictions.get(7)+"%");
-
-                dialog.dismiss(); // Dismiss the dialog when navigating to another activity
-            }
-        });
         dialog.show();
     }
 
-    // Fetch Firebase data
+    // Fetch Firebase Data
     public void fetchUserData(final Runnable onDataFetchedCallback) {
 
         FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
         assert currentUser != null;
         userId = currentUser.getUid();
+
         DatabaseReference database2 = FirebaseDatabase.getInstance("https://natural-disaster-predict-1-serctivity-a5951.asia-southeast1.firebasedatabase.app/").getReference().child(userId);
         DatabaseReference database3 = FirebaseDatabase.getInstance("https://natural-disaster-predict-1838a-4532a.firebaseio.com/").getReference().child(userId);
 
@@ -263,8 +225,9 @@ public class FloodActivity extends FragmentActivity implements OnMapReadyCallbac
         Task<DataSnapshot> location1Task = database3.child("Near By City 1").get();
         Task<DataSnapshot> location2Task = database3.child("Near By City 2").get();
         Task<DataSnapshot> rainfallTask = database3.child("Rainfall data").child("0").get(); // Make sure this path is correct
+        Task<DataSnapshot> windSpeedTask = database3.child("WindSpeed data").child("0").get();
 
-        Tasks.whenAll(latitudeTask, longitudeTask, location1Task, location2Task, rainfallTask).addOnCompleteListener(task -> {
+        Tasks.whenAll(latitudeTask, longitudeTask, location1Task, location2Task, rainfallTask, windSpeedTask).addOnCompleteListener(task -> {
             if (task.isSuccessful() && latitudeTask.getResult() != null && longitudeTask.getResult() != null  && rainfallTask.getResult() != null) {
 
                 account_user_latitue = latitudeTask.getResult().getValue(Double.class);
@@ -275,9 +238,7 @@ public class FloodActivity extends FragmentActivity implements OnMapReadyCallbac
                 Location1 = location1Task.getResult().getValue(String.class);
                 Location2 = location2Task.getResult().getValue(String.class);
                 Rainfall = String.valueOf(rainfallTask.getResult().getValue(Double.class)); // Ensure this correctly fetches the value
-
-
-
+                WindSpeed = String.valueOf(windSpeedTask.getResult().getValue(Double.class));
 
                 // Data fetched, now proceed with dependent operations
                 if (onDataFetchedCallback != null) {
@@ -288,6 +249,4 @@ public class FloodActivity extends FragmentActivity implements OnMapReadyCallbac
             }
         });
     }
-
-
 }

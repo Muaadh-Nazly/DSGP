@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.myapplication"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -52,11 +52,10 @@ dependencies {
     implementation("com.google.firebase:firebase-firestore")
     implementation ("com.google.android.gms:play-services-location:21.2.0")
     testImplementation ("junit:junit:4.13.2")
-    implementation(platform("com.google.firebase:firebase-bom:32.7.2"))
     implementation("com.google.firebase:firebase-ml-modeldownloader")
     implementation("org.tensorflow:tensorflow-lite:2.4.0")
     implementation ("com.google.firebase:firebase-functions:20.4.0")
-    implementation("com.google.firebase:firebase-database")
+    implementation("com.google.firebase:firebase-database:20.3.1")
     implementation ("com.opencsv:opencsv:5.5.2")
     implementation ("com.google.android.gms:play-services-location:21.2.0")
     implementation ("com.squareup.retrofit2:retrofit:2.9.0")

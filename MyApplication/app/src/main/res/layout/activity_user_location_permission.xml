@@ -15,12 +15,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent" />
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="140dp"
-        android:text="Location Permission Request"
+        android:text="Location Permission"
         android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,10 +33,9 @@
         android:layout_width="350dp"
         android:layout_height="145dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="288dp"
+        android:layout_marginTop="100dp"
         android:fontFamily="sans-serif"
         android:gravity="center"
-        android:background="@drawable/background"
         android:text="Please accept the location request to give best experience of the application"
         android:textColor="@color/white"
         android:textSize="20sp"
@@ -48,14 +48,16 @@
         android:id="@+id/user_Location_access"
         android:layout_width="223dp"
         android:layout_height="57dp"
-        android:layout_marginBottom="120dp"
-        android:background="#1F2227"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="72dp"
+        android:background="#12084A"
         android:text="Accept"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.404"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

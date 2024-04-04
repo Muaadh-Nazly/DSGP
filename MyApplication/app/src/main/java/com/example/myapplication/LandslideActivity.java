@@ -2,8 +2,8 @@ package com.example.myapplication;
 
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
-import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,7 +12,6 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.RequiresApi;
 import androidx.fragment.app.FragmentActivity;
 import androidx.annotation.NonNull;
 
@@ -30,7 +29,14 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.tasks.Task;
+import com.google.android.gms.tasks.Tasks;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -41,22 +47,31 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@RequiresApi(api = Build.VERSION_CODES.O)
+
+/**
+ * Shows the Landslide Map
+ */
 public class LandslideActivity extends FragmentActivity implements OnMapReadyCallback {
 
     GoogleMap gMap;
     FrameLayout map;
+    double account_user_latitue;
+    double account_user_longitude;
+    String account_user_city;
+    private String userId;
 
-    String Location = "Balangoda";
-    String Location1 = "Balangoda";
-    String Location2 = "Balangoda";
-    String District = "Ratnapura";
-    String Rainfall = "6.7";
+    String Location;
+    String Location1;
+    String Location2;
+    String District;
+    String Rainfall;
     LocalDate Today = LocalDate.now();
     LocalDate Day1 = LocalDate.now().plusDays(1);
     LocalDate Day2 = LocalDate.now().plusDays(2);
     LocalDate Day3 = LocalDate.now().plusDays(3);
     String url = "https://disaster-predictor-409bdbd99295.herokuapp.com/predict_landslide";
+
+
 
     public static List<String> landslide_predictions =new ArrayList<>();
     ProgressDialog progressDialog;
@@ -64,28 +79,41 @@ public class LandslideActivity extends FragmentActivity implements OnMapReadyCal
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_landslide);
+
         map = findViewById(R.id.map);
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
-        mapFragment.getMapAsync(this);
+
 
         progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("Loading...");
-        progressDialog.setCancelable(false);
+        progressDialog.setCancelable(true);
+
+        // Fetch user data and then initialize the map
+        fetchUserData(() -> {
+            SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
+            if (mapFragment != null) {
+                Log.d("******************************************************","MY 2  " + Location1);
+
+                mapFragment.getMapAsync(LandslideActivity.this);
+            }
+        });
     }
 
+    // Showing user location in map
     @Override
     public void onMapReady(@NonNull GoogleMap googleMap) {
+
         this.gMap = googleMap;
-        LatLng mapSL = new LatLng(7.0412, 80.1289);
-        Marker marker = this.gMap.addMarker(new MarkerOptions().position(mapSL).title("Marker in Kirindiwela"));
+        LatLng mapSL = new LatLng(account_user_latitue, account_user_longitude);
+        Marker marker = this.gMap.addMarker(new MarkerOptions().position(mapSL).title(Location));
         this.gMap.moveCamera(CameraUpdateFactory.newLatLngZoom(mapSL, 10)); // Adjust the zoom level
 
-        // Set a marker click listener
+        // Set a marker on user location
         gMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
 
             @Override
             public boolean onMarkerClick(Marker marker) {
                 progressDialog.show();
+
                 StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
                         new Response.Listener<String>() {
                             @Override
@@ -120,6 +148,7 @@ public class LandslideActivity extends FragmentActivity implements OnMapReadyCal
                         new Response.ErrorListener() {
                             @Override
                             public void onErrorResponse(VolleyError error) {
+
                                 Toast.makeText(LandslideActivity.this, error.getMessage(), Toast.LENGTH_SHORT).show();
                             }
 
@@ -127,27 +156,41 @@ public class LandslideActivity extends FragmentActivity implements OnMapReadyCal
                     @Override
                     protected Map<String, String> getParams() {
                         Map<String, String> params = new HashMap<String, String>();
+                        Log.d("***********4",Location+" "+Location1+" "+Location2);
+                        if(Location==null & Location1==null & Location2==null)
+                            Location = Location1 = Location2 = "Not a value";
+                        else if(Location==null & Location1==null)
+                            Location = Location1 = Location2;
+                        else if (Location==null & Location2==null)
+                            Location = Location2 = Location1;
+                        else if(Location1==null & Location2==null)
+                            Location1 = Location2 = Location;
+                        else if(Location==null)
+                            Location = Location1;
+                        else if(Location1==null)
+                            Location1 = Location2;
+                        else if(Location2==null)
+                            Location2 = Location;
+
                         params.put("Location", Location);
                         params.put("Location1", Location1);
                         params.put("Location2", Location2);
                         params.put("District", District);
                         params.put("Rainfall(mm)", Rainfall);
+                        Log.d("*********",Location+" "+Location1+" "+Location2+" "+District+" "+Rainfall);
 
                         return params;
                     }
-
                 };
 
-                RequestQueue queue = Volley.newRequestQueue(LandslideActivity.this);
+                RequestQueue queue = Volley.newRequestQueue( LandslideActivity.this);
                 queue.add(stringRequest);
-
                 return true;
             }
-
-            ;
         });
-    }
 
+    }
+    // Show Bottom panel of predictions
     @SuppressLint("SetTextI18n")
     private void showBottomSheetDialog(Marker marker) {
         progressDialog.dismiss();
@@ -170,13 +213,9 @@ public class LandslideActivity extends FragmentActivity implements OnMapReadyCal
         landslideTdyRFR.setText("Prediction for "+Today+" RFR "+ landslide_predictions.get(0)+"%");
         landslideTdyXGB.setText("Prediction for "+Today+" XGB "+ landslide_predictions.get(1)+"%");
 
-
-
-        // Create and show the bottom sheet dialog
         BottomSheetDialog dialog = new BottomSheetDialog(this);
         dialog.setContentView(view);
 
-        // Handle button click
         Button moreDetailsButton = view.findViewById(R.id.moreDetailsButton);
         moreDetailsButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -202,4 +241,47 @@ public class LandslideActivity extends FragmentActivity implements OnMapReadyCal
 
         dialog.show();
     }
+
+
+    // Fetch Firebase data
+    public void fetchUserData(final Runnable onDataFetchedCallback) {
+
+        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+        assert currentUser != null;
+        userId = currentUser.getUid();
+
+        DatabaseReference database2 = FirebaseDatabase.getInstance("https://natural-disaster-predict-1-serctivity-a5951.asia-southeast1.firebasedatabase.app/").getReference().child(userId);
+        DatabaseReference database3 = FirebaseDatabase.getInstance("https://natural-disaster-predict-1838a-4532a.firebaseio.com/").getReference().child(userId);
+
+        Task<DataSnapshot> latitudeTask = database2.child("Latitude").get();
+        Task<DataSnapshot> longitudeTask = database2.child("Longitude").get();
+        Task<DataSnapshot> locationTask = database2.child("City").get();
+        Task<DataSnapshot> districtTask = database2.child("District").get();
+
+        Task<DataSnapshot> location1Task = database3.child("Near By City 1").get();
+        Task<DataSnapshot> location2Task = database3.child("Near By City 2").get();
+        Task<DataSnapshot> rainfallTask = database3.child("Rainfall data").child("0").get(); // Make sure this path is correct
+
+        Tasks.whenAll(latitudeTask, longitudeTask, location1Task, location2Task, rainfallTask).addOnCompleteListener(task -> {
+            if (task.isSuccessful() && latitudeTask.getResult() != null && longitudeTask.getResult() != null  && rainfallTask.getResult() != null) {
+
+                account_user_latitue = latitudeTask.getResult().getValue(Double.class);
+                account_user_longitude = longitudeTask.getResult().getValue(Double.class);
+                District = districtTask.getResult().getValue(String.class);
+                Location = locationTask.getResult().getValue(String.class);
+
+                Location1 = location1Task.getResult().getValue(String.class);
+                Location2 = location2Task.getResult().getValue(String.class);
+                Rainfall = String.valueOf(rainfallTask.getResult().getValue(Double.class)); // Ensure this correctly fetches the value
+
+                // Data fetched, now proceed with dependent operations
+                if (onDataFetchedCallback != null) {
+                    onDataFetchedCallback.run();
+                }
+            } else {
+                Log.d("FetchUserData", "Failed to fetch user data due to a task failure or incorrect database path.");
+            }
+        });
+    }
+
 }
