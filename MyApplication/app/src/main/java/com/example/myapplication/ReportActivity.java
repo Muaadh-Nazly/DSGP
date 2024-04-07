@@ -47,9 +47,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
 
-@RequiresApi(api = Build.VERSION_CODES.O)
 public class ReportActivity extends FragmentActivity implements OnMapReadyCallback {
     String Location;
     String Location1 ;
@@ -87,7 +87,6 @@ public class ReportActivity extends FragmentActivity implements OnMapReadyCallba
         });
     }
 
-    // Set user location in map
     @Override
     public void onMapReady(@NonNull GoogleMap googleMap) {
         Log.d("***********1",Location+" "+Location1+" "+Location2);
@@ -97,7 +96,7 @@ public class ReportActivity extends FragmentActivity implements OnMapReadyCallba
         Marker marker = this.gMap.addMarker(new MarkerOptions().position(mapSL).title(Location));
         this.gMap.moveCamera(CameraUpdateFactory.newLatLngZoom(mapSL, 10)); // Adjust the zoom level
 
-        // Set a marker on user location
+        // Set a marker click listener
         gMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
             public boolean onMarkerClick(Marker marker) {
@@ -176,17 +175,18 @@ public class ReportActivity extends FragmentActivity implements OnMapReadyCallba
         });
     }
 
-    // Bottom panel to display predictions
     @SuppressLint("SetTextI18n")
     private void showBottomSheetDialog(Marker marker) {
         progressDialog.dismiss();
 
+        // Inflate the view for the bottom sheet dialog
         View view = LayoutInflater.from(this).inflate(R.layout.custom_info_window, null);
 
         Button moreDetails = view.findViewById(R.id.moreDetailsButton);
         ViewGroup parentLayout = (ViewGroup) moreDetails.getParent();
         parentLayout.removeView(moreDetails);
 
+        // Find and set the TextView to display the marker title
         TextView floodRFR = view.findViewById(R.id.tdyRFR);
         TextView floodXGB = view.findViewById(R.id.tdyXGB);
         TextView landslideRFR = view.findViewById(R.id.landslideRFR);
@@ -201,44 +201,71 @@ public class ReportActivity extends FragmentActivity implements OnMapReadyCallba
         cycloneRFR.setText("Prediction for " + Today + " Cyclone RFR " + predictions.get(4)+"%");
         cycloneXGB.setText("Prediction for " + Today + " Cyclone XGB " + predictions.get(5)+"%");
 
+        // Create and show the bottom sheet dialog
         BottomSheetDialog dialog = new BottomSheetDialog(this);
         dialog.setContentView(view);
 
         dialog.show();
     }
 
-    // Fetch Firebase Data
     public void fetchUserData(final Runnable onDataFetchedCallback) {
 
         FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
         assert currentUser != null;
         userId = currentUser.getUid();
 
-        DatabaseReference database2 = FirebaseDatabase.getInstance("https://natural-disaster-predict-1-serctivity-a5951.asia-southeast1.firebasedatabase.app/").getReference().child(userId);
+        Log.d("***************************","isnide the fetch");
+
         DatabaseReference database3 = FirebaseDatabase.getInstance("https://natural-disaster-predict-1838a-4532a.firebaseio.com/").getReference().child(userId);
 
-        Task<DataSnapshot> latitudeTask = database2.child("Latitude").get();
-        Task<DataSnapshot> longitudeTask = database2.child("Longitude").get();
-        Task<DataSnapshot> locationTask = database2.child("City").get();
-        Task<DataSnapshot> districtTask = database2.child("District").get();
+        Task<DataSnapshot> latitudeTask = database3.child("Latitude").get();
+        Task<DataSnapshot> longitudeTask = database3.child("Longitude").get();
+
+
+        Task<DataSnapshot> districtTask = database3.child("District").get();
+        Task<DataSnapshot> locationTask = database3.child("City").get();
+
 
         Task<DataSnapshot> location1Task = database3.child("Near By City 1").get();
         Task<DataSnapshot> location2Task = database3.child("Near By City 2").get();
         Task<DataSnapshot> rainfallTask = database3.child("Rainfall data").child("0").get(); // Make sure this path is correct
-        Task<DataSnapshot> windSpeedTask = database3.child("WindSpeed data").child("0").get();
 
-        Tasks.whenAll(latitudeTask, longitudeTask, location1Task, location2Task, rainfallTask, windSpeedTask).addOnCompleteListener(task -> {
-            if (task.isSuccessful() && latitudeTask.getResult() != null && longitudeTask.getResult() != null  && rainfallTask.getResult() != null) {
+        Task<DataSnapshot> windSpeedTask = database3.child("WindSpeed data").child("0").get(); // Make sure this path is correct
 
-                account_user_latitue = latitudeTask.getResult().getValue(Double.class);
-                account_user_longitude = longitudeTask.getResult().getValue(Double.class);
+
+
+        Tasks.whenAll(latitudeTask, longitudeTask, location1Task, location2Task, rainfallTask,windSpeedTask).addOnCompleteListener(task -> {
+            if (task.isSuccessful() &&
+
+
+                    latitudeTask.getResult() != null && longitudeTask.getResult() != null &&
+                    rainfallTask.getResult() != null  &&
+                    districtTask.getResult() != null && locationTask.getResult() != null &&
+                    location1Task.getResult() != null && location2Task.getResult() != null &&
+                    windSpeedTask.getResult() != null ) {
+
+                account_user_latitue = Double.parseDouble(Objects.requireNonNull(latitudeTask.getResult().getValue(String.class)));
+                account_user_longitude = Double.parseDouble(Objects.requireNonNull(longitudeTask.getResult().getValue(String.class)));
+
                 District = districtTask.getResult().getValue(String.class);
-                Location = locationTask.getResult().getValue(String.class);
+                Location1 = locationTask.getResult().getValue(String.class);
 
                 Location1 = location1Task.getResult().getValue(String.class);
                 Location2 = location2Task.getResult().getValue(String.class);
                 Rainfall = String.valueOf(rainfallTask.getResult().getValue(Double.class)); // Ensure this correctly fetches the value
+
                 WindSpeed = String.valueOf(windSpeedTask.getResult().getValue(Double.class));
+
+
+                Log.d("******************************************************","MY loc  " + Location);
+
+
+                Log.d("******************************************************","MY   " + Location1);
+                Log.d("******************************************************","MY   " + Location2);
+                Log.d("******************************************************","MY Rainfall <> " + Rainfall);
+                Log.d("******************************************************","MY wind <> " + WindSpeed);
+
+
 
                 // Data fetched, now proceed with dependent operations
                 if (onDataFetchedCallback != null) {

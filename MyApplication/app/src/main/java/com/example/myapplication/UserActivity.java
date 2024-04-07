@@ -18,14 +18,10 @@ import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 import android.Manifest;
 import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
-import android.widget.Button;
-import retrofit2.Retrofit;
 
 
 /**
@@ -35,7 +31,6 @@ public class UserActivity extends AppCompatActivity {
 
     FusedLocationProviderClient fusedLocationProviderClient;
     private String userId;
-
 
     CardView cycloneCard, landslideCard, floodCard,fullReportCard,aboutusCard,userCard;
     TextView currentLocation;
@@ -47,8 +42,6 @@ public class UserActivity extends AppCompatActivity {
     String string_City;
     String string_Country;
     String string_District;
-
-    static boolean isFirstTimeLoad = false;
 
 
     @Override
@@ -74,11 +67,8 @@ public class UserActivity extends AppCompatActivity {
         userId = currentUser.getUid();
 
         getLastLocation();
+        currentLocation.setText(string_City  + " " + string_District);
 
-        if (!isFirstTimeLoad){
-            isFirstTimeLoad = true;
-            LocationDetails();
-        }
 
 
         cycloneCard.setOnClickListener(new View.OnClickListener() {
@@ -113,6 +103,7 @@ public class UserActivity extends AppCompatActivity {
                 UserSettings();
             }
         });
+
         aboutusCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -136,8 +127,11 @@ public class UserActivity extends AppCompatActivity {
                 @Override
                 public void onSuccess(Location location) {
 
+                    Log.d("********************************", String.valueOf(location));
 
                     if (location != null) {
+
+                        Log.d("***********************************","success");
 
                         try {
                             Geocoder geocoder = new Geocoder(UserActivity.this, Locale.getDefault());
@@ -150,18 +144,8 @@ public class UserActivity extends AppCompatActivity {
                                 string_Country = addresses.get(0).getCountryName();
                                 string_District = addresses.get(0).getSubAdminArea();
 
-
                                 string_Latitude = location.getLatitude();
                                 string_Longitude = location.getLongitude();
-
-
-                                DatabaseReference database2 = FirebaseDatabase.getInstance("https://natural-disaster-predict-1-serctivity-a5951.asia-southeast1.firebasedatabase.app").getReference().child(userId);
-                                database2.child("Address").setValue(string_Address);
-                                database2.child("City").setValue(string_City);
-                                database2.child("Country").setValue(string_Country);
-                                database2.child("Longitude").setValue(string_Longitude);
-                                database2.child("Latitude").setValue(string_Latitude);
-                                database2.child("District").setValue(string_District);
 
                                 currentLocation.setText(string_City + "  " + string_District);
 
@@ -175,28 +159,34 @@ public class UserActivity extends AppCompatActivity {
         }
     }
 
+
+
     public void CycloneActivity() {
 
-        Intent intent = new Intent(this, CycloneActivity.class);
+        Intent intent = new Intent(this, WhichLocation.class);
+        intent.putExtra("DISASTER", "cyclone");
         startActivity(intent);
     }
 
     public void LandslideActivity() {
 
-        Intent intent = new Intent(this, LandslideActivity.class);
+        Intent intent = new Intent(this, WhichLocation.class);
+        intent.putExtra("DISASTER", "landslide");
         startActivity(intent);
     }
 
-
     public void FloodActivity() {
+        Log.d("**********************************************","did I even came here for FLOOD ACTIVITY"  );
 
-        Intent intent = new Intent(this, FloodActivity.class);
+        Intent intent = new Intent(this, WhichLocation.class);
+        intent.putExtra("DISASTER", "flood");
         startActivity(intent);
     }
 
     public void ReportActivity() {
 
-        Intent intent = new Intent(this, ReportActivity.class);
+        Intent intent = new Intent(this, WhichLocation.class);
+        intent.putExtra("DISASTER", "full-report");
         startActivity(intent);
     }
 
@@ -211,9 +201,6 @@ public class UserActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void LocationDetails(){
-        Intent intent = new Intent(this, LocationDetails.class);
-        startActivity(intent);
-    }
+
 
 }

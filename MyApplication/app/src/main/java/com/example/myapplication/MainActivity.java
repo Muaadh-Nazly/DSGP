@@ -33,11 +33,12 @@ public class MainActivity extends AppCompatActivity {
             setContentView(R.layout.activity_get_started);
             Button getStartedButton = findViewById(R.id.get_started);
 
+
+            // User is not yet Signed In
             getStartedButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     RegisterActivity();
-//                    UserActivity();
                 }
 
             });

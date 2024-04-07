@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectedLocation"
+    >
+
+    <ImageView
+        android:id="@+id/backgroundImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wallpap"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="315dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:textColorHint="@android:color/white"
+        app:boxBackgroundColor="@color/white"
+        app:boxStrokeErrorColor="@color/teal_700"
+        app:counterOverflowTextColor="@color/button"
+        app:cursorErrorColor="@color/button"
+        app:helperTextTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="304dp"
+            android:layout_height="match_parent"
+            android:hint="Select a Province"
+            android:inputType="none"
+            android:textColorHint="@android:color/white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        android:layout_width="315dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="16dp"
+        android:scrollbarStyle="outsideInset"
+        android:textColorHint="@android:color/white"
+        app:boxBackgroundColor="@color/white"
+        app:counterOverflowTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:counterOverflowTextColor="@color/colorPrimary"
+        app:counterTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:cursorErrorColor="@color/colorPrimary"
+        app:errorIconTint="@color/colorPrimary"
+        app:errorTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:errorTextColor="@color/colorPrimary"
+        app:helperTextTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:placeholderTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:prefixTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:suffixTextAppearance="@style/TextAppearance.AppCompat.Body1">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView2"
+            android:layout_width="290dp"
+            android:layout_height="match_parent"
+            android:hint="Select a District from Province"
+            android:inputType="none"
+            android:textColorHint="@android:color/white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        android:layout_width="315dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="112dp"
+        android:textColorHint="@android:color/white"
+        app:boxStrokeErrorColor="@color/colorPrimary"
+        app:counterOverflowTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:counterOverflowTextColor="@color/colorPrimary"
+        app:counterTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:errorTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:helperTextTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
+        app:placeholderTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:prefixTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:suffixTextAppearance="@style/TextAppearance.AppCompat.Body1">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView3"
+            android:layout_width="305dp"
+            android:layout_height="match_parent"
+            android:hint="Select a City from District"
+            android:inputType="none"
+            android:textColorHint="@android:color/white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/userSelectedSetLocationButton"
+        android:layout_width="237dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="60dp"
+        android:text="Set the location"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/button"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -22,7 +22,7 @@ import com.google.firebase.auth.FirebaseAuth;
  */
 public class LoginActivity extends AppCompatActivity {
 
-    TextInputEditText usernameLogin, passwordLogin;
+    private TextInputEditText usernameLogin, passwordLogin;
     TextView signUpInsteadSignIn;
     Button signInButton;
     FirebaseAuth mAuth;
@@ -39,6 +39,7 @@ public class LoginActivity extends AppCompatActivity {
         usernameLogin = findViewById(R.id.usernameLogin);
 
         passwordLogin = findViewById(R.id.passwordLogin);
+
 
         signInButton = findViewById(R.id.signInButton);
         signUpInsteadSignIn = findViewById(R.id.signUpInsteadSignIn);

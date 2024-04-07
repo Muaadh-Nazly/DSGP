@@ -39,7 +39,7 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="#12084A">
+                    android:background="@color/button">
 
                     <TextView
                         android:id="@+id/floodName"
@@ -77,7 +77,7 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="#12084A">
+                    android:background="@color/button">
 
                     <TextView
                         android:id="@+id/landslideName"
@@ -128,7 +128,7 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="#12084A">
+                    android:background="@color/button">
 
                     <TextView
                         android:id="@+id/Cyclone"
@@ -166,7 +166,7 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="#12084A">
+                    android:background="@color/button">
 
                     <TextView
                         android:id="@+id/fullreport"
@@ -220,7 +220,7 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="#12084A">
+                    android:background="@color/button">
 
                     <TextView
                         android:id="@+id/aboutus"
@@ -258,7 +258,7 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="#12084A">
+                    android:background="@color/button">
 
                     <TextView
                         android:id="@+id/user"

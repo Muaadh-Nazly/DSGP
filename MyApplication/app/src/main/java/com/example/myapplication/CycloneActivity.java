@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -12,6 +13,7 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.RequiresApi;
 import androidx.fragment.app.FragmentActivity;
 import androidx.annotation.NonNull;
 
@@ -46,6 +48,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
 
 /**
@@ -61,6 +64,9 @@ public class CycloneActivity extends FragmentActivity implements OnMapReadyCallb
     double account_user_longitude;
     String account_user_city;
     private String userId;
+
+
+
     String Location;
     String Location1;
     String Location2;
@@ -69,7 +75,12 @@ public class CycloneActivity extends FragmentActivity implements OnMapReadyCallb
     String WindSpeed1;
     String WindSpeed2;
     String WindSpeed3;
+
+
     String Rainfall;
+
+
+
 
     LocalDate Today = LocalDate.now();
     LocalDate Day1 = LocalDate.now().plusDays(1);
@@ -77,7 +88,10 @@ public class CycloneActivity extends FragmentActivity implements OnMapReadyCallb
     LocalDate Day3 = LocalDate.now().plusDays(3);
     String url = "https://disaster-predictor-409bdbd99295.herokuapp.com/predict_cyclone";
 
+
+
     public static List<String> cyclone_predictions =new ArrayList<>();
+
 
     ProgressDialog progressDialog;
     @Override
@@ -86,6 +100,8 @@ public class CycloneActivity extends FragmentActivity implements OnMapReadyCallb
         setContentView(R.layout.activity_cyclone);
 
         map = findViewById(R.id.map);
+
+        Log.d("************************","cyclone start :)");
 
         progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("Loading...");
@@ -102,7 +118,6 @@ public class CycloneActivity extends FragmentActivity implements OnMapReadyCallb
         });
     }
 
-    // Displaying the User Location
 
     @Override
     public void onMapReady(@NonNull GoogleMap googleMap) {
@@ -113,7 +128,7 @@ public class CycloneActivity extends FragmentActivity implements OnMapReadyCallb
         this.gMap.moveCamera(CameraUpdateFactory.newLatLngZoom(mapSL, 10)); // Adjust the zoom level
 
 
-        // Set user location marker
+        // Set a marker click listener
         gMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
 
             @Override
@@ -176,7 +191,6 @@ public class CycloneActivity extends FragmentActivity implements OnMapReadyCallb
                         else if(Location2==null)
                             Location2 = Location;
 
-                        // Pass the parameters
                         params.put("Location", Location);
                         params.put("Location1", Location1);
                         params.put("Location2", Location2);
@@ -202,7 +216,6 @@ public class CycloneActivity extends FragmentActivity implements OnMapReadyCallb
         });
     }
 
-    // Bottom sheet dialog for current prediction
     @SuppressLint("SetTextI18n")
     private void showBottomSheetDialog(Marker marker) {
         progressDialog.dismiss();
@@ -229,12 +242,14 @@ public class CycloneActivity extends FragmentActivity implements OnMapReadyCallb
         cycloneTdyRFR.setText("Prediction for "+Today+" RFR "+ cyclone_predictions.get(0)+"%");
         cycloneTdyXGB.setText("Prediction for "+Today+" XGB "+ cyclone_predictions.get(1)+"%");
 
+
+
+        // Create and show the bottom sheet dialog
         BottomSheetDialog dialog = new BottomSheetDialog(this);
         dialog.setContentView(view);
 
+        // Handle button click
         Button moreDetailsButton = view.findViewById(R.id.moreDetailsButton);
-
-        // 3 days  Predictions
         moreDetailsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -261,35 +276,49 @@ public class CycloneActivity extends FragmentActivity implements OnMapReadyCallb
     }
 
 
-    // Fetching Firebase Data
+
     public void fetchUserData(final Runnable onDataFetchedCallback) {
 
         FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
         assert currentUser != null;
         userId = currentUser.getUid();
 
-        DatabaseReference database2 = FirebaseDatabase.getInstance("https://natural-disaster-predict-1-serctivity-a5951.asia-southeast1.firebasedatabase.app/").getReference().child(userId);
+        Log.d("***************************","isnide the fetch");
+
         DatabaseReference database3 = FirebaseDatabase.getInstance("https://natural-disaster-predict-1838a-4532a.firebaseio.com/").getReference().child(userId);
 
-        Task<DataSnapshot> latitudeTask = database2.child("Latitude").get();
-        Task<DataSnapshot> longitudeTask = database2.child("Longitude").get();
-        Task<DataSnapshot> locationTask = database2.child("City").get();
-        Task<DataSnapshot> districtTask = database2.child("District").get();
+        Task<DataSnapshot> latitudeTask = database3.child("Latitude").get();
+        Task<DataSnapshot> longitudeTask = database3.child("Longitude").get();
+
+
+        Task<DataSnapshot> districtTask = database3.child("District").get();
+        Task<DataSnapshot> locationTask = database3.child("City").get();
+
 
         Task<DataSnapshot> location1Task = database3.child("Near By City 1").get();
         Task<DataSnapshot> location2Task = database3.child("Near By City 2").get();
-        Task<DataSnapshot> rainfallTask = database3.child("Rainfall data").child("0").get(); // Make sure this path is correct
+        Task<DataSnapshot> rainfallTask = database3.child("Rainfall data").child("0").get();
 
-        Task<DataSnapshot> windSpeedTask = database3.child("WindSpeed data").child("0").get(); // Make sure this path is correct
+        Task<DataSnapshot> windSpeedTask = database3.child("WindSpeed data").child("0").get();
         Task<DataSnapshot> windSpeedTask1 = database3.child("WindSpeed data").child("1").get();
-        Task<DataSnapshot> windSpeedTask2 = database3.child("WindSpeed data").child("2").get(); // Make sure this path is correct
-        Task<DataSnapshot> windSpeedTask3 = database3.child("WindSpeed data").child("3").get(); // Make sure this path is correct
+        Task<DataSnapshot> windSpeedTask2 = database3.child("WindSpeed data").child("2").get();
+        Task<DataSnapshot> windSpeedTask3 = database3.child("WindSpeed data").child("3").get();
 
-        Tasks.whenAll(latitudeTask, longitudeTask, location1Task, location2Task, rainfallTask,windSpeedTask,windSpeedTask1,windSpeedTask2,windSpeedTask3).addOnCompleteListener(task -> {
-            if (task.isSuccessful() && latitudeTask.getResult() != null && longitudeTask.getResult() != null  && rainfallTask.getResult() != null) {
 
-                account_user_latitue = latitudeTask.getResult().getValue(Double.class);
-                account_user_longitude = longitudeTask.getResult().getValue(Double.class);
+
+        Tasks.whenAll(districtTask, locationTask, latitudeTask, longitudeTask, location1Task, location2Task, rainfallTask,windSpeedTask,windSpeedTask1,windSpeedTask2,windSpeedTask3).addOnCompleteListener(task -> {
+            if (task.isSuccessful() &&
+
+
+                    latitudeTask.getResult() != null && longitudeTask.getResult() != null &&
+                    rainfallTask.getResult() != null  &&
+                    districtTask.getResult() != null && locationTask.getResult() != null &&
+                    location1Task.getResult() != null && location2Task.getResult() != null &&
+                    windSpeedTask.getResult() != null && windSpeedTask1.getResult() != null && windSpeedTask2.getResult() != null && windSpeedTask3.getResult() != null) {
+
+                account_user_latitue = Double.parseDouble(Objects.requireNonNull(latitudeTask.getResult().getValue(String.class)));
+                account_user_longitude = Double.parseDouble(Objects.requireNonNull(longitudeTask.getResult().getValue(String.class)));
+
                 District = districtTask.getResult().getValue(String.class);
                 Location = locationTask.getResult().getValue(String.class);
 
@@ -301,6 +330,20 @@ public class CycloneActivity extends FragmentActivity implements OnMapReadyCallb
                 WindSpeed1 = String.valueOf(windSpeedTask1.getResult().getValue(Double.class));
                 WindSpeed2 = String.valueOf(windSpeedTask2.getResult().getValue(Double.class));
                 WindSpeed3 = String.valueOf(windSpeedTask3.getResult().getValue(Double.class));
+
+
+                Log.d("******************************************************","MY loc  " + Location);
+
+
+                Log.d("******************************************************","MY   " + Location1);
+                Log.d("******************************************************","MY   " + Location2);
+                Log.d("******************************************************","MY Rainfall <> " + Rainfall);
+                Log.d("******************************************************","MY wind <> " + WindSpeed);
+                Log.d("******************************************************","MY wind1 <> " + WindSpeed1);
+                Log.d("******************************************************","MY wind2 <> " + WindSpeed2);
+                Log.d("******************************************************","MY wind3 <> " + WindSpeed3);
+
+
 
                 // Data fetched, now proceed with dependent operations
                 if (onDataFetchedCallback != null) {

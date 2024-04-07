@@ -1,5 +1,8 @@
 package com.example.myapplication;
 
+/**
+ * Near by cities of a given location
+ */
 public class NearbyCities {
     private String city1;
     private String city2;

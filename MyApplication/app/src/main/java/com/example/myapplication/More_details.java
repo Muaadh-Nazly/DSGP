@@ -3,6 +3,9 @@ package com.example.myapplication;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
+/**
+ *  More Details click button appear on each map
+ */
 public class More_details extends AppCompatActivity {
 
     @Override

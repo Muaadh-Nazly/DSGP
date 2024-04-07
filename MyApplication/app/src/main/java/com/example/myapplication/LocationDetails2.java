@@ -40,6 +40,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 import java.util.Locale;
+import java.util.Objects;
 
 import retrofit2.Call;
 import retrofit2.Response;
@@ -51,7 +52,7 @@ import retrofit2.http.GET;
 import retrofit2.http.Query;
 
 
-public class LocationDetails extends AppCompatActivity {
+public class LocationDetails2 extends AppCompatActivity {
     FusedLocationProviderClient fusedLocationProviderClient;
     TextView country, city, district, address, latitude, longitude;
     Button getLocation;
@@ -69,6 +70,14 @@ public class LocationDetails extends AppCompatActivity {
     String string_Longitude;
     String string_City;
     String string_District;
+
+
+    double user_selected_longitude;
+    double user_selected_latitude;
+
+    private String user_selected_city;
+    private String user_selected_district;
+
 
 
     TextView progressNumber;
@@ -92,15 +101,28 @@ public class LocationDetails extends AppCompatActivity {
         progressNumber = findViewById(R.id.progressNumber);
 
 
-        Intent intent = getIntent();
-        disasterType = intent.getStringExtra("DISASTER");
+        progressNumber = findViewById(R.id.progressNumber);
 
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
 
-        getLocationDetails();
+        Intent intent = getIntent();
+
+        disasterType = intent.getStringExtra("DISASTER");
+        user_selected_city = intent.getStringExtra("USER_SELECTED_CITY");
+        user_selected_district = intent.getStringExtra("USER_SELECTED_DISTRICT");
+        user_selected_latitude = Double.parseDouble(Objects.requireNonNull(intent.getStringExtra("USER_SELECTED_LATITUDE")));
+        user_selected_longitude = Double.parseDouble(Objects.requireNonNull(intent.getStringExtra("USER_SELECTED_LONGITUDE")));
+
+
+        Log.d("******************************","DISASTER TYPE IN LOCATION 2" + disasterType);
+        Log.d("******************************","LATITUDE in Location2 " + user_selected_latitude);
+        Log.d("******************************","LONGITUDE in Location2" + user_selected_longitude);
+
+
+        getLocationDetails(user_selected_latitude,user_selected_longitude, user_selected_city, user_selected_district);
 
     }
-    public void getLocationDetails(){
+    public void getLocationDetails(double user_selected_latitude, double user_selected_longitude, String user_selected_city, String user_selected_district){
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
             LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 
@@ -110,7 +132,7 @@ public class LocationDetails extends AppCompatActivity {
                         public void onSuccess(Location location) {
                             if (location != null) {
                                 Log.d("Location", "Latitude: " + location.getLatitude() + ", Longitude: " + location.getLongitude());
-                                Geocoder geocoder = new Geocoder(LocationDetails.this, Locale.getDefault());
+                                Geocoder geocoder = new Geocoder(LocationDetails2.this, Locale.getDefault());
 
                                 try {
                                     addresses = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
@@ -119,19 +141,20 @@ public class LocationDetails extends AppCompatActivity {
                                         // Update UI with location details
 
 
-                                        string_Latitude = String.valueOf(location.getLatitude());
-                                        string_Longitude = String.valueOf(location.getLongitude());
-                                        string_City = addresses.get(0).getLocality();
-                                        string_District = addresses.get(0).getSubAdminArea();
+
+                                        string_Latitude = String.valueOf(user_selected_latitude);
+                                        string_Longitude = String.valueOf(user_selected_longitude);
+                                        string_City = user_selected_city;
+                                        string_District = user_selected_district;
+
+                                        getWeatherData(user_selected_latitude, user_selected_longitude);
+
+//                                        city.setText("City: " + addresses.get(0).getLocality());
+//                                        district.setText("District: " + addresses.get(0).getSubAdminArea());
 
 
-                                        city.setText("City: " + addresses.get(0).getLocality());
-                                        district.setText("District: " + addresses.get(0).getSubAdminArea());
 
-
-                                        getWeatherData(addresses.get(0).getLatitude(),addresses.get(0).getLongitude());
-
-                                        NearbyCities nearbyCities = getNearbyLocationNames(addresses.get(0).getLatitude(), addresses.get(0).getLongitude());
+                                        NearbyCities nearbyCities = getNearbyLocationNames(user_selected_latitude, user_selected_longitude);
                                         updateNearbyCitiesUI(nearbyCities.getCity1(), nearbyCities.getCity2());
 
                                         progressNumber.setText("50%");
@@ -146,7 +169,7 @@ public class LocationDetails extends AppCompatActivity {
                                     e.printStackTrace();
                                 }
                                 // Call the method to process weather data
-                                getWeatherData(addresses.get(0).getLatitude(), addresses.get(0).getLongitude());
+                                getWeatherData(user_selected_latitude, user_selected_longitude);
                             }
                         }
                     })
@@ -158,7 +181,7 @@ public class LocationDetails extends AppCompatActivity {
                         }
                     });
         } else {
-            Toast.makeText(LocationDetails.this, "Location is required", Toast.LENGTH_SHORT).show();
+            Toast.makeText(LocationDetails2.this, "Location is required", Toast.LENGTH_SHORT).show();
         }
 
 
@@ -177,7 +200,7 @@ public class LocationDetails extends AppCompatActivity {
         double nearbyLatitude2 = latitude - latitudeOffset;
         double nearbyLongitude2 = longitude - longitudeOffset;
 
-        Geocoder geocoder = new Geocoder(LocationDetails.this, Locale.getDefault());
+        Geocoder geocoder = new Geocoder(LocationDetails2.this, Locale.getDefault());
 
         try {
             // Get the first nearby location
@@ -301,26 +324,26 @@ public class LocationDetails extends AppCompatActivity {
                                     parseAndPredict(currentWindSpeed, currentRainfall, dailyWindSpeeds);
                                 } else {
                                     // Handle the case where forecastList is empty
-                                    Toast.makeText(LocationDetails.this, "Forecast data is empty", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(LocationDetails2.this, "Forecast data is empty", Toast.LENGTH_SHORT).show();
                                 }
                             } else {
-                               // Toast.makeText(LocationDetails.this, "Failed to fetch forecast data", Toast.LENGTH_SHORT).show();
+                                // Toast.makeText(LocationDetails.this, "Failed to fetch forecast data", Toast.LENGTH_SHORT).show();
                             }
                         }
 
                         @Override
                         public void onFailure(Call<JsonObject> call, Throwable t) {
-                            Toast.makeText(LocationDetails.this, "Network error", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(LocationDetails2.this, "Network error", Toast.LENGTH_SHORT).show();
                         }
                     });
                 } else {
-                    Toast.makeText(LocationDetails.this, "Failed to fetch current weather data", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LocationDetails2.this, "Failed to fetch current weather data", Toast.LENGTH_SHORT).show();
                 }
             }
 
             @Override
             public void onFailure(Call<JsonObject> call, Throwable t) {
-                Toast.makeText(LocationDetails.this, "Network error", Toast.LENGTH_SHORT).show();
+                Toast.makeText(LocationDetails2.this, "Network error", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -329,8 +352,7 @@ public class LocationDetails extends AppCompatActivity {
 
     private void parseAndPredict(double currentWindSpeed, double currentRainfall, List<Double> dailyWindSpeeds) {
         if (addresses != null && addresses.size() > 0) {
-            String currentLocality = addresses.get(0).getLocality();
-            String subAdminArea = addresses.get(0).getSubAdminArea();
+//
 
             // The wind speed for the upcoming 4 days
             for (int i = 0; i < dailyWindSpeeds.size(); i++) {
@@ -489,7 +511,7 @@ public class LocationDetails extends AppCompatActivity {
 
     }
 
-        public void  FloodActivity(){
+    public void  FloodActivity(){
         Intent intent = new Intent(this, FloodActivity.class);
         startActivity(intent);
         finish();

@@ -1,11 +1,9 @@
 package com.example.myapplication;
 
 import android.Manifest;
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -42,10 +40,9 @@ public class UserLocationPermissionActivity extends AppCompatActivity {
         user_Location_access.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                askPermission();
-
-            }
+                askPermission();}
         });
+
     }
 
 
